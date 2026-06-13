@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-h: 64px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* offset anchored sections so the sticky header doesn't cover them */
+    scroll-padding-top: calc(var(--header-h) + 16px);
+  }
+
+  body {
+    @apply bg-page text-body antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink-strong;
+    text-wrap: balance;
+  }
+
+  /* Visible, consistent focus indicator (WCAG 2.4.7) */
+  :focus-visible {
+    outline: 2px solid #0d9488;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Respect users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-tz {
+    @apply mx-auto w-full max-w-container px-5 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-12 sm:py-16 lg:py-24;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.08em] text-brand;
+  }
+
+  .tz-number {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium
+      transition-colors duration-150 ease-tz focus-visible:outline-none
+      focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2
+      focus-visible:ring-offset-page disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-brand px-5 py-3 text-white hover:bg-brand-hover active:bg-brand-hover;
+  }
+  .btn-secondary {
+    @apply btn border border-line bg-surface px-5 py-3 text-ink hover:bg-subtle;
+  }
+  .btn-ghost {
+    @apply btn px-3 py-2 text-ink hover:text-brand;
+  }
+  .btn-sm {
+    @apply px-4 py-2;
+  }
+
+  .card {
+    @apply rounded-xl border border-line bg-surface;
+  }
+}
