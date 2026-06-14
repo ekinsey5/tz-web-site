@@ -149,3 +149,72 @@ production deploys.
 - **Why CloudFront Functions over Lambda@Edge?** The redirect/rewrite logic is trivial; Functions are cheaper, faster (sub-ms), and have a generous free tier.
 - **`PriceClass_100`** limits edge locations to North America + Europe — the cheapest tier. Bump to `PriceClass_All` only if global latency becomes a concern.
 - **Security posture:** no long-lived AWS credentials anywhere; the deploy role is scoped to exactly one bucket + one distribution and only trusts the `main` branch of this repo.
+
+---
+
+## Troubleshooting / known gotchas
+
+### OIDC `sub` claim changes when the job uses an `environment:`
+
+**Symptom:** the "Configure AWS credentials (OIDC)" step fails with:
+```
+Could not assume role with OIDC: Not authorized to perform sts:AssumeRoleWithWebIdentity
+```
+even though the OIDC provider exists and the role ARN is correct.
+
+**Cause:** GitHub's OIDC token `sub` (subject) claim — which the role's trust policy
+matches against — **changes format depending on job context**:
+
+| Job context | `sub` value |
+|---|---|
+| Plain push to a branch | `repo:<org>/<repo>:ref:refs/heads/<branch>` |
+| Job declares `environment: <name>` | `repo:<org>/<repo>:environment:<name>` |
+| Pull request | `repo:<org>/<repo>:pull_request` |
+
+Our `deploy` job sets `environment: production`, so GitHub sends the
+`...:environment:production` subject — but a trust policy that only allows the
+`...:ref:refs/heads/main` subject rejects it. The two are mutually exclusive: when
+an environment is set, the branch-ref form is **not** sent.
+
+**Fix (already applied):** the deploy-role trust policy allows **both** subjects via
+a list, parameterised by `GitHubEnvironment` (default `production`) in
+`cloudformation.yml`:
+```yaml
+StringLike:
+  token.actions.githubusercontent.com:sub:
+    - !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/${GitHubBranch}"
+    - !Sub "repo:${GitHubOrg}/${GitHubRepo}:environment:${GitHubEnvironment}"
+```
+
+**Rule of thumb:** if you add/rename/remove `environment:` in `deploy.yml`, update the
+trust policy's `sub` condition to match (and re-run `bootstrap.sh` to apply it).
+To inspect what the role currently trusts:
+```bash
+aws iam get-role --role-name tether-zero-gha-deploy \
+  --query "Role.AssumeRolePolicyDocument.Statement[0].Condition.StringLike" --output json
+```
+
+### CloudFront Function (and OAC) names reject dots
+
+**Symptom:** stack creation fails and rolls back with:
+```
+Value 'tether-zero.com-edge-router' at 'name' failed to satisfy constraint:
+Member must satisfy regular expression pattern: [a-zA-Z0-9-_]{1,64}
+```
+
+**Cause:** CloudFront Function names allow only `[a-zA-Z0-9-_]` — no dots — so a name
+derived from the domain (`tether-zero.com-...`) is invalid.
+
+**Fix (already applied):** resource *names* use the dot-free `ResourcePrefix`
+parameter (default `tether-zero`); only domain-bearing *values* (cert SANs, CloudFront
+aliases, Route 53 record names, and the redirect function's code) keep the dotted
+domain.
+
+### Recovering from a rolled-back stack
+
+A failed create leaves the stack in `ROLLBACK_COMPLETE`, which **cannot be updated** —
+delete it before re-running `bootstrap.sh`:
+```bash
+aws cloudformation delete-stack --stack-name tether-zero-site --region us-east-1
+aws cloudformation wait stack-delete-complete --stack-name tether-zero-site --region us-east-1
+```
