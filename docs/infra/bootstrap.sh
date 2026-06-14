@@ -27,6 +27,7 @@ HOSTED_ZONE_ID="${HOSTED_ZONE_ID:-Z001776426RC78U239EK1}"   # tether-zero.com pu
 GITHUB_ORG="${GITHUB_ORG:-ekinsey5}"
 GITHUB_REPO="${GITHUB_REPO:-tz-web-site}"
 GITHUB_BRANCH="${GITHUB_BRANCH:-main}"
+GITHUB_ENVIRONMENT="${GITHUB_ENVIRONMENT:-production}"        # must match `environment:` in deploy.yml (affects OIDC sub)
 CREATE_OIDC_PROVIDER="${CREATE_OIDC_PROVIDER:-true}"          # none exists in this account as of bootstrap
 
 # --- Sanity checks ---------------------------------------------------------
@@ -54,6 +55,7 @@ aws cloudformation deploy \
     GitHubOrg="$GITHUB_ORG" \
     GitHubRepo="$GITHUB_REPO" \
     GitHubBranch="$GITHUB_BRANCH" \
+    GitHubEnvironment="$GITHUB_ENVIRONMENT" \
     CreateOIDCProvider="$CREATE_OIDC_PROVIDER"
 
 echo

@@ -25,6 +25,10 @@ Parameters:
   GitHubBranch:
     Type: String
     Default: main
+  GitHubEnvironment:
+    Type: String
+    Default: production
+    Description: GitHub Actions environment used by the deploy job (changes the OIDC sub claim)
   CreateOIDCProvider:
     Type: String
     Default: "true"
@@ -220,7 +224,9 @@ Resources:
               StringEquals:
                 token.actions.githubusercontent.com:aud: sts.amazonaws.com
               StringLike:
-                token.actions.githubusercontent.com:sub: !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/${GitHubBranch}"
+                token.actions.githubusercontent.com:sub:
+                  - !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/${GitHubBranch}"
+                  - !Sub "repo:${GitHubOrg}/${GitHubRepo}:environment:${GitHubEnvironment}"
       Policies:
         - PolicyName: deploy-static-site
           PolicyDocument:
