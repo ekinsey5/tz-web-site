@@ -427,7 +427,7 @@ export const FOOTER = {
 
 export const PLACEHOLDERS: string[] = [
   "Sign-up URL (app.tether-zero.com/register) and login URL — confirmed for this build; verify before launch.",
-  "Legal pages (/privacy-policy, /terms-of-service) are now hosted on this marketing site as the canonical copies; the same SMS/Plaid/Unsplash/CCPA sections are mirrored in the app (tether-web) — keep both in sync.",
+  "Legal pages (/privacy-policy, /terms-of-service) are hosted on this marketing site as the canonical copies and the footer links are CONFIRMED live (both resolve HTTP 200 in production via the CloudFront edge router); the same SMS/Plaid/Unsplash/CCPA sections are mirrored in the app (tether-web) — keep both in sync.",
   "[SMS_TOLL_FREE_NUMBER] — registered Toll-Free A2P number for STOP/HELP; fill into the Privacy Policy Mobile Messaging section before carrier submission.",
   "[SMS_HELP_CONTACT] — support email/phone shown in the SMS HELP response; confirm.",
   "Legal 'Last Updated' / effective date set to the publish date (June 19, 2026) across both repos; update when the policy is next materially revised.",
