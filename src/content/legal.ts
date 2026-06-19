@@ -109,7 +109,7 @@ Tether-Zero operates a mobile messaging program to send transactional text alert
 - **Information Sharing:** No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
 - **Opt-Out:** You can cancel the SMS service at any time. Just text "STOP" to our toll-free number +1 (855) 529-5178. After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.
 
-For help, reply HELP or contact us at [SMS_HELP_CONTACT]. Message frequency varies. Message and data rates may apply.
+For help, reply HELP or contact us at support@tether-zero.com. Message frequency varies. Message and data rates may apply.
 
 # 6. Third-Party Applications and Integrations
 
