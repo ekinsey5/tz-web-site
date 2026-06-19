@@ -166,8 +166,6 @@ If you have questions, concerns, or requests regarding this Privacy Policy or ou
 **SpringThought, LLC (Tether-Zero)**
 
 **Email:** privacy@tether-zero.com
-
-**Address:** [REGISTERED_ADDRESS]
 `;
 
 /* ------------------------------------------------------------------ */
@@ -287,8 +285,6 @@ If you have any questions about these Terms, please contact us:
 **SpringThought, LLC (Tether-Zero)**
 
 **Email:** legal@tether-zero.com
-
-**Address:** [REGISTERED_ADDRESS]
 
 For general support inquiries, please contact support@tether-zero.com.
 `;
