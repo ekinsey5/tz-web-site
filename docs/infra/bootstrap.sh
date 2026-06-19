@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# One-time bootstrap for the Tether Zero static site infrastructure.
+# One-time bootstrap for the Tether-Zero static site infrastructure.
 #
 # Deploys the CloudFormation stack (S3 + CloudFront + ACM + Route 53 + GitHub OIDC
 # role) in us-east-1, then prints the stack outputs you need to configure GitHub.

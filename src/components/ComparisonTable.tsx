@@ -7,7 +7,7 @@ export function ComparisonTable() {
   return (
     <Section id="compare" alt aria-labelledby="compare-title">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="eyebrow">Why Tether Zero</p>
+        <p className="eyebrow">Why Tether-Zero</p>
         <h2 id="compare-title" className="mt-3 text-h2">
           {COMPARE.heading}
         </h2>
@@ -22,7 +22,7 @@ export function ComparisonTable() {
       >
         <table className="w-full min-w-[640px] border-collapse text-left">
           <caption className="sr-only">
-            Feature comparison of Tether Zero, YNAB and EveryDollar
+            Feature comparison of Tether-Zero, YNAB and EveryDollar
           </caption>
           <thead>
             <tr className="border-b border-line">

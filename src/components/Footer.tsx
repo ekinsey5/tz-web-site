@@ -1,4 +1,5 @@
 import { FOOTER, NAV_LINKS, APP_URLS } from "@/content/site";
+import { SmsDisclosure } from "@/components/SmsDisclosure";
 
 export function Footer() {
   return (
@@ -13,7 +14,7 @@ export function Footer() {
               >
                 TZ
               </span>
-              <span className="text-lg font-bold text-white">Tether Zero</span>
+              <span className="text-lg font-bold text-white">Tether-Zero</span>
             </span>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               {FOOTER.tagline}
@@ -66,9 +67,12 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/70 sm:flex-row sm:items-center sm:justify-between">
-          <p>{FOOTER.copyright}</p>
-          <p>{FOOTER.attribution}</p>
+        <div className="mt-10 border-t border-white/10 pt-6">
+          <SmsDisclosure className="max-w-3xl" />
+          <div className="mt-6 flex flex-col gap-2 text-xs text-white/70 sm:flex-row sm:items-center sm:justify-between">
+            <p>{FOOTER.copyright}</p>
+            <p>{FOOTER.attribution}</p>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,8 +1,8 @@
-# Deployment Plan — Tether Zero Static Site on AWS
+# Deployment Plan — Tether-Zero Static Site on AWS
 
 ## Overview
 
-The Tether Zero marketing site is a **Next.js 14 App Router** app served as a fully
+The Tether-Zero marketing site is a **Next.js 14 App Router** app served as a fully
 static site over **HTTPS** on the custom domain **tether-zero.com**, with **CI/CD
 from GitHub**. This document describes the most cost-effective production
 architecture and how to operate it.

@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: Tether Zero static site - S3 + CloudFront + ACM + Route53 + GitHub OIDC deploy role
+Description: Tether-Zero static site - S3 + CloudFront + ACM + Route53 + GitHub OIDC deploy role
 
 Parameters:
   DomainName:

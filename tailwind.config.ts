@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 /**
- * Tether Zero marketing theme.
+ * Tether-Zero marketing theme.
  * Tokens mirror the app design system (colors_and_type.css / Design.md),
  * extended with marketing-only display type sizes for the landing page.
  */

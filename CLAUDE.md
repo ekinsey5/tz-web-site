@@ -15,7 +15,7 @@ There are no tests configured.
 
 ## Architecture
 
-**Next.js 14 App Router marketing site** for Tether Zero (personal finance SaaS). Single-page composition with client-side interactivity.
+**Next.js 14 App Router marketing site** for Tether-Zero (personal finance SaaS). Single-page composition with client-side interactivity.
 
 ### Layered composition
 

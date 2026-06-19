@@ -69,7 +69,7 @@ export function Nav() {
         aria-label="Primary"
         className="container-tz flex h-16 items-center justify-between gap-4"
       >
-        <a href="#home" aria-label="Tether Zero — home" className="rounded-lg">
+        <a href="#home" aria-label="Tether-Zero — home" className="rounded-lg">
           <Logo />
         </a>
 

@@ -1,6 +1,6 @@
-# Tether Zero — Marketing Website
+# Tether-Zero — Marketing Website
 
-A single-page marketing site for **Tether Zero**, the personal-finance platform (debt
+A single-page marketing site for **Tether-Zero**, the personal-finance platform (debt
 reduction, budgeting and household money management) by **Springthought**. Built with
 Next.js (App Router) + TypeScript + Tailwind CSS. This site *sells* the product; it is
 not the product itself.
@@ -51,7 +51,7 @@ public/
 └─ brand/                   # logo SVGs
 ```
 
-`design-ref/` (git-ignored) holds the unzipped Tether Zero design-system handoff used
+`design-ref/` (git-ignored) holds the unzipped Tether-Zero design-system handoff used
 as reference; it is not part of the app.
 
 ---
@@ -92,7 +92,7 @@ The monthly/annual toggle defaults to **annual** with the "Save 30%" badge.
 
 ## Content grounding
 
-Every feature claim is sourced from the Tether Zero PRDs (`tether-core/docs/prd`). To
+Every feature claim is sourced from the Tether-Zero PRDs (`tether-core/docs/prd`). To
 avoid fabrication, a few claims from the original brief were **deliberately dropped or
 reworded** because the PRDs don't support them:
 
@@ -147,7 +147,7 @@ to a branded placeholder automatically.
 
 ## Design-system notes / divergences
 
-The shipped Tether Zero design system (`Design.md`) describes the *app* as calm and
+The shipped Tether-Zero design system (`Design.md`) describes the *app* as calm and
 restrained — near-black primary actions, teal only as a ≤6px accent, "not a startup
 marketing page." This marketing site intentionally follows the **brief's** explicit
 direction for a modern fintech landing page while honoring the DS tokens (Inter type,

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Tether Zero — Become debt-free with a plan you can actually follow.";
+  "Tether-Zero — Become debt-free with a plan you can actually follow.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
             TZ
           </div>
           <div style={{ fontSize: 30, fontWeight: 700, color: "#101828" }}>
-            Tether Zero
+            Tether-Zero
           </div>
         </div>
 

@@ -1,11 +1,11 @@
 /**
- * Tether Zero — marketing site content
+ * Tether-Zero — marketing site content
  * =====================================
  * Single source of truth for all section copy, pricing constants and URLs.
  * Edit copy here; components read from this module. Kept string-first so it can
  * be wrapped in an i18n layer (en / fr / es) later without touching components.
  *
- * Grounding note: every feature claim is sourced from the Tether Zero PRDs
+ * Grounding note: every feature claim is sourced from the Tether-Zero PRDs
  * (tether-core/docs/prd). Claims the PRDs do NOT support (e.g. "privacy mode",
  * blanket "encryption at rest") are intentionally omitted. Items needing
  * product-owner confirmation are collected in PLACEHOLDERS below.
@@ -20,9 +20,9 @@ export const APP_URLS = {
   register: "https://app.tether-zero.com/register",
   /** App login route (confirmed). */
   login: "https://app.tether-zero.com/login",
-  /** Footer legal links — point to existing app routes (assumed). */
-  privacy: "https://app.tether-zero.com/privacy",
-  terms: "https://app.tether-zero.com/terms",
+  /** Footer legal links — canonical legal pages live on this marketing site. */
+  privacy: "/privacy-policy",
+  terms: "/terms-of-service",
   contact: "mailto:hello@tether-zero.com",
 } as const;
 
@@ -41,13 +41,13 @@ export const PRICING = {
 } as const;
 
 export const BRAND = {
-  name: "Tether Zero",
-  company: "Springthought",
+  name: "Tether-Zero",
+  company: "SpringThought, LLC",
   year: 2026,
   /** Short positioning line used in meta + footer. */
   tagline: "Get to zero — and stay there.",
   description:
-    "Tether Zero combines debt payoff, budgeting and a personal AI coach in one calm, guided app — so every dollar has a job and you always know your freedom date.",
+    "Tether-Zero combines debt payoff, budgeting and a personal AI coach in one calm, guided app — so every dollar has a job and you always know your freedom date.",
 } as const;
 
 /* ------------------------------------------------------------------ */
@@ -77,7 +77,7 @@ export const HERO = {
   // Single H1 for the page.
   heading: "Become debt-free with a plan you can actually follow.",
   subheading:
-    "Tether Zero brings debt payoff, budgeting and a personal AI coach into one calm, guided app — so every dollar has a job and you always know your freedom date.",
+    "Tether-Zero brings debt payoff, budgeting and a personal AI coach into one calm, guided app — so every dollar has a job and you always know your freedom date.",
   primaryCta: { label: "Start your 30-day free trial", href: APP_URLS.register },
   secondaryCta: { label: "See how it works", href: "#how-it-works" },
   // Trust signals — all confirmed in the PRDs.
@@ -88,7 +88,7 @@ export const HERO = {
   ],
   image: {
     src: "/screenshots/hero.png",
-    alt: "Tether Zero Debt Crusher dashboard showing a projected debt-free date of May 2028, remaining debt, interest saved, payoff progress and the monthly debt budget.",
+    alt: "Tether-Zero Debt Crusher dashboard showing a projected debt-free date of May 2028, remaining debt, interest saved, payoff progress and the monthly debt budget.",
   },
 } as const;
 
@@ -183,7 +183,7 @@ export const FEATURES: { heading: string; subheading: string; items: Feature[] }
     {
       icon: "Languages",
       title: "Available in three languages",
-      body: "Use Tether Zero in English, French or Spanish across budgets, goals and insights.",
+      body: "Use Tether-Zero in English, French or Spanish across budgets, goals and insights.",
     },
     {
       icon: "ShieldCheck",
@@ -222,7 +222,7 @@ export const SPOTLIGHTS: Spotlight[] = [
     ],
     image: {
       src: "/screenshots/debt-crusher.png",
-      alt: "Tether Zero Debt Crusher dashboard showing snowball versus avalanche payoff projections and a debt-free date.",
+      alt: "Tether-Zero Debt Crusher dashboard showing snowball versus avalanche payoff projections and a debt-free date.",
     },
     imageSide: "right",
   },
@@ -230,7 +230,7 @@ export const SPOTLIGHTS: Spotlight[] = [
     id: "insights",
     eyebrow: "Freedom Dashboard & Insights",
     heading: "A dashboard that looks forward, not just back.",
-    body: "Most apps tell you where your money went. Tether Zero also shows where you're headed: a Freedom Horizon burndown projects your path to debt-free, while wellness cards track net worth, income vs. expense, age of money and your top payees — each with period-over-period trends.",
+    body: "Most apps tell you where your money went. Tether-Zero also shows where you're headed: a Freedom Horizon burndown projects your path to debt-free, while wellness cards track net worth, income vs. expense, age of money and your top payees — each with period-over-period trends.",
     bullets: [
       "Forward-looking burndown to your freedom date",
       "Net worth and income-vs-expense at a glance",
@@ -239,7 +239,7 @@ export const SPOTLIGHTS: Spotlight[] = [
     ],
     image: {
       src: "/screenshots/insights.png",
-      alt: "Tether Zero Insights dashboard with cards for spending, net income, income versus expense, net worth, top categories, age of money and savings rate.",
+      alt: "Tether-Zero Insights dashboard with cards for spending, net income, income versus expense, net worth, top categories, age of money and savings rate.",
     },
     imageSide: "left",
   },
@@ -256,7 +256,7 @@ export const SPOTLIGHTS: Spotlight[] = [
     ],
     image: {
       src: "/screenshots/coach.png",
-      alt: "Tether Zero's AI coach Zero answering whether a $500 purchase fits the user's plan, showing the impact on their debt-free date with options to redirect the money to debt or proceed.",
+      alt: "Tether-Zero's AI coach Zero answering whether a $500 purchase fits the user's plan, showing the impact on their debt-free date with options to redirect the money to debt or proceed.",
     },
     imageSide: "right",
   },
@@ -273,10 +273,10 @@ export const COMPARE: {
   rows: { capability: string; tetherZero: string; ynab: string; everyDollar: string }[];
   footnote: string;
 } = {
-  heading: "Why Tether Zero",
+  heading: "Why Tether-Zero",
   subheading:
-    "How Tether Zero compares with two popular budgeting apps. Each app is great at what it does — here's where Tether Zero focuses.",
-  columns: ["Tether Zero", "YNAB", "EveryDollar"],
+    "How Tether-Zero compares with two popular budgeting apps. Each app is great at what it does — here's where Tether-Zero focuses.",
+  columns: ["Tether-Zero", "YNAB", "EveryDollar"],
   rows: [
     {
       capability: "Guidance",
@@ -310,7 +310,7 @@ export const COMPARE: {
     },
   ],
   footnote:
-    "Comparison reflects Tether Zero's product focus and is provided for general guidance. Competitor capabilities change over time — check each provider for current details.",
+    "Comparison reflects Tether-Zero's product focus and is provided for general guidance. Competitor capabilities change over time — check each provider for current details.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -341,7 +341,7 @@ export const PRICING_SECTION = {
   premium: {
     name: "Premium",
     badge: "Most popular",
-    description: "Everything in Tether Zero, billed monthly or annually.",
+    description: "Everything in Tether-Zero, billed monthly or annually.",
     features: [
       "Debt Crusher Engine & strategy simulator",
       "Hybrid budgeting, sinking funds & smart splits",
@@ -375,7 +375,7 @@ export const FAQ: { heading: string; items: FaqItem[] } = {
     },
     {
       q: "Is my bank data safe?",
-      a: "Yes. Bank connections use Plaid with read-only permissions, which means Tether Zero can see your transactions and balances but can never move money. Stored bank credentials are encrypted with AES-256-GCM.",
+      a: "Yes. Bank connections use Plaid with read-only permissions, which means Tether-Zero can see your transactions and balances but can never move money. Stored bank credentials are encrypted with AES-256-GCM.",
     },
     {
       q: "Can my partner share the account?",
@@ -383,7 +383,7 @@ export const FAQ: { heading: string; items: FaqItem[] } = {
     },
     {
       q: "Which countries and banks are supported?",
-      a: "Tether Zero connects to banks through Plaid. Specific country and institution coverage is being finalized — contact us for the latest supported list.",
+      a: "Tether-Zero connects to banks through Plaid. Specific country and institution coverage is being finalized — contact us for the latest supported list.",
     },
     {
       q: "Can I cancel anytime?",
@@ -391,7 +391,7 @@ export const FAQ: { heading: string; items: FaqItem[] } = {
     },
     {
       q: "Does it work on mobile?",
-      a: "Tether Zero runs in your web browser, and this site is fully responsive. A mobile-optimized app experience is on the roadmap — reach out if you'd like updates.",
+      a: "Tether-Zero runs in your web browser, and this site is fully responsive. A mobile-optimized app experience is on the roadmap — reach out if you'd like updates.",
     },
   ],
 };
@@ -427,7 +427,13 @@ export const FOOTER = {
 
 export const PLACEHOLDERS: string[] = [
   "Sign-up URL (app.tether-zero.com/register) and login URL — confirmed for this build; verify before launch.",
-  "Footer legal links (Privacy, Terms) point to assumed app routes; confirm real URLs.",
+  "Legal pages (/privacy-policy, /terms-of-service) are now hosted on this marketing site as the canonical copies; the same SMS/Plaid/Unsplash/CCPA sections are mirrored in the app (tether-web) — keep both in sync.",
+  "[SMS_TOLL_FREE_NUMBER] — registered Toll-Free A2P number for STOP/HELP; fill into the Privacy Policy Mobile Messaging section before carrier submission.",
+  "[SMS_HELP_CONTACT] — support email/phone shown in the SMS HELP response; confirm.",
+  "[REGISTERED_ADDRESS] — SpringThought, LLC registered business address used in Privacy Policy + Terms; the app's legal docs currently use a placeholder San Francisco address — reconcile.",
+  "Legal 'Last Updated' / effective date set to the publish date (June 19, 2026) across both repos; update when the policy is next materially revised.",
+  "Brand/DBA confirmed as 'Tether-Zero' (hyphen), legal entity 'SpringThought, LLC'. Renamed across shipped src + tests in both repos and added explicit 'doing business as' language; the app's Terms entity was corrected from 'Tether Zero, Inc.' to SpringThought, LLC. NOT updated: internal docs/README/CLAUDE.md/design-ref (still say 'Tether Zero'), and the es/fr legal intros lack the formal DBA clause (needs a translator). Register the A2P brand exactly as 'Tether-Zero' to match the site and message content.",
+  "Contact email domain unified to the hyphenated tether-zero.com across both repos (privacy@/legal@/support@/hello@). Confirm these mailboxes exist before carrier submission. NOTE: the app's page metadata/canonical URLs and JSON-LD still use the non-hyphen domain (tetherzero.com) — reconcile the web domain separately if needed.",
   "Contact address (hello@tether-zero.com) is assumed; confirm.",
   "Annual pricing rounding ($7.69/mo, $92.28/yr) derived from $10.99 × 0.70; confirm exact figures.",
   "Post-trial behavior if the user does not subscribe (read-only vs. locked) — not specified in PRDs.",

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-/** Tether Zero wordmark: teal "TZ" mark + name. Decorative mark is aria-hidden. */
+/** Tether-Zero wordmark: teal "TZ" mark + name. Decorative mark is aria-hidden. */
 export function Logo({ className }: { className?: string }) {
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
@@ -11,7 +11,7 @@ export function Logo({ className }: { className?: string }) {
         TZ
       </span>
       <span className="text-lg font-bold tracking-tight text-ink-strong">
-        Tether Zero
+        Tether-Zero
       </span>
     </span>
   );
