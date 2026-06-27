@@ -11,14 +11,14 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          // teal-700 used as the base so white text and teal text both meet
-          // WCAG AA (4.5:1) contrast; teal-600 (#0D9488) is reserved for
+          // blue-700 used as the base so white text and blue text both meet
+          // WCAG AA (4.5:1) contrast; blue-600 (#155DFC) is reserved for
           // decorative accents via `brand-bright`.
-          DEFAULT: "#0F766E", // teal-700 — text, buttons, active states (AA-safe)
-          hover: "#115E59", // teal-800 — button hover
-          bright: "#0D9488", // teal-600 — decorative accents only
-          light: "#14B8A6", // teal-500
-          tint: "#CCFBF1", // teal-100
+          DEFAULT: "#1D4ED8", // blue-700 — text, buttons, active states (AA-safe, 6.7:1)
+          hover: "#1E40AF", // blue-800 — button hover
+          bright: "#155DFC", // blue-600 — decorative accents only (matches logo "Zero")
+          light: "#3B82F6", // blue-500
+          tint: "#DBEAFE", // blue-100
           ink: "#030213", // near-black (app primary action color)
         },
         page: "#F9FAFB",

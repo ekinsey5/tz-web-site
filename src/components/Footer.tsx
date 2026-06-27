@@ -7,15 +7,14 @@ export function Footer() {
       <div className="container-tz py-12">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <span className="inline-flex items-center gap-2.5">
-              <span
-                aria-hidden
-                className="grid h-8 w-8 place-items-center rounded-lg bg-brand text-[15px] font-bold leading-none text-white"
-              >
-                TZ
-              </span>
-              <span className="text-lg font-bold text-white">Tether-Zero</span>
-            </span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/brand/logo-full-inverse.svg"
+              alt="Tether Zero"
+              width={1862}
+              height={468}
+              className="h-[34px] w-auto"
+            />
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               {FOOTER.tagline}
             </p>
