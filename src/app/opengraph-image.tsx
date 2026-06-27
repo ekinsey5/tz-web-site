@@ -26,7 +26,7 @@ export default function OpengraphImage() {
               width: 56,
               height: 56,
               borderRadius: 12,
-              background: "#0D9488",
+              background: "#1D4ED8",
               color: "white",
               fontSize: 28,
               fontWeight: 700,
@@ -67,8 +67,8 @@ export default function OpengraphImage() {
                 key={chip}
                 style={{
                   fontSize: 22,
-                  color: "#0F766E",
-                  background: "#CCFBF1",
+                  color: "#1D4ED8",
+                  background: "#DBEAFE",
                   padding: "8px 18px",
                   borderRadius: 999,
                 }}

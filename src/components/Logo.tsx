@@ -1,18 +1,15 @@
 import { cn } from "@/lib/utils";
 
-/** Tether-Zero wordmark: teal "TZ" mark + name. Decorative mark is aria-hidden. */
+/** Tether-Zero horizontal logo lockup (ring + green dot + wordmark). */
 export function Logo({ className }: { className?: string }) {
   return (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
-      <span
-        aria-hidden="true"
-        className="grid h-8 w-8 place-items-center rounded-lg bg-brand text-[15px] font-bold leading-none tracking-tight text-white"
-      >
-        TZ
-      </span>
-      <span className="text-lg font-bold tracking-tight text-ink-strong">
-        Tether-Zero
-      </span>
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/brand/logo-full.svg"
+      alt="Tether Zero"
+      width={1862}
+      height={468}
+      className={cn("h-[38px] w-auto", className)}
+    />
   );
 }

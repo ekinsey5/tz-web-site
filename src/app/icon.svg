@@ -1,4 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#0D9488"/>
-  <text x="16" y="22" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="15" fill="#ffffff" letter-spacing="-0.5">TZ</text>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="7" fill="#ffffff" stroke="#E5E7EB"/>
+  <svg x="4" y="4" width="24" height="24" viewBox="0 0 448 448">
+    <defs>
+      <linearGradient id="tzRing" x1="0.12" y1="0.05" x2="0.88" y2="0.95">
+        <stop offset="0" stop-color="#4C2DB7"/>
+        <stop offset="0.5" stop-color="#343BD2"/>
+        <stop offset="1" stop-color="#0A5BFC"/>
+      </linearGradient>
+    </defs>
+    <g transform="translate(8,0)">
+      <path d="M 279.12 395.19 A 180.0 180.0 0 1 1 387.94 297.21" stroke="url(#tzRing)" stroke-width="41" stroke-linecap="round" fill="none"/>
+      <circle cx="352" cy="358.5" r="40.5" stroke="#06BD8A" stroke-width="33" fill="none"/>
+    </g>
+  </svg>
 </svg>
