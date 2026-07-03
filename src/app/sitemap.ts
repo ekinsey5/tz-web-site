@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const SITE_URL = "https://www.tether-zero.com"; // [PLACEHOLDER] marketing domain
+import { SITE_URL } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

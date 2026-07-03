@@ -15,6 +15,9 @@
 /* Constants — edit these to update pricing / destinations everywhere  */
 /* ------------------------------------------------------------------ */
 
+/** Canonical marketing domain — no www; CloudFront redirects www to apex. */
+export const SITE_URL = "https://tether-zero.com";
+
 export const APP_URLS = {
   /** Primary trial / sign-up route (confirmed). */
   register: "https://app.tether-zero.com/register",
@@ -432,7 +435,7 @@ export const PLACEHOLDERS: string[] = [
   "SMS HELP contact CONFIRMED as support@tether-zero.com and filled into the Privacy Policy Mobile Messaging (HELP) section.",
   "Legal 'Last Updated' / effective date set to the publish date (June 19, 2026) across both repos; update when the policy is next materially revised.",
   "Brand/DBA confirmed as 'Tether-Zero' (hyphen), legal entity 'SpringThought, LLC'. Renamed across shipped src + tests in both repos and added explicit 'doing business as' language; the app's Terms entity was corrected from 'Tether Zero, Inc.' to SpringThought, LLC. NOT updated: internal docs/README/CLAUDE.md/design-ref (still say 'Tether Zero'), and the es/fr legal intros lack the formal DBA clause (needs a translator). Register the A2P brand exactly as 'Tether-Zero' to match the site and message content.",
-  "Contact email domain unified to the hyphenated tether-zero.com across both repos (privacy@/legal@/support@/hello@). Confirm these mailboxes exist before carrier submission. NOTE: the app's page metadata/canonical URLs and JSON-LD still use the non-hyphen domain (tetherzero.com) — reconcile the web domain separately if needed.",
+  "Contact email domain unified to the hyphenated tether-zero.com across both repos (privacy@/legal@/support@/hello@). Confirm these mailboxes exist before carrier submission. This marketing site (tz-web-site) is fully reconciled on the hyphenated apex domain (canonical/sitemap/robots/OG all use https://tether-zero.com as of 2026-07-03). REMAINING: the app repo (tether-web / app.tether-zero.com) still needs its page metadata/canonical URLs and JSON-LD checked for the non-hyphen domain (tetherzero.com) — fix in that repo.",
   "Contact address (hello@tether-zero.com) is assumed; confirm.",
   "Annual pricing rounding ($7.69/mo, $92.28/yr) derived from $10.99 × 0.70; confirm exact figures.",
   "Post-trial behavior if the user does not subscribe (read-only vs. locked) — not specified in PRDs.",

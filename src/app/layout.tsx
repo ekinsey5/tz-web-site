@@ -1,9 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { inter } from "@/lib/fonts";
-import { BRAND } from "@/content/site";
+import { BRAND, SITE_URL } from "@/content/site";
 import "./globals.css";
-
-const SITE_URL = "https://www.tether-zero.com"; // [PLACEHOLDER] marketing domain
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -47,6 +45,15 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: BRAND.name,
+  url: SITE_URL,
+  logo: `${SITE_URL}/brand/logo-mark.svg`,
+  description: BRAND.description,
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -54,7 +61,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
