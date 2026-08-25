@@ -1,3 +1,15 @@
+import type { ReactNode } from "react";
+import {
+  Banknote,
+  Calculator,
+  CalendarCheck,
+  ClipboardList,
+  PiggyBank,
+  ReceiptText,
+  Sparkles,
+  Wallet,
+  type LucideIcon,
+} from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
 import { LearnPageChrome } from "@/components/LearnPageChrome";
@@ -8,7 +20,6 @@ import type { Locale } from "@/i18n/config";
 
 const ARTICLE = ARTICLES.makingABudget;
 
-const H2_CLASS = "mt-12 border-t border-ink/10 pt-8 text-2xl font-bold text-ink-strong";
 const P_CLASS = "mt-5 leading-relaxed text-body";
 
 /**
@@ -16,17 +27,32 @@ const P_CLASS = "mt-5 leading-relaxed text-body";
  * ordered list, so it's written out by hand between these two groups.
  */
 const SECTIONS_BEFORE_STEP4 = [
-  { key: "whatIsABudget", paragraphs: 3 },
-  { key: "gettingReady", paragraphs: 3 },
-  { key: "step1", paragraphs: 3 },
-  { key: "step2", paragraphs: 3 },
-  { key: "step3", paragraphs: 3 },
+  { key: "whatIsABudget", paragraphs: 3, icon: Wallet },
+  { key: "gettingReady", paragraphs: 3, icon: ClipboardList },
+  { key: "step1", paragraphs: 3, icon: ReceiptText },
+  { key: "step2", paragraphs: 3, icon: Banknote },
+  { key: "step3", paragraphs: 3, icon: Calculator },
 ] as const;
 
 const SECTIONS_AFTER_STEP4 = [
-  { key: "savings", paragraphs: 1 },
-  { key: "finalThoughts", paragraphs: 2 },
+  { key: "savings", paragraphs: 1, icon: PiggyBank },
+  { key: "finalThoughts", paragraphs: 2, icon: Sparkles },
 ] as const;
+
+/** Section h2 with a tinted icon chip, matching the homepage feature cards. */
+function SectionHeading({ icon: Icon, children }: { icon: LucideIcon; children: ReactNode }) {
+  return (
+    <div className="mt-12 flex items-center gap-4 border-t border-ink/10 pt-8">
+      <span
+        aria-hidden
+        className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-tint text-brand"
+      >
+        <Icon className="h-7 w-7" />
+      </span>
+      <h2 className="text-2xl font-bold text-ink-strong">{children}</h2>
+    </div>
+  );
+}
 
 const STEP4_ITEMS = ["li1", "li2", "li3", "li4"] as const;
 
@@ -95,9 +121,9 @@ export async function MakingABudgetArticlePage({ locale }: { locale: Locale }) {
           <p className={P_CLASS}>{rich("intro.p1")}</p>
           <p className={P_CLASS}>{rich("intro.p2")}</p>
 
-          {SECTIONS_BEFORE_STEP4.map(({ key, paragraphs }) => (
+          {SECTIONS_BEFORE_STEP4.map(({ key, paragraphs, icon }) => (
             <section key={key}>
-              <h2 className={H2_CLASS}>{t(`${key}.heading`)}</h2>
+              <SectionHeading icon={icon}>{t(`${key}.heading`)}</SectionHeading>
               {Array.from({ length: paragraphs }, (_, i) => (
                 <p key={i} className={P_CLASS}>
                   {rich(`${key}.p${i + 1}`)}
@@ -107,7 +133,7 @@ export async function MakingABudgetArticlePage({ locale }: { locale: Locale }) {
           ))}
 
           <section>
-            <h2 className={H2_CLASS}>{t("step4.heading")}</h2>
+            <SectionHeading icon={CalendarCheck}>{t("step4.heading")}</SectionHeading>
             <p className={P_CLASS}>{rich("step4.intro")}</p>
             <ol className="mt-5 list-decimal space-y-3 pl-6">
               {STEP4_ITEMS.map((item) => (
@@ -119,9 +145,9 @@ export async function MakingABudgetArticlePage({ locale }: { locale: Locale }) {
             <p className={P_CLASS}>{rich("step4.partner")}</p>
           </section>
 
-          {SECTIONS_AFTER_STEP4.map(({ key, paragraphs }) => (
+          {SECTIONS_AFTER_STEP4.map(({ key, paragraphs, icon }) => (
             <section key={key}>
-              <h2 className={H2_CLASS}>{t(`${key}.heading`)}</h2>
+              <SectionHeading icon={icon}>{t(`${key}.heading`)}</SectionHeading>
               {Array.from({ length: paragraphs }, (_, i) => (
                 <p key={i} className={P_CLASS}>
                   {rich(`${key}.p${i + 1}`)}
