@@ -36,18 +36,18 @@ There are no tests configured.
 ### Styling
 
 - Tailwind CSS with custom design tokens in `tailwind.config.ts`:
-  - Brand teal: `#0F766E` (teal-700) — AA-safe for text contrast (~5.5:1)
-  - `#0D9488` (teal-600) — decorative only, not for text
+  - Brand blue: `#1D4ED8` (blue-700) — AA-safe for text contrast (6.7:1)
+  - `#155DFC` (blue-600) — decorative only, not for text
 - Custom component helpers (`.btn`, `.card`, `.eyebrow`, `.section`) defined in `src/app/globals.css` as `@layer components`
 - Path alias: `@/*` → `src/*`
 
 ### Content grounding
 
-`src/content/site.ts` exports a `PLACEHOLDERS` object tracking 10 items that need product-owner confirmation before launch (sign-up URLs, legal links, supported countries, cancellation policy, etc.). See README.md for the full list.
+`src/content/site.ts` exports a `PLACEHOLDERS` array tracking 14 items that need product-owner confirmation before launch (sign-up URLs, legal links, supported countries, cancellation policy, etc.). See README.md for the full list.
 
 ### Public assets
 
 - `public/fonts/` — Self-hosted Inter woff2 (weights 400/500/600/700)
 - `public/screenshots/` — Product screenshots (hero, insights, coach); source from Figma
-- `public/brand/` — `logo-full.svg`, `logo-mark.svg`
+- `public/brand/` — `logo-full.svg`, `logo-full-inverse.svg`, `logo-mark.svg`
 - `design-ref/` — Git-ignored Figma design system export bundle

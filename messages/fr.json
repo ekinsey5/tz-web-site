@@ -1,0 +1,397 @@
+{
+  "Meta": {
+    "titleDefault": "Tether-Zero — Devenez libre de dettes avec un plan que vous pouvez vraiment suivre",
+    "titleTemplate": "%s · Tether-Zero",
+    "description": "Tether-Zero combine le remboursement de dettes, la budgétisation et un coach IA personnel dans une seule application calme et guidée — pour que chaque dollar ait un rôle et que vous connaissiez toujours votre date de liberté.",
+    "keywords": "remboursement de dettes, boule de neige, avalanche, application de budget, budget base zéro, finances personnelles, coach IA financier",
+    "tagline": "Atteignez zéro — et restez-y."
+  },
+  "Nav": {
+    "skipToContent": "Passer au contenu",
+    "primaryAriaLabel": "Principal",
+    "homeAriaLabel": "Tether-Zero — accueil",
+    "logIn": "Se connecter",
+    "startFreeTrial": "Commencer l'essai gratuit",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "links": {
+      "howItWorks": "Comment ça marche",
+      "features": "Fonctionnalités",
+      "debtCrusher": "Broyeur de dettes",
+      "pricing": "Tarifs",
+      "whyUs": "Pourquoi nous",
+      "learn": "Apprendre",
+      "faq": "FAQ"
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Langue",
+    "en": "English",
+    "fr": "Français",
+    "es": "Español"
+  },
+  "Hero": {
+    "eyebrow": "Remboursement de dettes · Budgétisation · Coaching IA",
+    "heading": "Devenez libre de dettes avec un plan que vous pouvez vraiment suivre.",
+    "subheading": "Tether-Zero réunit le remboursement de dettes, la budgétisation et un coach IA personnel dans une seule application calme et guidée — pour que chaque dollar ait un rôle et que vous connaissiez toujours votre date de liberté.",
+    "primaryCta": "Commencez votre essai gratuit de 30 jours",
+    "secondaryCta": "Découvrir comment ça marche",
+    "trust": [
+      "Connexions bancaires en lecture seule",
+      "Identifiants bancaires chiffrés (AES-256-GCM)",
+      "Exportez ou supprimez vos données à tout moment"
+    ],
+    "imageAlt": "Tableau de bord Broyeur de dettes de Tether-Zero montrant une date de liberté financière projetée en mai 2028, la dette restante, les intérêts économisés, la progression du remboursement et le budget mensuel consacré aux dettes."
+  },
+  "HowItWorks": {
+    "eyebrow": "Comment ça marche",
+    "heading": "Des comptes dispersés à un plan de remboursement clair",
+    "subheading": "Quatre étapes pour reprendre le contrôle de votre argent — la plupart des gens sont opérationnels en quelques minutes.",
+    "stepAriaPrefix": "Étape {number} : ",
+    "steps": [
+      {
+        "title": "Connectez ou ajoutez vos comptes",
+        "body": "Reliez vos banques en toute sécurité avec un accès en lecture seule via Plaid, ou ajoutez des comptes manuellement. Les transactions se synchronisent automatiquement pour que vous n'ayez plus à les saisir une par une."
+      },
+      {
+        "title": "Créez un budget en quelques minutes",
+        "body": "L'Assistant Budget Intelligent pose quelques questions sur votre vie et génère un budget personnalisé base zéro — seulement les catégories dont vous avez vraiment besoin, pas un modèle générique à élaguer."
+      },
+      {
+        "title": "Choisissez votre stratégie de remboursement",
+        "body": "Choisissez boule de neige ou avalanche et le Broyeur de dettes projette votre date de liberté financière, les intérêts que vous économiserez et les mois que vous gagnerez — recalculé instantanément."
+      },
+      {
+        "title": "Restez sur la bonne voie avec Zero",
+        "body": "Votre coach IA répond aux questions financières en langage simple et signale ce qui nécessite votre attention — et confirme toujours avec vous avant d'effectuer un changement."
+      }
+    ]
+  },
+  "Features": {
+    "eyebrow": "Fonctionnalités",
+    "heading": "Tout ce dont vous avez besoin pour atteindre zéro",
+    "subheading": "Une seule application pour rembourser vos dettes, budgétiser avec intention et comprendre votre argent.",
+    "items": [
+      {
+        "title": "Moteur Broyeur de dettes",
+        "body": "Comparez boule de neige et avalanche côte à côte, visualisez une date de liberté financière projetée, et appliquez des paiements exceptionnels « flocons de neige » pour y arriver plus vite."
+      },
+      {
+        "title": "Budgétisation hybride",
+        "body": "Budgétisation base zéro avec fonds d'amortissement et répartitions intelligentes, pour que chaque dollar ait un rôle et que les factures irrégulières ne vous prennent jamais au dépourvu."
+      },
+      {
+        "title": "Synchronisation automatique des transactions",
+        "body": "Les connexions Plaid en lecture seule importent vos transactions pour vous, et Smart Match apprend vos catégories au fil du temps."
+      },
+      {
+        "title": "Zero, votre coach IA",
+        "body": "Posez des questions en langage simple et obtenez des réponses fondées sur les données réelles de votre foyer — avec une confirmation avant tout changement."
+      },
+      {
+        "title": "Tableau de bord Liberté et analyses",
+        "body": "Valeur nette, revenus vs dépenses, âge de l'argent et principaux bénéficiaires — plus une projection tournée vers l'avenir jusqu'à votre date de liberté."
+      },
+      {
+        "title": "Objectifs et jalons",
+        "body": "Définissez des objectifs d'épargne partagés, suivez votre rythme et marquez les jalons à 25/50/75/100 % à mesure que votre objectif se précise."
+      },
+      {
+        "title": "Accès partagé au foyer",
+        "body": "Invitez un partenaire ou un conseiller par e-mail avec des permissions basées sur les rôles — Administrateur, Éditeur ou Lecteur — sans partager d'identifiants de connexion."
+      },
+      {
+        "title": "Disponible en trois langues",
+        "body": "Utilisez Tether-Zero en anglais, français ou espagnol pour vos budgets, objectifs et analyses."
+      },
+      {
+        "title": "Confidentialité et sécurité",
+        "body": "Accès bancaire en lecture seule, identifiants chiffrés AES-256-GCM, et export ou suppression de compte en un clic (RGPD/CCPA)."
+      }
+    ]
+  },
+  "Spotlights": {
+    "debtCrusher": {
+      "eyebrow": "Moteur Broyeur de dettes",
+      "heading": "Visualisez votre date de liberté financière — et rapprochez-la.",
+      "body": "Basculez entre boule de neige et avalanche et regardez la projection se recalculer instantanément, directement dans votre navigateur. Le Broyeur de dettes tient compte des taux promotionnels, réinjecte chaque paiement minimum libéré dans votre prochaine dette, et affiche les intérêts et les mois que vous économiserez par rapport aux paiements minimums.",
+      "bullets": [
+        "Boule de neige vs avalanche, comparées côte à côte",
+        "Une date de liberté financière projetée avec intérêts et mois économisés",
+        "Appliquez un bonus ou un remboursement d'impôt comme « flocon de neige » et voyez l'impact",
+        "Amortissement mois par mois pour chaque dette"
+      ],
+      "imageAlt": "Tableau de bord Broyeur de dettes de Tether-Zero montrant les projections de remboursement boule de neige versus avalanche et une date de liberté financière."
+    },
+    "insights": {
+      "eyebrow": "Tableau de bord Liberté et analyses",
+      "heading": "Un tableau de bord tourné vers l'avenir, pas seulement le passé.",
+      "body": "La plupart des applications vous montrent où est allé votre argent. Tether-Zero vous montre aussi où vous allez : une projection Horizon Liberté anticipe votre chemin vers la liberté financière, tandis que des cartes de bien-être suivent la valeur nette, les revenus vs dépenses, l'âge de l'argent et vos principaux bénéficiaires — chacune avec des tendances période par période.",
+      "bullets": [
+        "Projection tournée vers l'avenir jusqu'à votre date de liberté",
+        "Valeur nette et revenus vs dépenses en un coup d'œil",
+        "Âge de l'argent et analyses des principaux bénéficiaires",
+        "Tendances période par période pour suivre vos progrès"
+      ],
+      "imageAlt": "Tableau de bord Analyses de Tether-Zero avec des cartes pour les dépenses, le revenu net, revenus versus dépenses, la valeur nette, les principales catégories, l'âge de l'argent et le taux d'épargne."
+    },
+    "coach": {
+      "eyebrow": "Rencontrez Zero",
+      "heading": "Un coach IA qui fait plus qu'expliquer.",
+      "body": "Zero répond aux questions en langage simple en utilisant les vrais chiffres de votre foyer — « Suis-je sur la bonne voie ce mois-ci ? », « Boule de neige ou avalanche ? » — et suggère les prochaines étapes selon votre rôle. Il confirme toujours avant d'effectuer un changement, pour que vous gardiez le contrôle.",
+      "bullets": [
+        "Conseils conversationnels fondés sur vos données",
+        "Alertes proactives sur ce qui nécessite votre attention",
+        "Adapté au rôle : suggestions pour les éditeurs, explications pour les lecteurs",
+        "Confirmation d'abord — rien ne change sans votre accord"
+      ],
+      "imageAlt": "Le coach IA de Tether-Zero, Zero, répondant si un achat de 500 $ correspond au plan de l'utilisateur, montrant l'impact sur sa date de liberté financière avec des options pour rediriger l'argent vers la dette ou continuer."
+    }
+  },
+  "Compare": {
+    "eyebrow": "Pourquoi Tether-Zero",
+    "heading": "Pourquoi Tether-Zero",
+    "subheading": "Comment Tether-Zero se compare à deux applications de budget populaires. Chaque application excelle dans ce qu'elle fait — voici où Tether-Zero se concentre.",
+    "srCaption": "Comparaison des fonctionnalités de Tether-Zero, YNAB et EveryDollar",
+    "capabilityHeader": "Capacité",
+    "columns": ["Tether-Zero", "YNAB", "EveryDollar"],
+    "rows": [
+      {
+        "capability": "Accompagnement",
+        "tetherZero": "Coach IA actif",
+        "ynab": "Éducation passive",
+        "everyDollar": "Coaching passif"
+      },
+      {
+        "capability": "Stratégie de dette",
+        "tetherZero": "Simulateur boule de neige et avalanche",
+        "ynab": "Comptes statiques",
+        "everyDollar": "Boule de neige rigide"
+      },
+      {
+        "capability": "Projection",
+        "tetherZero": "Projection sur 12 à 24 mois",
+        "ynab": "Présent seulement",
+        "everyDollar": "Mois en cours seulement"
+      },
+      {
+        "capability": "Visuels",
+        "tetherZero": "Dynamiques, tournés vers l'avenir",
+        "ynab": "Graphiques statiques (passé)",
+        "everyDollar": "Barres de progression simples"
+      },
+      {
+        "capability": "Couples",
+        "tetherZero": "Accès basé sur les rôles (Admin/Lecteur)",
+        "ynab": "Identifiants partagés",
+        "everyDollar": "Identifiants partagés"
+      }
+    ],
+    "footnote": "La comparaison reflète l'orientation produit de Tether-Zero et est fournie à titre indicatif. Les capacités des concurrents évoluent avec le temps — vérifiez auprès de chaque fournisseur pour les détails actuels."
+  },
+  "Pricing": {
+    "eyebrow": "Tarifs",
+    "heading": "Des tarifs simples, sans surprises",
+    "subheading": "Commencez avec un essai gratuit de 30 jours. Continuez pour moins que le prix de deux cafés par mois.",
+    "billingPeriodAriaLabel": "Période de facturation",
+    "monthly": "Mensuel",
+    "annual": "Annuel",
+    "save": "Économisez {percent} %",
+    "perMonth": "/ mois",
+    "billedAnnually": "Facturé annuellement à {price} — économisez {amount} par an",
+    "billedMonthly": "Facturé mensuellement · {price} par an",
+    "trialCadence": "pendant {days} jours",
+    "trialNote": "Chaque forfait commence par un essai gratuit de {days} jours.",
+    "trial": {
+      "name": "Essai gratuit",
+      "badge": "Commencez ici",
+      "priceLabel": "Gratuit",
+      "description": "Accès complet à toutes les fonctionnalités pour construire votre plan avant de payer.",
+      "features": [
+        "Toutes les fonctionnalités Premium incluses",
+        "Créez votre budget et votre plan de remboursement",
+        "Aucun engagement à long terme"
+      ],
+      "cta": "Commencer l'essai gratuit"
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "Le plus populaire",
+      "description": "Tout Tether-Zero, facturé mensuellement ou annuellement.",
+      "features": [
+        "Moteur Broyeur de dettes et simulateur de stratégie",
+        "Budgétisation hybride, fonds d'amortissement et répartitions intelligentes",
+        "Synchronisation bancaire automatique via Plaid (lecture seule)",
+        "Zero, votre coach IA",
+        "Tableau de bord Liberté et analyses",
+        "Accès partagé au foyer (Admin / Éditeur / Lecteur)",
+        "Anglais, français et espagnol"
+      ],
+      "cta": "Commencez votre essai gratuit"
+    },
+    "note": "La synchronisation bancaire automatique via Plaid est une fonctionnalité Premium."
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "heading": "Questions fréquentes",
+    "trialQuestion": "Que se passe-t-il après l'essai gratuit de 30 jours ?",
+    "trialAnswer": "Votre essai comprend un accès complet à toutes les fonctionnalités. À la fin, vous pouvez vous abonner à Premium — {monthlyPrice} par mois, ou {annualPrice} par an ({annualPerMonthPrice} par mois) — pour continuer votre budget, votre plan de remboursement et vos analyses.",
+    "items": [
+      {
+        "q": "Mes données bancaires sont-elles en sécurité ?",
+        "a": "Oui. Les connexions bancaires utilisent Plaid avec des permissions en lecture seule, ce qui signifie que Tether-Zero peut voir vos transactions et soldes mais ne peut jamais déplacer d'argent. Les identifiants bancaires stockés sont chiffrés avec AES-256-GCM."
+      },
+      {
+        "q": "Mon partenaire peut-il partager le compte ?",
+        "a": "Oui. Créez un foyer et invitez un partenaire ou un conseiller financier par e-mail avec un rôle — Administrateur, Éditeur ou Lecteur — pour collaborer sur les mêmes données sans partager un seul identifiant de connexion."
+      },
+      {
+        "q": "Quels pays et quelles banques sont pris en charge ?",
+        "a": "Tether-Zero se connecte aux banques via Plaid. La couverture précise des pays et institutions est en cours de finalisation — contactez-nous pour la liste de prise en charge la plus récente."
+      },
+      {
+        "q": "Puis-je annuler à tout moment ?",
+        "a": "Vous pouvez gérer ou annuler votre abonnement depuis les paramètres de votre compte. Les conditions exactes d'annulation et de remboursement sont confirmées lors du paiement."
+      },
+      {
+        "q": "Est-ce que ça fonctionne sur mobile ?",
+        "a": "Tether-Zero fonctionne dans votre navigateur web, et ce site est entièrement responsive. Une expérience d'application optimisée pour mobile est prévue — contactez-nous si vous souhaitez être informé des mises à jour."
+      }
+    ]
+  },
+  "FinalCta": {
+    "heading": "Prêt à atteindre zéro ?",
+    "body": "Commencez votre essai gratuit de 30 jours et découvrez votre date de liberté dès aujourd'hui.",
+    "cta": "Commencez votre essai gratuit de 30 jours"
+  },
+  "Footer": {
+    "product": "Produit",
+    "company": "Entreprise",
+    "logIn": "Se connecter",
+    "footerAriaLabel": "Pied de page",
+    "tagline": "Remboursement de dettes, budgétisation et un coach IA dans une seule application calme.",
+    "links": {
+      "learn": "Apprendre",
+      "privacyPolicy": "Politique de confidentialité",
+      "terms": "Conditions",
+      "contact": "Contact"
+    },
+    "copyright": "© {year} {company}. Tous droits réservés.",
+    "attribution": "{name} est un produit de {company}."
+  },
+  "Learn": {
+    "meta": {
+      "title": "Apprendre",
+      "description": "Des guides pratiques sur la budgétisation, le remboursement de dettes et la gestion de l’argent — avec Tether-Zero et Zero, votre coach IA intégré."
+    },
+    "eyebrow": "Apprendre",
+    "heading": "Des guides pour atteindre zéro",
+    "subheading": "Des guides pratiques, étape par étape, sur la budgétisation et le remboursement de dettes — et comment Tether-Zero et votre coach IA s’occupent de la mécanique pour vous.",
+    "readArticle": "Lire l’article",
+    "backToHome": "← Retour à l’accueil",
+    "backToLearn": "← Tous les guides",
+    "breadcrumbHome": "Accueil",
+    "articles": {
+      "makingABudget": {
+        "title": "Comment faire un budget — avec Tether-Zero et votre coach IA à vos côtés",
+        "excerpt": "Un budget n’est qu’un plan écrit pour votre argent. Découvrez les étapes classiques — et comment Tether-Zero et Zero, votre coach IA intégré, font le gros du travail."
+      }
+    }
+  },
+  "Articles": {
+    "makingABudget": {
+      "meta": {
+        "title": "Comment faire un budget",
+        "description": "Les étapes classiques du budget selon la FTC — et comment Tether-Zero et Zero, votre coach IA intégré, s’occupent de la mécanique, de la synchronisation bancaire aux alertes de rythme."
+      },
+      "title": "Comment faire un budget — avec Tether-Zero et votre coach IA à vos côtés",
+      "intro": {
+        "p1": "Si vous êtes déjà arrivé à la fin du mois en vous demandant où est passé votre salaire, vous n’êtes pas seul — et la solution est plus simple que vous ne le pensez. Un budget n’est qu’un plan écrit pour votre argent. Il vous aide à vous assurer d’en avoir assez chaque mois, vous évite d’être à court avant la prochaine paie, et vous donne un moyen d’épargner pour vos objectifs et les imprévus.",
+        "p2": "Les étapes ci-dessous suivent le processus de budgétisation classique recommandé par consumer.gov, le site de la Federal Trade Commission. En chemin, nous montrerons comment Tether-Zero s’occupe de la mécanique pour vous — et comment <strong>Zero</strong>, votre coach IA intégré, agit comme un mentor financier qui a déjà lu vos chiffres et sait exactement où vous en êtes."
+      },
+      "whatIsABudget": {
+        "heading": "Qu’est-ce qu’un budget ?",
+        "p1": "Un budget est un plan qui montre deux choses : combien d’argent vous gagnez, et comment vous le dépensez. Quand vous voyez ces chiffres côte à côte, des tendances apparaissent — des catégories où vous pouvez dépenser moins, des domaines où vous préféreriez dépenser plus, et des occasions d’épargne cachées en pleine vue.",
+        "p2": "Tether-Zero repose sur une variante précise de cette idée appelée <strong>budget base zéro</strong> : chaque dollar que vous gagnez reçoit un rôle avant le début du mois. Votre tableau Budget suit cela avec l’indicateur <strong>À budgétiser</strong> — jaune quand de l’argent reste non assigné, rouge si vous avez alloué plus que vous ne gagnez, et vert quand vous atteignez exactement zéro.",
+        "p3": "Le budget base zéro est nouveau pour vous ? C’est le premier rôle de Zero. Au lieu de vous renvoyer vers des tutoriels, vous pouvez simplement demander — « Que signifie À budgétiser ? » ou « Pourquoi mon indicateur est-il rouge ? » — et obtenir une réponse fondée sur <em>votre</em> budget, pas une explication générique. Vous pouvez même choisir le style de coaching qui vous motive : la <strong>Pom-pom girl</strong> encourageante, le <strong>Sergent instructeur</strong> sans détour, ou l’<strong>Analyste</strong> axé sur les données."
+      },
+      "gettingReady": {
+        "heading": "Se préparer",
+        "p1": "La première étape traditionnelle consiste à rassembler factures, bulletins de paie et relevés bancaires pour travailler à partir de chiffres réels plutôt que d’estimations.",
+        "p2": "Dans Tether-Zero, cette étape disparaît presque. Connectez votre banque via la <strong>synchronisation Plaid</strong> et vos comptes et transactions arrivent automatiquement. Vous préférez garder la main ? Les comptes manuels, la saisie manuelle et l’<strong>import de transactions</strong> sont aussi entièrement pris en charge.",
+        "p3": "<strong>Là où Zero aide :</strong> Avec votre historique de transactions connecté, Zero voit vos habitudes de dépenses réelles dès le premier jour. Demandez « Combien est-ce que je dépense habituellement en courses ? » et vous obtiendrez une réponse basée sur votre historique réel — les chiffres de départ honnêtes que la plupart des débutants en budget n’ont jamais."
+      },
+      "step1": {
+        "heading": "Étape 1 : Listez vos factures et dépenses",
+        "p1": "Notez tout ce pour quoi vous dépensez de l’argent : les factures fixes comme le loyer et les services, plus les dépenses variables comme les courses, l’essence et les loisirs.",
+        "p2": "Dans Tether-Zero, cette liste devient vos <strong>Groupes de catégories et Catégories</strong> — organisez vos dépenses en groupes comme Besoins, Envies et Épargne, avec des catégories en dessous. Les <strong>Fonds d’amortissement</strong> gèrent les dépenses irrégulières (réparations auto, cadeaux de fin d’année, assurance annuelle) en reportant les soldes non dépensés de mois en mois, et la catégorisation automatique <strong>Smart Match</strong> apprend vos habitudes et classe les transactions entrantes pour vous.",
+        "p3": "<strong>Là où Zero aide :</strong> Vous ne savez pas comment structurer vos catégories, ou si une dépense relève d’un fonds d’amortissement ? Demandez. « Mon assurance auto devrait-elle être un fonds d’amortissement ou une catégorie normale ? » obtient une réponse pratique avec le raisonnement derrière — le genre de décision qui bloque habituellement les nouveaux budgéteurs pendant une semaine."
+      },
+      "step2": {
+        "heading": "Étape 2 : Calculez votre revenu mensuel",
+        "p1": "Additionnez ce que vous recevez chaque mois — salaires plus tout autre revenu régulier, comme une pension alimentaire.",
+        "p2": "Tether-Zero donne au revenu son propre groupe <strong>Revenus</strong> en haut de votre tableau Budget, avec des colonnes <strong>Prévu</strong> et <strong>Reçu</strong>, pour voir les dépôts réels se remplir face à votre plan. Si votre revenu varie, le conseil classique est de faire la moyenne de vos douze derniers mois — et avec votre historique synchronisé, c’est une question que Zero peut résoudre pour vous plutôt qu’un exercice de tableur.",
+        "p3": "<strong>Là où Zero aide :</strong> Zero surveille aussi les revenus que vous n’aviez pas prévus. L’<strong>Intercepteur d’aubaines</strong> remarque quand un dépôt dépasse nettement votre paie habituelle — un remboursement d’impôt, une prime — et vous sollicite avant qu’il ne disparaisse discrètement dans les dépenses du quotidien : appliquez-le à votre dette prioritaire, et Zero vous dit exactement combien d’intérêts vous économiseriez et combien de jours plus tôt vous seriez libre de dettes."
+      },
+      "step3": {
+        "heading": "Étape 3 : Soustrayez les dépenses des revenus",
+        "p1": "Voici le calcul central : revenus moins factures et dépenses. Le résultat doit être supérieur à zéro. S’il est négatif, vous dépensez plus que vous ne gagnez.",
+        "p2": "L’indicateur <strong>À budgétiser</strong> calcule cela en direct pendant que vous allouez. Et parce que le budget base zéro vous demande d’assigner <em>chaque</em> dollar, Tether-Zero inverse l’objectif : allouez délibérément tout surplus à l’épargne ou aux dettes jusqu’à atteindre exactement zéro.",
+        "p3": "<strong>Là où Zero aide :</strong> C’est à cette étape que les budgets deviennent émotionnellement difficiles — réduire, c’est choisir. Zero transforme une culpabilité vague en arbitrages concrets. Demandez « Puis-je me permettre cet achat de 300 $ ? » et le <strong>Simulateur de coût d’opportunité</strong> répond avec la conséquence réelle : « Techniquement oui, mais cela repousse votre date de liberté d’une semaine. » Si vous avez des dettes, l’<strong>Auditeur de stratégie</strong> de Zero va plus loin : il surveille vos taux et vos soldes et vous dit quand basculer entre les stratégies Boule de neige et Avalanche du <strong>Broyeur de dettes</strong> vous ferait économiser de l’argent réel — avec le graphique <strong>Horizon Liberté</strong> qui montre la date de remboursement bouger pendant que vous décidez."
+      },
+      "step4": {
+        "heading": "Étape 4 : Utilisez votre budget chaque mois",
+        "intro": "Un budget n’est pas un document que l’on fait une fois — c’est une routine mensuelle :",
+        "li1": "<strong>Début du mois :</strong> Faites votre plan. <strong>Copier le budget</strong> reporte les allocations du mois dernier en un clic, et Zero peut vous aider à les ajuster selon ce qui s’est réellement passé le mois précédent.",
+        "li2": "<strong>Tout au long du mois :</strong> Avec la synchronisation Plaid et Smart Match, le suivi se fait presque tout seul — votre travail se réduit à une relecture rapide.",
+        "li3": "<strong>Repérez les problèmes tôt :</strong> C’est là que Zero prouve sa valeur. Au-delà des <strong>alertes de dépassement</strong> classiques, les <strong>alertes prédictives de rythme</strong> de Zero détectent les problèmes <em>avant</em> qu’ils n’arrivent : si la moitié de votre budget restaurant est partie le 5 du mois, Zero vous prévient que vous êtes en route pour tout dépenser d’ici la mi-mois et suggère une dépense quotidienne qui vous mène jusqu’au 31. Vous corrigez le tir le jour 5, pas le jour 31.",
+        "li4": "<strong>Fin du mois :</strong> Le panneau de résumé du budget classe vos catégories les plus dépassées et les plus sous-utilisées, et Zero peut vous expliquer ce que les chiffres signifient pour le plan du mois suivant.",
+        "partner": "<strong>Vous budgétez en couple ?</strong> Les <strong>Foyers</strong> Tether-Zero permettent des budgets partagés avec un accès basé sur les rôles — et Zero joue le tiers neutre. Au lieu qu’un partenaire accuse l’autre, Zero présente les données sans passion : « Les achats shopping sont en hausse de 20 % par rapport au mois dernier — voulez-vous regarder les transactions ensemble ? » Il célèbre aussi les jalons communs, parce que passer ensemble en valeur nette positive mérite mieux qu’une cellule de tableur qui devient verte."
+      },
+      "savings": {
+        "heading": "Faites de l’épargne une partie du plan",
+        "p1": "Le conseil de la FTC est de traiter l’épargne comme l’une de vos dépenses budgétées plutôt que comme ce qui reste par hasard — et le budget base zéro l’intègre d’office. Créez des <strong>objectifs financiers</strong> dans Tether-Zero avec un montant et une date cibles, et l’application calcule la contribution mensuelle requise et suit votre rythme. Demandez à Zero « Combien dois-je mettre de côté chaque mois pour avoir 3 000 $ d’ici juin ? » et vous obtiendrez le chiffre, plus un avis sur la capacité de votre budget actuel à l’absorber."
+      },
+      "finalThoughts": {
+        "heading": "Derniers mots",
+        "p1": "Faire un budget prend une seule séance : listez ce que vous dépensez, additionnez ce que vous gagnez, et donnez un rôle à chaque dollar. Tenir un budget prend quelques minutes par jour — moins quand la synchronisation bancaire, la catégorisation automatique et les alertes font la comptabilité.",
+        "p2": "Ce qui a toujours manqué aux applications de budget, c’est le coach : quelqu’un pour répondre à « est-ce normal ? », « puis-je me le permettre ? » et « que faire ensuite ? » sur le moment, avec vos vrais chiffres en main. C’est Zero. Il n’attend pas que vous fouilliez un menu d’aide — il apparaît en contexte, juste quand une rentrée inattendue arrive, qu’une catégorie chauffe ou qu’une stratégie cesse d’être optimale. Les fondamentaux du budget n’ont pas changé depuis que la FTC les a écrits. Ce qui a changé, c’est que vous n’avez plus à les appliquer seul."
+      },
+      "cta": {
+        "heading": "Prêt à faire votre premier budget ?",
+        "body": "Commencez votre essai gratuit de 30 jours — connectez vos comptes, donnez un rôle à chaque dollar, et laissez Zero vous accompagner.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      },
+      "attribution": "Fondamentaux du budget adaptés de <link>Making a Budget — consumer.gov</link>, une ressource de la Federal Trade Commission."
+    }
+  },
+  "Simulator": {
+    "title": "Simulateur de stratégie",
+    "livePreview": "Aperçu en direct",
+    "payoffStrategyAriaLabel": "Stratégie de remboursement",
+    "snowball": "Boule de neige",
+    "avalanche": "Avalanche",
+    "extraPerMonth": "Supplément par mois",
+    "decreaseAria": "Diminuer le paiement supplémentaire de 50 dollars",
+    "increaseAria": "Augmenter le paiement supplémentaire de 50 dollars",
+    "projectedDebtFree": "Liberté financière projetée",
+    "monthsLabel": "{months, plural, one {# mois} other {# mois}}",
+    "interestPaid": "Intérêts payés",
+    "interestSaved": "Intérêts économisés",
+    "monthsSooner": "{months} mois",
+    "soonerThanMinimums": "Plus tôt que les minimums",
+    "disclaimer": "Exemple illustratif utilisant des dettes fictives — ceci n'est pas un conseil financier. Vos résultats dépendent de vos soldes, taux et budget réels."
+  },
+  "LegalPageLayout": {
+    "homeAriaLabel": "Tether-Zero accueil",
+    "backToHome": "← Retour à l'accueil",
+    "lastUpdated": "Dernière mise à jour : {date}"
+  },
+  "Assets": {
+    "debtCrusherLabel": "Tableau de bord Broyeur de dettes",
+    "debtCrusherEngineLabel": "Moteur Broyeur de dettes",
+    "insightsLabel": "Tableau de bord Liberté et analyses",
+    "coachLabel": "Zero — coach IA financier",
+    "productPreview": "Aperçu du produit"
+  }
+}

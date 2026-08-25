@@ -43,7 +43,7 @@ GitHub Actions ── npm ci → next build → out/ ──► S3 (private bucke
 | **Amazon S3** | Origin store for the `out/` build artifact. | Private bucket; **Block Public Access = all on**; SSE-S3 encryption; no static-website hosting (REST origin via OAC). |
 | **CloudFront** | Global CDN; the only public entry point; terminates TLS. | `PriceClass_100` (NA + EU, cheapest); HTTP→HTTPS redirect; Brotli/Gzip compress; default root object `index.html`; HTTP/2+3. |
 | **Origin Access Control (OAC)** | Lets only CloudFront read the private bucket (SigV4). Replaces legacy OAI. | Bucket policy scoped to the distribution ARN. |
-| **CloudFront Functions** | Lightweight viewer-request edge logic: `www → apex` 301 redirect + rewrite directory URIs to `…/index.html`. | Cheaper/faster than Lambda@Edge; 2M free invocations/mo. |
+| **CloudFront Functions** | Lightweight viewer-request edge logic: `www → apex` 301 redirect, a one-time Accept-Language locale redirect for fr/es, and rewriting directory URIs to `…/index.html`. | Cheaper/faster than Lambda@Edge; 2M free invocations/mo. |
 | **AWS Certificate Manager (ACM)** | Free public TLS cert for `tether-zero.com` + `www.tether-zero.com`. | **Must be in us-east-1** for CloudFront; DNS-validated via Route 53. |
 | **Amazon Route 53** | Existing hosted zone. Alias A/AAAA records (apex + www) → CloudFront; auto-created ACM validation records. | Alias queries to CloudFront are **free**. |
 | **GitHub OIDC + IAM Role** | Keyless CI auth. IAM OIDC provider trusts `token.actions.githubusercontent.com`; scoped role assumed per run. | Role limited to S3 sync on the bucket + CloudFront invalidation on the distribution. |
@@ -140,6 +140,59 @@ production deploys.
 6. **Origin is private** — the S3 REST URL (`https://<bucket>.s3.amazonaws.com/index.html`) returns `403 AccessDenied`, proving content is only reachable through CloudFront.
 7. **CI keyless auth** — a `main` push completes the workflow green; the run logs show an assumed-role session (no static keys), an S3 sync, and a CloudFront invalidation.
 8. **Cache headers** — `curl -I https://tether-zero.com/_next/static/...` shows `cache-control: public, max-age=31536000, immutable`; the root HTML shows `max-age=0, must-revalidate`.
+9. **Locale redirect** — see the dedicated section below for the exact `curl` checks.
+
+---
+
+## Locale redirect (fr/es)
+
+`EdgeRouterFunction` also redirects first-time visitors at the site root to
+`/fr/` or `/es/` based on their browser's `Accept-Language` header, in
+addition to the marketing site's own client-side language switcher
+(`src/components/LanguageSwitcher.tsx`). Design constraints, all enforced in
+the function code (`docs/infra/cloudformation.yml`):
+
+- **Root path only** (`/` or `/index.html`) — deep links (`/fr/`,
+  `/terms-of-service`, hash-linked sections) are never redirected, regardless
+  of `Accept-Language`. This respects bookmarks/shared links and avoids
+  Google's documented guidance against broad automatic language redirects
+  (including for crawlers, which typically send no `Accept-Language` at all
+  and so are never redirected here).
+- **Cookie-gated, redirect-once** — a `tz_locale` cookie (`Path=/;
+  Max-Age=31536000; SameSite=Lax`) short-circuits the check once present, so
+  a visitor is redirected at most once. The cookie is set two ways: by this
+  function's own redirect response, or client-side by the language switcher
+  whenever someone explicitly picks a language (including switching back to
+  English, which the edge function itself can never do — see next point).
+- **302 (temporary), not 301** — this is a soft per-visitor preference
+  signal, not a canonical URL change, so it must not be cached/treated as
+  permanent by browsers or crawlers.
+- **Cookies can only be set on a synthetic `response`, never on a
+  passthrough `request`** — a CloudFront Functions runtime constraint. This
+  means an English-preferring visitor gets no cookie from the edge (there's
+  nothing to redirect to, so the function just passes the request through
+  unmodified); the language switcher is what sets `tz_locale=en` for them if
+  they ever explicitly navigate, which is what makes the whole flow
+  idempotent rather than needing the edge to "confirm" English on every
+  visit.
+- **No `Intl`/negotiator library available** in the CloudFront Functions
+  runtime, so `Accept-Language` parsing is a minimal hand-rolled first-match
+  against `fr`/`es` primary subtags, in the header's stated preference order.
+
+**Verify after deploying:**
+```bash
+# First-time French visitor -> 302 to /fr/ with the preference cookie set
+curl -sI -H "Accept-Language: fr-FR,fr;q=0.9" https://tether-zero.com/ | grep -Ei "^(HTTP|location|set-cookie)"
+
+# Same cookie present -> passes through untouched (200, no redirect)
+curl -sI -H "Accept-Language: fr-FR,fr;q=0.9" -b "tz_locale=fr" https://tether-zero.com/ | head -1
+
+# Deep link never redirects regardless of Accept-Language
+curl -sI -H "Accept-Language: fr-FR,fr;q=0.9" https://tether-zero.com/terms-of-service | head -1
+
+# English (or no) Accept-Language -> no redirect, no cookie set
+curl -sI https://tether-zero.com/ | grep -Ei "^(HTTP|set-cookie)"
+```
 
 ---
 

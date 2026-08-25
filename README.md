@@ -139,22 +139,22 @@ to a branded placeholder automatically.
 - `prefers-reduced-motion` honored (Framer Motion reveals + a global CSS fallback).
 - All images have meaningful `alt` text; the comparison table is a real `<table>` in a
   focusable scroll region.
-- **Color contrast:** teal text/fills use **teal-700 `#0F766E`** (≈5.5:1) rather than
-  teal-600 `#0D9488` (≈3.8:1) so white-on-teal and teal-on-white meet AA. Green text
-  uses `#008236`. `#0D9488` is kept for decorative accents (`brand-bright`).
+- **Color contrast:** blue text/fills use **blue-700 `#1D4ED8`** (≈6.7:1) rather than
+  blue-600 `#155DFC` (lower contrast) so white-on-blue and blue-on-white meet AA. Green text
+  uses `#008236`. `#155DFC` is kept for decorative accents (`brand-bright`).
 
 ---
 
 ## Design-system notes / divergences
 
 The shipped Tether-Zero design system (`Design.md`) describes the *app* as calm and
-restrained — near-black primary actions, teal only as a ≤6px accent, "not a startup
+restrained — near-black primary actions, blue only as a ≤6px accent, "not a startup
 marketing page." This marketing site intentionally follows the **brief's** explicit
 direction for a modern fintech landing page while honoring the DS tokens (Inter type,
 neutral ramp, semantic colors, borders-over-shadows, generous whitespace):
 
-1. **Primary CTAs are teal-filled** (per the brief), not near-black as in the app DS.
-2. Teal shade shifted to teal-700 for AA contrast (see above).
+1. **Primary CTAs are blue-filled** (per the brief), not near-black as in the app DS.
+2. Blue shade shifted to blue-700 for AA contrast (see above).
 3. **Hero image** uses the Debt Crusher dashboard frame. The brief's hero frame is a
    Figma *Make* file (`/make/…`), which the Figma screenshot API does not support; the
    dashboard frame is a strong, on-brand substitute.
@@ -167,23 +167,49 @@ neutral ramp, semantic colors, borders-over-shadows, generous whitespace):
 
 1. **Sign-up / login URLs** — `https://app.tether-zero.com/register` and `/login`
    (confirmed for this build; re-verify before launch).
-2. **Footer legal links** (Privacy, Terms) point to assumed `app.tether-zero.com`
-   routes; **Contact** is `hello@tether-zero.com` (assumed).
-3. **Marketing domain** — `https://www.tether-zero.com` is assumed in
-   `layout.tsx` / `sitemap.ts` / `robots.ts`.
-4. **Annual pricing rounding** — `$7.69/mo`, `$92.28/yr` derived from `10.99 × 0.70`;
+2. **Legal pages** (`/privacy-policy`, `/terms-of-service`) are hosted on this
+   marketing site as the canonical copies; footer links are **confirmed live**
+   (both resolve HTTP 200 in production via the CloudFront edge router). The
+   same SMS/Plaid/Unsplash/CCPA sections are mirrored in the app (`tether-web`)
+   — keep both in sync.
+3. **Toll-Free A2P number confirmed** as `+1 (855) 529-5178` and filled into the
+   Privacy Policy Mobile Messaging (STOP) section; register the A2P campaign
+   under this same number.
+4. **SMS HELP contact confirmed** as `support@tether-zero.com` and filled into
+   the Privacy Policy Mobile Messaging (HELP) section.
+5. **Legal "Last Updated" / effective date** set to the publish date (June 19,
+   2026) across both repos; update when the policy is next materially revised.
+6. **Brand/DBA confirmed** as "Tether-Zero" (hyphen), legal entity
+   "SpringThought, LLC." Renamed across shipped src + tests in both repos with
+   explicit "doing business as" language; the app's Terms entity was corrected
+   from "Tether Zero, Inc." to SpringThought, LLC. **Not yet updated:** internal
+   docs/README/CLAUDE.md/design-ref (still say "Tether Zero"), and the es/fr
+   legal intros lack the formal DBA clause (needs a translator). Register the
+   A2P brand exactly as "Tether-Zero" to match the site and message content.
+7. **Contact email domain unified** to the hyphenated `tether-zero.com` across
+   both repos (`privacy@`/`legal@`/`support@`/`hello@`). Confirm these mailboxes
+   exist before carrier submission. This marketing site is fully reconciled on
+   the hyphenated apex domain (canonical/sitemap/robots/OG all use
+   `https://tether-zero.com`, since CloudFront redirects `www` to apex).
+   **Remaining:** the app repo (`tether-web` / `app.tether-zero.com`) still
+   needs its page metadata/canonical URLs and JSON-LD checked for the
+   non-hyphen domain (`tetherzero.com`) — fix in that repo.
+8. **Contact address** (`hello@tether-zero.com`) is assumed; confirm.
+9. **Annual pricing rounding** — `$7.69/mo`, `$92.28/yr` derived from `10.99 × 0.70`;
    confirm exact figures.
-5. **Post-trial behavior** if the user doesn't subscribe (read-only vs. locked) — not
-   specified in PRDs.
-6. **Supported countries / banks** (Plaid coverage) — list not specified.
-7. **Cancellation / refund policy** — not specified in PRDs.
-8. **Mobile app availability / timeline** — the app is currently desktop-first per the
-   design system.
-9. **Competitive one-pager** (`marketing.pdf`) could not be parsed in this environment
-   (no PDF renderer). The comparison matrix uses the brief-provided values; reconcile
-   with the one-pager before launch.
-10. **"No credit card required"** trial claim was **omitted** (not confirmed). Add to
-    the hero/CTA copy only if true.
+10. **Post-trial behavior** if the user doesn't subscribe (read-only vs. locked) — not
+    specified in PRDs.
+11. **Supported countries / banks** (Plaid coverage) — list not specified.
+12. **Cancellation / refund policy** — not specified in PRDs.
+13. **Mobile app availability / timeline** — the app is currently desktop-first per the
+    design system.
+14. **Competitive one-pager** (`marketing.pdf`) could not be parsed in this environment
+    (no PDF renderer). The comparison matrix uses the brief-provided values; reconcile
+    with the one-pager before launch.
+
+Also note: **"No credit card required"** trial claim was **omitted** (not
+confirmed) — this is a design decision, not a tracked placeholder. Add to the
+hero/CTA copy only if true.
 
 ---
 

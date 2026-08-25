@@ -2,25 +2,46 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { FAQ } from "@/content/site";
+import { useFormatter, useTranslations } from "next-intl";
+import { PRICING } from "@/content/site";
 import { Section } from "./Section";
 import { cn } from "@/lib/utils";
 
+interface FaqItem {
+  q: string;
+  a: string;
+}
+
 export function Faq() {
+  const t = useTranslations("Faq");
+  const format = useFormatter();
   const [open, setOpen] = useState<number | null>(0);
+
+  const currency = (value: number) => format.number(value, { style: "currency", currency: "USD" });
+  const items: FaqItem[] = [
+    {
+      q: t("trialQuestion"),
+      a: t("trialAnswer", {
+        monthlyPrice: currency(PRICING.monthly),
+        annualPrice: currency(PRICING.annualPerYear),
+        annualPerMonthPrice: currency(PRICING.annualPerMonth),
+      }),
+    },
+    ...(t.raw("items") as FaqItem[]),
+  ];
 
   return (
     <Section id="faq" alt aria-labelledby="faq-title">
       <div className="mx-auto max-w-3xl">
         <div className="text-center">
-          <p className="eyebrow">FAQ</p>
+          <p className="eyebrow">{t("eyebrow")}</p>
           <h2 id="faq-title" className="mt-3 text-h2">
-            {FAQ.heading}
+            {t("heading")}
           </h2>
         </div>
 
         <dl className="mt-10 divide-y divide-line overflow-hidden rounded-xl border border-line bg-surface">
-          {FAQ.items.map((item, i) => {
+          {items.map((item, i) => {
             const isOpen = open === i;
             const panelId = `faq-panel-${i}`;
             const buttonId = `faq-button-${i}`;

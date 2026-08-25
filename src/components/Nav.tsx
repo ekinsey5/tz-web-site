@@ -1,17 +1,46 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS, APP_URLS } from "@/content/site";
+import { useLocale, useTranslations } from "next-intl";
+import { NAV_LINKS, APP_URLS, type NavLink } from "@/content/site";
+import type { Locale } from "@/i18n/config";
+import { localizePath } from "@/lib/locale-links";
 import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
-const SECTION_IDS = ["home", ...NAV_LINKS.map((l) => l.href.replace("#", ""))];
+const SECTION_IDS = [
+  "home",
+  ...NAV_LINKS.filter((l) => l.href.startsWith("#")).map((l) =>
+    l.href.replace("#", ""),
+  ),
+];
 
 export function Nav() {
+  const t = useTranslations("Nav");
+  const locale = useLocale() as Locale;
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+
+  const homePath = localizePath(locale, "/");
+  const normalized = pathname.endsWith("/") ? pathname : `${pathname}/`;
+  const isHome = normalized === homePath;
+
+  // On the homepage anchors scroll in place; elsewhere they lead back home.
+  const hrefFor = (link: NavLink) =>
+    link.href.startsWith("#")
+      ? isHome
+        ? link.href
+        : `${homePath}${link.href}`
+      : localizePath(locale, link.href);
+
+  const isActiveLink = (link: NavLink) =>
+    link.href.startsWith("#")
+      ? isHome && active === link.href.replace("#", "")
+      : normalized.startsWith(localizePath(locale, link.href));
 
   // Header shadow once scrolled
   useEffect(() => {
@@ -62,33 +91,36 @@ export function Nav() {
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white"
       >
-        Skip to content
+        {t("skipToContent")}
       </a>
 
       <nav
-        aria-label="Primary"
+        aria-label={t("primaryAriaLabel")}
         className="container-tz flex h-16 items-center justify-between gap-4"
       >
-        <a href="#home" aria-label="Tether-Zero — home" className="rounded-lg">
+        <a
+          href={isHome ? "#home" : homePath}
+          aria-label={t("homeAriaLabel")}
+          className="rounded-lg"
+        >
           <Logo />
         </a>
 
         {/* Desktop links */}
         <ul className="hidden items-center gap-0.5 lg:flex">
           {NAV_LINKS.map((link) => {
-            const id = link.href.replace("#", "");
-            const isActive = active === id;
+            const isActive = isActiveLink(link);
             return (
               <li key={link.href}>
                 <a
-                  href={link.href}
+                  href={hrefFor(link)}
                   aria-current={isActive ? "true" : undefined}
                   className={cn(
                     "rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-150",
                     isActive ? "text-brand" : "text-body hover:text-ink-strong",
                   )}
                 >
-                  {link.label}
+                  {t(`links.${link.id}`)}
                 </a>
               </li>
             );
@@ -98,10 +130,10 @@ export function Nav() {
         {/* Desktop actions */}
         <div className="hidden items-center gap-2 lg:flex">
           <a href={APP_URLS.login} className="btn-ghost text-sm font-medium">
-            Log in
+            {t("logIn")}
           </a>
           <a href={APP_URLS.register} className="btn-primary btn-sm">
-            Start free trial
+            {t("startFreeTrial")}
           </a>
         </div>
 
@@ -110,7 +142,7 @@ export function Nav() {
           type="button"
           aria-expanded={open}
           aria-controls="mobile-menu"
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? t("closeMenu") : t("openMenu")}
           onClick={() => setOpen((o) => !o)}
           className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-ink transition-colors hover:bg-subtle focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 lg:hidden"
         >
@@ -131,12 +163,11 @@ export function Nav() {
         <div className="container-tz flex flex-col gap-1 py-4">
           <ul className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => {
-              const id = link.href.replace("#", "");
-              const isActive = active === id;
+              const isActive = isActiveLink(link);
               return (
                 <li key={link.href}>
                   <a
-                    href={link.href}
+                    href={hrefFor(link)}
                     aria-current={isActive ? "true" : undefined}
                     onClick={() => setOpen(false)}
                     className={cn(
@@ -146,26 +177,26 @@ export function Nav() {
                         : "text-body hover:bg-subtle",
                     )}
                   >
-                    {link.label}
+                    {t(`links.${link.id}`)}
                   </a>
                 </li>
               );
             })}
           </ul>
-          <div className="mt-3 flex flex-col gap-2">
+          <div className="mt-3 flex flex-col gap-3">
             <a
               href={APP_URLS.login}
               className="btn-secondary"
               onClick={() => setOpen(false)}
             >
-              Log in
+              {t("logIn")}
             </a>
             <a
               href={APP_URLS.register}
               className="btn-primary"
               onClick={() => setOpen(false)}
             >
-              Start free trial
+              {t("startFreeTrial")}
             </a>
           </div>
         </div>

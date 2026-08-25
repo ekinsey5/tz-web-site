@@ -1,0 +1,397 @@
+{
+  "Meta": {
+    "titleDefault": "Tether-Zero — Become debt-free with a plan you can actually follow",
+    "titleTemplate": "%s · Tether-Zero",
+    "description": "Tether-Zero combines debt payoff, budgeting and a personal AI coach in one calm, guided app — so every dollar has a job and you always know your freedom date.",
+    "keywords": "debt payoff, debt snowball, debt avalanche, budgeting app, zero-based budgeting, personal finance, AI money coach",
+    "tagline": "Get to zero — and stay there."
+  },
+  "Nav": {
+    "skipToContent": "Skip to content",
+    "primaryAriaLabel": "Primary",
+    "homeAriaLabel": "Tether-Zero — home",
+    "logIn": "Log in",
+    "startFreeTrial": "Start free trial",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "links": {
+      "howItWorks": "How it works",
+      "features": "Features",
+      "debtCrusher": "Debt Crusher",
+      "pricing": "Pricing",
+      "whyUs": "Why us",
+      "learn": "Learn",
+      "faq": "FAQ"
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français",
+    "es": "Español"
+  },
+  "Hero": {
+    "eyebrow": "Debt payoff · Budgeting · AI coaching",
+    "heading": "Become debt-free with a plan you can actually follow.",
+    "subheading": "Tether-Zero brings debt payoff, budgeting and a personal AI coach into one calm, guided app — so every dollar has a job and you always know your freedom date.",
+    "primaryCta": "Start your 30-day free trial",
+    "secondaryCta": "See how it works",
+    "trust": [
+      "Read-only bank connections",
+      "Bank credentials encrypted (AES-256-GCM)",
+      "Export or delete your data anytime"
+    ],
+    "imageAlt": "Tether-Zero Debt Crusher dashboard showing a projected debt-free date of May 2028, remaining debt, interest saved, payoff progress and the monthly debt budget."
+  },
+  "HowItWorks": {
+    "eyebrow": "How it works",
+    "heading": "From scattered accounts to a clear payoff plan",
+    "subheading": "Four steps to take control of your money — most people are up and running in minutes.",
+    "stepAriaPrefix": "Step {number}: ",
+    "steps": [
+      {
+        "title": "Connect or add your accounts",
+        "body": "Securely link your banks with read-only access through Plaid, or add accounts by hand. Transactions sync automatically so you stop entering them one by one."
+      },
+      {
+        "title": "Build a budget in minutes",
+        "body": "The Smart Budget Wizard asks a few questions about your life and seeds a personalized, zero-based budget — only the categories you actually need, not a generic template you have to prune."
+      },
+      {
+        "title": "Pick your payoff strategy",
+        "body": "Choose snowball or avalanche and the Debt Crusher projects your debt-free date, the interest you'll save and the months you'll shave off — recalculated instantly."
+      },
+      {
+        "title": "Stay on track with Zero",
+        "body": "Your AI coach answers money questions in plain language and flags what needs attention — and always confirms with you before making any change."
+      }
+    ]
+  },
+  "Features": {
+    "eyebrow": "Capabilities",
+    "heading": "Everything you need to reach zero",
+    "subheading": "One app for paying down debt, budgeting with intention and understanding your money.",
+    "items": [
+      {
+        "title": "Debt Crusher Engine",
+        "body": "Compare snowball and avalanche side by side, see a projected debt-free date, and apply windfall “snowflake” payments to get there faster."
+      },
+      {
+        "title": "Hybrid budgeting",
+        "body": "Zero-based budgeting with sinking funds and smart splits, so every dollar has a job and irregular bills never catch you off guard."
+      },
+      {
+        "title": "Automatic transaction sync",
+        "body": "Read-only Plaid connections import transactions for you, and Smart Match learns your categories as you go."
+      },
+      {
+        "title": "Zero, your AI coach",
+        "body": "Ask questions in plain language and get answers grounded in your real household data — with a confirmation before any change."
+      },
+      {
+        "title": "Freedom Dashboard & insights",
+        "body": "Net worth, income vs. expense, age of money and top payees — plus a forward-looking burndown to your freedom date."
+      },
+      {
+        "title": "Goals & milestones",
+        "body": "Set shared savings goals, track pacing, and mark milestones at 25/50/75/100% as your goal image comes into focus."
+      },
+      {
+        "title": "Shared household access",
+        "body": "Invite a partner or advisor by email with role-based permissions — Admin, Editor or Viewer — without sharing a login."
+      },
+      {
+        "title": "Available in three languages",
+        "body": "Use Tether-Zero in English, French or Spanish across budgets, goals and insights."
+      },
+      {
+        "title": "Privacy & security",
+        "body": "Read-only bank access, AES-256-GCM-encrypted credentials, and one-click data export or account deletion (GDPR/CCPA)."
+      }
+    ]
+  },
+  "Spotlights": {
+    "debtCrusher": {
+      "eyebrow": "Debt Crusher Engine",
+      "heading": "See your debt-free date — and pull it closer.",
+      "body": "Toggle between snowball and avalanche and watch the projection recalculate instantly, right in your browser. The Debt Crusher accounts for promotional APRs, rolls each freed-up minimum payment into your next debt, and shows the interest and months you'll save versus paying the minimums.",
+      "bullets": [
+        "Snowball vs. avalanche, compared side by side",
+        "A projected debt-free date with interest and months saved",
+        "Apply a bonus or tax refund as a “snowflake” and see the impact",
+        "Month-by-month amortization for every debt"
+      ],
+      "imageAlt": "Tether-Zero Debt Crusher dashboard showing snowball versus avalanche payoff projections and a debt-free date."
+    },
+    "insights": {
+      "eyebrow": "Freedom Dashboard & Insights",
+      "heading": "A dashboard that looks forward, not just back.",
+      "body": "Most apps tell you where your money went. Tether-Zero also shows where you're headed: a Freedom Horizon burndown projects your path to debt-free, while wellness cards track net worth, income vs. expense, age of money and your top payees — each with period-over-period trends.",
+      "bullets": [
+        "Forward-looking burndown to your freedom date",
+        "Net worth and income-vs-expense at a glance",
+        "Age of money and top-payee insights",
+        "Period-over-period trends so you can see progress"
+      ],
+      "imageAlt": "Tether-Zero Insights dashboard with cards for spending, net income, income versus expense, net worth, top categories, age of money and savings rate."
+    },
+    "coach": {
+      "eyebrow": "Meet Zero",
+      "heading": "An AI coach that does more than explain.",
+      "body": "Zero answers questions in plain language using your real household numbers — “Am I on track this month?”, “Snowball or avalanche?” — and suggests next steps based on your role. It always confirms before making a change, so you stay in control.",
+      "bullets": [
+        "Conversational guidance grounded in your data",
+        "Proactive nudges on what needs your attention",
+        "Role-aware: suggestions for editors, explanations for viewers",
+        "Confirmation-first — nothing changes without your yes"
+      ],
+      "imageAlt": "Tether-Zero's AI coach Zero answering whether a $500 purchase fits the user's plan, showing the impact on their debt-free date with options to redirect the money to debt or proceed."
+    }
+  },
+  "Compare": {
+    "eyebrow": "Why Tether-Zero",
+    "heading": "Why Tether-Zero",
+    "subheading": "How Tether-Zero compares with two popular budgeting apps. Each app is great at what it does — here's where Tether-Zero focuses.",
+    "srCaption": "Feature comparison of Tether-Zero, YNAB and EveryDollar",
+    "capabilityHeader": "Capability",
+    "columns": ["Tether-Zero", "YNAB", "EveryDollar"],
+    "rows": [
+      {
+        "capability": "Guidance",
+        "tetherZero": "Active AI coach",
+        "ynab": "Passive education",
+        "everyDollar": "Passive coaching"
+      },
+      {
+        "capability": "Debt strategy",
+        "tetherZero": "Snowball & avalanche simulator",
+        "ynab": "Static accounts",
+        "everyDollar": "Rigid snowball"
+      },
+      {
+        "capability": "Forecasting",
+        "tetherZero": "12–24 month projection",
+        "ynab": "Present only",
+        "everyDollar": "Current month only"
+      },
+      {
+        "capability": "Visuals",
+        "tetherZero": "Dynamic, forward-looking",
+        "ynab": "Static charts (past)",
+        "everyDollar": "Simple progress bars"
+      },
+      {
+        "capability": "Couples",
+        "tetherZero": "Role-based access (Admin/Viewer)",
+        "ynab": "Shared login",
+        "everyDollar": "Shared login"
+      }
+    ],
+    "footnote": "Comparison reflects Tether-Zero's product focus and is provided for general guidance. Competitor capabilities change over time — check each provider for current details."
+  },
+  "Pricing": {
+    "eyebrow": "Pricing",
+    "heading": "Simple pricing, no surprises",
+    "subheading": "Start with a 30-day free trial. Keep going for less than the cost of a couple of coffees a month.",
+    "billingPeriodAriaLabel": "Billing period",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save": "Save {percent}%",
+    "perMonth": "/ month",
+    "billedAnnually": "Billed annually at {price} — save {amount} a year",
+    "billedMonthly": "Billed monthly · {price} a year",
+    "trialCadence": "for {days} days",
+    "trialNote": "Every plan starts with a {days}-day free trial.",
+    "trial": {
+      "name": "Free trial",
+      "badge": "Start here",
+      "priceLabel": "Free",
+      "description": "Full access to every feature so you can build your plan before you pay.",
+      "features": [
+        "Every Premium feature included",
+        "Build your budget and payoff plan",
+        "No long-term commitment"
+      ],
+      "cta": "Start free trial"
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "Most popular",
+      "description": "Everything in Tether-Zero, billed monthly or annually.",
+      "features": [
+        "Debt Crusher Engine & strategy simulator",
+        "Hybrid budgeting, sinking funds & smart splits",
+        "Automatic bank sync via Plaid (read-only)",
+        "Zero, your AI coach",
+        "Freedom Dashboard & insights",
+        "Shared household access (Admin / Editor / Viewer)",
+        "English, French & Spanish"
+      ],
+      "cta": "Start your free trial"
+    },
+    "note": "Automatic bank sync via Plaid is a Premium feature."
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "heading": "Frequently asked questions",
+    "trialQuestion": "What happens after the 30-day free trial?",
+    "trialAnswer": "Your trial includes full access to every feature. When it ends, you can subscribe to Premium — {monthlyPrice} per month, or {annualPrice} per year ({annualPerMonthPrice} per month) — to keep your budget, debt plan and insights going.",
+    "items": [
+      {
+        "q": "Is my bank data safe?",
+        "a": "Yes. Bank connections use Plaid with read-only permissions, which means Tether-Zero can see your transactions and balances but can never move money. Stored bank credentials are encrypted with AES-256-GCM."
+      },
+      {
+        "q": "Can my partner share the account?",
+        "a": "Yes. Create a household and invite a partner or financial advisor by email with a role — Admin, Editor or Viewer — so you collaborate on the same data without sharing a single login."
+      },
+      {
+        "q": "Which countries and banks are supported?",
+        "a": "Tether-Zero connects to banks through Plaid. Specific country and institution coverage is being finalized — contact us for the latest supported list."
+      },
+      {
+        "q": "Can I cancel anytime?",
+        "a": "You can manage or cancel your subscription from your account settings. Exact cancellation and refund terms are confirmed at checkout."
+      },
+      {
+        "q": "Does it work on mobile?",
+        "a": "Tether-Zero runs in your web browser, and this site is fully responsive. A mobile-optimized app experience is on the roadmap — reach out if you'd like updates."
+      }
+    ]
+  },
+  "FinalCta": {
+    "heading": "Ready to get to zero?",
+    "body": "Start your 30-day free trial and see your freedom date today.",
+    "cta": "Start your 30-day free trial"
+  },
+  "Footer": {
+    "product": "Product",
+    "company": "Company",
+    "logIn": "Log in",
+    "footerAriaLabel": "Footer",
+    "tagline": "Debt payoff, budgeting and an AI coach in one calm app.",
+    "links": {
+      "learn": "Learn",
+      "privacyPolicy": "Privacy Policy",
+      "terms": "Terms",
+      "contact": "Contact"
+    },
+    "copyright": "© {year} {company}. All rights reserved.",
+    "attribution": "{name} is a product of {company}."
+  },
+  "Learn": {
+    "meta": {
+      "title": "Learn",
+      "description": "Practical guides to budgeting, debt payoff and money management — with Tether-Zero and Zero, your built-in AI coach."
+    },
+    "eyebrow": "Learn",
+    "heading": "Guides for getting to zero",
+    "subheading": "Practical, step-by-step guides to budgeting and debt payoff — and how Tether-Zero and your AI coach handle the mechanics for you.",
+    "readArticle": "Read the article",
+    "backToHome": "← Back to home",
+    "backToLearn": "← All guides",
+    "breadcrumbHome": "Home",
+    "articles": {
+      "makingABudget": {
+        "title": "How to Make a Budget — With Tether-Zero and Your AI Coach in Your Corner",
+        "excerpt": "A budget is just a written plan for your money. Learn the classic steps — and how Tether-Zero and Zero, your built-in AI coach, do the heavy lifting."
+      }
+    }
+  },
+  "Articles": {
+    "makingABudget": {
+      "meta": {
+        "title": "How to Make a Budget",
+        "description": "The classic budgeting steps — and how Tether-Zero and Zero, your built-in AI coach, handle the mechanics, from bank sync to pacing alerts."
+      },
+      "title": "How to Make a Budget — With Tether-Zero and Your AI Coach in Your Corner",
+      "intro": {
+        "p1": "If you've ever reached the end of the month wondering where your paycheck went, you're not alone — and the fix is simpler than you might think. A budget is just a written plan for your money. It helps you make sure you have enough every month, keeps you from running out before the next paycheck, and gives you a way to save for goals and emergencies.",
+        "p2": "The steps below follow the classic budgeting process recommended by the Federal Trade Commission's consumer.gov. Along the way, we'll show how Tether-Zero handles the mechanics for you — and how <strong>Zero</strong>, your built-in AI coach, acts like a financial mentor who's already read your numbers and knows exactly where you are in the process."
+      },
+      "whatIsABudget": {
+        "heading": "What Is a Budget?",
+        "p1": "A budget is a plan that shows two things: how much money you make, and how you spend it. When you see those numbers side by side, patterns jump out — categories where you can spend less, areas where you'd rather spend more, and savings opportunities hiding in plain sight.",
+        "p2": "Tether-Zero is built on a specific flavor of this idea called <strong>zero-based budgeting</strong>: every dollar you earn gets a job before the month begins. Your Budget board tracks this with the <strong>To Be Budgeted</strong> indicator — yellow when money is still unassigned, red if you've allocated more than you earn, and green when you hit exactly zero.",
+        "p3": "New to zero-based budgeting? This is Zero's first job. Instead of sending you off to read tutorials, you can simply ask — “What does To Be Budgeted mean?” or “Why is my indicator red?” — and get an answer grounded in <em>your</em> budget, not a generic explainer. You can even pick the coaching style that keeps you motivated: the encouraging <strong>Cheerleader</strong>, the no-nonsense <strong>Drill Sergeant</strong>, or the data-driven <strong>Analyst</strong>."
+      },
+      "gettingReady": {
+        "heading": "Getting Ready",
+        "p1": "The traditional first step is gathering bills, pay stubs, and bank statements so you're working from real numbers instead of guesses.",
+        "p2": "In Tether-Zero, this step mostly disappears. Connect your bank through <strong>Plaid sync</strong> and your accounts and transactions flow in automatically. Prefer to stay hands-on? Manual accounts, manual entry, and <strong>transaction import</strong> are fully supported too.",
+        "p3": "<strong>Where Zero helps:</strong> With your transaction history connected, Zero can see your actual spending patterns from day one. Ask “What do I typically spend on groceries?” and you'll get an answer based on your real history — the honest starting numbers most first-time budgeters never have."
+      },
+      "step1": {
+        "heading": "Step 1: List Your Bills and Expenses",
+        "p1": "Write down everything you spend money on: fixed bills like rent and utilities, plus variable expenses like groceries, gas, and entertainment.",
+        "p2": "In Tether-Zero, this list becomes your <strong>Category Groups and Categories</strong> — organize spending into groups like Needs, Wants, and Savings, with categories underneath. <strong>Sinking Funds</strong> handle irregular expenses (car repairs, holiday gifts, annual insurance) by rolling unspent balances forward month to month, and <strong>Smart Match</strong> auto-categorization learns your patterns and files incoming transactions for you.",
+        "p3": "<strong>Where Zero helps:</strong> Not sure how to structure your categories, or whether an expense belongs in a sinking fund? Ask. “Should my car insurance be a sinking fund or a regular category?” gets a practical answer with the reasoning behind it — the kind of judgment call that usually stalls new budgeters for a week."
+      },
+      "step2": {
+        "heading": "Step 2: Figure Out Your Monthly Income",
+        "p1": "Total up what you bring in each month — paychecks plus anything else regular, like child support.",
+        "p2": "Tether-Zero gives income its own <strong>Income group</strong> at the top of your Budget board, with <strong>Planned</strong> and <strong>Received</strong> columns, so you can watch actual deposits fill in against your plan. If your income varies, the classic advice is to average your last twelve months — and with your history synced, that's a question Zero can answer for you rather than a spreadsheet exercise.",
+        "p3": "<strong>Where Zero helps:</strong> Zero also watches for income you didn't plan on. The <strong>Windfall Interceptor</strong> notices when a deposit lands well above your normal paycheck — a tax refund, a bonus — and prompts you before it quietly disappears into everyday spending: apply it to your top debt, and Zero tells you exactly how much interest you'd save and how many days sooner you'd be debt-free."
+      },
+      "step3": {
+        "heading": "Step 3: Subtract Expenses From Income",
+        "p1": "Here's the core math: income minus bills and expenses. The result should be more than zero. If it's negative, you're spending more than you make.",
+        "p2": "The <strong>To Be Budgeted</strong> indicator computes this live as you allocate. And because zero-based budgeting asks you to assign <em>every</em> dollar, Tether-Zero flips the goal: deliberately allocate any surplus to savings or debt until you reach exactly zero.",
+        "p3": "<strong>Where Zero helps:</strong> This step is where budgets get emotionally hard — cutting back means choosing. Zero turns vague guilt into concrete trade-offs. Ask “Can I afford this $300 purchase?” and the <strong>Opportunity Cost Simulator</strong> answers with the actual consequence: “Technically yes, but it pushes your debt-free date back a week.” If you carry debt, Zero's <strong>Strategy Auditor</strong> goes further, watching your APRs and balances and telling you when switching between <strong>Debt Crusher's</strong> Snowball and Avalanche strategies would save you real money — with the <strong>Freedom Horizon</strong> chart showing the payoff date move as you decide."
+      },
+      "step4": {
+        "heading": "Step 4: Use Your Budget Every Month",
+        "intro": "A budget isn't a document you make once — it's a monthly routine:",
+        "li1": "<strong>Beginning of the month:</strong> Make your plan. <strong>Copy Budget</strong> pulls last month's allocations forward in one click, and Zero can help you adjust it based on what actually happened last month.",
+        "li2": "<strong>Throughout the month:</strong> With Plaid sync and Smart Match, tracking mostly happens automatically — your job shrinks to a quick review.",
+        "li3": "<strong>Watch for problems early:</strong> This is where Zero earns its keep. Beyond the standard <strong>overspend alerts</strong>, Zero's <strong>predictive pacing alerts</strong> catch problems <em>before</em> they happen: if half your dining budget is gone by the 5th, Zero warns you that you're projected to run dry by mid-month and suggests a daily spend that gets you to the 31st. You course-correct on day 5, not day 31.",
+        "li4": "<strong>End of the month:</strong> The budget summary panel ranks your most overspent and underspent categories, and Zero can walk you through what the numbers mean for next month's plan.",
+        "partner": "<strong>Budgeting with a partner?</strong> Tether-Zero <strong>Households</strong> support shared budgets with role-based access — and Zero plays neutral third party. Instead of one partner accusing the other, Zero surfaces the data dispassionately: “Shopping is trending 20% higher than last month — want to look at the transactions together?” It also celebrates joint milestones, because crossing into positive net worth together deserves more than a spreadsheet cell turning green."
+      },
+      "savings": {
+        "heading": "Make Savings Part of the Plan",
+        "p1": "The FTC's advice is to treat savings as one of your budgeted expenses rather than whatever happens to be left over — and zero-based budgeting bakes this in. Create <strong>financial goals</strong> in Tether-Zero with a target amount and date, and the app calculates the required monthly contribution and tracks your pacing. Ask Zero “How much do I need to set aside monthly to have $3,000 by June?” and you'll get the number plus a read on whether your current budget can absorb it."
+      },
+      "finalThoughts": {
+        "heading": "Final Thoughts",
+        "p1": "Making a budget takes one sitting: list what you spend, total what you earn, and give every dollar a job. Keeping a budget takes a few minutes a day — less when bank sync, auto-categorization, and alerts do the bookkeeping.",
+        "p2": "What's historically been missing from budgeting apps is the coach: someone to answer “is this normal?”, “can I afford it?”, and “what should I do next?” in the moment, with your actual numbers in hand. That's Zero. It doesn't wait for you to dig through a help menu — it shows up contextually, right when a windfall lands, a category runs hot, or a strategy stops being optimal. The fundamentals of budgeting haven't changed since the FTC wrote them down. What's changed is that you no longer have to work them out alone."
+      },
+      "cta": {
+        "heading": "Ready to make your first budget?",
+        "body": "Start your 30-day free trial — connect your accounts, give every dollar a job, and let Zero coach you through it.",
+        "button": "Start your 30-day free trial"
+      },
+      "attribution": "Budgeting fundamentals adapted from <link>Making a Budget — consumer.gov</link>, a Federal Trade Commission resource."
+    }
+  },
+  "Simulator": {
+    "title": "Strategy simulator",
+    "livePreview": "Live preview",
+    "payoffStrategyAriaLabel": "Payoff strategy",
+    "snowball": "Snowball",
+    "avalanche": "Avalanche",
+    "extraPerMonth": "Extra per month",
+    "decreaseAria": "Decrease extra payment by 50 dollars",
+    "increaseAria": "Increase extra payment by 50 dollars",
+    "projectedDebtFree": "Projected debt-free",
+    "monthsLabel": "{months, plural, one {# month} other {# months}}",
+    "interestPaid": "Interest paid",
+    "interestSaved": "Interest saved",
+    "monthsSooner": "{months} mo",
+    "soonerThanMinimums": "Sooner than minimums",
+    "disclaimer": "Illustrative example using sample debts — not financial advice. Your results depend on your actual balances, APRs and budget."
+  },
+  "LegalPageLayout": {
+    "homeAriaLabel": "Tether-Zero home",
+    "backToHome": "← Back to home",
+    "lastUpdated": "Last Updated: {date}"
+  },
+  "Assets": {
+    "debtCrusherLabel": "Debt Crusher dashboard",
+    "debtCrusherEngineLabel": "Debt Crusher Engine",
+    "insightsLabel": "Freedom Dashboard & Insights",
+    "coachLabel": "Zero — AI money coach",
+    "productPreview": "Product preview"
+  }
+}

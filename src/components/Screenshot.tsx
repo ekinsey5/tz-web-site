@@ -1,9 +1,16 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import type { ScreenshotAsset } from "@/content/assets";
 import { cn } from "@/lib/utils";
+import type { Locale } from "@/i18n/config";
 
 interface ScreenshotProps {
   asset: ScreenshotAsset;
+  /** Translated alt text describing the image. */
+  alt: string;
+  /** Translated short label shown on the placeholder — required when asset.available is false. */
+  label?: string;
+  locale: Locale;
   /** Set on the hero image (above the fold) for LCP. */
   priority?: boolean;
   className?: string;
@@ -14,7 +21,7 @@ interface ScreenshotProps {
  * branded placeholder (same aspect ratio) when the real asset isn't available
  * yet, so layout stays stable and the build stays clean.
  */
-export function Screenshot({ asset, priority, className }: ScreenshotProps) {
+export async function Screenshot({ asset, alt, label, locale, priority, className }: ScreenshotProps) {
   return (
     <figure
       className={cn(
@@ -34,21 +41,22 @@ export function Screenshot({ asset, priority, className }: ScreenshotProps) {
         {asset.available ? (
           <Image
             src={asset.src}
-            alt={asset.alt}
+            alt={alt}
             fill
             priority={priority}
             sizes="(min-width: 1024px) 600px, 100vw"
             className="object-cover object-top"
           />
         ) : (
-          <Placeholder label={asset.label} alt={asset.alt} />
+          <Placeholder label={label ?? ""} alt={alt} locale={locale} />
         )}
       </div>
     </figure>
   );
 }
 
-function Placeholder({ label, alt }: { label: string; alt: string }) {
+async function Placeholder({ label, alt, locale }: { label: string; alt: string; locale: Locale }) {
+  const t = await getTranslations({ locale, namespace: "Assets" });
   return (
     <div
       role="img"
@@ -59,7 +67,7 @@ function Placeholder({ label, alt }: { label: string; alt: string }) {
         TZ
       </span>
       <span className="text-sm font-semibold text-ink-strong">{label}</span>
-      <span className="text-xs text-muted">Product preview</span>
+      <span className="text-xs text-muted">{t("productPreview")}</span>
     </div>
   );
 }

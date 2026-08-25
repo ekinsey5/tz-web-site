@@ -10,7 +10,6 @@ import {
   ShieldCheck,
   type LucideIcon,
 } from "lucide-react";
-import type { Feature } from "@/content/site";
 
 const ICONS: Record<string, LucideIcon> = {
   Target,
@@ -24,8 +23,14 @@ const ICONS: Record<string, LucideIcon> = {
   ShieldCheck,
 };
 
-export function FeatureCard({ feature }: { feature: Feature }) {
-  const Icon = ICONS[feature.icon] ?? Sparkles;
+interface FeatureCardProps {
+  icon: string;
+  title: string;
+  body: string;
+}
+
+export function FeatureCard({ icon, title, body }: FeatureCardProps) {
+  const Icon = ICONS[icon] ?? Sparkles;
   return (
     <div className="card h-full p-6 transition-colors duration-150 hover:border-line-strong">
       <span
@@ -34,8 +39,8 @@ export function FeatureCard({ feature }: { feature: Feature }) {
       >
         <Icon className="h-5 w-5" />
       </span>
-      <h3 className="mt-4 text-h3">{feature.title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-body">{feature.body}</p>
+      <h3 className="mt-4 text-h3">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-body">{body}</p>
     </div>
   );
 }

@@ -103,7 +103,7 @@ Resources:
       Name: !Sub "${ResourcePrefix}-edge-router"
       AutoPublish: true
       FunctionConfig:
-        Comment: Redirect www to apex and rewrite directory URIs to index.html
+        Comment: Redirect www to apex, redirect root-path visitors by Accept-Language once, and rewrite directory URIs to index.html
         Runtime: cloudfront-js-2.0
       FunctionCode: !Sub |
         function handler(event) {
@@ -117,12 +117,58 @@ Resources:
               headers: { location: { value: 'https://${DomainName}' + uri } }
             };
           }
+
+          // Locale-preference redirect — root path only, cookie-gated, 302.
+          // Root-path-only: never touches deep links (/fr/, /terms-of-service,
+          // hash-linked sections), so bookmarks/shared links/crawlers are
+          // unaffected and this can't be mistaken for a permanent URL move.
+          // Cookie-gated: a visitor is redirected at most once; the tz_locale
+          // cookie (set here, or by the manual language switcher client-side)
+          // short-circuits this on every later visit.
+          var isRootPath = (uri === '/' || uri === '/index.html');
+          var hasLocalePref = request.cookies && request.cookies['tz_locale'];
+          if (isRootPath && !hasLocalePref) {
+            var acceptLanguage = request.headers['accept-language']
+              ? request.headers['accept-language'].value
+              : '';
+            var preferred = pickLocale(acceptLanguage);
+            if (preferred) {
+              // Cookies can only be set on a synthetic response, not on a
+              // passthrough request — so an English-preferring visitor gets
+              // no cookie from the edge here; the language switcher sets
+              // tz_locale=en client-side if they ever explicitly navigate,
+              // which is what makes this idempotent.
+              return {
+                statusCode: 302,
+                statusDescription: 'Found',
+                headers: { location: { value: '/' + preferred + '/' } },
+                cookies: {
+                  tz_locale: { value: preferred, attributes: 'Path=/; Max-Age=31536000; SameSite=Lax' }
+                }
+              };
+            }
+          }
+
           if (uri.endsWith('/')) {
             request.uri += 'index.html';
           } else if (!uri.includes('.')) {
             request.uri += '/index.html';
           }
           return request;
+        }
+
+        // Minimal dependency-free Accept-Language parse (the CloudFront
+        // Functions runtime has no Intl/negotiator library available) —
+        // first primary-subtag match against our two non-default locales,
+        // in the header's stated preference order.
+        function pickLocale(acceptLanguage) {
+          var langs = acceptLanguage.split(',');
+          for (var i = 0; i < langs.length; i++) {
+            var lang = langs[i].split(';')[0].trim().slice(0, 2).toLowerCase();
+            if (lang === 'fr') return 'fr';
+            if (lang === 'es') return 'es';
+          }
+          return null;
         }
 
   Distribution:

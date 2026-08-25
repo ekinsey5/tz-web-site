@@ -5,14 +5,15 @@
  * /public/screenshots (e.g. via the Figma MCP). When false, the <Screenshot>
  * component renders a branded placeholder of the same aspect ratio so the
  * layout is stable and the build is clean even before assets land.
+ *
+ * `alt`/`label` are NOT stored here — they're translated copy and are read
+ * from messages.Hero.imageAlt / messages.Spotlights.<id>.imageAlt /
+ * messages.Assets.* by the consuming component at render time.
  */
 import { HERO, SPOTLIGHTS } from "@/content/site";
 
 export interface ScreenshotAsset {
   src: string;
-  alt: string;
-  /** Short label shown on the placeholder until the real image is supplied. */
-  label: string;
   available: boolean;
   /** CSS aspect-ratio value, e.g. "16 / 10". */
   ratio: string;
@@ -27,9 +28,7 @@ export const SCREENSHOTS: Record<
   ScreenshotAsset
 > = {
   hero: {
-    src: HERO.image.src,
-    alt: HERO.image.alt,
-    label: "Debt Crusher dashboard",
+    src: HERO.imageSrc,
     available: true,
     ratio: "1579 / 880",
   },
@@ -37,22 +36,16 @@ export const SCREENSHOTS: Record<
   // kept here for completeness.
   debtCrusher: {
     src: spot("debt-crusher").image.src,
-    alt: spot("debt-crusher").image.alt,
-    label: "Debt Crusher Engine",
     available: false,
     ratio: "4 / 3",
   },
   insights: {
     src: spot("insights").image.src,
-    alt: spot("insights").image.alt,
-    label: "Freedom Dashboard & Insights",
     available: true,
     ratio: "1440 / 900",
   },
   coach: {
     src: spot("coach").image.src,
-    alt: spot("coach").image.alt,
-    label: "Zero — AI money coach",
     available: true,
     ratio: "480 / 900",
     maxW: "max-w-[340px]",
