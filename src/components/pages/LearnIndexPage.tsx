@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Wallet } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { LearnPageChrome } from "@/components/LearnPageChrome";
 import { ARTICLES } from "@/content/site";
@@ -22,11 +23,19 @@ export async function LearnIndexPage({ locale }: { locale: Locale }) {
         <ul className="mt-10 space-y-6">
           <li>
             <article className="card p-6">
-              <h2 className="text-h3 text-ink-strong">
-                <Link href={articleHref} className="hover:text-brand">
-                  {t("articles.makingABudget.title")}
-                </Link>
-              </h2>
+              <div className="flex items-center gap-4">
+                <span
+                  aria-hidden
+                  className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-tint text-brand"
+                >
+                  <Wallet className="h-7 w-7" />
+                </span>
+                <h2 className="text-h3 text-ink-strong">
+                  <Link href={articleHref} className="hover:text-brand">
+                    {t("articles.makingABudget.title")}
+                  </Link>
+                </h2>
+              </div>
               <p className="mt-3 text-body">{t("articles.makingABudget.excerpt")}</p>
               <p className="mt-4">
                 <Link
