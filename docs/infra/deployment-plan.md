@@ -160,6 +160,13 @@ production deploys.
 
 ## Locale redirect (fr/es)
 
+> **Status: live in production since 2026-08-26.** The template had been
+> committed ahead of the stack (the deployed `EdgeRouterFunction` predated
+> this logic); the `tether-zero-site` stack was updated on 2026-08-26 and all
+> the `curl` checks below were verified against the live site (fr → 302
+> `/fr/` + cookie, es → 302 `/es/`, cookie/deep-link/English passthroughs,
+> www → apex 301 intact). Drift detection on the stack reports `IN_SYNC`.
+
 `EdgeRouterFunction` also redirects first-time visitors at the site root to
 `/fr/` or `/es/` based on their browser's `Accept-Language` header, in
 addition to the marketing site's own client-side language switcher
