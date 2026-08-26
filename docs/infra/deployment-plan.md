@@ -60,6 +60,20 @@ GitHub Actions ── npm ci → next build → out/ ──► S3 (private bucke
 | GitHub Actions | $0.00 (included minutes) |
 | **Total** | **≈ $0.50–$1.00 / month** |
 
+### Uptime monitoring (separate stack: `tether-zero-monitoring`)
+
+External black-box watchdog, deliberately deployed as its own stack so the
+alert path shares nothing with the site's delivery: EventBridge Scheduler
+(every 5 min) → `tether-zero-watchdog` Lambda (Node 20) → HTTPS GET of the
+homepage with a marker-text assertion → outage state in SSM parameter
+`/tether-zero/monitoring/state` → on DOWN (3 consecutive failures) / RECOVERY,
+one SES email to support + one SNS SMS to the on-call number (stack
+parameters). Template: `docs/infra/monitoring.yml`; code + unit tests:
+`docs/infra/monitoring/`; deploy/update: `docs/infra/deploy-monitoring.sh`.
+Steady-state cost ≈ $0 (Lambda/Scheduler/SSM free tier; ~$0.02 in SMS per
+outage incident). See the README "Monitoring & Alerting" section for the
+operational details.
+
 ---
 
 ## Components

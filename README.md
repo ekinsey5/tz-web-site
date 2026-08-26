@@ -213,6 +213,32 @@ hero/CTA copy only if true.
 
 ---
 
+## Monitoring & Alerting
+
+An external black-box watchdog (separate `tether-zero-monitoring` CloudFormation
+stack, us-east-1 — nothing shared with the site's S3/CloudFront delivery path)
+polls `https://tether-zero.com/` every **5 minutes** the way a real visitor
+would:
+
+- **Unhealthy** = non-2xx status, timeout (10s), DNS failure, TLS failure, or a
+  200 page missing the `Tether-Zero` marker text (catches blank/broken-but-200).
+- **3 consecutive failures** (≈15 min) trigger exactly **one DOWN alert**;
+  recovery triggers exactly **one RECOVERED notice**. No reminders in between —
+  outage state lives in the SSM parameter `/tether-zero/monitoring/state`.
+- **Who gets alerted:** email to `support@tether-zero.com` (via SES, sender
+  `alerts@tether-zero.com`) and SMS via SNS to the on-call number configured as
+  the `AlertSmsNumber` stack parameter (`ALERT_SMS_NUMBER` env var — never
+  hardcoded in code).
+
+Code lives in `docs/infra/monitoring/` (pure logic + `node --test` unit tests —
+run with `npm test`); infra in `docs/infra/monitoring.yml`. To deploy changes or
+update recipients, re-run `./docs/infra/deploy-monitoring.sh` (recipients are
+overridable env vars, e.g. `ALERT_EMAIL=... ALERT_SMS_NUMBER=...`). Tail the
+watchdog with
+`aws logs tail /aws/lambda/tether-zero-watchdog --region us-east-1 --follow`.
+
+---
+
 ## Tech stack
 
 Next.js 14 (App Router) · React 18 · TypeScript · Tailwind CSS 3 · Framer Motion ·
