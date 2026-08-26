@@ -1,0 +1,176 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Tether-Zero marketing site uptime watchdog - EventBridge Scheduler + Lambda poller with SES email + SNS SMS alerting
+
+# Deployed as a stack SEPARATE from tether-zero-site so the alert path shares
+# nothing with the site's own S3/CloudFront delivery. Lambda code is uploaded
+# by docs/infra/deploy-monitoring.sh after the stack deploys (the inline code
+# below is only a placeholder).
+
+Parameters:
+  SiteUrl:
+    Type: String
+    Default: https://tether-zero.com/
+    Description: URL the watchdog polls, exactly as a visitor would
+  MarkerText:
+    Type: String
+    Default: Tether-Zero
+    Description: Text that must appear in the page body (catches 200-but-broken pages); empty disables the content assertion
+  AlertEmail:
+    Type: String
+    Description: Recipient for outage/recovery emails
+  SenderEmail:
+    Type: String
+    Description: SES-verified sender address for alert emails
+  AlertSmsNumber:
+    Type: String
+    Description: E.164 destination for outage/recovery SMS (becomes the ALERT_SMS_NUMBER env var)
+  DomainName:
+    Type: String
+    Default: tether-zero.com
+    Description: Domain whose SES identity the sender uses (scopes the IAM policy)
+  FailureThreshold:
+    Type: Number
+    Default: 3
+    Description: Consecutive failed polls before the DOWN alert fires
+  CheckIntervalMinutes:
+    Type: Number
+    Default: 5
+  RequestTimeoutMs:
+    Type: Number
+    Default: 10000
+  ResourcePrefix:
+    Type: String
+    Default: tether-zero
+
+Resources:
+  # ---------- Outage state (exactly-once alert bookkeeping) ----------
+  StateParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: !Sub /${ResourcePrefix}/monitoring/state
+      Type: String
+      Value: '{"status":"UP","consecutiveFailures":0}'
+      Description: Watchdog outage state; written by the watchdog Lambda each poll
+
+  # ---------- Watchdog Lambda ----------
+  WatchdogLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${ResourcePrefix}-watchdog
+      RetentionInDays: 30
+
+  WatchdogRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: watchdog-minimal
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: Logs
+                Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !Sub ${WatchdogLogGroup.Arn}:*
+              - Sid: ReadWriteOwnState
+                Effect: Allow
+                Action:
+                  - ssm:GetParameter
+                  - ssm:PutParameter
+                Resource: !Sub arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${ResourcePrefix}/monitoring/state
+              - Sid: SendAlertEmail
+                Effect: Allow
+                Action: ses:SendEmail
+                Resource:
+                  - !Sub arn:aws:ses:${AWS::Region}:${AWS::AccountId}:identity/${DomainName}
+                  - !Sub arn:aws:ses:${AWS::Region}:${AWS::AccountId}:identity/${SenderEmail}
+              # Direct-to-phone SMS publish has no ARN, so Resource must be "*";
+              # the explicit Deny below blocks publishing to any SNS topic.
+              - Sid: SendAlertSms
+                Effect: Allow
+                Action: sns:Publish
+                Resource: "*"
+              - Sid: DenyTopicPublish
+                Effect: Deny
+                Action: sns:Publish
+                Resource: arn:aws:sns:*:*:*
+
+  WatchdogFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub ${ResourcePrefix}-watchdog
+      Description: External black-box uptime check for the marketing site; alerts via SES email + SNS SMS
+      Runtime: nodejs20.x
+      Handler: watchdog.handler
+      MemorySize: 128
+      Timeout: 30
+      Role: !GetAtt WatchdogRole.Arn
+      Environment:
+        Variables:
+          SITE_URL: !Ref SiteUrl
+          MARKER_TEXT: !Ref MarkerText
+          FAILURE_THRESHOLD: !Ref FailureThreshold
+          CHECK_INTERVAL_MINUTES: !Ref CheckIntervalMinutes
+          REQUEST_TIMEOUT_MS: !Ref RequestTimeoutMs
+          STATE_PARAMETER_NAME: !Ref StateParameter
+          ALERT_EMAIL: !Ref AlertEmail
+          SENDER_EMAIL: !Ref SenderEmail
+          ALERT_SMS_NUMBER: !Ref AlertSmsNumber
+      Code:
+        # Placeholder only — deploy-monitoring.sh uploads the real handler
+        # (docs/infra/monitoring/*.mjs) right after the stack deploys.
+        ZipFile: |
+          exports.handler = async () => {
+            throw new Error("watchdog code not uploaded yet - run docs/infra/deploy-monitoring.sh");
+          };
+
+  # ---------- Schedule ----------
+  SchedulerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: scheduler.amazonaws.com }
+            Action: sts:AssumeRole
+            Condition:
+              StringEquals:
+                aws:SourceAccount: !Ref AWS::AccountId
+      Policies:
+        - PolicyName: invoke-watchdog
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource: !GetAtt WatchdogFunction.Arn
+
+  WatchdogSchedule:
+    Type: AWS::Scheduler::Schedule
+    Properties:
+      Name: !Sub ${ResourcePrefix}-watchdog-schedule
+      Description: Polls the marketing site every few minutes
+      ScheduleExpression: !Sub rate(${CheckIntervalMinutes} minutes)
+      FlexibleTimeWindow: { Mode: "OFF" }
+      State: ENABLED
+      Target:
+        Arn: !GetAtt WatchdogFunction.Arn
+        RoleArn: !GetAtt SchedulerRole.Arn
+        RetryPolicy:
+          MaximumRetryAttempts: 0
+
+Outputs:
+  FunctionName:
+    Value: !Ref WatchdogFunction
+  StateParameterName:
+    Value: !Ref StateParameter
+  ScheduleName:
+    Value: !Ref WatchdogSchedule
