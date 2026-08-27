@@ -299,6 +299,10 @@
       "firstBudget": {
         "title": "Tu primer presupuesto en 10 minutos",
         "excerpt": "Cinco preguntas rápidas — vivienda, transporte, deudas, estilo de vida — y el asistente inteligente de presupuesto de Tether-Zero construye un presupuesto personalizado alrededor de tu vida real. Sin hoja en blanco, sin juicios."
+      },
+      "envelopeBudgeting": {
+        "title": "Dale un trabajo a cada dólar: presupuesto por sobres con asignaciones mensuales",
+        "excerpt": "El presupuesto por sobres es el truco más viejo de las finanzas personales. Tether-Zero lo digitaliza con asignaciones mensuales, fondos de reserva que se trasladan de mes a mes y un monto «Por presupuestar» que te mantiene honesto."
       }
     }
   },
@@ -412,6 +416,52 @@
       "cta": {
         "heading": "¿Listo para ver tu presupuesto en diez minutos?",
         "body": "Comienza tu prueba gratuita de 30 días — responde cinco preguntas rápidas y mira cómo Tether-Zero construye un presupuesto alrededor de tu vida real.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "envelopeBudgeting": {
+      "meta": {
+        "title": "Dale un trabajo a cada dólar",
+        "description": "El presupuesto por sobres, en versión digital: asignaciones mensuales, fondos de reserva y un monto «Por presupuestar» que dice la verdad, con Tether-Zero."
+      },
+      "title": "Dale un trabajo a cada dólar: presupuesto por sobres con asignaciones mensuales",
+      "intro": {
+        "p1": "Mucho antes de las apps de presupuesto, la gente hacía esto con efectivo y sobres de papel: llegaba el día de pago, el dinero se repartía — la renta en este sobre, el supermercado en aquel — y cuando un sobre quedaba vacío, el gasto se detenía. Funcionaba porque volvía ineludible una decisión: cada dólar recibía un trabajo antes de gastarse.",
+        "p2": "Tether-Zero se basa en ese mismo principio, sin los cortes de papel. Cada mes asignas tus ingresos entre tus categorías de presupuesto hasta que tus ingresos menos tus asignaciones den exactamente cero — lo que la app llama <strong>cuadrar a cero</strong>. Esta guía explica cómo funcionan las asignaciones mensuales, y cómo la app se encarga de la aritmética, de la memoria y de hacer de espejo honesto por ti."
+      },
+      "envelopeMethod": {
+        "heading": "El método de los sobres, sin los sobres",
+        "p1": "En Tether-Zero, tus categorías son los sobres. Cada fila de tu presupuesto muestra dos números: <strong>Asignado</strong> — lo que pusiste en el sobre este mes — y <strong>Disponible</strong> — lo que queda después de gastar. Llénalos al inicio del mes o con cada pago, gasta contra ellos, y mira el Disponible antes de cualquier compra que te haga dudar.",
+        "p2": "El número Disponible hace la contabilidad que un sobre de papel hacía físicamente: lo que asignaste, más lo que venía de antes, menos lo que has gastado. Cuando está holgado, gasta sin culpa. Cuando está bajo, es el sobre diciéndote que está casi vacío — no un juicio, solo aritmética."
+      },
+      "tbb": {
+        "heading": "«Por presupuestar»: el número que dice la verdad",
+        "p1": "Encima de tus categorías está el indicador <strong>Por presupuestar</strong> — el dinero que todavía no tiene trabajo. En las propias palabras de la app: «Verde significa que has llegado a cuadrar a cero, amarillo significa que aún hay dinero esperando, y rojo significa que has asignado más de lo que tienes.»",
+        "p2": "Un número positivo son dólares desempleados — el dinero sin trabajo termina gastándose por accidente; asígnalo, aunque su trabajo sea simplemente las facturas del próximo mes. Un número negativo significa que prometiste dinero que no tienes; retira asignaciones de tus categorías menos prioritarias hasta volver a cero. Y cero es un piso de honestidad, no un techo de ahorro — darle un trabajo a cada dólar incluye los dólares que van a tus metas y a tu ahorro."
+      },
+      "guidedSetup": {
+        "heading": "Deja que la configuración guiada haga los cálculos",
+        "p1": "Frente a un mes nuevo y una columna de sobres vacíos, verás un aviso que ofrece ayuda para armar el presupuesto del mes: «Configura cada categoría una a la vez, empezando por los ingresos, con los cálculos ya hechos.» Toca <strong>Iniciar configuración guiada</strong> y el asistente hace exactamente eso.",
+        "p2": "Su pantalla inicial se titula, con toda razón, <em>Cuadrar a cero</em>. Cada respuesta se guarda de inmediato: puedes parar en cualquier momento y retomar donde ibas — y el indicador «Por presupuestar» se actualiza sobre la marcha, así que te ves a ti mismo pasar del amarillo al verde."
+      },
+      "sinkingFunds": {
+        "heading": "Sobres con memoria: los fondos de reserva",
+        "p1": "Algunos gastos no llegan cada mes — reparaciones del auto, regalos de fin de año, el seguro anual. Para esos, marca la categoría como <strong>Fondo de reserva</strong>: los fondos no gastados se trasladan automáticamente al mes siguiente en lugar de reiniciarse, y el sobre crece en silencio hasta que llega la factura.",
+        "p2": "Digamos que tu fondo de Reparaciones del auto trae $200 de meses anteriores y este mes le asignas $100 más: el Disponible muestra $300, listos para el día en que gane la luz del motor. Esa es la diferencia entre una emergencia y una molestia."
+      },
+      "newMonth": {
+        "heading": "Un mes nuevo en un clic",
+        "p1": "Una vez que ajustaste un mes que te gusta, nunca vuelves a empezar de cero: <strong>Copiar presupuesto</strong> trae todas las asignaciones de otro mes en un solo clic, y ajustas desde ahí. Presupuestar el segundo mes toma minutos, no una tarde entera.",
+        "p2": "Y cuando una categoría se pasa — alguna se pasará, y está bien — Tether-Zero marca el sobregasto con claridad, mueves dinero desde una categoría que pueda cederlo, y el mes sigue. Hazlo con constancia y la app hasta lleva tu racha de semanas consecutivas sin categorías sobregastadas. Un sobregasto manejado con honestidad no es un fracaso; es el sistema funcionando."
+      },
+      "startSmall": {
+        "heading": "Empieza más pequeño de lo que crees",
+        "p1": "El método de los sobres fracasa cuando hay demasiados sobres. Diez categorías que de verdad revisas valen más que cuarenta que abandonas — siempre puedes dividir «Comida» en «Supermercado» y «Salir a comer» más adelante, cuando aparezcan tus patrones reales. Las asignaciones de tu primer mes serán estimaciones; para el tercer mes serán hechos.",
+        "p2": "Y si todavía no tienes categorías, no las construyas a mano: el asistente inteligente de presupuesto arma <link>tu primer presupuesto</link> con cinco preguntas rápidas sobre tu vida. Después vuelve aquí, dale un trabajo a cada dólar, y cuadra a cero."
+      },
+      "cta": {
+        "heading": "¿Listo para poner tus dólares a trabajar?",
+        "body": "Comienza tu prueba gratuita de 30 días — asigna tu primer mes, mira «Por presupuestar» ponerse en verde, y haz que cada dólar se gane su lugar.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

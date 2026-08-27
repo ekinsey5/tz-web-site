@@ -299,6 +299,10 @@
       "firstBudget": {
         "title": "Votre premier budget en 10 minutes",
         "excerpt": "Cinq questions rapides — logement, transport, dettes, style de vie — et l’assistant budgétaire intelligent de Tether-Zero construit un budget personnalisé autour de votre vraie vie. Sans page blanche, sans jugement."
+      },
+      "envelopeBudgeting": {
+        "title": "Donnez un rôle à chaque dollar : le budget par enveloppes avec des allocations mensuelles",
+        "excerpt": "Le budget par enveloppes est la plus vieille astuce des finances personnelles. Tether-Zero le numérise avec des allocations mensuelles, des fonds de réserve reportés d’un mois à l’autre et un montant « À budgéter » qui vous garde honnête."
       }
     }
   },
@@ -412,6 +416,52 @@
       "cta": {
         "heading": "Prêt à voir votre budget en dix minutes ?",
         "body": "Commencez votre essai gratuit de 30 jours — répondez à cinq questions rapides et regardez Tether-Zero construire un budget autour de votre vraie vie.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "envelopeBudgeting": {
+      "meta": {
+        "title": "Donnez un rôle à chaque dollar",
+        "description": "Le budget par enveloppes, version numérique : allocations mensuelles, fonds de réserve et un montant « À budgéter » qui dit la vérité, avec Tether-Zero."
+      },
+      "title": "Donnez un rôle à chaque dollar : le budget par enveloppes avec des allocations mensuelles",
+      "intro": {
+        "p1": "Bien avant les applications de budget, on faisait cela avec du liquide et des enveloppes en papier : le jour de paie, l’argent était réparti — le loyer dans cette enveloppe, l’épicerie dans celle-là — et quand une enveloppe était vide, les dépenses s’arrêtaient. Cela fonctionnait parce qu’une décision devenait incontournable : chaque dollar recevait un rôle avant d’être dépensé.",
+        "p2": "Tether-Zero repose sur le même principe, sans les coupures de papier. Chaque mois, vous allouez vos revenus à vos catégories de budget jusqu’à ce que vos revenus moins vos allocations donnent exactement zéro — ce que l’application appelle <strong>équilibrer à zéro</strong>. Ce guide explique le fonctionnement des allocations mensuelles, et comment l’application se charge du calcul, de la mémoire et du miroir honnête à votre place."
+      },
+      "envelopeMethod": {
+        "heading": "La méthode des enveloppes, sans les enveloppes",
+        "p1": "Dans Tether-Zero, vos catégories sont les enveloppes. Chaque ligne de votre budget affiche deux nombres : <strong>Alloué</strong> — ce que vous avez mis dans l’enveloppe ce mois-ci — et <strong>Disponible</strong> — ce qu’il en reste après vos dépenses. Remplissez-les en début de mois ou à chaque paie, dépensez dessus, et jetez un œil au Disponible avant tout achat qui vous fait hésiter.",
+        "p2": "Le montant Disponible fait la comptabilité qu’une enveloppe en papier faisait physiquement : ce que vous avez alloué, plus ce qui a été reporté, moins ce que vous avez dépensé. Quand il est confortable, dépensez sans culpabilité. Quand il est bas, c’est l’enveloppe qui vous dit qu’elle est presque vide — pas un jugement, juste de l’arithmétique."
+      },
+      "tbb": {
+        "heading": "« À budgéter » : le nombre qui dit la vérité",
+        "p1": "Au-dessus de vos catégories se trouve le badge <strong>À budgéter</strong> — l’argent qui n’a pas encore reçu de rôle. Dans les mots mêmes de l’application : « Vert signifie que vous avez atteint l’équilibre à zéro, jaune signifie qu’il reste de l’argent en attente, et rouge signifie que vous avez affecté plus d’argent que vous n’en avez. »",
+        "p2": "Un montant positif, ce sont des dollars au chômage — l’argent sans rôle finit par se dépenser par accident ; affectez-le, même si son rôle est simplement les factures du mois prochain. Un montant négatif signifie que vous avez promis de l’argent que vous n’avez pas ; retirez des allocations à vos catégories les moins prioritaires jusqu’à revenir à zéro. Et zéro est un plancher d’honnêteté, pas un plafond d’épargne — donner un rôle à chaque dollar inclut les dollars destinés à vos objectifs et à votre épargne."
+      },
+      "guidedSetup": {
+        "heading": "Laissez la configuration guidée faire les calculs",
+        "p1": "Devant un mois tout neuf et une colonne d’enveloppes vides, une bannière vous propose de l’aide pour bâtir le budget du mois : « Définissez chaque catégorie une à la fois — les revenus d’abord, avec les calculs faits pour vous. » Touchez <strong>Démarrer la configuration guidée</strong> et l’assistant fait exactement cela.",
+        "p2": "Son écran d’ouverture s’intitule, à juste titre, <em>Équilibrer à zéro</em>. Chaque réponse est enregistrée immédiatement : vous pouvez vous arrêter à tout moment et reprendre là où vous en étiez — et le badge « À budgéter » se met à jour au fur et à mesure, si bien que vous vous regardez passer du jaune au vert."
+      },
+      "sinkingFunds": {
+        "heading": "Des enveloppes qui ont de la mémoire : les fonds de réserve",
+        "p1": "Certaines dépenses ne sont pas mensuelles — réparations auto, cadeaux des fêtes, prime d’assurance annuelle. Pour celles-là, marquez la catégorie comme <strong>Fonds de réserve</strong> : les fonds non dépensés sont automatiquement reportés au mois suivant au lieu d’être remis à zéro, et l’enveloppe grossit tranquillement jusqu’à l’arrivée de la facture.",
+        "p2": "Disons que votre fonds Réparations auto a reporté 200 $ des mois précédents et que vous y allouez 100 $ de plus ce mois-ci : le Disponible affiche 300 $, prêts pour le jour où le voyant moteur gagnera. C’est la différence entre une urgence et un désagrément."
+      },
+      "newMonth": {
+        "heading": "Un nouveau mois en un clic",
+        "p1": "Une fois que vous avez réglé un mois qui vous convient, vous ne repartez plus jamais de zéro : <strong>Copier le budget</strong> reprend toutes les allocations d’un autre mois en un seul clic, et vous ajustez à partir de là. Budgéter le deuxième mois prend quelques minutes, pas une soirée.",
+        "p2": "Et quand une catégorie dépasse — cela arrivera, et ce n’est pas grave — Tether-Zero signale clairement le dépassement, vous déplacez de l’argent depuis une catégorie qui peut s’en passer, et le mois continue. Faites-le régulièrement et l’application suit même votre série de semaines consécutives sans catégorie en dépassement. Un dépassement géré honnêtement n’est pas un échec ; c’est le système qui fonctionne."
+      },
+      "startSmall": {
+        "heading": "Commencez plus petit que vous ne le pensez",
+        "p1": "La méthode des enveloppes échoue quand il y a trop d’enveloppes. Dix catégories que vous consultez vraiment valent mieux que quarante que vous abandonnez — vous pourrez toujours scinder « Alimentation » en « Épicerie » et « Restaurants » plus tard, quand vos vraies habitudes apparaîtront. Les allocations de votre premier mois seront des estimations ; au troisième mois, ce seront des faits.",
+        "p2": "Et si vous n’avez pas encore de catégories, ne les créez pas à la main : l’assistant budgétaire intelligent construit <link>votre premier budget</link> à partir de cinq questions rapides sur votre vie. Revenez ensuite ici, donnez un rôle à chaque dollar, et équilibrez à zéro."
+      },
+      "cta": {
+        "heading": "Prêt à mettre vos dollars au travail ?",
+        "body": "Commencez votre essai gratuit de 30 jours — allouez votre premier mois, regardez « À budgéter » passer au vert, et faites travailler chaque dollar.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     }

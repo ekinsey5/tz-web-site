@@ -25,6 +25,12 @@ const FIRST_BUDGET_LANGUAGES = {
   es: `${SITE_URL}/es/learn/your-first-budget/`,
 };
 
+const ENVELOPE_BUDGETING_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/envelope-budgeting/`,
+  fr: `${SITE_URL}/fr/learn/envelope-budgeting/`,
+  es: `${SITE_URL}/es/learn/envelope-budgeting/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -110,6 +116,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: FIRST_BUDGET_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/envelope-budgeting/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: ENVELOPE_BUDGETING_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/envelope-budgeting/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: ENVELOPE_BUDGETING_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/envelope-budgeting/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: ENVELOPE_BUDGETING_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

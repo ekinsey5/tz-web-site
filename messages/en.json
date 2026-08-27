@@ -299,6 +299,10 @@
       "firstBudget": {
         "title": "Your First Budget in 10 Minutes",
         "excerpt": "Five quick questions — housing, transportation, debts, lifestyle — and Tether-Zero's Smart Budget Customization Wizard builds a personalized budget around your real life. No blank spreadsheet, no judgment."
+      },
+      "envelopeBudgeting": {
+        "title": "Give Every Dollar a Job: Envelope Budgeting with Monthly Allocations",
+        "excerpt": "Envelope budgeting is the oldest trick in personal finance. Tether-Zero digitizes it with monthly allocations, sinking funds that roll over, and a To Be Budgeted number that keeps you honest."
       }
     }
   },
@@ -412,6 +416,52 @@
       "cta": {
         "heading": "Ready to see your budget in ten minutes?",
         "body": "Start your 30-day free trial — answer five quick questions and watch Tether-Zero build a budget around your real life.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "envelopeBudgeting": {
+      "meta": {
+        "title": "Give Every Dollar a Job",
+        "description": "Envelope budgeting, digitized: give every dollar a job with Tether-Zero's monthly allocations, sinking funds, and a To Be Budgeted number that tells the truth."
+      },
+      "title": "Give Every Dollar a Job: Envelope Budgeting with Monthly Allocations",
+      "intro": {
+        "p1": "Long before budgeting apps, people did this with cash and paper envelopes: payday came, the money got divided — rent in this envelope, groceries in that one — and when an envelope was empty, the spending stopped. It worked because it made one decision unavoidable: every dollar got a job before it got spent.",
+        "p2": "Tether-Zero is built on that same principle, minus the paper cuts. Each month you allocate your income across your budget categories until your income minus your allocations equals exactly zero — what the app calls <strong>balance to zero</strong>. This guide walks through how monthly allocations work, and how the app handles the arithmetic, the remembering, and the honest-mirror part for you."
+      },
+      "envelopeMethod": {
+        "heading": "The envelope method, minus the envelopes",
+        "p1": "In Tether-Zero, your categories are the envelopes. Every category row in your budget shows two numbers: <strong>Allocated</strong> — what you put in the envelope this month — and <strong>Available</strong> — what's still in it after spending. Fill them at the start of the month or whenever you're paid, spend against them, and glance at Available before any purchase you're unsure about.",
+        "p2": "The Available number does the bookkeeping a paper envelope did physically: it's whatever you allocated, plus anything carried in from before, minus what you've spent. When it's healthy, spend without guilt. When it's low, that's the envelope telling you it's nearly empty — not a judgment, just arithmetic."
+      },
+      "tbb": {
+        "heading": "To Be Budgeted: the number that tells the truth",
+        "p1": "Above your categories sits <strong>To Be Budgeted</strong> — the money you have that hasn't been given a job yet. In the app's own words: “Green means you've hit balance to zero, yellow means money is still waiting, and red means you have assigned more than you have.”",
+        "p2": "A positive number is unemployed dollars — money without a job tends to get spent by accident, so assign it, even if its job is simply next month's bills. A negative number means you've promised money you don't have; pull back from your lowest-priority categories until you're at zero. And zero is a floor for honesty, not a ceiling for savings — giving every dollar a job includes the dollars headed for goals and savings."
+      },
+      "guidedSetup": {
+        "heading": "Let Guided Setup do the math",
+        "p1": "Facing a fresh month and a column of empty envelopes, you'll see a banner offering help with that month's budget: “Set each category one at a time — income first, with the math done for you.” Tap <strong>Start Guided Setup</strong> and the wizard does exactly that.",
+        "p2": "Its opening screen is titled, fittingly, <em>Balance to Zero</em>. Every answer saves immediately, so you can stop at any point and pick up right where you left off — and the To Be Budgeted chip updates as you go, so you watch yourself budget your way from yellow to green."
+      },
+      "sinkingFunds": {
+        "heading": "Envelopes that remember: sinking funds",
+        "p1": "Some expenses don't arrive monthly — car repairs, holiday gifts, annual insurance premiums. For those, mark a category as a <strong>Sinking Fund</strong>: unspent funds automatically roll over to the next month instead of resetting, so the envelope quietly grows until the bill shows up.",
+        "p2": "Say your Car Repair fund carried $200 in from previous months and you allocate another $100 this month: Available shows $300, ready for the day the check-engine light wins. That's the difference between an emergency and an inconvenience."
+      },
+      "newMonth": {
+        "heading": "A new month in one click",
+        "p1": "Once you've dialed in a month you like, you never start from scratch again: <strong>Copy Budget</strong> brings all of another month's allocations into the new one in a single click, and you adjust from there. Budgeting month two takes minutes, not an evening.",
+        "p2": "And when a category goes over — one will, and that's fine — Tether-Zero flags it plainly as overspent, you move money from a category that can spare it, and the month goes on. Do that consistently and the app even tracks your streak of consecutive weeks with no overspent categories. Overspending handled honestly isn't failure; it's the system working."
+      },
+      "startSmall": {
+        "heading": "Start smaller than you think",
+        "p1": "The envelope method fails when there are too many envelopes. Ten categories you actually check beat forty you abandon — you can always split “Food” into “Groceries” and “Dining Out” later, once your real patterns show up. Your first month's allocations will be guesses; by month three they'll be facts.",
+        "p2": "And if you don't have categories yet, don't build them by hand: the Smart Budget Customization Wizard sets up <link>your first budget</link> around five quick questions about your life. Then come back here, give every dollar its job, and balance to zero."
+      },
+      "cta": {
+        "heading": "Ready to put your dollars to work?",
+        "body": "Start your 30-day free trial — allocate your first month, watch To Be Budgeted hit green, and let every dollar earn its keep.",
         "button": "Start your 30-day free trial"
       }
     }
