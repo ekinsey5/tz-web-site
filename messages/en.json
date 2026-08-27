@@ -303,6 +303,10 @@
       "envelopeBudgeting": {
         "title": "Give Every Dollar a Job: Envelope Budgeting with Monthly Allocations",
         "excerpt": "Envelope budgeting is the oldest trick in personal finance. Tether-Zero digitizes it with monthly allocations, sinking funds that roll over, and a To Be Budgeted number that keeps you honest."
+      },
+      "sinkingFunds": {
+        "title": "Stop Getting Ambushed by “Surprise” Expenses: Sinking Funds Explained",
+        "excerpt": "Car registration, new tires, December: the expenses that wreck budgets are rarely surprises — they're schedules. Sinking funds turn them into small, painless monthly amounts that grow until the bill arrives."
       }
     }
   },
@@ -462,6 +466,52 @@
       "cta": {
         "heading": "Ready to put your dollars to work?",
         "body": "Start your 30-day free trial — allocate your first month, watch To Be Budgeted hit green, and let every dollar earn its keep.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "sinkingFunds": {
+      "meta": {
+        "title": "Sinking Funds Explained",
+        "description": "Car repairs, annual bills, December — not surprises, schedules. Sinking funds in Tether-Zero turn big irregular expenses into small, painless monthly amounts."
+      },
+      "title": "Stop Getting Ambushed by “Surprise” Expenses: Sinking Funds Explained",
+      "intro": {
+        "p1": "Every budget has a villain story that goes the same way: the month was going fine, and then the car registration came due, or the vet found something, or December happened. The budget “blew up.” But look closer and most of these ambushes share a secret — they were never surprises at all. They were scheduled.",
+        "p2": "These are <em>irregular certainties</em>: expenses that don't arrive monthly but absolutely arrive. A <strong>sinking fund</strong> is the old, unglamorous, extremely effective fix — set aside a little every month so the money is already waiting when the bill lands. Tether-Zero builds them into the budget itself. Here's how to use them."
+      },
+      "onSchedule": {
+        "heading": "Surprises that arrive on schedule",
+        "p1": "Car registration comes once a year, every year. Tires wear out every few years, reliably. December brings gifts every single time. None of this is an emergency — yet these irregular certainties wreck more budgets than any restaurant habit ever did, because a monthly budget quietly assumes every month looks the same.",
+        "p2": "It helps to keep two buckets straight. An <strong>emergency fund</strong> is for the genuinely unknown — the job loss, the broken arm. <strong>Sinking funds</strong> are for the known-but-irregular: you can name the expense, roughly when it's coming, and roughly what it costs. Different problems, different envelopes."
+      },
+      "math": {
+        "heading": "The math that makes big bills small",
+        "p1": "The trick is one division. Take a $600 insurance premium due in twelve months: that's a budget-breaking lump, or it's $50 a month and a non-event. Divide what the expense costs by the months until it arrives, and that's your monthly amount.",
+        "p2": "Stack a few of these — $50 for the premium, $50 toward holiday gifts, $40 toward tires, $50 for a vet-visit buffer — and about $190 a month quietly disarms four future ambushes at once. The expenses didn't change; the schedule did."
+      },
+      "flipSwitch": {
+        "heading": "Flip one switch in Tether-Zero",
+        "p1": "In Tether-Zero, a sinking fund is an ordinary budget category with one switch flipped. When you create or edit a category, enable <strong>Sinking Fund</strong> — the dialog explains it in one line: “Unspent funds will automatically roll over to next month.” Allocate to it like any other category, and on the 1st of each month the leftover balance carries forward automatically.",
+        "p2": "Set aside $100 a month for car insurance and don't touch it, and six months later the category shows $600 available. The fund's tooltip breaks the balance down — Allocated, Balance Forward, Spent, Available — so you always know how much is this month's money versus what's been quietly accumulating."
+      },
+      "honest": {
+        "heading": "Honest even when you overspend",
+        "p1": "What if the bill arrives before the fund is ready? Say you've budgeted $200 for car repairs and the actual repair costs $230. The fund doesn't reset and pretend nothing happened — the $30 shortfall carries forward as a negative balance, so next month's $200 allocation shows $170 actually available.",
+        "p2": "That sounds strict, but it's the kindest thing a budget can do: show you the true number. A deficit that carries forward gets noticed and fixed with one extra allocation; a deficit that silently vanishes gets repeated."
+      },
+      "fundOrGoal": {
+        "heading": "Sinking fund or goal?",
+        "p1": "Tether-Zero also has <strong>Financial Goals</strong>, and the line between the two is worth knowing. A good rule of thumb: recurring cycles — insurance, holidays, car maintenance — work best as plain sinking funds. One-time targets with an amount and a date — a $2,000 vacation next August — shine as goals, which add a target amount, a pacing indicator that tells you whether you're on track, and progress visuals.",
+        "p2": "If in doubt, start with the sinking fund. You can always create a goal later, once the thing you're saving for has a specific finish line."
+      },
+      "spendIt": {
+        "heading": "Spend it — that's the point",
+        "p1": "When the expense finally arrives, spend from the fund like any other category. The balance drops — possibly to zero — and that's not a setback: it's the money doing exactly the job you hired it for, while the rest of your monthly budget never feels a thing. And if a fund outlives its purpose, Tether-Zero lets you release the category's available funds back to your budget.",
+        "p2": "Start smaller than you think: scan the last twelve months of statements for everything that made you say “where did that come from?”, then pick two or three funds — not ten. Fully funding car maintenance and holidays beats sprinkling $10 across eight envelopes. For how sinking funds fit into the bigger monthly rhythm, see our guide to <link>envelope budgeting with monthly allocations</link>."
+      },
+      "cta": {
+        "heading": "Ready to retire the word “surprise”?",
+        "body": "Start your 30-day free trial — set up your first sinking fund this month, and let the next annual bill arrive to money already waiting.",
         "button": "Start your 30-day free trial"
       }
     }

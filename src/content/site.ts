@@ -180,6 +180,12 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-27",
   },
+  sinkingFunds: {
+    slug: "sinking-funds",
+    path: "/learn/sinking-funds/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
 } as const;
 
 /* ------------------------------------------------------------------ */

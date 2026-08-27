@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Wallet, Wand2, type LucideIcon } from "lucide-react";
+import { Mail, PiggyBank, Wallet, Wand2, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { LearnPageChrome } from "@/components/LearnPageChrome";
 import { ARTICLES } from "@/content/site";
@@ -8,6 +8,7 @@ import type { Locale } from "@/i18n/config";
 
 /** Listing order + icon chip per article; copy comes from Learn.articles.<key>. */
 const ARTICLE_CARDS: ReadonlyArray<{ key: keyof typeof ARTICLES; icon: LucideIcon }> = [
+  { key: "sinkingFunds", icon: PiggyBank },
   { key: "envelopeBudgeting", icon: Mail },
   { key: "firstBudget", icon: Wand2 },
   { key: "makingABudget", icon: Wallet },

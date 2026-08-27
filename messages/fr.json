@@ -303,6 +303,10 @@
       "envelopeBudgeting": {
         "title": "Donnez un rôle à chaque dollar : le budget par enveloppes avec des allocations mensuelles",
         "excerpt": "Le budget par enveloppes est la plus vieille astuce des finances personnelles. Tether-Zero le numérise avec des allocations mensuelles, des fonds de réserve reportés d’un mois à l’autre et un montant « À budgéter » qui vous garde honnête."
+      },
+      "sinkingFunds": {
+        "title": "Ne vous laissez plus surprendre par les dépenses « imprévues » : les fonds de réserve expliqués",
+        "excerpt": "Immatriculation, pneus neufs, décembre : les dépenses qui ruinent les budgets sont rarement des surprises — ce sont des échéances. Les fonds de réserve les transforment en petits montants mensuels qui grandissent jusqu’à l’arrivée de la facture."
       }
     }
   },
@@ -462,6 +466,52 @@
       "cta": {
         "heading": "Prêt à mettre vos dollars au travail ?",
         "body": "Commencez votre essai gratuit de 30 jours — allouez votre premier mois, regardez « À budgéter » passer au vert, et faites travailler chaque dollar.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "sinkingFunds": {
+      "meta": {
+        "title": "Les fonds de réserve expliqués",
+        "description": "Des échéances, pas des surprises : les fonds de réserve de Tether-Zero transforment les grosses dépenses irrégulières en petits montants mensuels indolores."
+      },
+      "title": "Ne vous laissez plus surprendre par les dépenses « imprévues » : les fonds de réserve expliqués",
+      "intro": {
+        "p1": "Chaque budget a une histoire de méchant qui se déroule pareil : le mois se passait bien, puis l’immatriculation de la voiture est arrivée, ou le vétérinaire a trouvé quelque chose, ou décembre a eu lieu. Le budget « a explosé ». Mais regardez de plus près : la plupart de ces embuscades partagent un secret — ce n’étaient pas des surprises du tout. Elles étaient planifiées.",
+        "p2": "Ce sont des <em>certitudes irrégulières</em> : des dépenses qui n’arrivent pas chaque mois mais qui arrivent à coup sûr. Un <strong>fonds de réserve</strong> est le remède ancien, sans prétention et redoutablement efficace — mettez un peu de côté chaque mois pour que l’argent attende déjà la facture. Tether-Zero les intègre directement au budget. Voici comment s’en servir."
+      },
+      "onSchedule": {
+        "heading": "Des surprises qui arrivent à date fixe",
+        "p1": "L’immatriculation revient une fois par an, chaque année. Les pneus s’usent tous les quelques années, immanquablement. Décembre apporte des cadeaux à chaque fois. Rien de tout cela n’est une urgence — et pourtant ces certitudes irrégulières ruinent plus de budgets que n’importe quelle habitude de restaurant, parce qu’un budget mensuel suppose sans le dire que tous les mois se ressemblent.",
+        "p2": "Il faut distinguer deux poches. Un <strong>fonds d’urgence</strong> couvre l’inconnu véritable — la perte d’emploi, le bras cassé. Les <strong>fonds de réserve</strong> couvrent le connu-mais-irrégulier : vous pouvez nommer la dépense, dire à peu près quand elle arrive et combien elle coûte. Problèmes différents, enveloppes différentes."
+      },
+      "math": {
+        "heading": "Le calcul qui rend les grosses factures petites",
+        "p1": "L’astuce tient en une division. Prenez une prime d’assurance de 600 $ due dans douze mois : c’est une somme qui casse un budget, ou bien c’est 50 $ par mois et un non-événement. Divisez le montant de la dépense par le nombre de mois avant son arrivée : voilà votre montant mensuel.",
+        "p2": "Empilez-en quelques-uns — 50 $ pour la prime, 50 $ pour les cadeaux des fêtes, 40 $ pour les pneus, 50 $ pour le vétérinaire — et environ 190 $ par mois désamorcent quatre embuscades futures d’un coup. Les dépenses n’ont pas changé ; le calendrier, oui."
+      },
+      "flipSwitch": {
+        "heading": "Un seul interrupteur dans Tether-Zero",
+        "p1": "Dans Tether-Zero, un fonds de réserve est une catégorie de budget ordinaire avec un interrupteur activé. À la création ou la modification d’une catégorie, activez <strong>Fonds de réserve</strong> — la boîte de dialogue l’explique en une ligne : « Les fonds non dépensés seront automatiquement reportés au mois suivant. » Allouez-y comme à n’importe quelle catégorie, et le 1er de chaque mois, le solde restant est reporté automatiquement.",
+        "p2": "Mettez 100 $ par mois de côté pour l’assurance auto sans y toucher, et six mois plus tard la catégorie affiche 600 $ disponibles. L’infobulle du fonds détaille le solde — Alloué, Report de solde, Dépensé, Disponible — pour distinguer l’argent du mois de ce qui s’est accumulé en silence."
+      },
+      "honest": {
+        "heading": "Honnête même quand vous dépassez",
+        "p1": "Et si la facture arrive avant que le fonds soit prêt ? Disons 200 $ budgétés pour les réparations auto, et une réparation à 230 $. Le fonds ne se remet pas à zéro en faisant comme si de rien n’était — les 30 $ manquants sont reportés en solde négatif, si bien que l’allocation de 200 $ du mois suivant affiche 170 $ réellement disponibles.",
+        "p2": "Cela paraît strict, mais c’est la chose la plus bienveillante qu’un budget puisse faire : montrer le vrai chiffre. Un déficit reporté se remarque et se corrige d’une allocation supplémentaire ; un déficit qui disparaît en silence se répète."
+      },
+      "fundOrGoal": {
+        "heading": "Fonds de réserve ou objectif ?",
+        "p1": "Tether-Zero propose aussi des <strong>objectifs financiers</strong>, et la frontière entre les deux mérite d’être connue. Règle simple : les cycles récurrents — assurance, fêtes, entretien auto — fonctionnent mieux en simples fonds de réserve. Les cibles ponctuelles avec un montant et une date — 2 000 $ de vacances en août prochain — brillent en objectifs, qui ajoutent un montant cible, un indicateur de rythme qui dit si vous êtes dans les temps, et des visuels de progression.",
+        "p2": "Dans le doute, commencez par le fonds de réserve. Vous pourrez toujours créer un objectif plus tard, quand ce que vous épargnez aura une vraie ligne d’arrivée."
+      },
+      "spendIt": {
+        "heading": "Dépensez-le — c’est le but",
+        "p1": "Quand la dépense arrive enfin, payez depuis le fonds comme depuis n’importe quelle catégorie. Le solde baisse — parfois jusqu’à zéro — et ce n’est pas un revers : c’est l’argent qui fait exactement le travail pour lequel vous l’avez embauché, pendant que le reste de votre budget mensuel ne sent rien passer. Et si un fonds n’a plus de raison d’être, Tether-Zero permet de libérer les fonds disponibles de la catégorie vers votre budget.",
+        "p2": "Commencez plus petit que vous ne le pensez : parcourez les douze derniers mois de relevés à la recherche de tout ce qui vous a fait dire « d’où ça sort ? », puis choisissez deux ou trois fonds — pas dix. Financer pleinement l’entretien auto et les fêtes vaut mieux que saupoudrer 10 $ sur huit enveloppes. Pour la place des fonds de réserve dans le rythme mensuel, voyez notre guide du <link>budget par enveloppes et des allocations mensuelles</link>."
+      },
+      "cta": {
+        "heading": "Prêt à rayer le mot « surprise » ?",
+        "body": "Commencez votre essai gratuit de 30 jours — créez votre premier fonds de réserve ce mois-ci, et laissez la prochaine facture annuelle trouver l’argent déjà prêt.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     }

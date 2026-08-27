@@ -303,6 +303,10 @@
       "envelopeBudgeting": {
         "title": "Dale un trabajo a cada dólar: presupuesto por sobres con asignaciones mensuales",
         "excerpt": "El presupuesto por sobres es el truco más viejo de las finanzas personales. Tether-Zero lo digitaliza con asignaciones mensuales, fondos de reserva que se trasladan de mes a mes y un monto «Por presupuestar» que te mantiene honesto."
+      },
+      "sinkingFunds": {
+        "title": "Adiós a los gastos «sorpresa»: fondos de reserva explicados",
+        "excerpt": "Registro del auto, llantas nuevas, diciembre: los gastos que arruinan presupuestos rara vez son sorpresas — son fechas. Los fondos de reserva los convierten en pequeños montos mensuales que crecen hasta que llega la factura."
       }
     }
   },
@@ -462,6 +466,52 @@
       "cta": {
         "heading": "¿Listo para poner tus dólares a trabajar?",
         "body": "Comienza tu prueba gratuita de 30 días — asigna tu primer mes, mira «Por presupuestar» ponerse en verde, y haz que cada dólar se gane su lugar.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "sinkingFunds": {
+      "meta": {
+        "title": "Fondos de reserva explicados",
+        "description": "Fechas, no sorpresas: los fondos de reserva de Tether-Zero convierten los gastos grandes e irregulares en pequeños montos mensuales que no duelen."
+      },
+      "title": "Adiós a los gastos «sorpresa»: fondos de reserva explicados",
+      "intro": {
+        "p1": "Todo presupuesto tiene una historia de villano que se repite igual: el mes iba bien, y entonces tocó el registro del auto, o el veterinario encontró algo, o llegó diciembre. El presupuesto «explotó». Pero mira de cerca y la mayoría de estas emboscadas comparten un secreto: nunca fueron sorpresas. Estaban programadas.",
+        "p2": "Son <em>certezas irregulares</em>: gastos que no llegan cada mes pero llegan sin falta. Un <strong>fondo de reserva</strong> es el remedio viejo, sin glamour y tremendamente eficaz — aparta un poco cada mes para que el dinero ya esté esperando cuando caiga la factura. Tether-Zero los integra directamente en el presupuesto. Así se usan."
+      },
+      "onSchedule": {
+        "heading": "Sorpresas que llegan puntuales",
+        "p1": "El registro del auto toca una vez al año, todos los años. Las llantas se gastan cada pocos años, sin falta. Diciembre trae regalos cada vez. Nada de esto es una emergencia — y aun así estas certezas irregulares arruinan más presupuestos que cualquier hábito de restaurante, porque un presupuesto mensual asume en silencio que todos los meses son iguales.",
+        "p2": "Conviene separar dos bolsillos. Un <strong>fondo de emergencia</strong> es para lo genuinamente desconocido — perder el empleo, un brazo roto. Los <strong>fondos de reserva</strong> son para lo conocido-pero-irregular: puedes nombrar el gasto, decir más o menos cuándo llega y cuánto cuesta. Problemas distintos, sobres distintos."
+      },
+      "math": {
+        "heading": "La cuenta que hace pequeñas las facturas grandes",
+        "p1": "El truco es una división. Toma una prima de seguro de $600 que vence en doce meses: es un golpe que rompe el presupuesto, o son $50 al mes y un no-evento. Divide lo que cuesta el gasto entre los meses que faltan, y ese es tu monto mensual.",
+        "p2": "Junta unos cuantos — $50 para la prima, $50 para los regalos, $40 para las llantas, $50 para el veterinario — y unos $190 al mes desactivan cuatro emboscadas futuras de una vez. Los gastos no cambiaron; cambió el calendario."
+      },
+      "flipSwitch": {
+        "heading": "Un solo interruptor en Tether-Zero",
+        "p1": "En Tether-Zero, un fondo de reserva es una categoría normal con un interruptor activado. Al crear o editar una categoría, activa <strong>Fondo de reserva</strong> — el diálogo lo explica en una línea: «Los fondos no gastados se trasladarán automáticamente al mes siguiente.» Asígnale como a cualquier otra categoría, y el día 1 de cada mes el saldo sobrante se traslada automáticamente.",
+        "p2": "Aparta $100 al mes para el seguro del auto sin tocarlos, y seis meses después la categoría muestra $600 disponibles. El tooltip del fondo desglosa el saldo — Asignado, Saldo anterior, Gastado, Disponible — para distinguir el dinero de este mes de lo que se ha ido acumulando en silencio."
+      },
+      "honest": {
+        "heading": "Honesto incluso cuando te pasas",
+        "p1": "¿Y si la factura llega antes de que el fondo esté listo? Digamos que presupuestaste $200 para reparaciones y la reparación cuesta $230. El fondo no se reinicia fingiendo que no pasó nada: los $30 faltantes se trasladan como saldo negativo, así que la asignación de $200 del mes siguiente muestra $170 realmente disponibles.",
+        "p2": "Suena estricto, pero es lo más amable que puede hacer un presupuesto: mostrarte el número verdadero. Un déficit que se traslada se nota y se corrige con una asignación extra; un déficit que desaparece en silencio se repite."
+      },
+      "fundOrGoal": {
+        "heading": "¿Fondo de reserva o meta?",
+        "p1": "Tether-Zero también tiene <strong>metas financieras</strong>, y vale la pena conocer la frontera entre ambas. Regla práctica: los ciclos recurrentes — seguros, fiestas, mantenimiento del auto — funcionan mejor como simples fondos de reserva. Los objetivos únicos con monto y fecha — $2,000 de vacaciones el próximo agosto — brillan como metas, que añaden un monto objetivo, un indicador de ritmo que te dice si vas a tiempo, y visuales de progreso.",
+        "p2": "Ante la duda, empieza con el fondo de reserva. Siempre puedes crear una meta después, cuando lo que ahorras tenga una línea de llegada concreta."
+      },
+      "spendIt": {
+        "heading": "Gástalo — de eso se trata",
+        "p1": "Cuando el gasto por fin llega, paga desde el fondo como desde cualquier categoría. El saldo baja — quizás hasta cero — y eso no es un retroceso: es el dinero haciendo exactamente el trabajo para el que lo contrataste, mientras el resto de tu presupuesto mensual ni se entera. Y si un fondo deja de tener sentido, Tether-Zero te deja liberar los fondos disponibles de la categoría de vuelta a tu presupuesto.",
+        "p2": "Empieza más pequeño de lo que crees: revisa los últimos doce meses de estados de cuenta buscando todo lo que te hizo decir «¿y esto de dónde salió?», y elige dos o tres fondos — no diez. Financiar por completo el mantenimiento del auto y las fiestas vale más que regar $10 en ocho sobres. Para ver cómo encajan los fondos de reserva en el ritmo mensual, mira nuestra guía del <link>presupuesto por sobres con asignaciones mensuales</link>."
+      },
+      "cta": {
+        "heading": "¿Listo para jubilar la palabra «sorpresa»?",
+        "body": "Comienza tu prueba gratuita de 30 días — crea tu primer fondo de reserva este mes, y deja que la próxima factura anual encuentre el dinero ya esperando.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

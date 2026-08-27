@@ -31,6 +31,12 @@ const ENVELOPE_BUDGETING_LANGUAGES = {
   es: `${SITE_URL}/es/learn/envelope-budgeting/`,
 };
 
+const SINKING_FUNDS_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/sinking-funds/`,
+  fr: `${SITE_URL}/fr/learn/sinking-funds/`,
+  es: `${SITE_URL}/es/learn/sinking-funds/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -137,6 +143,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: ENVELOPE_BUDGETING_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/sinking-funds/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SINKING_FUNDS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/sinking-funds/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SINKING_FUNDS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/sinking-funds/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SINKING_FUNDS_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,
