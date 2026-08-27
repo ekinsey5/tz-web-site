@@ -295,6 +295,10 @@
       "makingABudget": {
         "title": "Comment faire un budget — avec Tether-Zero et votre coach IA à vos côtés",
         "excerpt": "Un budget n’est qu’un plan écrit pour votre argent. Découvrez les étapes classiques — et comment Tether-Zero et Zero, votre coach IA intégré, font le gros du travail."
+      },
+      "firstBudget": {
+        "title": "Votre premier budget en 10 minutes",
+        "excerpt": "Cinq questions rapides — logement, transport, dettes, style de vie — et l’assistant budgétaire intelligent de Tether-Zero construit un budget personnalisé autour de votre vraie vie. Sans page blanche, sans jugement."
       }
     }
   },
@@ -363,6 +367,53 @@
         "button": "Commencez votre essai gratuit de 30 jours"
       },
       "attribution": "Fondamentaux du budget adaptés de <link>Making a Budget — consumer.gov</link>, une ressource de la Federal Trade Commission."
+    },
+    "firstBudget": {
+      "meta": {
+        "title": "Votre premier budget en 10 minutes",
+        "description": "L’assistant budgétaire intelligent de Tether-Zero transforme cinq questions rapides sur votre vie en un budget personnalisé — sans page blanche, sans jugement."
+      },
+      "title": "Votre premier budget en 10 minutes",
+      "intro": {
+        "p1": "Le plus difficile dans un budget, ce n’est pas le calcul — c’est la page blanche. La plupart des outils vous accueillent avec un tableur vide ou un mur de catégories génériques, et bonne chance. La première session devient une corvée, et le budget ne voit jamais le jour.",
+        "p2": "Tether-Zero commence autrement : par une courte conversation. <strong>L’assistant budgétaire intelligent</strong> (Smart Budget Customization Wizard) vous pose cinq questions rapides sur votre vie — les questions elles-mêmes prennent environ une minute — puis construit votre budget à partir de vos réponses. Ajoutez quelques minutes pour donner un rôle à vos premiers dollars, et vous aurez un budget opérationnel le temps de préparer un café."
+      },
+      "whyBudgetsFail": {
+        "heading": "Pourquoi tant de premiers budgets échouent avant de commencer",
+        "p1": "Les modèles de budget traditionnels vous déposent devant environ 35 catégories toutes faites, dont la plupart n’ont rien à voir avec votre vie. Pas de voiture ? Pourquoi une catégorie « vidange » ? Avant même d’avoir budgété un seul dollar, vous faites du ménage : supprimer, renommer, douter.",
+        "p2": "Il y a aussi un problème plus discret : saisir ses dettes dans un formulaire froid et clinique peut donner l’impression d’être noté. Beaucoup abandonnent la configuration à ce moment précis. L’assistant de Tether-Zero a été conçu pour éliminer ces deux points d’échec — il ne crée que ce qui correspond à vos réponses, et il parle de dettes comme le ferait un ami."
+      },
+      "fiveQuestions": {
+        "heading": "Cinq questions rapides sur votre vraie vie",
+        "p1": "L’assistant s’ouvre sur <em>« Construisons votre budget »</em> et vous demande de nommer votre foyer. Puis il devient personnel, dans le bon sens : <em>« Où habitez-vous ? »</em> Locataire, propriétaire avec ou sans crédit, ou hébergé en famille — plus les services que vous payez. Chaque réponse devient discrètement une catégorie de budget que vous auriez autrement créée à la main.",
+        "p2": "<em>« Comment vous déplacez-vous ? »</em> couvre voiture personnelle, transports en commun, VTC ou vélo et marche — avec des options rapides pour un crédit auto et une assurance auto. L’assistant est attentif : mentionnez un paiement de voiture ici, et l’étape des dettes arrive avec le prêt automobile déjà sélectionné, accompagné d’une note précisant qu’il vient de votre réponse précédente.",
+        "p3": "La dernière question, <em>« Dans quoi dépensez-vous ? »</em>, capture votre style de vie — streaming, restaurants, salle de sport. Rien n’est obligatoire : chaque étape après le logement propose « Passer cette étape », et si la vie vous interrompt en cours de route, l’assistant enregistre votre progression et vous accueille la fois suivante avec <em>« Reprendre là où vous vous étiez arrêté ? »</em>"
+      },
+      "noJudgment": {
+        "heading": "L’étape sans jugement",
+        "p1": "Entre le transport et le style de vie vient la question que la plupart des applications ratent : <em>« Que voulez-vous rembourser ? »</em> L’écran dit le reste, dans les mots mêmes de Tether-Zero : <strong>« C’est ce qu’on est là pour écraser — sans jugement. »</strong> Cartes de crédit, prêts étudiants, prêts personnels, crédit auto, dettes médicales — ou simplement aucune dette.",
+        "p2": "La formulation est délibérée. Dans Tether-Zero, une dette est quelque chose que l’on écrase — c’est le même esprit que le planificateur de remboursement Debt Crusher — et cela commence ici, en donnant à chaque paiement de dette une place dans votre budget dès le premier jour, au lieu d’en faire une confession."
+      },
+      "review": {
+        "heading": "Vérifiez tout, puis « Créer mon budget »",
+        "p1": "Rien n’est créé dans votre dos. L’étape de récapitulatif présente exactement les groupes et catégories de budget issus de vos réponses, organisés et dépliables, pour que vous puissiez regarder avant de vous engager. Quelque chose cloche ? Revenez en arrière, changez une réponse, et l’aperçu se met à jour. Le budget ne devient réel que lorsque vous touchez <strong>« Créer mon budget »</strong>.",
+        "p2": "Le résultat : généralement un budget de 12 à 20 catégories qui correspondent vraiment à votre vie — pas 35 à élaguer pendant toute une soirée. Quelques essentiels sont toujours inclus, comme l’épicerie et un fonds d’urgence, et comme le dit l’assistant lui-même : « Vous pourrez tout ajouter, renommer ou supprimer plus tard. »"
+      },
+      "firstTenMinutes": {
+        "heading": "Vos dix premières minutes de vrai budget",
+        "p1": "L’assistant vous dépose directement dans votre nouveau budget, et c’est là que les dix minutes prennent tout leur sens : donner un rôle à vos premiers dollars. Parcourez vos catégories par ordre de priorité — l’essentiel d’abord, puis les paiements de dettes, puis le reste — jusqu’à ce que le montant <strong>À budgéter</strong> en haut de l’écran affiche 0 $. Il passe au vert quand vous y êtes. C’est le budget base zéro : chaque dollar a une mission.",
+        "p2": "Si vous manquez d’argent avant de manquer de catégories, ce n’est pas un échec — c’est l’information financière la plus honnête que vous ayez eue depuis longtemps. Financez ce qui compte le plus ; le reste attendra votre prochaine paie."
+      },
+      "startingPoint": {
+        "heading": "Un point de départ, pas un contrat",
+        "p1": "Votre premier budget est un brouillon, et c’est voulu. Au cours du prochain mois, vous déplacerez de l’argent entre catégories, découvrirez une facture oubliée et corrigerez des estimations — c’est ainsi qu’un budget devient précis : en servant. Tout ce que l’assistant a créé peut être complété, renommé ou supprimé. Et toute l’expérience, jusqu’aux noms de vos catégories, parle anglais, français et espagnol.",
+        "p2": "Quand vous voudrez approfondir la méthode elle-même — les étapes classiques, et comment Zero, votre coach IA intégré, vous aide à chacune — notre guide <link>comment faire un budget</link> reprend exactement là où l’assistant s’arrête."
+      },
+      "cta": {
+        "heading": "Prêt à voir votre budget en dix minutes ?",
+        "body": "Commencez votre essai gratuit de 30 jours — répondez à cinq questions rapides et regardez Tether-Zero construire un budget autour de votre vraie vie.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
     }
   },
   "Simulator": {

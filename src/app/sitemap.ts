@@ -19,6 +19,12 @@ const MAKING_A_BUDGET_LANGUAGES = {
   es: `${SITE_URL}/es/learn/making-a-budget/`,
 };
 
+const FIRST_BUDGET_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/your-first-budget/`,
+  fr: `${SITE_URL}/fr/learn/your-first-budget/`,
+  es: `${SITE_URL}/es/learn/your-first-budget/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -83,6 +89,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: MAKING_A_BUDGET_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/your-first-budget/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: FIRST_BUDGET_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/your-first-budget/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: FIRST_BUDGET_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/your-first-budget/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: FIRST_BUDGET_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

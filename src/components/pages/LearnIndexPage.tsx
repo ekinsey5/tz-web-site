@@ -1,15 +1,20 @@
 import Link from "next/link";
-import { Wallet } from "lucide-react";
+import { Wallet, Wand2, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { LearnPageChrome } from "@/components/LearnPageChrome";
 import { ARTICLES } from "@/content/site";
 import { localizePath } from "@/lib/locale-links";
 import type { Locale } from "@/i18n/config";
 
+/** Listing order + icon chip per article; copy comes from Learn.articles.<key>. */
+const ARTICLE_CARDS: ReadonlyArray<{ key: keyof typeof ARTICLES; icon: LucideIcon }> = [
+  { key: "firstBudget", icon: Wand2 },
+  { key: "makingABudget", icon: Wallet },
+];
+
 /** Listing page for the /learn section, shared by the (en) and [locale] routes. */
 export async function LearnIndexPage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "Learn" });
-  const articleHref = localizePath(locale, ARTICLES.makingABudget.path);
 
   return (
     <LearnPageChrome locale={locale}>
@@ -21,33 +26,38 @@ export async function LearnIndexPage({ locale }: { locale: Locale }) {
         <p className="mt-4 text-lead text-body">{t("subheading")}</p>
 
         <ul className="mt-10 space-y-6">
-          <li>
-            <article className="card p-6">
-              <div className="flex items-center gap-4">
-                <span
-                  aria-hidden
-                  className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-tint text-brand"
-                >
-                  <Wallet className="h-7 w-7" />
-                </span>
-                <h2 className="text-h3 text-ink-strong">
-                  <Link href={articleHref} className="hover:text-brand">
-                    {t("articles.makingABudget.title")}
-                  </Link>
-                </h2>
-              </div>
-              <p className="mt-3 text-body">{t("articles.makingABudget.excerpt")}</p>
-              <p className="mt-4">
-                <Link
-                  href={articleHref}
-                  className="text-sm font-medium text-brand hover:underline"
-                >
-                  {t("readArticle")}
-                  <span aria-hidden="true"> →</span>
-                </Link>
-              </p>
-            </article>
-          </li>
+          {ARTICLE_CARDS.map(({ key, icon: Icon }) => {
+            const articleHref = localizePath(locale, ARTICLES[key].path);
+            return (
+              <li key={key}>
+                <article className="card p-6">
+                  <div className="flex items-center gap-4">
+                    <span
+                      aria-hidden
+                      className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-tint text-brand"
+                    >
+                      <Icon className="h-7 w-7" />
+                    </span>
+                    <h2 className="text-h3 text-ink-strong">
+                      <Link href={articleHref} className="hover:text-brand">
+                        {t(`articles.${key}.title`)}
+                      </Link>
+                    </h2>
+                  </div>
+                  <p className="mt-3 text-body">{t(`articles.${key}.excerpt`)}</p>
+                  <p className="mt-4">
+                    <Link
+                      href={articleHref}
+                      className="text-sm font-medium text-brand hover:underline"
+                    >
+                      {t("readArticle")}
+                      <span aria-hidden="true"> →</span>
+                    </Link>
+                  </p>
+                </article>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </LearnPageChrome>

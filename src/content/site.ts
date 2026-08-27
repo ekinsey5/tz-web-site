@@ -168,6 +168,12 @@ export const ARTICLES = {
     /** FTC source credited in the end-of-article attribution footnote. */
     sourceUrl: "https://consumer.gov/your-money/making-budget",
   },
+  firstBudget: {
+    slug: "your-first-budget",
+    path: "/learn/your-first-budget/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
 } as const;
 
 /* ------------------------------------------------------------------ */

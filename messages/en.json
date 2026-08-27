@@ -295,6 +295,10 @@
       "makingABudget": {
         "title": "How to Make a Budget — With Tether-Zero and Your AI Coach in Your Corner",
         "excerpt": "A budget is just a written plan for your money. Learn the classic steps — and how Tether-Zero and Zero, your built-in AI coach, do the heavy lifting."
+      },
+      "firstBudget": {
+        "title": "Your First Budget in 10 Minutes",
+        "excerpt": "Five quick questions — housing, transportation, debts, lifestyle — and Tether-Zero's Smart Budget Customization Wizard builds a personalized budget around your real life. No blank spreadsheet, no judgment."
       }
     }
   },
@@ -363,6 +367,53 @@
         "button": "Start your 30-day free trial"
       },
       "attribution": "Budgeting fundamentals adapted from <link>Making a Budget — consumer.gov</link>, a Federal Trade Commission resource."
+    },
+    "firstBudget": {
+      "meta": {
+        "title": "Your First Budget in 10 Minutes",
+        "description": "Tether-Zero's Smart Budget Customization Wizard turns five quick questions about your life into a personalized budget — no blank spreadsheet, no judgment."
+      },
+      "title": "Your First Budget in 10 Minutes",
+      "intro": {
+        "p1": "The hardest part of budgeting isn't the math — it's the blank page. Most tools greet you with an empty spreadsheet or a wall of generic categories and wish you luck. So the first session becomes homework, and the budget quietly never happens.",
+        "p2": "Tether-Zero starts differently: with a short conversation. The <strong>Smart Budget Customization Wizard</strong> asks five quick questions about your life — the questions themselves take about a minute — and builds your budget around the answers. Add a few more minutes to give your first dollars a job, and you'll have a working budget in roughly the time it takes to brew a pot of coffee."
+      },
+      "whyBudgetsFail": {
+        "heading": "Why most first budgets fail before they start",
+        "p1": "Traditional budget templates drop you into about 35 ready-made categories, most of which have nothing to do with your life. If you don't own a car, why is there a category for oil changes? Before you've budgeted a single dollar, you're doing chores — deleting, renaming, second-guessing.",
+        "p2": "There's a quieter problem too: entering your debts into a cold, clinical form can feel like being graded. Plenty of people abandon setup right there. Tether-Zero's wizard was designed to remove both failure points — it only creates what matches your answers, and it talks about debt the way a friend would."
+      },
+      "fiveQuestions": {
+        "heading": "Five quick questions about your real life",
+        "p1": "The wizard opens with <em>“Let's build your budget”</em> and asks you to name your household. Then it gets personal, in the best way: <em>“Where do you live?”</em> Renting, paying a mortgage, owned outright, or living with family — plus which utilities you pay. Each answer quietly becomes a budget category you would otherwise have created by hand.",
+        "p2": "<em>“How do you get around?”</em> covers personal vehicle, public transit, rideshare, or bike and walking — with quick toggles for a car payment and car insurance. The wizard pays attention: mention a car payment here, and the debts step arrives with an auto loan already selected, marked “Added from your earlier answer — deselect if it doesn't apply.”",
+        "p3": "The last question, <em>“What do you spend on?”</em>, captures lifestyle — streaming, dining out, the gym. Nothing feels mandatory: every step after housing has a “Skip this step” link, and if life interrupts you mid-setup, the wizard saves your progress and greets you next time with <em>“Pick up where you left off?”</em>"
+      },
+      "noJudgment": {
+        "heading": "The step with no judgment",
+        "p1": "Between transportation and lifestyle comes the question most apps fumble: <em>“What are you working to pay off?”</em> The screen says the rest in Tether-Zero's own words: <strong>“This is what we're here to crush — no judgment.”</strong> Credit cards, student loans, personal loans, auto loans, medical debt — or simply “No debt.”",
+        "p2": "The wording is deliberate. Debt in Tether-Zero is something you crush — it's the same spirit behind the Debt Crusher payoff planner — and crushing it starts here, by giving every debt payment a home in your budget from day one instead of treating it like a confession."
+      },
+      "review": {
+        "heading": "Review everything, then “Create my budget”",
+        "p1": "Nothing is created behind your back. The review step lays out exactly which budget groups and categories your answers produced, organized and expandable, so you can look before you commit. Something off? Step back, change an answer, and the preview updates. The budget only becomes real when you tap <strong>“Create my budget.”</strong>",
+        "p2": "The result is typically a budget of 12–20 categories that actually match your life — not 35 you'll spend an evening pruning. A few essentials are always included, like Groceries and an Emergency Fund, and as the wizard itself puts it: “You can add, rename, or remove anything later.”"
+      },
+      "firstTenMinutes": {
+        "heading": "Your first ten minutes of actual budgeting",
+        "p1": "The wizard drops you straight into your new budget, and here's where the ten minutes earn their keep: giving your first dollars a job. Work down your categories in priority order — essentials first, then debt payments, then everything else — until the <strong>To Be Budgeted</strong> amount at the top reads $0. It turns green when you get there. That's zero-based budgeting: every dollar has an assignment.",
+        "p2": "If you run out of money before you run out of categories, that isn't failure — it's the most honest financial information you've had in a while. Fund what matters most; the rest waits for your next paycheck."
+      },
+      "startingPoint": {
+        "heading": "A starting point, not a contract",
+        "p1": "Your first budget is a draft, and that's the point. Over the next month you'll move money between categories, discover a bill you forgot, and fix estimates that were wrong — that's the budget getting accurate through use. Everything the wizard created can be added to, renamed, or removed. And the whole experience, down to your seeded category names, speaks English, French, and Spanish.",
+        "p2": "When you're ready to go deeper on the method itself — the classic steps, and how Zero, your built-in AI coach, helps with each one — our guide on <link>how to make a budget</link> picks up right where the wizard leaves off."
+      },
+      "cta": {
+        "heading": "Ready to see your budget in ten minutes?",
+        "body": "Start your 30-day free trial — answer five quick questions and watch Tether-Zero build a budget around your real life.",
+        "button": "Start your 30-day free trial"
+      }
     }
   },
   "Simulator": {
