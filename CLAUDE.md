@@ -45,6 +45,10 @@ There are no tests configured.
 
 `src/content/site.ts` exports a `PLACEHOLDERS` array tracking 14 items that need product-owner confirmation before launch (sign-up URLs, legal links, supported countries, cancellation policy, etc.). See README.md for the full list.
 
+### /learn article ordering
+
+The `/learn` index renders in the curated "budget journey" order defined by `LEARN_JOURNEY` in `src/content/site.ts` (stages → ordered article keys; stage headings come from `Learn.stages.*` in `messages/*.json`). Every key in `ARTICLES` must appear exactly once in `LEARN_JOURNEY` — a build-time guard fails `next build` otherwise. When adding an article, place its key in the journey deliberately (see `.agents/plans/blog-grid-and-ordering.md` for stage definitions) and add its icon to `ICONS` in `LearnIndexPage.tsx`. Order test: `test/learn-journey.test.mjs` (`npm test`).
+
 ### Public assets
 
 - `public/fonts/` — Self-hosted Inter woff2 (weights 400/500/600/700)
