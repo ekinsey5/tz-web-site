@@ -230,6 +230,48 @@ export const ARTICLES = {
   },
 } as const;
 
+/**
+ * Curated "budget journey" order for the /learn index. Stages render in
+ * array order with a heading from messages.Learn.stages.<stage>; articles
+ * render in array order within each stage. EVERY key in ARTICLES must
+ * appear exactly once across the stages — the guard below fails the build
+ * otherwise, so placing a new article here is a required publishing step.
+ */
+export const LEARN_JOURNEY = [
+  { stage: "startHere", articles: ["makingABudget"] },
+  { stage: "buildYourBudget", articles: ["firstBudget", "envelopeBudgeting", "sinkingFunds"] },
+  { stage: "monthToMonth", articles: ["irregularPaycheck", "catchOverspendingEarly"] },
+  {
+    stage: "crushDebt",
+    articles: ["payOffDebtFaster", "snowflakePayments", "canIAffordThis", "windfallInterceptor"],
+  },
+  { stage: "coachRefine", articles: ["aiFinancialCoach"] },
+] as const satisfies ReadonlyArray<{
+  stage: string;
+  articles: ReadonlyArray<keyof typeof ARTICLES>;
+}>;
+
+/** Throws (failing the build) unless `journey` covers `keys` exactly once each. */
+export function assertJourneyCovers(
+  journey: ReadonlyArray<{ stage: string; articles: ReadonlyArray<string> }>,
+  keys: ReadonlyArray<string>,
+): void {
+  const flat = journey.flatMap((s) => s.articles);
+  const duplicates = flat.filter((k, i) => flat.indexOf(k) !== i);
+  const missing = keys.filter((k) => !flat.includes(k));
+  const unknown = flat.filter((k) => !keys.includes(k as (typeof keys)[number]));
+  if (duplicates.length || missing.length || unknown.length) {
+    throw new Error(
+      `LEARN_JOURNEY must list every ARTICLES key exactly once.` +
+        (missing.length ? ` Missing: ${missing.join(", ")}.` : "") +
+        (unknown.length ? ` Unknown: ${unknown.join(", ")}.` : "") +
+        (duplicates.length ? ` Duplicated: ${duplicates.join(", ")}.` : ""),
+    );
+  }
+}
+
+assertJourneyCovers(LEARN_JOURNEY, Object.keys(ARTICLES));
+
 /* ------------------------------------------------------------------ */
 /* Footer — labels live in messages.Footer; hrefs stay here            */
 /* ------------------------------------------------------------------ */
