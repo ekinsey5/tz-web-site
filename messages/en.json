@@ -288,6 +288,7 @@
     "heading": "Guides for getting to zero",
     "subheading": "Practical, step-by-step guides to budgeting and debt payoff — and how Tether-Zero and your AI coach handle the mechanics for you.",
     "readArticle": "Read the article",
+    "step": "Step {number}",
     "stages": {
       "startHere": "Start Here",
       "getSetUp": "Get Set Up",

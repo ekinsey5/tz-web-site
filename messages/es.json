@@ -288,6 +288,7 @@
     "heading": "Guías para llegar a cero",
     "subheading": "Guías prácticas, paso a paso, sobre presupuesto y pago de deudas — y cómo Tether-Zero y tu coach de IA se encargan de la mecánica por ti.",
     "readArticle": "Leer el artículo",
+    "step": "Paso {number}",
     "stages": {
       "startHere": "Empieza aquí",
       "getSetUp": "Deja todo listo",

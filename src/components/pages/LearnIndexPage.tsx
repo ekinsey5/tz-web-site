@@ -44,6 +44,11 @@ const ICONS: Record<keyof typeof ARTICLES, LucideIcon> = {
   moneyStory: BookOpen,
 };
 
+/** 1-based journey step number per article key, derived from the manifest order. */
+const STEP_NUMBERS = new Map(
+  LEARN_JOURNEY.flatMap((s) => s.articles).map((key, i) => [key, i + 1]),
+);
+
 /** Listing page for the /learn section, shared by the (en) and [locale] routes. */
 export async function LearnIndexPage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "Learn" });
@@ -76,11 +81,17 @@ export async function LearnIndexPage({ locale }: { locale: Locale }) {
                         >
                           <Icon className="h-7 w-7" />
                         </span>
-                        <h3 className="text-h3 text-ink-strong">
-                          <Link href={articleHref} className="hover:text-brand">
-                            {t(`articles.${key}.title`)}
-                          </Link>
-                        </h3>
+                        <div>
+                          <p className="text-xs font-semibold uppercase tracking-wide text-brand">
+                            {/* Key always present: the map is built from the same manifest. */}
+                            {t("step", { number: STEP_NUMBERS.get(key)! })}
+                          </p>
+                          <h3 className="mt-1 text-h3 text-ink-strong">
+                            <Link href={articleHref} className="hover:text-brand">
+                              {t(`articles.${key}.title`)}
+                            </Link>
+                          </h3>
+                        </div>
                       </div>
                       <p className="mt-3 line-clamp-3 text-body">{t(`articles.${key}.excerpt`)}</p>
                       {/* Redundant with the title link; hidden from AT so each card
