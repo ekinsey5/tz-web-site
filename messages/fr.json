@@ -352,6 +352,10 @@
         "title": "Faites entrer votre argent dans Tether-Zero : connexion bancaire, importation de fichiers et catégorisation automatique",
         "excerpt": "Un budget ne pilote que ce qu’il voit. Trois façons de faire entrer vos transactions dans Tether-Zero — connexion bancaire sécurisée via Plaid, importation CSV/OFX et catégorisation Smart Match — plus le flux de vérification qui vous laisse aux commandes."
       },
+      "budgetWithPartner": {
+        "title": "Le budget est un sport d’équipe : gérer un seul budget en foyer",
+        "excerpt": "La plupart des disputes d’argent sont des disputes d’information. Mettez-vous plutôt tous les deux sur le même budget : les foyers Tether-Zero partagent un seul jeu de chiffres, avec des rôles Administrateur, Éditeur et Lecteur — et personne ne débat de mémoire."
+      },
       "spendingTags": {
         "title": "Au-delà des catégories : répondez à « Combien ont vraiment coûté les vacances ? » avec les étiquettes",
         "excerpt": "Des vacances s’éparpillent entre épicerie, essence, restaurants et hébergement. Les étiquettes rassemblent les morceaux — et Zero les additionne — pour que « combien ça a coûté ? » ait enfin une réponse."
@@ -949,6 +953,47 @@
       "cta": {
         "heading": "Ouvrez les portes",
         "body": "Commencez votre essai gratuit de 30 jours, connectez un compte bancaire ou importez votre premier fichier, et regardez votre budget se remplir de votre vraie vie. La mise en place prend quelques minutes ; la saisie économisée dure pour toujours.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "budgetWithPartner": {
+      "meta": {
+        "title": "Le budget est un sport d’équipe",
+        "description": "Un seul budget pour tout le foyer : invitez votre partenaire, choisissez son rôle — Administrateur, Éditeur ou Lecteur — et partagez les mêmes chiffres réels."
+      },
+      "title": "Le budget est un sport d’équipe : gérer un seul budget en foyer",
+      "intro": {
+        "p1": "La plupart des disputes d’argent ne portent pas vraiment sur l’argent — elles portent sur l’information. Deux personnes, deux applications bancaires, deux registres mentaux, et un rapprochement mensuel fait de mémoire à la table de la cuisine. Quand les faits vivent à des endroits différents, chaque conversation commence par établir ce qui est vrai avant de pouvoir discuter de quoi faire.",
+        "p2": "Tether-Zero est construit foyer d’abord, précisément pour fermer cet écart. Le budget, les comptes, les dettes et les objectifs n’appartiennent pas à un identifiant — ils appartiennent au <strong>foyer</strong>, et chaque membre voit la même image vivante. Mêmes catégories, mêmes soldes, mêmes barres de progression — mis à jour pour tout le monde dès que quelque chose change. Faites entrer votre partenaire, et « établir les faits » cesse d’être une conversation. C’est simplement l’écran que vous regardez à deux."
+      },
+      "oneBudget": {
+        "heading": "Un seul budget, vos deux noms dessus",
+        "p1": "Partager un foyer, c’est partager tout ce qui compte : les mêmes catégories, les mêmes soldes de comptes, la même Date sans dette. Quand l’un de vous catégorise une transaction ou déplace de l’argent entre les enveloppes, l’autre le voit — pas d’export, pas de captures d’écran, pas de « attends, c’est quel chiffre le bon ? ». Toute la surface de l’application, de la page budget au tableau de bord d’analyses, lit le foyer, pas l’individu. Les objectifs financés ensemble, les dettes écrasées ensemble, le tableau de bord consulté ensemble — un seul et même registre.",
+        "p2": "Cela change la texture des conversations d’argent. Au lieu de comparer des souvenirs, vous pointez le même graphique. Au lieu de demander à votre partenaire ce qu’il a dépensé, vous avez tous les deux vu l’enveloppe épicerie se vider en temps réel. Les désaccords ne disparaissent pas — mais ils partent de preuves partagées, et c’est l’essentiel de la bataille."
+      },
+      "roles": {
+        "heading": "Trois rôles, des frontières honnêtes",
+        "p1": "Tout le monde n’a pas besoin des mêmes clés. Tether-Zero propose trois rôles. L’<strong>Administrateur</strong> a le contrôle complet, y compris inviter et retirer des membres — la personne qui crée le foyer commence Administrateur. L’<strong>Éditeur</strong> fait tout le travail du quotidien : budgéter, ajouter des comptes, saisir des transactions, gérer dettes et objectifs — tout sauf gérer les membres. Le <strong>Lecteur</strong> voit tout et ne change rien.",
+        "p2": "Le rôle de Lecteur est discrètement le plus polyvalent. Il convient au proche qui veut de la visibilité sans responsabilité, au complice qui encourage votre remboursement, même à un coach financier à qui vous demandez un regard sur votre plan. Et les frontières sont appliquées, pas seulement suggérées : la boîte d’invitation énonce l’accès de chaque rôle en termes clairs, et l’application s’y tient partout — y compris Zero, le coach IA, qui ajuste ce qu’il propose à ce que votre rôle peut réellement faire."
+      },
+      "inviting": {
+        "heading": "L’invitation prend une minute",
+        "p1": "Ajouter votre partenaire est une course de page de réglages, pas un projet. Ouvrez la page <strong>Membres</strong> de votre foyer, choisissez « Inviter un membre », saisissez son courriel et choisissez son rôle. La boîte de dialogue décrit ce que chaque rôle peut faire à l’endroit même où vous le choisissez : personne ne devine ce qu’il confie. Il reçoit un courriel avec un lien sécurisé ; en cliquant, il arrive sur une page d’acceptation qui fonctionne qu’il ait déjà un compte Tether-Zero ou qu’il le crée sur-le-champ.",
+        "p2": "La mécanique est pensée pour la vraie vie. Chaque lien d’invitation est à usage unique et expire après 72 heures — un courriel qui traîne dans une boîte de réception n’est donc pas une faille permanente — et vous pouvez renvoyer ou révoquer une invitation en attente à tout moment. Un foyer accueille jusqu’à cinq membres, et la page Membres affiche la capacité directement à l’écran."
+      },
+      "changeAndLeave": {
+        "heading": "Les gens changent ; le budget survit",
+        "p1": "Les rôles ne sont pas des tatouages. Un Administrateur peut changer le rôle de n’importe quel membre depuis la même page Membres — promouvoir votre partenaire Administrateur, redescendre un coach d’Éditeur à Lecteur quand l’accompagnement se termine. Retirer un membre révoque son accès immédiatement, mais ne supprime rien : le budget, les comptes et l’historique du foyer restent exactement tels quels.",
+        "p2": "Partir fonctionne pareil, en sens inverse — vous vous retirez et le foyer continue pour les autres. Un seul garde-fou : le dernier Administrateur ne peut pas partir sans promouvoir quelqu’un d’abord, pour qu’un foyer ne soit jamais orphelin. C’est le même principe partout : l’accès doit correspondre à votre vie d’aujourd’hui, et le modifier ne doit jamais mettre en danger le registre commun."
+      },
+      "teamPlays": {
+        "heading": "Des tactiques pour le jeu à deux",
+        "p1": "La mise en place prend quelques minutes ; le bénéfice vient de l’usage. La tactique qui compte le plus est le point hebdomadaire : dix minutes, le même écran, le budget parcouru ensemble. Si vous êtes tous deux Éditeurs, catégorisez chacun vos dépenses au fil de l’eau — Smart Match apprend de vous deux, et personne n’hérite du retard de l’autre. Et quand une décision dépasse une enveloppe, <link2>demandez à Zero ensemble</link2> — le coach répond à partir de vos chiffres communs.",
+        "p2": "Si vous débutez, faites la première construction en duo : <link>montez votre premier budget</link> à deux, parce que la personne qui aide à répartir les dollars est celle qui défendra le plan ensuite. Un budget, deux paires d’yeux, aucune version parallèle de la vérité. C’est ça, le sport d’équipe — et gagner ensemble est nettement plus agréable."
+      },
+      "cta": {
+        "heading": "Faites entrer votre partenaire",
+        "body": "Commencez votre essai gratuit de 30 jours, créez votre foyer et envoyez l’invitation ce soir. La première conversation budget devant les mêmes chiffres aura une autre saveur — la bonne.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     },

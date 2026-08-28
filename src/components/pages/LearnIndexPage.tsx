@@ -12,6 +12,7 @@ import {
   Snowflake,
   Tag,
   Target,
+  Users,
   Wallet,
   Wand2,
   type LucideIcon,
@@ -38,6 +39,7 @@ const ICONS: Record<keyof typeof ARTICLES, LucideIcon> = {
   goalsAndDebt: Target,
   connectYourBank: Landmark,
   spendingTags: Tag,
+  budgetWithPartner: Users,
 };
 
 /** Listing page for the /learn section, shared by the (en) and [locale] routes. */

@@ -352,6 +352,10 @@
         "title": "Get Your Money Into Tether-Zero: Bank Linking, File Imports, and Auto-Categorization",
         "excerpt": "A budget can only steer what it can see. Three ways to get your transactions into Tether-Zero — secure Plaid bank linking, CSV/OFX file imports, and Smart Match auto-categorization — plus the review flow that keeps you in charge of all of it."
       },
+      "budgetWithPartner": {
+        "title": "Budgeting Is a Team Sport: Running One Budget as a Household",
+        "excerpt": "Most money fights are information fights. Put both of you on the same budget instead: Tether-Zero households share one set of numbers, with Admin, Editor, and Viewer roles so everyone gets the right keys — and nobody argues from memory."
+      },
       "spendingTags": {
         "title": "Beyond Categories: Answer “What Did the Vacation Actually Cost?” with Tags",
         "excerpt": "A vacation scatters across groceries, gas, dining, and lodging. Tags collect the scattered pieces — and Zero totals them — so “what did it cost?” finally has an answer."
@@ -949,6 +953,47 @@
       "cta": {
         "heading": "Open the doors",
         "body": "Start your 30-day free trial, link a bank account or import your first file, and watch your budget fill with your real life. The setup takes minutes; the typing it saves lasts forever.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "budgetWithPartner": {
+      "meta": {
+        "title": "Budgeting Is a Team Sport",
+        "description": "Run one budget as a household in Tether-Zero: invite your partner by email, pick Admin, Editor, or Viewer roles, and see the same real numbers together."
+      },
+      "title": "Budgeting Is a Team Sport: Running One Budget as a Household",
+      "intro": {
+        "p1": "Most money arguments aren't really about money — they're about information. Two people, two banking apps, two mental ledgers, and a monthly reconciliation performed from memory at the kitchen table. When the facts live in different places, every conversation starts with establishing what's true before anyone can discuss what to do about it.",
+        "p2": "Tether-Zero is built household-first to close exactly that gap. The budget, the accounts, the debts, and the goals don't belong to a login — they belong to the <strong>household</strong>, and every member sees the same living picture. Same categories, same balances, same progress bars — updated for everyone the moment anything changes. Bring your partner in, and establishing the facts stops being a conversation. It's just the screen you're both looking at."
+      },
+      "oneBudget": {
+        "heading": "One budget, both names on it",
+        "p1": "Share a household and you share everything that matters: the same categories, the same account balances, the same Debt Free Date. When one of you categorizes a transaction or moves money between envelopes, the other sees it — no exporting, no screenshots, no “wait, which number is right?” The app's whole surface, from the budget page to the insights dashboard, reads from the household, not the individual. Goals you fund together, debts you're crushing together, the dashboard you check together — all of it one record.",
+        "p2": "That changes the texture of money conversations. Instead of comparing recollections, you point at the same chart. Instead of asking your partner what they spent, you both watched the grocery envelope drain in real time. Disagreements don't vanish — but they get to start from shared evidence, which is most of the battle."
+      },
+      "roles": {
+        "heading": "Three roles, honest boundaries",
+        "p1": "Not everyone in a household needs the same keys. Tether-Zero has three roles. An <strong>Admin</strong> has full control, including inviting and removing members — whoever creates the household starts as its Admin. An <strong>Editor</strong> can do all the day-to-day work: budget, add accounts, log transactions, manage debts and goals — everything except manage members. A <strong>Viewer</strong> sees everything and changes nothing.",
+        "p2": "The Viewer role is quietly the most versatile. It fits the family member who wants visibility without responsibility, the accountability buddy cheering on your payoff, even a financial coach you've asked to look over your plan. And the boundaries are enforced, not implied: the invite dialog states each role's access in plain terms, and the app holds to it everywhere — including Zero, the AI coach, which tailors what it offers to what your role can actually do."
+      },
+      "inviting": {
+        "heading": "The invite takes a minute",
+        "p1": "Adding your partner is a settings-page errand, not a project. Open <strong>Settings → Household → Members</strong>, choose <strong>Invite Member</strong>, enter their email, and pick their role. The dialog spells out what each role can do right where you choose it, so nobody is guessing what they're handing over. They get an email with a secure link; clicking it lands on an accept page that works whether they already have a Tether-Zero account or are creating one on the spot.",
+        "p2": "The mechanics are built for real life. Each invite link is single-use and expires after 72 hours — so a stale email sitting in an inbox isn't a standing security hole — and you can resend or revoke a pending invitation any time. Households hold up to five members, and the Members page shows the capacity right on the screen, so there's no guessing."
+      },
+      "changeAndLeave": {
+        "heading": "People change; the budget survives",
+        "p1": "Roles aren't tattoos. An Admin can change any member's role from the same Members page — promote your partner to Admin, move a coach from Editor down to Viewer when the engagement ends. Removing a member revokes their access immediately, but deletes nothing: the household's budget, accounts, and history stay exactly as they were.",
+        "p2": "Leaving works the same way in reverse — walk away, and the household continues for everyone else. The one guardrail: the last Admin can't leave without first promoting someone, so a household is never orphaned. It's the same principle throughout: access should match your life today, and changing it should never put the shared record at risk."
+      },
+      "teamPlays": {
+        "heading": "Plays for the two-player game",
+        "p1": "The setup takes minutes; the payoff comes from how you use it. The play that matters most is the weekly check-in: ten minutes, same screen, walking the budget together. If you're both Editors, categorize your own spending as it happens — Smart Match learns from each of you, and nobody inherits the other person's backlog. And when a decision is bigger than an envelope, <link2>ask Zero together</link2> — the coach answers from your shared numbers.",
+        "p2": "If you're just starting, do the first build as a pair: <link>set up your first budget</link> with both of you in the room, because the person who helps assign the dollars is the person who defends the plan later. One budget, two sets of eyes, no competing versions of the truth. That's the team sport — and it's a lot more fun to win together."
+      },
+      "cta": {
+        "heading": "Bring your partner in",
+        "body": "Start your 30-day free trial, create your household, and send the invite tonight. The first budget conversation you have over the same numbers will feel different — in the best way.",
         "button": "Start your 30-day free trial"
       }
     },

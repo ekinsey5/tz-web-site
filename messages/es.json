@@ -352,6 +352,10 @@
         "title": "Lleva tu dinero a Tether-Zero: conexión bancaria, importación de archivos y categorización automática",
         "excerpt": "Un presupuesto solo dirige lo que ve. Tres formas de llevar tus transacciones a Tether-Zero — conexión bancaria segura con Plaid, importación CSV/OFX y categorización Smart Match — más el flujo de revisión que te deja al mando."
       },
+      "budgetWithPartner": {
+        "title": "El presupuesto es un deporte de equipo: un solo presupuesto para todo el hogar",
+        "excerpt": "La mayoría de las peleas por dinero son peleas por información. Mejor pongan a los dos en el mismo presupuesto: los hogares de Tether-Zero comparten un solo juego de números, con roles de Administrador, Editor y Lector — y nadie discute de memoria."
+      },
       "spendingTags": {
         "title": "Más allá de las categorías: responde «¿Cuánto costaron realmente las vacaciones?» con etiquetas",
         "excerpt": "Unas vacaciones se dispersan entre supermercado, gasolina, restaurantes y alojamiento. Las etiquetas reúnen los pedazos — y Zero los suma — para que «¿cuánto costó?» por fin tenga respuesta."
@@ -949,6 +953,47 @@
       "cta": {
         "heading": "Abre las puertas",
         "body": "Comienza tu prueba gratuita de 30 días, vincula una cuenta bancaria o importa tu primer archivo, y mira tu presupuesto llenarse con tu vida real. La configuración toma minutos; el tecleo que te ahorras dura para siempre.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "budgetWithPartner": {
+      "meta": {
+        "title": "El presupuesto es un deporte de equipo",
+        "description": "Un solo presupuesto para todo el hogar: invita a tu pareja por correo, elige su rol — Administrador, Editor o Lector — y compartan los mismos números reales."
+      },
+      "title": "El presupuesto es un deporte de equipo: un solo presupuesto para todo el hogar",
+      "intro": {
+        "p1": "La mayoría de las peleas por dinero no son realmente por dinero — son por información. Dos personas, dos aplicaciones bancarias, dos libretas mentales, y una conciliación mensual hecha de memoria en la mesa de la cocina. Cuando los hechos viven en lugares distintos, cada conversación empieza por establecer qué es verdad antes de poder discutir qué hacer.",
+        "p2": "Tether-Zero está construido con el hogar primero, precisamente para cerrar esa brecha. El presupuesto, las cuentas, las deudas y las metas no pertenecen a un usuario — pertenecen al <strong>hogar</strong>, y cada miembro ve la misma imagen viva. Mismas categorías, mismos saldos, mismas barras de progreso — actualizadas para todos en cuanto algo cambia. Trae a tu pareja, y «establecer los hechos» deja de ser una conversación. Es simplemente la pantalla que ambos están mirando."
+      },
+      "oneBudget": {
+        "heading": "Un solo presupuesto, con los dos nombres",
+        "p1": "Compartir un hogar es compartir todo lo que importa: las mismas categorías, los mismos saldos, la misma Fecha libre de deudas. Cuando uno categoriza una transacción o mueve dinero entre sobres, el otro lo ve — sin exportar, sin capturas de pantalla, sin «espera, ¿cuál número es el bueno?». Toda la superficie de la aplicación, de la página del presupuesto al panel de análisis, lee del hogar, no del individuo. Las metas que financian juntos, las deudas que aplastan juntos, el panel que revisan juntos — todo un mismo registro.",
+        "p2": "Eso cambia la textura de las conversaciones de dinero. En vez de comparar recuerdos, señalan el mismo gráfico. En vez de preguntarle a tu pareja qué gastó, ambos vieron el sobre del supermercado vaciarse en tiempo real. Los desacuerdos no desaparecen — pero empiezan desde evidencia compartida, y eso es la mayor parte de la batalla."
+      },
+      "roles": {
+        "heading": "Tres roles, límites honestos",
+        "p1": "No todos en un hogar necesitan las mismas llaves. Tether-Zero tiene tres roles. El <strong>Administrador</strong> tiene control total, incluido invitar y eliminar miembros — quien crea el hogar empieza como Administrador. El <strong>Editor</strong> hace todo el trabajo del día a día: presupuestar, agregar cuentas, registrar transacciones, gestionar deudas y metas — todo excepto gestionar miembros. El <strong>Lector</strong> lo ve todo y no cambia nada.",
+        "p2": "El rol de Lector es discretamente el más versátil. Le queda al familiar que quiere visibilidad sin responsabilidad, al cómplice que anima tu pago de deudas, incluso a un coach financiero al que le pediste revisar tu plan. Y los límites se aplican, no se sugieren: el diálogo de invitación describe el acceso de cada rol en términos claros, y la aplicación lo respeta en todas partes — incluido Zero, el coach de IA, que ajusta lo que ofrece a lo que tu rol realmente puede hacer."
+      },
+      "inviting": {
+        "heading": "La invitación toma un minuto",
+        "p1": "Agregar a tu pareja es un trámite de página de configuración, no un proyecto. Abre la página de <strong>Miembros</strong> de tu hogar, elige «Invitar miembro», escribe su correo y elige su rol. El diálogo describe qué puede hacer cada rol justo donde lo eliges: nadie tiene que adivinar qué está entregando. Recibirá un correo con un enlace seguro; al hacer clic llega a una página de aceptación que funciona tanto si ya tiene cuenta de Tether-Zero como si la crea en ese momento.",
+        "p2": "La mecánica está pensada para la vida real. Cada enlace de invitación es de un solo uso y caduca a las 72 horas — un correo olvidado en una bandeja de entrada no es un agujero de seguridad permanente — y puedes reenviar o revocar una invitación pendiente cuando quieras. Un hogar admite hasta cinco miembros, y la página de Miembros muestra la capacidad ahí mismo en pantalla."
+      },
+      "changeAndLeave": {
+        "heading": "La gente cambia; el presupuesto sobrevive",
+        "p1": "Los roles no son tatuajes. Un Administrador puede cambiar el rol de cualquier miembro desde la misma página de Miembros — ascender a tu pareja a Administrador, bajar a un coach de Editor a Lector cuando termina el acompañamiento. Eliminar a un miembro revoca su acceso de inmediato, pero no borra nada: el presupuesto, las cuentas y el historial del hogar quedan exactamente igual.",
+        "p2": "Irse funciona igual, a la inversa — te retiras y el hogar continúa para los demás. Una sola barandilla: el último Administrador no puede irse sin ascender antes a alguien, para que un hogar nunca quede huérfano. Es el mismo principio en todo: el acceso debe corresponder a tu vida de hoy, y cambiarlo nunca debe poner en riesgo el registro compartido."
+      },
+      "teamPlays": {
+        "heading": "Jugadas para el juego de dos",
+        "p1": "La configuración toma minutos; el beneficio viene del uso. La jugada que más importa es la revisión semanal: diez minutos, la misma pantalla, el presupuesto recorrido juntos. Si ambos son Editores, que cada uno categorice sus gastos sobre la marcha — Smart Match aprende de los dos, y nadie hereda el atraso del otro. Y cuando una decisión es más grande que un sobre, <link2>pregúntenle a Zero juntos</link2> — el coach responde desde sus números compartidos.",
+        "p2": "Si recién empiezan, hagan la primera construcción en pareja: <link>armen su primer presupuesto</link> con los dos presentes, porque la persona que ayuda a repartir los dólares es la que después defiende el plan. Un presupuesto, dos pares de ojos, ninguna versión paralela de la verdad. Eso es el deporte de equipo — y ganar juntos es mucho más divertido."
+      },
+      "cta": {
+        "heading": "Trae a tu pareja",
+        "body": "Comienza tu prueba gratuita de 30 días, crea tu hogar y envía la invitación esta noche. La primera conversación de presupuesto frente a los mismos números se sentirá distinta — para bien.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     },

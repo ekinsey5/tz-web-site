@@ -246,6 +246,12 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-28",
   },
+  budgetWithPartner: {
+    slug: "budget-with-your-partner",
+    path: "/learn/budget-with-your-partner/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-28",
+  },
 } as const;
 
 /**
@@ -257,7 +263,7 @@ export const ARTICLES = {
  */
 export const LEARN_JOURNEY = [
   { stage: "startHere", articles: ["makingABudget"] },
-  { stage: "getSetUp", articles: ["connectYourBank"] },
+  { stage: "getSetUp", articles: ["connectYourBank", "budgetWithPartner"] },
   { stage: "buildYourBudget", articles: ["firstBudget", "envelopeBudgeting", "sinkingFunds"] },
   { stage: "monthToMonth", articles: ["irregularPaycheck", "catchOverspendingEarly", "spendingTags"] },
   {

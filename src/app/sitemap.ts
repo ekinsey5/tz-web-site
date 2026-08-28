@@ -97,6 +97,12 @@ const SPENDING_TAGS_LANGUAGES = {
   es: `${SITE_URL}/es/learn/track-spending-with-tags/`,
 };
 
+const BUDGET_WITH_PARTNER_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/budget-with-your-partner/`,
+  fr: `${SITE_URL}/fr/learn/budget-with-your-partner/`,
+  es: `${SITE_URL}/es/learn/budget-with-your-partner/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -434,6 +440,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: SPENDING_TAGS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/budget-with-your-partner/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: BUDGET_WITH_PARTNER_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/budget-with-your-partner/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: BUDGET_WITH_PARTNER_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/budget-with-your-partner/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: BUDGET_WITH_PARTNER_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,
