@@ -49,6 +49,30 @@ const CATCH_OVERSPENDING_LANGUAGES = {
   es: `${SITE_URL}/es/learn/catch-overspending-early/`,
 };
 
+const SNOWFLAKE_PAYMENTS_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/snowflake-payments/`,
+  fr: `${SITE_URL}/fr/learn/snowflake-payments/`,
+  es: `${SITE_URL}/es/learn/snowflake-payments/`,
+};
+
+const PAY_OFF_DEBT_FASTER_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/pay-off-debt-faster/`,
+  fr: `${SITE_URL}/fr/learn/pay-off-debt-faster/`,
+  es: `${SITE_URL}/es/learn/pay-off-debt-faster/`,
+};
+
+const WINDFALL_INTERCEPTOR_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/what-to-do-with-a-windfall/`,
+  fr: `${SITE_URL}/fr/learn/what-to-do-with-a-windfall/`,
+  es: `${SITE_URL}/es/learn/what-to-do-with-a-windfall/`,
+};
+
+const CAN_I_AFFORD_THIS_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/can-i-afford-this/`,
+  fr: `${SITE_URL}/fr/learn/can-i-afford-this/`,
+  es: `${SITE_URL}/es/learn/can-i-afford-this/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -218,6 +242,90 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: CATCH_OVERSPENDING_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/snowflake-payments/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SNOWFLAKE_PAYMENTS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/snowflake-payments/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SNOWFLAKE_PAYMENTS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/snowflake-payments/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SNOWFLAKE_PAYMENTS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/pay-off-debt-faster/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: PAY_OFF_DEBT_FASTER_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/pay-off-debt-faster/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: PAY_OFF_DEBT_FASTER_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/pay-off-debt-faster/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: PAY_OFF_DEBT_FASTER_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/what-to-do-with-a-windfall/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: WINDFALL_INTERCEPTOR_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/what-to-do-with-a-windfall/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: WINDFALL_INTERCEPTOR_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/what-to-do-with-a-windfall/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: WINDFALL_INTERCEPTOR_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/can-i-afford-this/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CAN_I_AFFORD_THIS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/can-i-afford-this/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CAN_I_AFFORD_THIS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/can-i-afford-this/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CAN_I_AFFORD_THIS_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

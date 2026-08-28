@@ -315,6 +315,22 @@
       "catchOverspendingEarly": {
         "title": "Detecta el sobregasto antes de que ocurra: alertas de ritmo y el medidor de ritmo",
         "excerpt": "Los presupuestos rara vez fallan de golpe — fallan en pequeños desvíos que nadie ve hasta fin de mes. El medidor Ritmo de gasto y las alertas de ritmo de Zero señalan el sobregasto a mitad de mes, cuando todavía hay tiempo de arreglarlo."
+      },
+      "snowflakePayments": {
+        "title": "El poder de los pagos adicionales: cómo $20 aquí y allá adelantan tu fecha de libertad",
+        "excerpt": "Todo el mundo conoce la bola de nieve. Su prima pequeña y pasada por alto — el pago adicional — convierte reembolsos de impuestos, trabajos extra y dinero de cumpleaños en una fecha de libertad visiblemente más cercana."
+      },
+      "payOffDebtFaster": {
+        "title": "¿Bola de nieve o avalancha? Elige tu estrategia de pago de deudas con una simulación lado a lado",
+        "excerpt": "¿Bola de nieve o avalancha? Ambas funcionan — la pregunta es cuál te lleva a cero. El Simulador de estrategia pone tu Fecha libre de deudas proyectada con cada método lado a lado, para que elijas con tus números y no con los de Internet."
+      },
+      "canIAffordThis": {
+        "title": "¿Cuánto cuesta realmente esa compra? Usa el simulador de Costo de oportunidad antes de comprar",
+        "excerpt": "Cada compra tiene dos precios: la etiqueta y lo que le hace a tu Fecha libre de deudas. Pregúntale a Zero «can I afford $400» y Tether-Zero responde con tus números reales — días de retraso e interés adicional — antes de comprar."
+      },
+      "windfallInterceptor": {
+        "title": "Qué hacer con una ganancia inesperada: cómo Tether-Zero atrapa el dinero sorpresa antes de que se esfume",
+        "excerpt": "Los reembolsos y los bonos tienen el don de disolverse en el gasto diario. El Interceptor de Zero detecta el depósito sorpresa y hace una sola pregunta, mientras aún hay tiempo: ¿debería adelantar tu fecha de libertad?"
       }
     }
   },
@@ -607,6 +623,180 @@
       "cta": {
         "heading": "Mira tu propio ritmo este mes",
         "body": "Comienza tu prueba gratuita de 30 días, configura tu presupuesto y deja que el medidor Ritmo de gasto y las alertas de ritmo de Zero monten guardia — para que el fin de mes no vuelva a sorprenderte.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "snowflakePayments": {
+      "meta": {
+        "title": "El poder de los pagos adicionales",
+        "description": "Reembolsos, bonos, dinero inesperado: en el Debt Crusher de Tether-Zero, los pagos adicionales adelantan visiblemente tu fecha de libertad."
+      },
+      "title": "El poder de los pagos adicionales: cómo $20 aquí y allá adelantan tu fecha de libertad",
+      "intro": {
+        "p1": "La estrategia bola de nieve es famosa: paga el mínimo en todo, concentra todo lo demás en una sola deuda, repite. Pero tiene una prima pequeña y pasada por alto que hace un trabajo enorme — el <strong>pago adicional</strong>. Veinte dólares por vender una lámpara vieja. Un reembolso de $75. El cheque de cumpleaños de la abuela. Dinero demasiado pequeño para sentirse estratégico — exactamente el que la mayoría de los planes desperdicia.",
+        "p2": "El Debt Crusher de Tether-Zero trata estos pagos como ciudadanos de primera: registra uno y la app te muestra — en días — cuánto antes estarás libre de deudas. Esta guía cubre qué cuenta, a dónde va el dinero, y por qué ver moverse la fecha es lo más motivador que puede hacer un presupuesto."
+      },
+      "whatCounts": {
+        "heading": "Qué cuenta como pago adicional",
+        "p1": "La app lo define en la propia página: «Un pago adicional es cualquier dinero extra e inesperado que puedes destinar a tus deudas — reembolsos de impuestos, bonificaciones, regalos. ¡Cada pago adelanta tu fecha de libertad!» La palabra clave es <em>inesperado</em>. Tu pago mensual regular ya está en el plan; un pago adicional es dinero encontrado por encima.",
+        "p2": "Eso lo separa de apretarse el cinturón. No estás recortando el supermercado para liberar $20 — estás atrapando dinero que se habría evaporado en el gasto diario y dándole una misión única con beneficio permanente."
+      },
+      "measurableTime": {
+        "heading": "Dinero pequeño, tiempo medible",
+        "p1": "Esto es lo que hace la función más que un registro: la respuesta inmediata. Aplica un pago adicional — digamos un reembolso de impuestos de $500 — y Tether-Zero recalcula todo tu plan al instante y responde en la única unidad que importa: días. En ese ejemplo, unos sesenta — dos meses más cerca de la libertad.",
+        "p2": "Cada pago de tu historial lleva su propio recibo — «45 días ahorrados» junto a uno, «12 días ahorrados» junto a otro. Pagar deudas es un juego largo, y los juegos largos se pierden por invisibles. Un número que se mueve el mismo día en que actúas es lo que te mantiene jugando."
+      },
+      "smartRouting": {
+        "heading": "Dirigido a donde más le duele a la deuda",
+        "p1": "No tienes que decidir a dónde va el dinero. Deja el destino vacío y la app lo aplica sola — el texto de ayuda lo dice claro: «Dejar vacío para aplicar automáticamente a la deuda de mayor prioridad.» Cuál sea depende de tu estrategia activa: el saldo más pequeño en Bola de nieve, la tasa de interés más cara en Avalancha.",
+        "p2": "Y ningún pago se desperdicia por un tecnicismo. Aplica $2,000 a una deuda a la que le quedan $1,500: los primeros $1,500 la liquidan y los $500 restantes pasan directo a la siguiente."
+      },
+      "freedomHorizon": {
+        "heading": "Mira avanzar tu horizonte de libertad",
+        "p1": "El beneficio aparece donde lo verás a diario. El mosaico de fecha de libertad del panel sigue tu proyección, y el Debt Crusher da el titular: «Estarás libre de deudas 14 meses antes que con pagos mínimos.» Cada pago adicional empuja ese número más lejos.",
+        "p2": "La línea de tiempo de libertad lo convierte en una barra de progreso con personalidad — vas adelantado, tantas semanas restantes — así que cada pago que registras mueve un estado que se siente. Pagar deudas deja de ser una abstracción y se vuelve una fecha en el calendario con tu nombre."
+      },
+      "findingSnowflakes": {
+        "heading": "De dónde salen los pagos adicionales",
+        "p1": "Cuando empiezas a buscar, están por todas partes: el reembolso de impuestos, el bono trimestral, el trabajo extra, los $40 de vaciar el garaje, la devolución que olvidaste. Nada de eso estaba en tu presupuesto — y precisamente por eso cada uno es un pago adicional y no una línea más.",
+        "p2": "¿Te pagan cada dos semanas? Dos veces al año el calendario te entrega un cheque completo de más — Tether-Zero incluso lo señala durante la configuración como dinero para destinar a deudas o ahorros. Un <link>tercer pago</link> completo es el mayor pago adicional que la mayoría de los hogares recibirá jamás."
+      },
+      "keepReceipts": {
+        "heading": "Guarda los recibos",
+        "p1": "Cada pago cae en el Historial de pagos adicionales — fecha, monto, deuda destino, días ahorrados — y todo el hogar puede verlo. Quienes tienen acceso de solo lectura pueden revisar el historial aunque solo los roles de editor y administrador pueden registrar o eliminar pagos: las victorias se comparten y los datos quedan limpios.",
+        "p2": "¿Registraste uno por error? Elimínalo y el impacto de cada pago restante se recalcula para que las cuentas nunca se alejen de la realidad. Números honestos, progreso visible, dinero pequeño haciendo trabajo grande — ese es todo el truco."
+      },
+      "cta": {
+        "heading": "¿Tienes $20? Empieza ahí.",
+        "body": "Comienza tu prueba gratuita de 30 días — configura tu Debt Crusher, registra tu primer pago adicional y mira avanzar tu fecha de libertad.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "payOffDebtFaster": {
+      "meta": {
+        "title": "¿Bola de nieve o avalancha?",
+        "description": "El Simulador de estrategia de Tether-Zero compara tu Fecha libre de deudas con ambos métodos, lado a lado — elige el plan que salda tus deudas más rápido."
+      },
+      "title": "¿Bola de nieve o avalancha? Elige tu estrategia de pago de deudas con una simulación lado a lado",
+      "intro": {
+        "p1": "Pregúntale a Internet cómo pagar tus deudas más rápido y caerás en medio de una discusión con una década de historia. Un bando dice que ataques primero la tasa de interés más alta, por matemáticas. El otro, que elimines primero el saldo más pequeño, por motivación. Ambos bandos tienen hojas de cálculo, historias de éxito y certeza absoluta — lo cual no te ayuda mucho cuando solo quieres un plan para empezar este mes.",
+        "p2": "Este es el secreto que esa discusión entierra: los dos métodos funcionan. La verdadera pregunta no es cuál es mejor en abstracto — es cuál te deja a <em>ti</em> libre de deudas, con tus deudas, tus tasas y tu temperamento. Esa pregunta se responde con una simulación, no con un debate, y para eso existe el <strong>Simulador de estrategia</strong> de Tether-Zero."
+      },
+      "oneEngine": {
+        "heading": "Todo plan de pago es el mismo motor",
+        "p1": "Quítale la marca y la bola de nieve y la avalancha comparten el mismo chasis. Pagas el mínimo de cada deuda, cada mes — sin excepciones; eso mantiene todo al día. Luego diriges cada dólar extra a una sola <em>deuda objetivo</em>. Cuando esa deuda muere, todo su pago pasa a la siguiente, y los pagos se acumulan como una roca que gana velocidad. La única diferencia entre los dos métodos es el orden de los objetivos.",
+        "p2": "En Tether-Zero, ese “extra” tiene nombre: tu <strong>Presupuesto mensual de deuda</strong> — el monto que tu hogar destina al pago de deudas por encima de los mínimos. Defínelo una vez en Destructor de deudas, y todas las proyecciones que verás se construyen a partir de él. Es el acelerador del motor: las estrategias deciden a dónde va el dinero; el Presupuesto mensual de deuda decide con cuánta fuerza empuja."
+      },
+      "avalanche": {
+        "heading": "La avalancha: primero el interés más alto",
+        "p1": "El <strong>Método avalancha</strong> ordena tus deudas objetivo por tasa de interés, de mayor a menor. Una tarjeta al 27 % recibe cada dólar disponible antes de que un préstamo de auto al 6 % vea un centavo más allá del mínimo. La lógica es pura aritmética: la tasa más alta es donde tu dinero se desangra más rápido; detener esa fuga primero paga el menor interés total — y suele ser la ruta más rápida a cero en dinero contante.",
+        "p2": "La trampa es emocional, no matemática. Si tu deuda con la tasa más alta es también tu saldo más grande, puedes estar echándole dinero un año entero antes de celebrar el cierre de una sola cuenta. Hay quien funciona perfectamente a pura aritmética. Muchos no — y un plan que abandonas en el mes siete no te ahorra nada."
+      },
+      "snowball": {
+        "heading": "La bola de nieve: primero el saldo más pequeño",
+        "p1": "El <strong>Método bola de nieve</strong> ignora las tasas de interés y ordena tus deudas por saldo, del más pequeño al más grande. Esa tarjeta de tienda de $400 va primero — no porque te cueste mucho, sino porque puede estar <em>saldada</em> en un mes o dos. Cada deuda eliminada es una victoria real y visible: una factura menos, un acreedor menos, la prueba de que el plan funciona.",
+        "p2": "Sí, suele costar algo más de interés total que la avalancha. Lo que compra con ese dinero es impulso — y pagar deudas es un juego de años donde el impulso suele ser el recurso más escaso. La mejor estrategia sobre el papel no vale nada si la abandonas, y las victorias rápidas mantienen a la gente en el juego."
+      },
+      "simulator": {
+        "heading": "Deja de adivinar: tus dos futuros lado a lado",
+        "p1": "Aquí es donde termina la discusión y mandan tus números. En el panel de Destructor de deudas, el <strong>Simulador de estrategia</strong> muestra el <strong>Método bola de nieve</strong> y el <strong>Método avalancha</strong> lado a lado — cada uno con tu <strong>Fecha libre de deudas</strong> proyectada y los meses restantes, calculados con tus deudas reales y tu Presupuesto mensual de deuda. A veces la brecha entre ambos son años; muchas veces es más pequeña de lo que sugieren los gritos de Internet. En cualquier caso, eliges entre dos fechas reales, no entre dos filosofías.",
+        "p2": "Mueve el interruptor y todo el plan se recalcula al instante — orden de pago, deuda objetivo, proyecciones, todo. El simulador solo pide dos cosas: al menos dos deudas para comparar y un Presupuesto mensual de deuda para ajustar el acelerador. ¿Quieres ver la comparación antes de registrarte? Hay un <link>simulador de muestra en nuestra página de inicio</link> para probar en diez segundos."
+      },
+      "commit": {
+        "heading": "Comprométanse como hogar — y cambien con libertad",
+        "p1": "Pagar deudas es un deporte de equipo, así que la estrategia elegida se comparte con todo el hogar: una persona mueve el interruptor y el panel de todos refleja el mismo plan. Quienes tienen acceso de solo lectura ven la estrategia y sus proyecciones sin poder cambiarlas — todos ven la misma Fecha libre de deudas, y nadie puede reacomodar el plan en silencio.",
+        "p2": "Y la elección no es un tatuaje. Empieza con la bola de nieve para un par de victorias rápidas y cambia a la avalancha cuando el impulso sea real — el plan se recalcula en el momento. Si aún no tienes un presupuesto, <link2>empieza por ahí</link2>: el Presupuesto mensual de deuda necesita un presupuesto alrededor para ser honesto. Luego elige una fecha, elige la estrategia que te lleve entero, y deja rodar la roca."
+      },
+      "cta": {
+        "heading": "Dos fechas. Elige la que vas a alcanzar.",
+        "body": "Comienza tu prueba gratuita de 30 días, agrega tus deudas, define tu Presupuesto mensual de deuda — y deja que el Simulador de estrategia te muestre tu Fecha libre de deudas con ambas estrategias antes de comprometerte.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "canIAffordThis": {
+      "meta": {
+        "title": "¿Cuánto cuesta realmente esa compra?",
+        "description": "Pregúntale a Zero si puedes permitirte una compra: días añadidos a tu Fecha libre de deudas e interés adicional, calculados antes de comprar."
+      },
+      "title": "¿Cuánto cuesta realmente esa compra? Usa el simulador de Costo de oportunidad antes de comprar",
+      "intro": {
+        "p1": "La chaqueta dice $400 y la página de pago está de acuerdo. Pero cuando estás pagando deudas, la etiqueta es solo la primera cuota. Cada dólar que gastas es un dólar que nunca llega a tus saldos — y el interés sigue corriendo sobre todo lo que queda atrás. El precio real de una compra incluye las semanas extra de pagos que firma por ti en silencio.",
+        "p2": "La mayoría sentimos esa verdad como una punzada vaga al pagar. Tether-Zero convierte la punzada en un número. Pregúntale a <strong>Zero</strong>, el coach financiero de IA integrado en la aplicación, si puedes permitirte una compra, y el simulador de <strong>Costo de oportunidad</strong> responde con tus cálculos reales de pago: cuánto retrocede tu <strong>Fecha libre de deudas</strong> y cuánto interés adicional se suma. No es un sermón — es un recibo, antes de comprar."
+      },
+      "truePrice": {
+        "heading": "La etiqueta no es todo el precio",
+        "p1": "Los economistas lo llaman costo de oportunidad: el costo real de algo es aquello a lo que renuncias para obtenerlo. Cuando sigues un plan de pago en el <em>Destructor de deudas</em>, renuncias a tu progreso. El dinero que pudo reducir un saldo este mes se queda en la tarjeta, y el contador de intereses corre un poco más en cada deuda pendiente. Por eso Tether-Zero presenta el <strong>costo real</strong> de una compra: el precio de etiqueta más el interés adicional que genera — el número que la tienda nunca imprime.",
+        "p2": "Imagina una compra de $500 en una tarjeta que estás pagando activamente. Según tus saldos, tasas y presupuesto mensual de deuda, ese único gasto puede retrasar tu Fecha libre de deudas unas tres semanas y añadir cerca de $48 en intereses — un costo real cercano a $548. Tus números serán distintos, y ese es justamente el punto: los consejos genéricos no pueden responder «¿puedo permitírmelo?». Solo tu propio calendario de amortización puede."
+      },
+      "askZero": {
+        "heading": "Solo pregúntale a Zero",
+        "p1": "No hay formulario que buscar ni calculadora escondida en un menú. Abre <strong>Zero</strong> — el coach está a un toque desde cualquier parte de la aplicación — y haz la pregunta con un monto usando la frase en inglés «can I afford $400»: esa frase exacta es la que dispara la simulación. En cuanto Zero la detecta, Tether-Zero inicia en segundo plano un cálculo real sobre tu plan de pago mientras Zero lee el resto de tu mensaje.",
+        "p2": "Dos cosas ocurren en paralelo. Zero conversa la decisión con el contexto completo de tus finanzas — esa conversación es acompañamiento, no aritmética. Los números precisos vienen del simulador, que recorre tu calendario de amortización dos veces: una tal como está hoy y otra con la compra añadida a tu deuda prioritaria. El mismo motor, la misma <link2>estrategia de pago</link2> que ya elegiste — bola de nieve o avalancha — y las mismas tasas promocionales si una tarjeta está en período promocional. La diferencia entre esos dos futuros es la respuesta honesta."
+      },
+      "readingCard": {
+        "heading": "Cómo leer la tarjeta de Costo de oportunidad",
+        "p1": "Un momento después aparece en el chat una tarjeta etiquetada <strong>Costo de oportunidad</strong>. Su diseño es deliberadamente directo: «SI GASTAS $400» arriba, luego la cifra principal — cuántos días se retrasa tu fecha, bajo el rótulo «FECHA LIBRE DE DEUDAS RETRASADA» — seguida de tu <strong>Nueva fecha sin deuda</strong> y el <strong>Interés adicional</strong> que costaría la compra. Dos datos, cero regaños.",
+        "p2": "Medir en días es lo que hace que la tarjeta funcione. «$31 de interés extra» se ignora encogiéndose de hombros; «dieciocho días más de pagos», no — porque el tiempo es exactamente lo que intentas recuperar. La tarjeta convierte un cambio de saldo invisible en calendario, una unidad que tu instinto ya entiende."
+      },
+      "twoButtons": {
+        "heading": "Dos botones honestos",
+        "p1": "Bajo los números hay dos botones, y ninguno es un sermón. <strong>«Continuar con la compra»</strong> hace exactamente lo que dice: la simulación nunca tocó tus datos, nada cambia en tu presupuesto y Zero simplemente registra tu decisión. A veces dieciocho días es un intercambio justo por una chaqueta que usarás cinco inviernos. El producto es claridad, no juicio.",
+        "p2": "El otro botón le da dientes de verdad a la gratificación diferida: <strong>«Redirigir $400 a deuda»</strong>. Decide que la compra no vale la pena, elige qué cuenta de deuda debe recibir el dinero, y Tether-Zero lo hace concreto — el monto se aplica como un <link>pago adicional</link> único contra el saldo que elijas. El dinero que casi gastas empieza a acercar tu Fecha libre de deudas en lugar de alejarla."
+      },
+      "whenToRun": {
+        "heading": "Cuándo correr los números",
+        "p1": "El simulador brilla en las compras que los hogares de verdad debaten. Un electrodoméstico de $2,000 rara vez es un impulso — es una negociación. En lugar de intercambiar sensaciones sobre la mesa, corre la simulación y pon la tarjeta entre los dos: esto es lo que le hace a nuestra fecha. La pareja no tiene que estar de acuerdo con la compra, pero por fin estarán en desacuerdo sobre los mismos números.",
+        "p2": "Para todo lo demás, conviértelo en reflejo por encima de un umbral que tú elijas — $100, $200, según los nervios de tu presupuesto. La meta nunca fue dejar de comprar; es dejar de comprar a ciegas. Algunos días la respuesta será «redirigir», y tu yo futuro gana. Otros días será «continuar» — y quizá sea la compra más tranquila de tu año, porque por una vez pagaste conociendo el precio completo."
+      },
+      "cta": {
+        "heading": "Conoce el precio completo antes de pagarlo",
+        "body": "Comienza tu prueba gratuita de 30 días, configura el Destructor de deudas y pregúntale a Zero cuánto cuesta esa compra que tienes en la mira — la respuesta tarda segundos y es solo tuya.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "windfallInterceptor": {
+      "meta": {
+        "title": "Qué hacer con una ganancia inesperada",
+        "description": "Llega un bono y desaparece. El Interceptor de Tether-Zero detecta depósitos sorpresa y ofrece adelantar tu fecha de libertad — con un solo toque."
+      },
+      "title": "Qué hacer con una ganancia inesperada: cómo Tether-Zero atrapa el dinero sorpresa antes de que se esfume",
+      "intro": {
+        "p1": "Llega un reembolso de impuestos. Se acredita un bono. Un familiar se pone generoso, un antiguo empleador envía un último cheque, el seguro por fin paga. Pregúntale a ese mismo hogar dos meses después qué hizo el dinero y la respuesta suele ser un encogimiento de hombros: nadie lo derrochó en un yate y, sin embargo, el saldo ya no está. Las ganancias inesperadas rara vez son robadas — son absorbidas.",
+        "p2": "Tether-Zero se niega a dejar que eso pase en silencio. La aplicación vigila tus cuentas sincronizadas en busca de depósitos que no se parecen a tus ingresos normales y, cuando llega uno, <strong>Zero</strong> — el coach de IA integrado en la aplicación — lo intercepta con una sola pregunta: ¿quieres que este dinero adelante tu <strong>fecha de libertad</strong>? Este artículo recorre el <strong>Interceptor de ganancias inesperadas</strong>: cómo detecta el dinero sorpresa, qué hace un solo toque con él y por qué la decisión funciona mejor en el momento en que el dinero aterriza."
+      },
+      "whyDisappear": {
+        "heading": "Por qué desaparecen las ganancias inesperadas",
+        "p1": "Los economistas conductuales lo llaman contabilidad mental: el mismo dólar se siente distinto según el bolsillo por el que llega. El salario es dinero serio, presupuestado y comprometido. Una ganancia inesperada llega sin trabajo asignado — y el dinero sin trabajo se desliza hacia lo que el mes tenga ganas. Una compra de supermercado un poco más alegre, una cena extra fuera, esa compra «casi justificada» de todos modos.",
+        "p2": "La ventana para decidir es corta. El día que aterriza, la ganancia todavía se siente como un acontecimiento — dinero especial, que merece una decisión especial. Déjala una semana en la cuenta corriente y se funde con el saldo, indistinguible del resto. El remedio no es más disciplina; es el momento oportuno. Necesitas que la pregunta — ¿para qué es este dinero? — llegue mientras el dinero todavía se siente como una ganancia inesperada."
+      },
+      "meetInterceptor": {
+        "heading": "Conoce el Interceptor de ganancias inesperadas",
+        "p1": "Tether-Zero automatiza ese momento. Cuando una cuenta sincronizada recibe un depósito notablemente mayor que tus ingresos habituales — del orden de 1.2 veces tu promedio reciente — la aplicación lo marca como una decisión pendiente. En tu siguiente visita al panel, aparece una sección llamada «Rincón del coach» con una tarjeta marcada «GANANCIA INESPERADA DETECTADA»: el monto del depósito, su comparación con tu ingreso promedio y la cuenta donde aterrizó.",
+        "p2": "La tarjeta también nombra el destino posible del dinero. Tether-Zero ya conoce tu plan de pago por el <em>Debt Crusher</em>, así que la sugerencia apunta a tu deuda prioritaria según tu estrategia activa — el saldo más pequeño en bola de nieve, la tasa de interés más cara en avalancha. Debajo, exactamente dos botones: «Aplicar como copo de nieve» y «Ahora no»."
+      },
+      "oneTap": {
+        "heading": "Un toque entre el depósito y el progreso",
+        "p1": "Toca «Aplicar como copo de nieve» y el depósito se convierte en un pago adicional — lo que el Debt Crusher llama «copo de nieve»: dinero extra e inesperado aplicado por encima de tu plan regular. Tether-Zero recalcula todo tu calendario de pagos al instante y responde con una tarjeta de confirmación: «Copo de nieve aplicado», el monto enviado, cuántos días acaba de adelantarse tu fecha de libertad y la nueva fecha misma.",
+        "p2": "La tarjeta incluso lo dibuja: una pequeña línea de tiempo de hoy a tu nueva fecha de libertad, con la fecha anterior anotada al lado. Los días son la unidad que hace que valga la pena atrapar estas ganancias. Mil dólares a la tarjeta es abstracto; «libre de deudas cinco semanas antes» es un mes de vida devuelto — un recibo que se siente, impreso en el momento en que la decisión todavía se siente bien."
+      },
+      "stayInCharge": {
+        "heading": "Tú mantienes el control",
+        "p1": "El Interceptor es una invitación, no una automatización. Ningún dinero se mueve hasta que tocas — Tether-Zero nunca desvía un depósito hacia la deuda por su cuenta. Y «Ahora no» significa nunca para ese depósito: una ganancia rechazada queda registrada, la tarjeta desaparece y la aplicación no volverá a preguntar por la misma transacción. Una pregunta, una respuesta, sin insistencia.",
+        "p2": "Los roles del hogar también se respetan. Solo los administradores y editores — las personas que pueden mover dinero en tu plan — ven la invitación. Una pareja o un familiar con acceso de solo lectura puede ver mejorar la fecha de libertad, pero la decisión queda en manos de quienes están autorizados a tomarla."
+      },
+      "quietUntilNeeded": {
+        "heading": "Silencioso hasta que importa",
+        "p1": "El Rincón del coach no es otro widget compitiendo por tu atención. La sección existe en tu panel solo mientras hay una decisión realmente pendiente; responde la pregunta y se repliega. Sin rachas, sin insignias, sin análisis fabricados para justificar una notificación — el Interceptor habla solo cuando hay genuinamente algo que decidir.",
+        "p2": "También espera a conocerte. La detección necesita al menos un mes de historial de ingresos y unos cuantos depósitos de sueldo antes de marcar nada: una cuenta recién conectada no recibe una lluvia de falsas alarmas mientras la aplicación aprende qué es lo normal en tu hogar. El umbral filtra el otro extremo: un sueldo ordinario nunca dispara la tarjeta, porque lo ordinario es exactamente su vara de medir."
+      },
+      "beyondDebt": {
+        "heading": "No toda ganancia pertenece a la deuda",
+        "p1": "A veces «Ahora no» es la respuesta correcta, y el Interceptor la trata como una opción de primera clase. Si tu fondo de emergencia está flaco, rellenarlo puede ganarle a cualquier cálculo de intereses. Si se acercan diciembre, las renovaciones del seguro o una reparación del auto, dirigir el dinero a <link>fondos de reserva</link> convierte un depósito sorpresa en varios meses predecibles. El trabajo de la función no es canalizarlo todo hacia la deuda — es asegurar que el dinero reciba un trabajo deliberado antes de evaporarse.",
+        "p2": "Un límite que conviene conocer: una ganancia inesperada es una sorpresa, no un patrón. Si tus ingresos oscilan por naturaleza — comisiones, trabajos por encargo, contratos de temporada — un depósito grande puede ser solo un buen mes, y la respuesta es un <link2>presupuesto pensado para un pago irregular</link2> en lugar de una decisión puntual. Y cuando aterriza una ganancia de verdad, repartirla es perfectamente válido: una pequeña celebración, el resto hacia la fecha. El plan que sobrevive es el que deja espacio para ser humano."
+      },
+      "cta": {
+        "heading": "Dale un trabajo a tu próxima ganancia inesperada",
+        "body": "Comienza tu prueba gratuita de 30 días — conecta tus cuentas, configura tu Debt Crusher y deja que Zero atrape el próximo depósito sorpresa antes de que se funda en el gasto diario.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

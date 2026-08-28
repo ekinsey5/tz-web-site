@@ -315,6 +315,22 @@
       "catchOverspendingEarly": {
         "title": "Détectez les dépassements avant qu’ils n’arrivent : alertes de rythme et jauge de rythme",
         "excerpt": "Les budgets échouent rarement d’un coup — ils échouent par petites dérives que personne ne voit avant la fin du mois. La jauge Rythme de dépenses et les alertes de rythme de Zero signalent les dépassements en cours de mois, quand il est encore temps d’agir."
+      },
+      "snowflakePayments": {
+        "title": "La puissance des paiements ponctuels : comment 20 $ par-ci par-là avancent votre date de liberté",
+        "excerpt": "Tout le monde connaît la boule de neige. Sa petite cousine méconnue — le paiement ponctuel — transforme remboursements d’impôts, contrats à côté et chèques d’anniversaire en une date de liberté visiblement plus proche."
+      },
+      "payOffDebtFaster": {
+        "title": "Boule de neige ou avalanche : choisissez votre stratégie de remboursement avec une simulation côte à côte",
+        "excerpt": "Boule de neige ou avalanche ? Les deux fonctionnent — la question est de savoir laquelle vous mène à zéro. Le Simulateur de stratégie met votre Date sans dette projetée selon chaque méthode côte à côte, pour choisir avec vos propres chiffres plutôt qu’avec ceux d’Internet."
+      },
+      "canIAffordThis": {
+        "title": "Que coûte vraiment cet achat ? Utiliser le simulateur de Coût d’opportunité avant d’acheter",
+        "excerpt": "Chaque achat a deux prix : l’étiquette, et ce qu’il fait à votre Date sans dette. Demandez à Zero « can I afford $400 » et Tether-Zero répond avec vos vrais chiffres — jours de retard et intérêts supplémentaires — avant d’acheter."
+      },
+      "windfallInterceptor": {
+        "title": "Que faire d’une aubaine : comment Tether-Zero attrape l’argent surprise avant qu’il ne fonde",
+        "excerpt": "Remboursements d’impôts et primes ont le don de se dissoudre dans les dépenses du quotidien. L’Intercepteur d’aubaines de Zero repère le dépôt surprise et pose une seule question, pendant qu’il est encore temps : doit-il avancer votre date de liberté ?"
       }
     }
   },
@@ -607,6 +623,180 @@
       "cta": {
         "heading": "Voyez votre propre rythme ce mois-ci",
         "body": "Commencez votre essai gratuit de 30 jours, configurez votre budget, et laissez la jauge Rythme de dépenses et les alertes de rythme de Zero monter la garde — pour que la fin du mois ne vous surprenne plus.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "snowflakePayments": {
+      "meta": {
+        "title": "La puissance des paiements ponctuels",
+        "description": "Remboursements d’impôts, primes, petits gains : dans le Debt Crusher de Tether-Zero, les paiements ponctuels avancent visiblement votre date de liberté."
+      },
+      "title": "La puissance des paiements ponctuels : comment 20 $ par-ci par-là avancent votre date de liberté",
+      "intro": {
+        "p1": "La stratégie boule de neige est célèbre : payer le minimum partout, concentrer tout le reste sur une seule dette, recommencer. Mais elle a une petite cousine méconnue au travail démesuré — le <strong>paiement ponctuel</strong>. Vingt dollars pour une vieille lampe vendue. Une remise de 75 $. Le chèque d’anniversaire de grand-maman. De l’argent trop petit pour sembler stratégique — exactement celui que la plupart des plans gaspillent.",
+        "p2": "Le Debt Crusher de Tether-Zero traite ces paiements en citoyens de première classe : enregistrez-en un, et l’application vous montre — en jours — combien plus tôt vous serez libéré de vos dettes. Ce guide couvre ce qui compte, où va l’argent, et pourquoi voir la date bouger est ce qu’un budget peut faire de plus motivant."
+      },
+      "whatCounts": {
+        "heading": "Ce qui compte comme paiement ponctuel",
+        "p1": "L’application le définit directement sur la page : « Un paiement ponctuel est tout argent supplémentaire et inattendu que vous pouvez mettre sur vos dettes — remboursements d’impôts, primes, cadeaux. Chaque paiement avance votre date de liberté ! » Le mot clé est <em>inattendu</em>. Votre paiement mensuel régulier fait déjà partie du plan ; un paiement ponctuel, c’est de l’argent trouvé par-dessus.",
+        "p2": "C’est ce qui distingue cette pratique du serrage de ceinture. Vous ne rognez pas l’épicerie pour libérer 20 $ — vous attrapez de l’argent qui se serait évaporé dans les dépenses du quotidien et vous lui donnez une mission unique au bénéfice permanent."
+      },
+      "measurableTime": {
+        "heading": "Petit argent, temps mesurable",
+        "p1": "Voici ce qui rend la fonction plus intéressante qu’un simple registre : le retour immédiat. Appliquez un paiement ponctuel — disons un remboursement d’impôts de 500 $ — et Tether-Zero recalcule tout votre plan sur-le-champ, puis répond dans la seule unité qui compte : les jours. Dans cet exemple, environ soixante — deux mois plus près de la liberté.",
+        "p2": "Chaque paiement de votre historique porte son propre reçu — « 45 jours économisés » à côté de l’un, « 12 jours économisés » à côté d’un autre. Rembourser des dettes est un jeu de longue haleine, et les jeux longs se perdent dans l’invisible. Un chiffre qui bouge le jour même où vous agissez, voilà ce qui vous garde dans la partie."
+      },
+      "smartRouting": {
+        "heading": "Dirigé là où ça fait le plus mal à la dette",
+        "p1": "Pas besoin de décider où va l’argent. Laissez la cible vide et l’application s’en charge — le texte d’aide le dit sans détour : « Laisser vide pour appliquer automatiquement à la dette prioritaire. » Laquelle ? Cela dépend de votre stratégie active : le plus petit solde en mode Boule de neige, le taux d’intérêt le plus élevé en mode Avalanche.",
+        "p2": "Et aucun paiement n’est jamais perdu sur un détail technique. Appliquez 2 000 $ à une dette dont il ne reste que 1 500 $ : les premiers 1 500 $ la soldent, et les 500 $ restants passent directement à la suivante."
+      },
+      "freedomHorizon": {
+        "heading": "Regardez votre horizon de liberté avancer",
+        "p1": "Le bénéfice s’affiche là où vous le verrez chaque jour. La tuile de date de libération du tableau de bord suit votre projection, et le Debt Crusher annonce la manchette : « Vous serez libéré de vos dettes 14 mois plus tôt que les paiements minimaux. » Chaque paiement ponctuel pousse ce chiffre plus loin.",
+        "p2": "La chronologie de liberté en fait une barre de progression avec du caractère — en avance, tant de semaines restantes — si bien que chaque paiement enregistré fait bouger un statut que vous ressentez. Le remboursement cesse d’être une abstraction et devient une date au calendrier, avec votre nom dessus."
+      },
+      "findingSnowflakes": {
+        "heading": "D’où viennent les paiements ponctuels",
+        "p1": "Une fois qu’on cherche, il y en a partout : le remboursement d’impôts, la prime trimestrielle, le contrat à côté, les 40 $ du désencombrement du garage, la remise qu’on avait oubliée. Rien de tout cela n’était au budget — c’est précisément pourquoi chacun est un paiement ponctuel et non une ligne de plus.",
+        "p2": "Payé aux deux semaines ? Deux fois par an, le calendrier vous tend une paie entière en surplus — Tether-Zero la signale même pendant la configuration du budget comme de l’argent à consacrer aux dettes ou à l’épargne. Un <link>troisième versement</link> complet est le plus gros paiement ponctuel que la plupart des ménages recevront jamais."
+      },
+      "keepReceipts": {
+        "heading": "Gardez les reçus",
+        "p1": "Chaque paiement atterrit dans l’Historique des paiements ponctuels — date, montant, dette ciblée, jours économisés — et tout le foyer peut le consulter. Les partenaires en lecture seule peuvent parcourir l’historique même si seuls les rôles éditeur et administrateur peuvent enregistrer ou supprimer des paiements : les victoires se partagent, les données restent propres.",
+        "p2": "Une erreur de saisie ? Supprimez-la, et l’impact de chaque paiement restant est recalculé pour que les chiffres ne dérivent jamais de la réalité. Des nombres honnêtes, un progrès visible, du petit argent qui fait un grand travail — c’est tout le truc."
+      },
+      "cta": {
+        "heading": "Vous avez 20 $ ? Commencez là.",
+        "body": "Commencez votre essai gratuit de 30 jours — configurez votre Debt Crusher, enregistrez votre premier paiement ponctuel, et regardez votre date de liberté avancer.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "payOffDebtFaster": {
+      "meta": {
+        "title": "Boule de neige ou avalanche",
+        "description": "Le Simulateur de stratégie de Tether-Zero compare votre Date sans dette selon les deux méthodes — choisissez le plan qui rembourse vos dettes plus vite."
+      },
+      "title": "Boule de neige ou avalanche : choisissez votre stratégie de remboursement avec une simulation côte à côte",
+      "intro": {
+        "p1": "Demandez à Internet comment rembourser ses dettes plus vite et vous tomberez au milieu d’un débat vieux de dix ans. Un camp dit d’attaquer d’abord le taux d’intérêt le plus élevé, mathématiques à l’appui. L’autre dit d’éliminer d’abord le plus petit solde, motivation à l’appui. Les deux camps ont leurs tableurs, leurs témoignages et leurs certitudes absolues — ce qui ne vous aide guère quand vous voulez simplement un plan à commencer ce mois-ci.",
+        "p2": "Voici le secret que ce débat enterre : les deux méthodes fonctionnent. La vraie question n’est pas de savoir laquelle est la meilleure dans l’absolu — c’est laquelle vous mènera, <em>vous</em>, à zéro dette, avec vos dettes, vos taux et votre tempérament. C’est une question qu’une simulation peut trancher à la place d’un débat, et c’est exactement pour cela que le <strong>Simulateur de stratégie</strong> de Tether-Zero existe."
+      },
+      "oneEngine": {
+        "heading": "Tous les plans de remboursement partagent le même moteur",
+        "p1": "Enlevez l’habillage et la boule de neige comme l’avalanche partagent le même châssis. Vous payez le minimum sur chaque dette, chaque mois — sans exception, c’est ce qui garde tout à jour. Puis vous dirigez chaque dollar disponible vers une seule <em>dette cible</em>. Quand cette dette disparaît, tout son paiement bascule vers la cible suivante, et les paiements s’accumulent comme un rocher qui prend de la vitesse. La seule différence entre les deux méthodes, c’est l’ordre des cibles.",
+        "p2": "Dans Tether-Zero, ce « surplus » a un nom : votre <strong>Budget mensuel de dette</strong> — le montant que votre foyer consacre au remboursement au-delà des minimums. Définissez-le une fois dans Écraseur de dettes, et toutes les projections qui suivent en découlent. C’est l’accélérateur du moteur : les stratégies décident où va l’argent, le Budget mensuel de dette décide de la poussée."
+      },
+      "avalanche": {
+        "heading": "L’avalanche : le taux le plus élevé d’abord",
+        "p1": "La <strong>Méthode avalanche</strong> classe vos dettes cibles par taux d’intérêt, du plus élevé au plus bas. Une carte de crédit à 27 % reçoit chaque dollar disponible avant qu’un prêt auto à 6 % ne voie un centime au-delà du minimum. La logique est purement arithmétique : le taux le plus élevé est l’endroit où votre argent fuit le plus vite ; colmater cette fuite d’abord coûte le moins d’intérêts au total — et c’est généralement le chemin le plus rapide vers zéro en dollars sonnants.",
+        "p2": "Le piège est émotionnel, pas mathématique. Si votre dette au taux le plus élevé est aussi votre plus gros solde, vous pouvez y verser de l’argent pendant un an avant de fêter la fermeture d’un seul compte. Certains carburent très bien à l’arithmétique seule. Beaucoup d’entre nous, non — et un plan abandonné au septième mois ne vous fait rien économiser du tout."
+      },
+      "snowball": {
+        "heading": "La boule de neige : le plus petit solde d’abord",
+        "p1": "La <strong>Méthode boule de neige</strong> ignore les taux d’intérêt et classe vos dettes par solde, du plus petit au plus grand. Cette carte de magasin à 400 $ passe en premier — non parce qu’elle vous coûte cher, mais parce qu’elle peut être <em>soldée</em> en un mois ou deux. Chaque dette effacée est une victoire réelle et visible : une facture de moins, un créancier de moins, la preuve que le plan fonctionne.",
+        "p2": "Oui, elle coûte généralement un peu plus d’intérêts au total que l’avalanche. Ce qu’elle achète avec cet argent, c’est de l’élan — et le remboursement de dettes est un jeu de plusieurs années où l’élan est souvent la ressource la plus rare. La meilleure stratégie sur le papier ne vaut rien si vous abandonnez, et les victoires rapides gardent les gens dans la partie."
+      },
+      "simulator": {
+        "heading": "Arrêtez de deviner : vos deux futurs côte à côte",
+        "p1": "C’est ici que le débat s’arrête et que vos chiffres prennent le relais. Sur le tableau de bord Écraseur de dettes, le <strong>Simulateur de stratégie</strong> affiche la <strong>Méthode boule de neige</strong> et la <strong>Méthode avalanche</strong> côte à côte — chacune avec votre <strong>Date sans dette</strong> projetée et les mois restants, calculés à partir de vos vraies dettes et de votre Budget mensuel de dette. Parfois l’écart se compte en années ; souvent il est plus petit que ne le laissent croire les cris d’Internet. Dans les deux cas, vous choisissez entre deux dates réelles, pas entre deux philosophies.",
+        "p2": "Basculez l’interrupteur et tout le plan se recalcule instantanément — ordre de remboursement, dette cible, projections, tout. Le simulateur ne demande que deux choses : au moins deux dettes à comparer, et un Budget mensuel de dette pour régler l’accélérateur. Curieux de voir la comparaison avant de vous inscrire ? Un <link>simulateur d’exemple vous attend sur notre page d’accueil</link>, à essayer en dix secondes."
+      },
+      "commit": {
+        "heading": "Engagez-vous en foyer — et changez librement",
+        "p1": "Le remboursement de dettes est un sport d’équipe : la stratégie choisie est partagée par tout le foyer. Une personne bascule l’interrupteur, et le tableau de bord de chacun reflète le même plan. Les partenaires en lecture seule voient la stratégie et ses projections sans pouvoir les modifier — tout le monde voit la même Date sans dette, et personne ne peut réarranger le plan en douce.",
+        "p2": "Et ce choix n’est pas un tatouage. Commencez par la boule de neige pour quelques victoires rapides, puis passez à l’avalanche une fois l’élan bien réel — le plan se recalcule à l’instant même. Si vous n’avez pas encore de budget, <link2>commencez par là</link2> : le Budget mensuel de dette a besoin d’un budget autour de lui pour être honnête. Puis choisissez une date, choisissez la stratégie qui vous y mène entier, et laissez le rocher rouler."
+      },
+      "cta": {
+        "heading": "Deux dates. Choisissez celle que vous atteindrez.",
+        "body": "Commencez votre essai gratuit de 30 jours, ajoutez vos dettes, définissez votre Budget mensuel de dette — et laissez le Simulateur de stratégie vous montrer votre Date sans dette selon les deux stratégies avant de vous engager.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "canIAffordThis": {
+      "meta": {
+        "title": "Que coûte vraiment cet achat ?",
+        "description": "Demandez à Zero si vous pouvez vous permettre un achat : jours ajoutés à votre Date sans dette et intérêts supplémentaires, calculés avant d'acheter."
+      },
+      "title": "Que coûte vraiment cet achat ? Utiliser le simulateur de Coût d’opportunité avant d’acheter",
+      "intro": {
+        "p1": "La veste affiche 400 $, et la page de paiement confirme. Mais quand vous remboursez des dettes, l’étiquette n’est que le premier versement. Chaque dollar dépensé est un dollar qui n’atteindra jamais vos soldes — et les intérêts continuent de courir sur tout ce qui reste. Le vrai prix d’un achat inclut les semaines de paiements supplémentaires qu’il vous fait signer en silence.",
+        "p2": "La plupart d’entre nous ressentent cette vérité comme un pincement vague au moment de payer. Tether-Zero transforme le pincement en chiffre. Demandez à <strong>Zero</strong>, le coach financier IA intégré à l’application, si vous pouvez vous permettre un achat, et le simulateur de <strong>Coût d’opportunité</strong> répond avec vos vrais calculs de remboursement : de combien votre <strong>Date sans dette</strong> recule et combien d’intérêts s’ajoutent. Pas un sermon — un reçu, avant l’achat."
+      },
+      "truePrice": {
+        "heading": "L’étiquette n’est pas tout le prix",
+        "p1": "Les économistes appellent ça le coût d’opportunité : le vrai coût d’une chose, c’est ce qu’on abandonne pour l’obtenir. Quand vous suivez un plan de remboursement dans l’<em>Écraseur de dettes</em>, ce que vous abandonnez, c’est votre progression. L’argent qui aurait pu réduire un solde ce mois-ci reste sur la carte, et le compteur d’intérêts tourne un peu plus longtemps sur chaque dette derrière. C’est pourquoi Tether-Zero présente le <strong>coût réel</strong> d’un achat : le prix affiché plus les intérêts supplémentaires qu’il crée — le chiffre que le magasin n’imprime jamais.",
+        "p2": "Imaginez un achat de 500 $ sur une carte que vous remboursez activement. Selon vos soldes, vos taux et votre budget mensuel de dette, ce seul geste peut repousser votre Date sans dette d’environ trois semaines et ajouter près de 48 $ d’intérêts — un coût réel proche de 548 $. Vos chiffres seront différents, et c’est justement le point : les conseils génériques ne peuvent pas répondre à « puis-je me le permettre ? ». Seul votre propre échéancier d’amortissement le peut."
+      },
+      "askZero": {
+        "heading": "Demandez simplement à Zero",
+        "p1": "Pas de formulaire à chercher ni de calculatrice enfouie dans un menu. Ouvrez <strong>Zero</strong> — le coach est à un geste de vous partout dans l’application — et posez la question avec un montant, en utilisant la formule anglaise « can I afford $400 » : c’est exactement cette phrase qui déclenche la simulation. Dès que Zero la repère, Tether-Zero lance discrètement un calcul réel sur votre plan de remboursement pendant que Zero lit le reste de votre message.",
+        "p2": "Deux choses se produisent en parallèle. Zero discute la décision avec le contexte complet de vos finances — cette conversation est un accompagnement, pas de l’arithmétique. Les chiffres précis viennent du simulateur, qui déroule votre échéancier d’amortissement deux fois : une fois tel quel, une fois avec l’achat ajouté à votre dette prioritaire. Même moteur, même <link2>stratégie de remboursement</link2> que celle que vous avez choisie — boule de neige ou avalanche — et mêmes taux promotionnels si une carte est en période promo. La différence entre ces deux futurs, c’est la réponse honnête."
+      },
+      "readingCard": {
+        "heading": "Lire la carte Coût d’opportunité",
+        "p1": "Un instant plus tard, une carte étiquetée <strong>Coût d’opportunité</strong> apparaît dans la conversation. Sa mise en page est volontairement directe : « SI VOUS DÉPENSEZ 400 $ » en haut, puis le chiffre clé — de combien de jours votre date recule, sous la mention « DATE LIBRE DE DETTES REPOUSSÉE » — suivi de votre <strong>Nouvelle date sans dette</strong> et des <strong>Intérêts supplémentaires</strong> que coûterait l’achat. Deux faits, zéro morale.",
+        "p2": "Mesurer en jours, c’est ce qui fait mouche. « 31 $ d’intérêts en plus » se balaie d’un haussement d’épaules ; « dix-huit jours de paiements en plus », non — parce que le temps est précisément ce que vous essayez de racheter. La carte convertit un changement de solde invisible en calendrier, une unité que votre instinct comprend déjà."
+      },
+      "twoButtons": {
+        "heading": "Deux boutons honnêtes",
+        "p1": "Sous les chiffres, deux boutons — et aucun n’est une leçon de morale. <strong>« Continuer l’achat »</strong> fait exactement ce qu’il dit : la simulation n’a jamais touché vos données, rien ne change dans votre budget, et Zero note simplement votre choix. Parfois, dix-huit jours est un échange équitable contre une veste que vous porterez cinq hivers. Le produit, c’est la clarté, pas le jugement.",
+        "p2": "L’autre bouton donne de vraies dents à la gratification différée : <strong>« Rediriger 400 $ vers la dette »</strong>. Décidez que l’achat n’en vaut pas la peine, choisissez le compte de dette qui doit recevoir l’argent, et Tether-Zero le rend concret — le montant est appliqué comme <link>paiement ponctuel</link>, un paiement supplémentaire unique sur le solde choisi. L’argent que vous avez failli dépenser se met à rapprocher votre Date sans dette au lieu de l’éloigner."
+      },
+      "whenToRun": {
+        "heading": "Quand lancer le calcul",
+        "p1": "Le simulateur brille sur les achats dont les ménages débattent vraiment. Un électroménager à 2 000 $ est rarement un achat impulsif — c’est une négociation. Au lieu d’échanger des ressentis autour de la table, lancez la simulation et posez la carte entre vous : voilà ce que ça fait à notre date. Les partenaires n’ont pas à être d’accord sur l’achat, mais ils seront enfin en désaccord sur les mêmes chiffres.",
+        "p2": "Pour tout le reste, faites-en un réflexe au-delà d’un seuil que vous choisissez — 100 $, 200 $, selon les nerfs de votre budget. L’objectif n’a jamais été d’arrêter d’acheter ; c’est d’arrêter d’acheter à l’aveugle. Certains jours, la réponse sera « rediriger », et votre futur vous gagne. D’autres jours, ce sera « continuer » — et ce sera peut-être l’achat le plus serein de votre année, parce que pour une fois, vous avez payé en connaissant le prix entier."
+      },
+      "cta": {
+        "heading": "Connaissez le prix entier avant de le payer",
+        "body": "Commencez votre essai gratuit de 30 jours, configurez l’Écraseur de dettes et demandez à Zero ce que coûte l’achat que vous guettez — la réponse prend quelques secondes et n’appartient qu’à vous.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "windfallInterceptor": {
+      "meta": {
+        "title": "Que faire d’une aubaine",
+        "description": "Une prime arrive, puis disparaît. L’Intercepteur d’aubaines de Tether-Zero repère les dépôts surprises et propose d’avancer votre date de liberté — en un geste."
+      },
+      "title": "Que faire d’une aubaine : comment Tether-Zero attrape l’argent surprise avant qu’il ne fonde",
+      "intro": {
+        "p1": "Un remboursement d’impôts arrive. Une prime est versée. Un proche se montre généreux, un ancien employeur envoie un dernier chèque, une assurance finit par payer. Demandez à ce même ménage, deux mois plus tard, ce que l’argent est devenu : haussement d’épaules. Rien n’a été dilapidé dans une folie, et pourtant le solde a disparu. Les aubaines sont rarement volées — elles sont absorbées.",
+        "p2": "Tether-Zero refuse de laisser faire en silence. L’application surveille vos comptes synchronisés à la recherche de dépôts qui ne ressemblent pas à vos revenus habituels, et quand l’un d’eux arrive, <strong>Zero</strong> — le coach IA intégré à l’application — l’intercepte avec une seule question : voulez-vous que cet argent avance votre <strong>date de liberté</strong> ? Cet article passe en revue l’<strong>Intercepteur d’aubaines</strong> : comment il repère l’argent surprise, ce qu’un seul geste en fait, et pourquoi la décision se prend mieux au moment même où l’argent arrive."
+      },
+      "whyDisappear": {
+        "heading": "Pourquoi les aubaines s’évaporent",
+        "p1": "Les économistes comportementaux parlent de comptabilité mentale : le même dollar change de valeur selon la poche par laquelle il arrive. Le salaire est de l’argent sérieux, budgété, déjà réservé. Une aubaine, elle, arrive sans mission — et l’argent sans mission dérive vers ce dont le mois a envie. Une épicerie un peu plus gourmande, un souper de plus au restaurant, cet achat « presque justifié » de toute façon.",
+        "p2": "La fenêtre de décision est courte. Le jour où l’aubaine tombe, elle a encore le statut d’événement — de l’argent spécial, qui mérite une décision spéciale. Laissez-lui une semaine dans le compte courant et elle se fond dans le solde, indiscernable du reste. Le remède n’est pas plus de discipline ; c’est le bon moment. Il faut que la question — à quoi sert cet argent ? — arrive pendant que l’argent ressemble encore à une aubaine."
+      },
+      "meetInterceptor": {
+        "heading": "Voici l’Intercepteur d’aubaines",
+        "p1": "Tether-Zero automatise ce bon moment. Quand un compte synchronisé reçoit un dépôt nettement supérieur à vos revenus habituels — de l’ordre de 1,2 fois votre moyenne récente — l’application le signale comme une décision d’aubaine en attente. À votre prochaine visite du tableau de bord, une section nommée « Coin du coach » apparaît avec une carte marquée « BONNE AUBAINE DÉTECTÉE » : le montant du dépôt, sa comparaison avec votre revenu moyen et le compte où il a atterri.",
+        "p2": "La carte nomme aussi la destination possible de l’argent. Tether-Zero connaît déjà votre plan de remboursement grâce au <em>Debt Crusher</em>, alors la suggestion vise votre dette prioritaire selon votre stratégie active — le plus petit solde en boule de neige, le taux le plus coûteux en avalanche. En dessous, exactement deux boutons : « Appliquer comme flocon » et « Pas maintenant »."
+      },
+      "oneTap": {
+        "heading": "Un geste entre le dépôt et le progrès",
+        "p1": "Touchez « Appliquer comme flocon » et le dépôt devient un paiement ponctuel — ce que le Debt Crusher appelle un « flocon de neige » : de l’argent supplémentaire et inattendu appliqué par-dessus votre plan régulier. Tether-Zero recalcule aussitôt tout votre échéancier et répond par une carte de confirmation : « Flocon appliqué », le montant envoyé, le nombre de jours que votre date de liberté vient de gagner, et la nouvelle date elle-même.",
+        "p2": "La carte va jusqu’à le dessiner : une petite frise d’aujourd’hui à votre nouvelle date de liberté, l’ancienne date notée à côté. Les jours sont l’unité qui rend les aubaines dignes d’être attrapées. Mille dollars vers la carte de crédit, c’est abstrait ; « libre de dettes cinq semaines plus tôt », c’est un mois de vie rendu — un reçu qu’on ressent, imprimé au moment où la décision fait encore du bien."
+      },
+      "stayInCharge": {
+        "heading": "Vous gardez la main",
+        "p1": "L’Intercepteur est une invitation, pas un automatisme. Aucun argent ne bouge avant votre geste — Tether-Zero n’aiguille jamais un dépôt vers vos dettes de son propre chef. Et « Pas maintenant » veut dire jamais pour ce dépôt : une aubaine déclinée est enregistrée, la carte disparaît, et l’application ne reposera pas la question pour la même transaction. Une question, une réponse, pas de harcèlement.",
+        "p2": "Les rôles du ménage sont respectés aussi. Seuls les administrateurs et les éditeurs — les personnes habilitées à déplacer de l’argent dans votre plan — voient l’invitation. Un conjoint ou un proche en accès lecture seule peut regarder la date de liberté s’améliorer, mais la décision reste entre les mains de ceux qui ont le droit de la prendre."
+      },
+      "quietUntilNeeded": {
+        "heading": "Silencieux jusqu’à ce que ça compte",
+        "p1": "Le Coin du coach n’est pas un widget de plus en quête d’attention. La section n’existe sur votre tableau de bord que pendant qu’une décision d’aubaine est réellement en attente ; répondez, et elle se replie. Pas de séries, pas de badges, pas d’analyses fabriquées pour justifier une notification — l’Intercepteur ne parle que lorsqu’il y a véritablement quelque chose à décider.",
+        "p2": "Il attend aussi de vous connaître. La détection exige au moins un mois d’historique de revenus et quelques dépôts de salaire avant de signaler quoi que ce soit : un compte fraîchement connecté n’est pas mitraillé de fausses alertes pendant que l’application apprend ce qui est normal pour votre ménage. Le seuil filtre l’autre extrémité : une paie ordinaire ne déclenche jamais la carte, puisque l’ordinaire est précisément son étalon."
+      },
+      "beyondDebt": {
+        "heading": "Toute aubaine n’appartient pas aux dettes",
+        "p1": "Parfois, « Pas maintenant » est la bonne réponse, et l’Intercepteur la traite comme un choix de premier ordre. Si votre fonds d’urgence est maigre, le renflouer peut battre n’importe quel calcul d’intérêts. Si décembre, les renouvellements d’assurance ou une réparation de voiture approchent, diriger l’argent vers des <link>fonds de réserve</link> transforme un dépôt surprise en plusieurs mois prévisibles. Le rôle de la fonctionnalité n’est pas de tout canaliser vers les dettes — c’est de garantir que l’argent reçoive une mission délibérée avant de s’évaporer.",
+        "p2": "Une limite à connaître : une aubaine est une surprise, pas une habitude. Si vos revenus oscillent naturellement — commissions, contrats, travail saisonnier — un gros dépôt n’est peut-être qu’un bon mois, et la réponse est un <link2>budget pensé pour une paie irrégulière</link2> plutôt qu’une décision ponctuelle. Et quand une vraie aubaine tombe, la partager est parfaitement permis : une petite célébration, le reste vers la date. Le plan qui survit est celui qui laisse de la place à l’humain."
+      },
+      "cta": {
+        "heading": "Donnez une mission à votre prochaine aubaine",
+        "body": "Commencez votre essai gratuit de 30 jours — connectez vos comptes, configurez votre Debt Crusher, et laissez Zero attraper le prochain dépôt surprise avant qu’il ne fonde dans les dépenses du quotidien.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     }

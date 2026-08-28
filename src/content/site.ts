@@ -198,6 +198,30 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-27",
   },
+  snowflakePayments: {
+    slug: "snowflake-payments",
+    path: "/learn/snowflake-payments/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
+  payOffDebtFaster: {
+    slug: "pay-off-debt-faster",
+    path: "/learn/pay-off-debt-faster/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
+  canIAffordThis: {
+    slug: "can-i-afford-this",
+    path: "/learn/can-i-afford-this/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
+  windfallInterceptor: {
+    slug: "what-to-do-with-a-windfall",
+    path: "/learn/what-to-do-with-a-windfall/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
 } as const;
 
 /* ------------------------------------------------------------------ */

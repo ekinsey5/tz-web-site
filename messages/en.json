@@ -315,6 +315,22 @@
       "catchOverspendingEarly": {
         "title": "Catch Overspending Before It Happens: Pacing Alerts and the Pacing Gauge",
         "excerpt": "Budgets rarely fail in one blowout — they fail in small drifts nobody notices until month-end. Tether-Zero's Spending Pace gauge and Zero's pacing alerts flag overspending mid-month, while there's still time to fix it."
+      },
+      "snowflakePayments": {
+        "title": "The Power of Snowflake Payments: How $20 Here and There Moves Your Debt-Free Date",
+        "excerpt": "Everyone knows the debt snowball. Its overlooked little cousin — the snowflake payment — turns tax refunds, side-gig checks, and birthday money into a visibly earlier debt-free date."
+      },
+      "payOffDebtFaster": {
+        "title": "Snowball vs. Avalanche: Pick Your Debt Payoff Strategy with a Side-by-Side Simulation",
+        "excerpt": "Snowball or avalanche? Both work — the question is which one gets you to zero. Tether-Zero's Strategy Simulator puts your projected Debt Free Date under each method side by side, so you pick a plan with your own numbers instead of the internet's."
+      },
+      "canIAffordThis": {
+        "title": "What Does That Purchase Really Cost? Using the Opportunity Cost Simulator Before You Buy",
+        "excerpt": "Every purchase has two prices: the sticker, and what it does to your Debt Free Date. Ask Zero “can I afford $400” and Tether-Zero answers with your real numbers — days delayed and extra interest — before you buy."
+      },
+      "windfallInterceptor": {
+        "title": "What to Do With a Windfall: How Tether-Zero Catches Surprise Money Before It Melts Away",
+        "excerpt": "Tax refunds and bonuses have a way of dissolving into everyday spending. Zero's Windfall Interceptor spots the surprise deposit and asks one question while it still counts: should this move your Debt Free Date?"
       }
     }
   },
@@ -607,6 +623,180 @@
       "cta": {
         "heading": "See your own pace this month",
         "body": "Start your 30-day free trial, set up your budget, and let the Spending Pace gauge and Zero's pacing alerts stand watch — so the end of the month never surprises you again.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "snowflakePayments": {
+      "meta": {
+        "title": "The Power of Snowflake Payments",
+        "description": "Tax refunds, side gigs, birthday money: snowflake payments in Tether-Zero's Debt Crusher turn small windfalls into a measurably earlier debt-free date."
+      },
+      "title": "The Power of Snowflake Payments: How $20 Here and There Moves Your Debt-Free Date",
+      "intro": {
+        "p1": "The debt snowball is famous: pay minimums on everything, throw everything extra at one debt, repeat. But the strategy has a small, overlooked cousin that does outsized work — the <strong>snowflake</strong>. A snowflake is $20 from selling an old lamp. A $75 rebate. The birthday check from grandma. Money too small to feel strategic, and exactly the money most plans waste.",
+        "p2": "Tether-Zero's Debt Crusher treats snowflakes as first-class citizens: log one, and the app shows you — in days — how much sooner you'll be debt-free. This guide covers what counts, where the money goes, and why watching the date move is the most motivating thing a budget can do."
+      },
+      "whatCounts": {
+        "heading": "What counts as a snowflake",
+        "p1": "The app defines it right on the page: “A snowflake is any extra, unexpected money you can put toward debt — like tax refunds, bonuses, birthday money, or proceeds from selling items.” The key word is <em>unexpected</em>. Your regular monthly debt payment is already in your plan; a snowflake is found money on top of it.",
+        "p2": "That's what separates snowflaking from tightening your budget. You're not squeezing groceries to free up $20 — you're catching money that would otherwise evaporate into everyday spending and giving it a one-time job with a permanent payoff."
+      },
+      "measurableTime": {
+        "heading": "Small money, measurable time",
+        "p1": "Here's what makes the feature more than a ledger: instant feedback. Apply a snowflake — say a $500 tax refund — and Tether-Zero recalculates your entire payoff plan on the spot, then answers in the only unit that matters: days. In that example, roughly sixty of them — two months closer to free.",
+        "p2": "Every snowflake in your history carries its own receipt — “45 days saved” next to one, “12 days saved” next to another. Debt payoff is a long game, and long games are lost to invisibility. A number that moves the same day you act is what keeps you playing."
+      },
+      "smartRouting": {
+        "heading": "Routed where it hurts debt most",
+        "p1": "You don't have to decide where the money goes. Leave the target empty and the app applies it automatically — the helper text says it plainly: “Leave empty to auto-apply to your #1 priority debt.” Which debt that is depends on your active strategy: the smallest balance if you're running Debt snowball, the priciest interest rate on Debt avalanche.",
+        "p2": "And no snowflake is ever wasted on a technicality. Apply $2,000 against a debt with only $1,500 left, and the first $1,500 finishes that debt while the remaining $500 rolls straight into the next one in line."
+      },
+      "freedomHorizon": {
+        "heading": "Watch your Freedom Horizon move",
+        "p1": "The payoff shows up where you'll see it daily. The dashboard's Debt-Free Date tile tracks your projected freedom date, and the Debt Crusher spells out the headline: “You'll be debt-free 14 months sooner than minimum-only payments.” Snowflakes push that number further.",
+        "p2": "The Freedom timeline turns it into a progress bar with a personality — “You're ahead — 6 weeks to go” — so every snowflake you log nudges a status you can feel. Debt payoff stops being an abstraction and starts being a date on the calendar with your name on it."
+      },
+      "findingSnowflakes": {
+        "heading": "Where snowflakes come from",
+        "p1": "Once you start looking, they're everywhere: the tax refund, the quarterly bonus, the side-gig payout, the $40 from decluttering the garage, the rebate you forgot you filed. None of them was in your budget — which is precisely why each one is a snowflake and not a line item.",
+        "p2": "Paid every two weeks? Twice a year the calendar hands you a whole extra paycheck — Tether-Zero even flags it during budget setup as money you can put toward debt or savings. An entire <link>third payday</link> is the biggest snowflake most households ever get."
+      },
+      "keepReceipts": {
+        "heading": "Keep the receipts",
+        "p1": "Every snowflake lands in the Snowflake Payment History — date, amount, target debt, and days saved — and the whole household can see it. Partners with Viewer access can browse the record even though only Editors and Admins can log or remove payments, so the wins are shared and the data stays clean.",
+        "p2": "Logged one by mistake? Delete it, and the impact of every remaining snowflake is recalculated so the math never drifts from reality. Honest numbers, visible progress, small money doing big work — that's the whole trick."
+      },
+      "cta": {
+        "heading": "Got $20? Start there.",
+        "body": "Start your 30-day free trial — set up your Debt Crusher, log your first snowflake, and watch your debt-free date move.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "payOffDebtFaster": {
+      "meta": {
+        "title": "Snowball vs. Avalanche",
+        "description": "Snowball or avalanche? Tether-Zero's Strategy Simulator shows your Debt Free Date under both, side by side — pick the plan that helps you pay off debt faster."
+      },
+      "title": "Snowball vs. Avalanche: Pick Your Debt Payoff Strategy with a Side-by-Side Simulation",
+      "intro": {
+        "p1": "Ask the internet how to pay off debt faster and you'll land in the middle of a decade-old argument. One camp says attack the highest interest rate first, because math. The other says knock out the smallest balance first, because motivation. Both camps have spreadsheets, success stories, and absolute certainty — which doesn't help you much when you just want a plan you can start this month.",
+        "p2": "Here's the secret the argument buries: both methods work. The real question isn't which strategy is best in the abstract — it's which one gets <em>you</em> debt-free, with your debts, your rates, and your temperament. That's a question you can answer with a simulation instead of a debate, and it's exactly what Tether-Zero's <strong>Strategy Simulator</strong> was built for."
+      },
+      "oneEngine": {
+        "heading": "Every payoff plan is the same engine",
+        "p1": "Strip away the branding and snowball and avalanche share one chassis. You pay the minimum on every debt, every month — no exceptions; that keeps everything current. Then you take every extra dollar you can spare and aim it at a single <em>focus debt</em>. When that debt dies, its entire payment rolls into the next focus debt, and the payments compound like a boulder gathering speed. The only difference between the two methods is the order of the targets.",
+        "p2": "In Tether-Zero, the “extra” has a name: your <strong>Monthly Debt Budget</strong> — the amount your household commits to debt payoff above the minimums. Set it once in Debt Crusher, and every projection you're about to see is built from it. It's the throttle of the whole engine: the strategies decide where the money goes, the Monthly Debt Budget decides how hard it pushes."
+      },
+      "avalanche": {
+        "heading": "The avalanche: highest interest first",
+        "p1": "The <strong>Avalanche Method</strong> orders your focus debts by interest rate, highest first. A 27% credit card gets every spare dollar before a 6% car loan sees a cent beyond the minimum. The logic is pure arithmetic: the highest rate is where your money bleeds fastest, so stopping that bleed first pays the least total interest — and it's usually the fastest route to zero in pure dollar terms.",
+        "p2": "The catch is emotional, not mathematical. If your highest-rate debt is also your biggest balance, you can pour money into it for a year before you get to celebrate closing a single account. Some people are fine running on arithmetic alone. Plenty of us aren't — and a plan you abandon in month seven saves you nothing."
+      },
+      "snowball": {
+        "heading": "The snowball: smallest balance first",
+        "p1": "The <strong>Snowball Method</strong> ignores interest rates and orders your debts by balance, smallest first. That $400 store card goes first — not because it's costing you much, but because it can be <em>gone</em> in a month or two. Each cleared debt is a real, visible win: one fewer bill, one fewer creditor, proof the plan is working.",
+        "p2": "Yes, it usually costs somewhat more in total interest than the avalanche. What it buys with that money is momentum — and debt payoff is a years-long game where momentum is frequently the scarcest resource. The best strategy on paper is worthless if you quit it, and quick wins keep people in the game."
+      },
+      "simulator": {
+        "heading": "Stop guessing: see both futures side by side",
+        "p1": "This is where the argument ends and your numbers take over. On the Debt Crusher dashboard, the <strong>Strategy Simulator</strong> shows the <strong>Snowball Method</strong> and <strong>Avalanche Method</strong> side by side — each with your projected <strong>Debt Free Date</strong> and the months remaining, computed from your actual debts and your Monthly Debt Budget. Sometimes the gap between the two is years; often it's smaller than the internet's shouting suggests. Either way, you're choosing between two real dates, not two philosophies.",
+        "p2": "Flip the toggle and the whole plan recalculates instantly — payoff order, focus debt, projections, everything. The simulator asks only two things: at least two debts to compare, and a Monthly Debt Budget so it has a throttle setting to project from. Curious what the comparison feels like before signing up? There's a <link>sample simulator right on our homepage</link> you can play with in ten seconds."
+      },
+      "commit": {
+        "heading": "Commit as a household — and switch freely",
+        "p1": "Debt payoff is a team sport, so your chosen strategy is shared by the whole household: one person flips the toggle and everyone's dashboard reflects the same plan. Partners with view-only access see the strategy and its projections without being able to change them — everybody sees the same Debt Free Date, and nobody can quietly rearrange the plan.",
+        "p2": "And the choice isn't a tattoo. Start with the snowball for a few quick wins, then switch to the avalanche once the momentum is real — the plan recalculates the moment you do. If you haven't set up your budget yet, <link2>start there</link2>: the Monthly Debt Budget needs a budget around it to be honest. Then pick a date, pick the strategy that gets you there in one piece, and let the boulder roll."
+      },
+      "cta": {
+        "heading": "Two dates. Pick the one you'll reach.",
+        "body": "Start your 30-day free trial, add your debts, set your Monthly Debt Budget — and let the Strategy Simulator show you your Debt Free Date under both strategies before you commit to either.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "canIAffordThis": {
+      "meta": {
+        "title": "What Does That Purchase Really Cost?",
+        "description": "Ask Zero “Can I afford this?” and see a purchase’s real price — days added to your Debt Free Date and extra interest — before you buy."
+      },
+      "title": "What Does That Purchase Really Cost? Using the Opportunity Cost Simulator Before You Buy",
+      "intro": {
+        "p1": "The jacket says $400, and the checkout page agrees. But if you're paying down debt, the sticker is only the first installment. Every dollar you spend is a dollar that never reaches your balances — and interest keeps running on everything that stays behind. The real price of a purchase includes the extra weeks of payments it quietly signs you up for.",
+        "p2": "Most of us feel that truth as a vague twinge at checkout. Tether-Zero turns the twinge into a number. Ask <strong>Zero</strong>, the AI financial coach built into the app, whether you can afford something, and the <strong>Opportunity Cost</strong> simulator answers with your actual payoff math: how far your <strong>Debt Free Date</strong> slips and how much extra interest tags along. Not a lecture — a receipt, before you buy."
+      },
+      "truePrice": {
+        "heading": "The price tag isn't the whole price",
+        "p1": "Economists call it opportunity cost: the true cost of anything is what you give up to get it. When you're working a payoff plan in <em>Debt Crusher</em>, what you give up is progress. Money that could have shrunk a balance this month stays on the card instead, and the interest meter runs a little longer on every debt behind it. That's why Tether-Zero reports a purchase's <strong>true cost</strong> as the sticker price plus the additional interest it creates — the number the store never prints.",
+        "p2": "Picture a $500 purchase landing on a card you're actively paying down. Depending on your balances, rates, and monthly debt budget, that one swipe might push your Debt Free Date back about three weeks and add close to $48 in interest — a true cost near $548. Your numbers will differ, and that's exactly the point: generic advice can't answer “can I afford this?” Only your own amortization schedule can."
+      },
+      "askZero": {
+        "heading": "Just ask Zero",
+        "p1": "There's no form to find and no calculator buried in a menu. Open <strong>Zero</strong> — the coach lives one tap away anywhere in the app — and type the question the way you'd say it out loud: “can I afford $400 for a winter jacket?” That phrase is the trigger. The moment Zero sees “can I afford” with an amount, Tether-Zero quietly starts a real simulation against your debt payoff plan while Zero reads the rest of your message.",
+        "p2": "Two things happen in parallel. Zero talks the decision through with the full context of your finances — that conversation is guidance, not arithmetic. The precise math comes from the simulator, which runs your amortization schedule twice: once as things stand today, and once with the purchase added to your top-priority debt. Same engine, same <link2>payoff strategy</link2> you already committed to — Snowball or Avalanche — and the same promotional rates, if a card is inside a promo window. The difference between those two futures is the honest answer."
+      },
+      "readingCard": {
+        "heading": "Reading the Opportunity Cost card",
+        "p1": "A moment later, a card labeled <strong>Opportunity Cost</strong> appears right in the chat. Its layout is deliberately blunt: “IF YOU SPEND $400” across the top, then the headline — how many days “DEBT FREE PUSHED BACK” — followed by your <strong>New Debt Free Date</strong> and the <strong>Extra interest</strong> the purchase would cost. Two facts, zero scolding.",
+        "p2": "Measuring in days is what makes the card land. “$31 of extra interest” is easy to shrug off; “eighteen more days of payments” is not, because time is the thing you're actually trying to buy back. The card converts an invisible balance change into calendar — a unit your gut already understands."
+      },
+      "twoButtons": {
+        "heading": "Two honest buttons",
+        "p1": "Beneath the numbers sit two buttons, and neither one is a guilt trip. <strong>“Proceed with purchase”</strong> does exactly what it says: the simulation never touched your data, nothing changes in your budget, and Zero simply notes that you chose to go ahead. Sometimes eighteen days is a fair trade for a jacket you'll wear for five winters. The product is clarity, not judgment.",
+        "p2": "The other button gives deferred gratification real teeth: <strong>“Redirect $400 to debt.”</strong> Decide the purchase isn't worth it, choose which debt account should receive the money, and Tether-Zero makes it concrete — the amount is applied as a <link>snowflake payment</link>, an extra one-time payment against the balance you picked. The money you almost spent starts pulling your Debt Free Date closer instead of pushing it away."
+      },
+      "whenToRun": {
+        "heading": "When to run the numbers",
+        "p1": "The simulator earns its keep on the purchases households actually argue about. A $2,000 appliance is rarely an impulse buy — it's a negotiation. Instead of trading feelings across the kitchen table, run the simulation and put the card between you: this is what it does to our date. Partners don't have to agree on the purchase, but they'll finally be disagreeing about the same numbers.",
+        "p2": "For everything else, make it a reflex above a threshold you choose — $100, $200, whatever matches your budget's nerves. The goal was never to stop buying things; it's to stop buying them blind. Some days the answer is “redirect,” and your future self gets the win. Other days the answer is “proceed” — and it may be the most peaceful purchase you make all year, because for once you paid knowing the whole price."
+      },
+      "cta": {
+        "heading": "Know the whole price before you pay it",
+        "body": "Start your 30-day free trial, set up Debt Crusher, and ask Zero about the purchase you've been eyeing — the answer takes seconds and it's yours alone.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "windfallInterceptor": {
+      "meta": {
+        "title": "What to Do With a Windfall",
+        "description": "A bonus lands, and somehow it's gone. Tether-Zero's Windfall Interceptor spots surprise deposits and offers to move your Debt Free Date up — with one tap."
+      },
+      "title": "What to Do With a Windfall: How Tether-Zero Catches Surprise Money Before It Melts Away",
+      "intro": {
+        "p1": "A tax refund lands. A bonus clears. A relative is generous, an old employer sends a final check, an insurance claim finally pays out. Ask that same household two months later what the money did, and the answer is usually a shrug: nothing was squandered on a yacht, yet the balance is gone. Windfalls rarely get stolen — they get absorbed.",
+        "p2": "Tether-Zero refuses to let that happen quietly. The app watches your synced accounts for deposits that don't look like your normal income, and when one arrives, <strong>Zero</strong> — the AI coach built into the app — intercepts it with a single question: do you want this money to move your <strong>Debt Free Date</strong>? This article walks through the <strong>Windfall Interceptor</strong>: how it spots surprise money, what one tap does with it, and why the decision works best in the moment the money lands."
+      },
+      "whyDisappear": {
+        "heading": "Why windfalls disappear",
+        "p1": "Behavioral economists call it mental accounting: the same dollar feels different depending on the pocket it arrives in. Salary is serious money, budgeted and spoken for. A windfall arrives with no job assigned — and money without a job drifts toward whatever the month happens to want. A slightly nicer grocery run, one extra dinner out, a purchase that was “almost justified” anyway.",
+        "p2": "The window for deciding is short. The day a windfall lands, it still feels like an event — special money, worth a special decision. Give it a week in your checking account and it fades into the balance, indistinguishable from the rest. The fix isn't more discipline; it's timing. You need the question — what is this money for? — to arrive while the money still feels like a windfall."
+      },
+      "meetInterceptor": {
+        "heading": "Meet the Windfall Interceptor",
+        "p1": "Tether-Zero automates the timing. When a synced account receives a deposit noticeably larger than your typical income — on the order of 1.2 times your recent average — the app flags it as a pending windfall decision. The next time you open your dashboard, a section called <strong>Coach's Corner</strong> appears with a card marked “WINDFALL DETECTED”: the deposit amount, how it compares to your average income, and the account it landed in.",
+        "p2": "The card also names where the money could go. Tether-Zero already knows your payoff plan from the <em>Debt Crusher</em>, so the suggestion targets your number-one priority debt under your active strategy — the smallest balance if you run Debt snowball, the most expensive interest rate on Debt avalanche. Underneath sit exactly two buttons: “Apply as Snowflake” and “Not now.”"
+      },
+      "oneTap": {
+        "heading": "One tap from deposit to debt progress",
+        "p1": "Tap “Apply as Snowflake” and the deposit becomes a snowflake payment — the Debt Crusher's name for extra, unexpected money applied on top of your regular plan. Tether-Zero recalculates your entire payoff schedule on the spot and answers with a confirmation card: “Snowflake applied,” the amount sent, how many days your Debt Free Date just moved, and the new date itself.",
+        "p2": "The card even draws it: a small timeline from today to your new Debt Free Date, with the old date noted beside it. Days are the unit that makes windfalls worth catching. A thousand dollars toward the card is abstract; “debt-free five weeks sooner” is a month of your life handed back — a receipt you can feel, printed in the moment the decision still feels good."
+      },
+      "stayInCharge": {
+        "heading": "You stay in charge",
+        "p1": "The Interceptor is a prompt, not an automation. No money moves until you tap — Tether-Zero never sweeps a deposit into debt on its own. And “Not now” means never for that deposit: a declined windfall is recorded, the card disappears, and the app will not ask about the same transaction again. One question, one answer, no nagging.",
+        "p2": "Household roles are respected too. Only Admins and Editors — the people who can move money in your plan — see the windfall prompt at all. A partner or family member with view-only access can watch the Debt Free Date improve, but the decision stays with the people authorized to make it."
+      },
+      "quietUntilNeeded": {
+        "heading": "Quiet until it matters",
+        "p1": "Coach's Corner is not another widget competing for attention. The section exists on your dashboard only while a windfall decision is actually pending; answer the question and it folds away. No streaks, no badges, no “insights” manufactured to justify a notification — the Interceptor speaks only when there is genuinely something to decide.",
+        "p2": "It also waits until it knows you. Detection needs at least a month of income history and a few income deposits before it starts flagging anything, so a freshly connected account isn't peppered with false alarms while the app learns what normal looks like for your household. The threshold does the same filtering job on the other end: an ordinary paycheck never triggers the card, because ordinary is exactly what it's measured against."
+      },
+      "beyondDebt": {
+        "heading": "Not every windfall belongs to debt",
+        "p1": "Sometimes “Not now” is the right answer, and the Interceptor treats it as a first-class choice. If your emergency fund is thin, topping it up may beat any interest math. If December, insurance renewals, or a car repair are looming, routing the money into <link>sinking funds</link> converts a surprise deposit into several predictable months. The feature's job isn't to funnel everything into debt — it's to make sure the money gets a deliberate job before it evaporates.",
+        "p2": "One boundary worth knowing: a windfall is a surprise, not a pattern. If your income naturally swings — commissions, gig work, seasonal contracts — a big deposit may just be a good month, and the answer is a <link2>budgeting system built for an irregular paycheck</link2> rather than a one-off decision. And when a true windfall does land, splitting it is perfectly legal: a little celebration, the rest toward the date. The plan that survives is the one that leaves room to be human."
+      },
+      "cta": {
+        "heading": "Give your next windfall a job",
+        "body": "Start your 30-day free trial — connect your accounts, set up your Debt Crusher, and let Zero catch the next surprise deposit before it melts into everyday spending.",
         "button": "Start your 30-day free trial"
       }
     }

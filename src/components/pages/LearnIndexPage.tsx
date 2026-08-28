@@ -1,5 +1,17 @@
 import Link from "next/link";
-import { Coins, Gauge, Mail, PiggyBank, Wallet, Wand2, type LucideIcon } from "lucide-react";
+import {
+  Coins,
+  Gauge,
+  Gift,
+  Mail,
+  PiggyBank,
+  Scale,
+  ShoppingCart,
+  Snowflake,
+  Wallet,
+  Wand2,
+  type LucideIcon,
+} from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { LearnPageChrome } from "@/components/LearnPageChrome";
 import { ARTICLES } from "@/content/site";
@@ -8,6 +20,10 @@ import type { Locale } from "@/i18n/config";
 
 /** Listing order + icon chip per article; copy comes from Learn.articles.<key>. */
 const ARTICLE_CARDS: ReadonlyArray<{ key: keyof typeof ARTICLES; icon: LucideIcon }> = [
+  { key: "windfallInterceptor", icon: Gift },
+  { key: "canIAffordThis", icon: ShoppingCart },
+  { key: "payOffDebtFaster", icon: Scale },
+  { key: "snowflakePayments", icon: Snowflake },
   { key: "catchOverspendingEarly", icon: Gauge },
   { key: "irregularPaycheck", icon: Coins },
   { key: "sinkingFunds", icon: PiggyBank },
