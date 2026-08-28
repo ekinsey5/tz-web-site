@@ -288,6 +288,13 @@
     "heading": "Des guides pour atteindre zéro",
     "subheading": "Des guides pratiques, étape par étape, sur la budgétisation et le remboursement de dettes — et comment Tether-Zero et votre coach IA s’occupent de la mécanique pour vous.",
     "readArticle": "Lire l’article",
+    "stages": {
+      "startHere": "Commencez ici",
+      "buildYourBudget": "Construisez votre budget",
+      "monthToMonth": "Mois après mois",
+      "crushDebt": "Écrasez vos dettes",
+      "coachRefine": "Affinez avec votre coach"
+    },
     "backToHome": "← Retour à l’accueil",
     "backToLearn": "← Tous les guides",
     "breadcrumbHome": "Accueil",
