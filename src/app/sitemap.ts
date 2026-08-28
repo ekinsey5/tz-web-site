@@ -85,6 +85,18 @@ const GOALS_AND_DEBT_LANGUAGES = {
   es: `${SITE_URL}/es/learn/saving-while-paying-off-debt/`,
 };
 
+const CONNECT_YOUR_BANK_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/connect-your-bank/`,
+  fr: `${SITE_URL}/fr/learn/connect-your-bank/`,
+  es: `${SITE_URL}/es/learn/connect-your-bank/`,
+};
+
+const SPENDING_TAGS_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/track-spending-with-tags/`,
+  fr: `${SITE_URL}/fr/learn/track-spending-with-tags/`,
+  es: `${SITE_URL}/es/learn/track-spending-with-tags/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -380,6 +392,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: GOALS_AND_DEBT_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/connect-your-bank/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CONNECT_YOUR_BANK_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/connect-your-bank/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CONNECT_YOUR_BANK_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/connect-your-bank/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CONNECT_YOUR_BANK_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/track-spending-with-tags/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SPENDING_TAGS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/track-spending-with-tags/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SPENDING_TAGS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/track-spending-with-tags/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: SPENDING_TAGS_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

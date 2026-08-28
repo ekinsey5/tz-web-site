@@ -234,6 +234,18 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-28",
   },
+  connectYourBank: {
+    slug: "connect-your-bank",
+    path: "/learn/connect-your-bank/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-28",
+  },
+  spendingTags: {
+    slug: "track-spending-with-tags",
+    path: "/learn/track-spending-with-tags/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-28",
+  },
 } as const;
 
 /**
@@ -245,8 +257,9 @@ export const ARTICLES = {
  */
 export const LEARN_JOURNEY = [
   { stage: "startHere", articles: ["makingABudget"] },
+  { stage: "getSetUp", articles: ["connectYourBank"] },
   { stage: "buildYourBudget", articles: ["firstBudget", "envelopeBudgeting", "sinkingFunds"] },
-  { stage: "monthToMonth", articles: ["irregularPaycheck", "catchOverspendingEarly"] },
+  { stage: "monthToMonth", articles: ["irregularPaycheck", "catchOverspendingEarly", "spendingTags"] },
   {
     stage: "crushDebt",
     articles: [

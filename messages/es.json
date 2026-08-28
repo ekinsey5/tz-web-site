@@ -290,6 +290,7 @@
     "readArticle": "Leer el artículo",
     "stages": {
       "startHere": "Empieza aquí",
+      "getSetUp": "Deja todo listo",
       "buildYourBudget": "Construye tu presupuesto",
       "monthToMonth": "Mes a mes",
       "crushDebt": "Aplasta deudas, financia metas",
@@ -346,6 +347,14 @@
       "goalsAndDebt": {
         "title": "Ahorrar para un sueño mientras aplastas tu deuda: objetivos y deudas sin culpa",
         "excerpt": "Ahorrar para un viaje mientras pagas tarjetas suele alimentarse de culpa. Tether-Zero pone número al intercambio — cuántos meses se retrasa tu fecha de libertad — y te deja elegir con los ojos abiertos."
+      },
+      "connectYourBank": {
+        "title": "Lleva tu dinero a Tether-Zero: conexión bancaria, importación de archivos y categorización automática",
+        "excerpt": "Un presupuesto solo dirige lo que ve. Tres formas de llevar tus transacciones a Tether-Zero — conexión bancaria segura con Plaid, importación CSV/OFX y categorización Smart Match — más el flujo de revisión que te deja al mando."
+      },
+      "spendingTags": {
+        "title": "Más allá de las categorías: responde «¿Cuánto costaron realmente las vacaciones?» con etiquetas",
+        "excerpt": "Unas vacaciones se dispersan entre supermercado, gasolina, restaurantes y alojamiento. Las etiquetas reúnen los pedazos — y Zero los suma — para que «¿cuánto costó?» por fin tenga respuesta."
       }
     }
   },
@@ -899,6 +908,93 @@
       "cta": {
         "heading": "Ponle nombre al sueño. Conserva la fecha.",
         "body": "Comienza tu prueba gratuita de 30 días — configura tu Debt Crusher, crea tu primer objetivo y ve exactamente lo que cuestan ambos futuros antes de elegir.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "connectYourBank": {
+      "meta": {
+        "title": "Lleva tu dinero a Tether-Zero",
+        "description": "Tres puertas de entrada para tus transacciones: sincronización bancaria segura con Plaid, importación CSV/OFX y categorización Smart Match que aprende de ti."
+      },
+      "title": "Lleva tu dinero a Tether-Zero: conexión bancaria, importación de archivos y categorización automática",
+      "intro": {
+        "p1": "Un presupuesto es un plan para dinero que de verdad se mueve — y solo puede dirigir lo que ve. Todos los métodos que Tether-Zero enseña, de los sobres a la Fecha libre de deudas, parten de la misma materia prima: tus transacciones reales, dentro de la aplicación, categorizadas. Así que la primera pregunta práctica de un presupuesto nuevo es refrescantemente poco glamorosa: ¿cómo entra tu dinero ahí?",
+        "p2": "Tether-Zero te abre tres puertas. Conecta tu banco y deja que las transacciones lleguen solas. Importa archivos cuando traigas historial de un export bancario o de otra aplicación de presupuesto. O registra transacciones a mano cuando sea lo más fácil. La mayoría de los hogares termina combinando las tres, y la aplicación está construida para que todo aterrice en el mismo lugar: una sola lista de transacciones, un solo flujo de revisión, un solo presupuesto."
+      },
+      "bankLinking": {
+        "heading": "Conecta tu banco y deja de teclear",
+        "p1": "La puerta más rápida es la página «Conecta tu banco». Te guía a través de Plaid — el servicio de conexión usado en toda la industria financiera — para vincular tu institución en unos minutos — la propia página resume su circuito en tres palabras: conectar, sincronizar, categorizar. El modelo de seguridad merece decirse con todas las letras, y la aplicación lo hace, ahí mismo en la página: tus credenciales bancarias las gestiona Plaid, Tether-Zero nunca las almacena, y la conexión es de solo lectura. Tether-Zero ve transacciones y saldos; nadie puede mover tu dinero desde una aplicación de presupuesto.",
+        "p2": "Una vez vinculado, las transacciones nuevas se importan automáticamente y se actualizan a diario, con un botón de sincronización bajo demanda para las noches de conciliación en que quieres los datos más frescos. Todo lo que llega por esta vía lleva la etiqueta «Vinculado», y su fecha, monto y beneficiario quedan protegidos — tu banco es la fuente de verdad, así que esos campos no pueden desviarse. Dos notas honestas: la sincronización bancaria es un complemento premium, y vincular está reservado a administradores y editores del hogar. Si algún día desconectas, la cuenta simplemente pasa a ser manual — cada transacción sincronizada se queda."
+      },
+      "fileImports": {
+        "heading": "¿Te mudas? Trae tu historial",
+        "p1": "¿Vienes de otra aplicación de presupuesto, o partes de una pila de exports de estados de cuenta? Toca «Importar» en la página de Transacciones: el asistente «Importar transacciones» acepta archivos CSV, OFX o QFX de hasta 5 MB y sigue tres pasos: subir el archivo y elegir la cuenta de destino, previsualizar las primeras filas y revisar los resultados. No hay rompecabezas de columnas que resolver — se detectan automáticamente en el servidor.",
+        "p2": "La importación está hecha para ser difícil de lamentar. Los duplicados se detectan y omiten automáticamente: reimportar un estado de cuenta que se solapa no duplicará tu historial. La importación solo agrega transacciones — nunca modifica ni elimina lo que ya está. Y la pantalla de resultados dice exactamente qué pasó: cuántas filas se importaron, cuántas se omitieron y por qué, fila por fila."
+      },
+      "smartMatch": {
+        "heading": "Categorización que aprende de ti",
+        "p1": "Meter las transacciones es la mitad del trabajo; ponerlas en la categoría correcta es la otra mitad. Ahí es donde <strong>Smart Match</strong> se gana el nombre. Cuando eliges un beneficiario que ya has usado, aparece una etiqueta «Sugerido» con tu categoría habitual para ese beneficiario — acéptala con un clic, o descártala y elige otra. En cualquier caso, la última palabra es tuya.",
+        "p2": "Lo ingenioso es lo que ocurre cuando corriges: la regla se actualiza. Categoriza tu supermercado distinto una vez y Smart Match aprende la corrección para la próxima. Las reglas son de tu hogar — construidas con tu historial, no con el de los demás — y una sugerencia solo aparece cuando la coincidencia es confiable (más del 80 %), para que la etiqueta siga siendo útil en vez de ruido — callar cuando no está segura es parte del diseño."
+      },
+      "pendingReview": {
+        "heading": "Tú tienes la última palabra",
+        "p1": "La automatización nunca escribe tu registro sin supervisión. Las transacciones que llegan de tu banco caen en estado «Pendiente de revisión»: las que reconoces, las aceptas («Aceptar»); las que no, las rechazas («Rechazar») — con confirmación explícita, porque rechazar elimina la transacción permanentemente. Todo ocurre en la propia fila, y la aceptación masiva existe para la pila del lunes por la mañana.",
+        "p2": "Las transacciones aceptadas pueden marcarse después como «Conciliada» mientras las cotejas con un estado de cuenta — la versión moderna de cuadrar la chequera. El resultado es un registro en el que confías: nada entra a tu presupuesto sin pasar ante tus ojos, y nada desconocido se queda contaminando tus reportes."
+      },
+      "fromInbox": {
+        "heading": "De la bandeja de entrada al presupuesto",
+        "p1": "Con la tubería conectada, el impulso llega rápido. Dale categorías al primer lote de transacciones importadas — Smart Match hace que el segundo lote sea más rápido que el primero — y pon los datos a trabajar: <link>construye tu primer presupuesto</link> sobre números reales en lugar de recordados. Esa es la diferencia entre presupuestar de memoria y presupuestar con evidencia.",
+        "p2": "A partir de ahí, el resto de Tether-Zero despierta. Las transacciones frescas alimentan el cálculo de ritmo que <link2>atrapa el sobregasto temprano</link2>, nutren el panel de análisis y le dan a Zero, el coach de IA, números reales con qué responder. Cada una de esas funciones es tan actual como tus datos de transacciones — exactamente por eso llevar tu dinero adentro es el paso uno."
+      },
+      "cta": {
+        "heading": "Abre las puertas",
+        "body": "Comienza tu prueba gratuita de 30 días, vincula una cuenta bancaria o importa tu primer archivo, y mira tu presupuesto llenarse con tu vida real. La configuración toma minutos; el tecleo que te ahorras dura para siempre.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "spendingTags": {
+      "meta": {
+        "title": "¿Cuánto costaron realmente las vacaciones?",
+        "description": "El gasto de unas vacaciones se dispersa entre categorías. Las etiquetas lo reúnen — y Zero lo suma — para que una pregunta por fin tenga respuesta."
+      },
+      "title": "Más allá de las categorías: responde «¿Cuánto costaron realmente las vacaciones?» con etiquetas",
+      "intro": {
+        "p1": "Las vacaciones fueron una sola decisión. El presupuesto las recuerda en cinco pedazos: una semana de supermercado más pesada, dos tanques de gasolina, un hotel archivado en Viajes, restaurantes fundidos con tus salidas normales y un café de aeropuerto desaparecido en Varios. Pregúntale a tu presupuesto «¿cuánto costó el viaje?» y se encoge de hombros — cada dólar está contabilizado, y la respuesta sigue sin aparecer.",
+        "p2": "No es un defecto de tus categorías; es su diseño. Las categorías responden una pregunta mensual — ¿a dónde va el dinero? — una por línea, el mismo marco cada mes. Algunas preguntas corren en diagonal a esa estructura. Para ellas, Tether-Zero tiene un segundo eje: las <strong>etiquetas</strong>. Este artículo muestra cómo un rótulo de dos minutos convierte «más o menos mucho» en un número de verdad — para vacaciones, remodelaciones, la temporada de impuestos y cualquier otro proyecto que tu dinero atraviese."
+      },
+      "whyCategoriesFail": {
+        "heading": "Por qué las categorías no pueden responder",
+        "p1": "Las categorías son los muros de carga de un presupuesto de base cero: exclusivas, mensuales, una por línea de transacción. Esa rigidez es una virtud — es lo que hace comprobable el «cada dólar tiene un trabajo». Pero un evento como unas vacaciones es transversal por naturaleza. Su gasto cae en supermercado, gasolina, restaurantes y alojamiento, y debe quedarse ahí: esas categorías siguen necesitando totales mensuales honestos.",
+        "p2": "El atajo tentador — una categoría «Vacaciones» — rompe en silencio ambas respuestas. Saca el supermercado del viaje de su categoría y tu historial de supermercado miente; déjalo dentro y tu total de vacaciones miente. El verdadero remedio no es una categoría mejor, sino un segundo rótulo independiente que acompaña al gasto dondequiera que ocurra — exactamente lo que el recorrido guiado de la aplicación dice de las etiquetas: «Las etiquetas cruzan categorías, así que puedes seguir unas vacaciones o un proyecto dondequiera que ocurra el gasto»."
+      },
+      "meetTags": {
+        "heading": "Conoce la página de Etiquetas",
+        "p1": "Las etiquetas tienen su propia página en la barra lateral y pertenecen al hogar — crea «Hawaii 2026» una vez y las transacciones de todos pueden llevarla. Una etiqueta es deliberadamente simple: un nombre de hasta 50 caracteres y, si quieres, uno de doce colores predefinidos para distinguirla en las listas. La lista se mantiene alfabética: un hábito de nombres consistente («Viaje: Hawaii», «Viaje: Navidad») mantiene juntas las etiquetas relacionadas.",
+        "p2": "Dos notas prácticas. Los nombres distinguen mayúsculas — «vacaciones» y «Vacaciones» son dos etiquetas distintas, como advierte el propio recorrido — así que elige una capitalización y mantenla. Y los roles importan: todo el hogar ve las etiquetas, los editores las crean y editan, y solo los administradores pueden borrar una. Un rótulo del que reporta todo el hogar merece esa pequeña dosis de gobierno."
+      },
+      "tagAsYouGo": {
+        "heading": "Etiqueta mientras está fresco",
+        "p1": "El etiquetado funciona mejor como reflejo del momento, y el formulario de transacción está hecho para eso. Cada transacción acepta etiquetas desde un selector múltiple — «Seleccionar etiquetas» — y una misma compra puede llevar varias a la vez: la cena junto al mar puede ser «Hawaii 2026» y «Aniversario» al mismo tiempo, algo que ninguna categoría permitirá jamás.",
+        "p2": "A media captura, si la etiqueta aún no existe, no sales del formulario: la opción «+ Crear nueva etiqueta» está dentro del propio selector. La fila del alquiler de autos es exactamente donde debería nacer «Hawaii 2026» — porque la alternativa es una excavación arqueológica de fin de mes entre estados de cuenta, reconstruyendo cuáles de cuarenta líneas de supermercado eran el viaje."
+      },
+      "splitTheReceipt": {
+        "heading": "Divide el recibo, conserva la verdad",
+        "p1": "Los recibos reales rara vez son puros. La compra grande antes del viaje fue una hielera, bloqueador y toallas de playa — más una semana normal de supermercado. Etiqueta la transacción entera como «Hawaii 2026» y tu total de vacaciones se infla; omítela y el viaje parece más barato de lo que fue. La respuesta de Tether-Zero es la división: parte la transacción en líneas, y cada línea lleva su propia categoría <em>y</em> su propia etiqueta opcional.",
+        "p2": "Así, la hielera y el bloqueador van en una línea «Hawaii 2026» y el supermercado normal queda sin etiqueta, con el editor de división verificando que las líneas sumen el monto original. El número de las vacaciones queda honesto al dólar, sin inventar transacciones falsas para lograrlo."
+      },
+      "askZeroForTheBill": {
+        "heading": "Pídele la cuenta a Zero",
+        "p1": "Terminado el viaje, la lista de transacciones cuenta la historia: filtra por etiqueta — el filtro ofrece «Cualquier etiqueta» — y cada línea «Hawaii 2026», de todas las categorías, queda en un solo lugar. Esa es la mitad de consulta. Para la aritmética, pregúntale a <link>Zero</link>, el coach de IA integrado en la aplicación, tan simple como quieras: ¿cuánto costó todo lo etiquetado Hawaii 2026?",
+        "p2": "Los totales por etiqueta son parte del oficio de Zero — la biblioteca de sugerencias de la aplicación propone por sí sola el total del año de todo lo etiquetado como Médico, o comparar dos meses filtrando una sola etiqueta de Noche de cita. Tu pregunta de vacaciones es la misma frase con tu etiqueta adentro. Un rótulo mientras gastas; una pregunta cuando terminas."
+      },
+      "oneLabelManyJobs": {
+        "heading": "Un rótulo, muchos oficios",
+        "p1": "Las vacaciones son solo la puerta de entrada. El mismo mecanismo arma un reporte de gastos — etiqueta los costos de trabajo como «Reembolsable» y saca la lista antes de enviarlo. Sobrevive la temporada de impuestos, donde una etiqueta «Deducible» junta las piezas todo el año. Mantiene honesta una remodelación, porque a «Remodelación» no le importa si el dinero salió por la ferretería o por la factura del plomero. Y Zero incluso puede ayudarte a diseñar una estrategia de etiquetado a la medida de tus finanzas.",
+        "p2": "Cuando una etiqueta empieza a medir algo que todavía estás ahorrando, los dos sistemas se encuentran: la propia biblioteca de sugerencias pregunta si una etiqueta de Vacaciones y un objetivo de vacaciones deberían coexistir. Pueden — miran en direcciones opuestas. Un <link2>objetivo financia el sueño</link2> antes de salir; una etiqueta mide lo que realmente costó al volver. Usa ambos, y el próximo viaje se planea con números reales en lugar de una mueca."
+      },
+      "cta": {
+        "heading": "Etiqueta el viaje. Consigue el número.",
+        "body": "Comienza tu prueba gratuita de 30 días — crea tu primera etiqueta, etiqueta sobre la marcha y pregúntale a Zero el total al aterrizar.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

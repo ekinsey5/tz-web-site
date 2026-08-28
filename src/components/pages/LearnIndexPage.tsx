@@ -4,11 +4,13 @@ import {
   Coins,
   Gauge,
   Gift,
+  Landmark,
   Mail,
   PiggyBank,
   Scale,
   ShoppingCart,
   Snowflake,
+  Tag,
   Target,
   Wallet,
   Wand2,
@@ -34,6 +36,8 @@ const ICONS: Record<keyof typeof ARTICLES, LucideIcon> = {
   windfallInterceptor: Gift,
   aiFinancialCoach: Bot,
   goalsAndDebt: Target,
+  connectYourBank: Landmark,
+  spendingTags: Tag,
 };
 
 /** Listing page for the /learn section, shared by the (en) and [locale] routes. */

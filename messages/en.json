@@ -290,6 +290,7 @@
     "readArticle": "Read the article",
     "stages": {
       "startHere": "Start Here",
+      "getSetUp": "Get Set Up",
       "buildYourBudget": "Build Your Budget",
       "monthToMonth": "Run It Month to Month",
       "crushDebt": "Crush Debt & Fund Goals",
@@ -346,6 +347,14 @@
       "goalsAndDebt": {
         "title": "Saving for a Dream While Killing Your Debt: Goals and Debt Without the Guilt",
         "excerpt": "Saving for a trip while paying down cards usually runs on guilt. Tether-Zero prices the trade-off — how many months your debt-free date slips — and lets you choose with open eyes."
+      },
+      "connectYourBank": {
+        "title": "Get Your Money Into Tether-Zero: Bank Linking, File Imports, and Auto-Categorization",
+        "excerpt": "A budget can only steer what it can see. Three ways to get your transactions into Tether-Zero — secure Plaid bank linking, CSV/OFX file imports, and Smart Match auto-categorization — plus the review flow that keeps you in charge of all of it."
+      },
+      "spendingTags": {
+        "title": "Beyond Categories: Answer “What Did the Vacation Actually Cost?” with Tags",
+        "excerpt": "A vacation scatters across groceries, gas, dining, and lodging. Tags collect the scattered pieces — and Zero totals them — so “what did it cost?” finally has an answer."
       }
     }
   },
@@ -899,6 +908,93 @@
       "cta": {
         "heading": "Name the dream. Keep the date.",
         "body": "Start your 30-day free trial — set up your Debt Crusher, create your first goal, and see exactly what both futures cost before you choose either.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "connectYourBank": {
+      "meta": {
+        "title": "Get Your Money Into Tether-Zero",
+        "description": "Three ways to get transactions into Tether-Zero — secure Plaid bank sync, CSV/OFX file imports, and Smart Match auto-categorization that learns from you."
+      },
+      "title": "Get Your Money Into Tether-Zero: Bank Linking, File Imports, and Auto-Categorization",
+      "intro": {
+        "p1": "A budget is a plan for money that actually moves — and it can only steer what it can see. Every method Tether-Zero teaches, from envelope allocations to the Debt Free Date, starts from the same raw material: your real transactions, in the app, categorized. Which makes the first practical question of any new budget refreshingly unglamorous: how does your money get in there?",
+        "p2": "Tether-Zero gives you three doors. Link your bank and let transactions flow in on their own. Import files when you're bringing history from a bank export or another budgeting app. Or enter transactions by hand whenever that's easiest. Most households end up using a mix, and the app is built so all three land in the same place: one transaction list, one review flow, one budget."
+      },
+      "bankLinking": {
+        "heading": "Link your bank, stop typing",
+        "p1": "The fastest door is the <strong>Connect Your Bank</strong> page. It walks you through Plaid — the connection service used across the finance industry — to link your institution in a couple of minutes — the page even explains its own pipeline in three words: connect, sync, categorize. The security model is worth spelling out, and the app does, right on the page: your banking credentials are handled by Plaid, never stored by Tether-Zero, and the connection is read-only. Tether-Zero can see transactions and balances; nobody can move your money from inside a budgeting app.",
+        "p2": "Once linked, new transactions are imported automatically and updated daily, with a <strong>Sync all accounts</strong> button for the reconciliation nights when you want the freshest data on demand. Everything that arrives this way wears a <strong>Linked</strong> badge, and its date, amount, and payee are protected — your bank is the source of truth, so those fields can't drift. Two honest notes: bank sync is a premium add-on, and linking is for household Admins and Editors. If you ever disconnect, the account simply becomes a manual one — every transaction you've synced stays."
+      },
+      "fileImports": {
+        "heading": "Moving in? Bring your history",
+        "p1": "Switching from another budgeting app, or starting from a pile of bank statement exports? Tap <strong>Import</strong> on the Transactions page and the <strong>Import Transactions</strong> wizard takes CSV, OFX, or QFX files up to 5MB and walks three steps: upload the file and pick the destination account, preview the first rows, and review the results. There's no column-mapping puzzle to solve — the columns are detected automatically on the server.",
+        "p2": "The import is built to be hard to regret. Duplicates are detected and skipped automatically, so re-importing an overlapping statement won't double your history. The import only ever adds transactions — it never modifies or deletes what's already there. And the results screen tells you exactly what happened: how many rows imported, how many were skipped, and why, down to the row."
+      },
+      "smartMatch": {
+        "heading": "Categorization that learns from you",
+        "p1": "Getting transactions in is half the job; putting them in the right category is the other half. That's where <strong>Smart Match</strong> earns its name. When you pick a payee you've used before, a <strong>Suggested</strong> category chip appears with your usual category for that payee — accept it with one click, or dismiss it and choose another. Either way, you keep the final say.",
+        "p2": "The clever part is what happens when you override: the rule updates. Categorize your grocery store differently once, and Smart Match learns your correction for next time. The rules are your household's own — built from your history, not everyone else's — and a suggestion only appears when the match is confident (above 80%), so the chip stays helpful instead of noisy — staying silent when it isn't sure is part of the design."
+      },
+      "pendingReview": {
+        "heading": "You get the final say",
+        "p1": "Automation never gets to write your record unsupervised. Transactions that arrive from your bank land in a <strong>Pending review</strong> state: recognized ones you <strong>Accept</strong>, unrecognized ones you <strong>Reject</strong> — with an explicit confirmation, since rejecting deletes the transaction permanently. Both happen inline on the transaction row, and bulk accept exists for the Monday-morning pile.",
+        "p2": "Accepted transactions can later be marked <strong>Cleared</strong> as you check them against a statement — the modern version of balancing a checkbook. The result is a register you actually trust: nothing enters your budget without passing under your eyes, and nothing unrecognized gets to sit there polluting your reports."
+      },
+      "fromInbox": {
+        "heading": "From inbox to budget",
+        "p1": "Once the pipes are connected, momentum builds fast. Give the first batch of imported transactions categories — Smart Match makes the second batch faster than the first — and then put the data to work: <link>build your first budget</link> on numbers that are real rather than remembered. That's the difference between budgeting from memory and budgeting from evidence.",
+        "p2": "From there, the rest of Tether-Zero wakes up. Fresh transactions power the pacing math that <link2>catches overspending early</link2>, feed the insights dashboard, and give Zero, the AI coach, real numbers to answer with. Every one of those features is only as current as your transaction data — which is exactly why getting your money in is step one."
+      },
+      "cta": {
+        "heading": "Open the doors",
+        "body": "Start your 30-day free trial, link a bank account or import your first file, and watch your budget fill with your real life. The setup takes minutes; the typing it saves lasts forever.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "spendingTags": {
+      "meta": {
+        "title": "What Did the Vacation Actually Cost?",
+        "description": "Vacation spending scatters across categories. Tether-Zero's tags collect it — and Zero totals it — so one question finally has one answer."
+      },
+      "title": "Beyond Categories: Answer “What Did the Vacation Actually Cost?” with Tags",
+      "intro": {
+        "p1": "The vacation was one decision. The budget remembers it as five: a bigger grocery week, two tanks of gas, a hotel under Travel, restaurants that blurred into your normal dining out, and an airport coffee that vanished into Miscellaneous. Ask your budget “what did the trip cost?” and it shrugs — every dollar is accounted for, and the answer is still nowhere.",
+        "p2": "That's not a flaw in your categories; it's their design. Categories are built to answer a monthly question — where does the money go? — one label per line, the same shape every month. Some questions run sideways across that structure. For those, Tether-Zero has a second axis: <strong>tags</strong>. This article shows how a two-minute label turns “roughly a lot” into an actual number — for vacations, remodels, tax season, and any other project your money touches."
+      },
+      "whyCategoriesFail": {
+        "heading": "Why categories can't answer it",
+        "p1": "Categories are the load-bearing walls of a zero-based budget: exclusive, monthly, one per transaction line. That rigidity is a feature — it's what makes “every dollar has a job” checkable. But an event like a vacation is cross-cutting by nature. Its spending lands in groceries, gas, dining, and lodging, and it should stay there: those categories still need honest monthly totals.",
+        "p2": "The tempting workaround — a “Vacation” category — quietly breaks both answers. Move the trip's groceries out of Groceries and your grocery history lies; leave them in and your vacation total lies. The real fix isn't a better category. It's a second, independent label that rides along wherever the spending happens — which is exactly what the app's own tour says tags are for: “Tags cut across categories, so you can track things like a vacation or a project wherever the spending happens.”"
+      },
+      "meetTags": {
+        "heading": "Meet the Tags page",
+        "p1": "Tags live on their own page in the sidebar, and they belong to the household — create “Hawaii 2026” once and everyone's transactions can wear it. A tag is deliberately simple: a name up to 50 characters and, if you like, one of twelve preset colors so it stands out in lists. The list stays alphabetical, so a consistent naming habit (“Trip: Hawaii”, “Trip: Thanksgiving”) keeps related tags together.",
+        "p2": "Two practical notes. Names are case-sensitive — “vacation” and “Vacation” are two different tags, as the app's own tour warns — so pick a capitalization and stick with it. And roles matter: everyone in the household can see the tags, Editors can create and edit them, and only Admins can delete one. A label your whole household reports against deserves that small amount of governance."
+      },
+      "tagAsYouGo": {
+        "heading": "Tag it while it's fresh",
+        "p1": "Tagging works best as a habit of the moment, and the transaction form is built for that. Every transaction takes tags from a multi-select — “Select tags” — and a single purchase can wear several at once: the resort dinner can be “Hawaii 2026” and “Anniversary” simultaneously, something no category could ever allow.",
+        "p2": "Mid-entry, if the tag doesn't exist yet, you don't leave the form: a “+ Create new tag” option sits right in the picker. Standing in the rental-car line is exactly when “Hawaii 2026” should be born — because the alternative is a month-end archaeology dig through statements, reconstructing which of forty grocery lines were the trip."
+      },
+      "splitTheReceipt": {
+        "heading": "Split the receipt, keep the truth",
+        "p1": "Real receipts are rarely pure. The big-box run before the trip was a cooler, sunscreen, and beach towels — plus a normal week of groceries. Tag the whole transaction “Hawaii 2026” and your vacation total inflates; skip it and the trip looks cheaper than it was. Tether-Zero's answer is the split: divide the transaction into lines, and each line carries its own category <em>and</em> its own optional tag.",
+        "p2": "So the cooler and sunscreen go on a “Hawaii 2026” line and the regular groceries stay untagged, with the split editor checking that the lines add up to the original amount. The vacation number stays honest to the dollar, and nobody invents fake transactions to get there."
+      },
+      "askZeroForTheBill": {
+        "heading": "Ask Zero for the bill",
+        "p1": "When the trip is over, the transactions list shows you the story: filter by tag — the filter's placeholder reads “Any tag” — and every “Hawaii 2026” line from every category stands in one place. That's the browsing half. For the arithmetic, ask <link>Zero</link>, the AI coach built into the app, as plainly as you like: what did everything tagged Hawaii 2026 cost?",
+        "p2": "Totals by tag are squarely inside Zero's job description — the app's own prompt library seeds questions like “What's my total spending across all transactions tagged as Medical this year so far?” and comparing two months of spending filtered to a single “Date Night” tag. Your vacation question is the same sentence with your tag in it. One label while you spend; one question when you're done."
+      },
+      "oneLabelManyJobs": {
+        "heading": "One label, many jobs",
+        "p1": "Vacation is just the gateway use. The same mechanism runs an expense report — tag work costs “Reimbursable” and pull the list before submitting. It survives tax season, where a “Tax Deductible” tag collects the audit trail all year. It keeps a remodel honest, because “Home Renovation” doesn't care whether the money left through the hardware store or a plumber's invoice. And Zero will even help you design a tagging strategy if you tell it how your finances are shaped.",
+        "p2": "When a tag starts measuring something you're still saving for, the two systems meet: the prompt library's own example asks whether a Vacation tag and a separate vacation goal should coexist. They can — they face opposite directions. A <link2>goal funds the dream</link2> before you leave; a tag measures what it actually cost once you're back. Run both, and the next trip gets planned with real numbers instead of a wince."
+      },
+      "cta": {
+        "heading": "Tag the trip. Get the number.",
+        "body": "Start your 30-day free trial — create your first tag, tag as you go, and ask Zero what it all cost when you land.",
         "button": "Start your 30-day free trial"
       }
     }
