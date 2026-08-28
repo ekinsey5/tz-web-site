@@ -271,14 +271,14 @@ export const LEARN_JOURNEY = [
   { stage: "startHere", articles: ["makingABudget"] },
   { stage: "getSetUp", articles: ["connectYourBank", "budgetWithPartner"] },
   { stage: "buildYourBudget", articles: ["firstBudget", "envelopeBudgeting", "sinkingFunds"] },
-  { stage: "monthToMonth", articles: ["irregularPaycheck", "catchOverspendingEarly", "spendingTags"] },
+  { stage: "monthToMonth", articles: ["catchOverspendingEarly", "spendingTags", "irregularPaycheck"] },
   {
     stage: "crushDebt",
     articles: [
       "payOffDebtFaster",
       "snowflakePayments",
-      "canIAffordThis",
       "windfallInterceptor",
+      "canIAffordThis",
       "goalsAndDebt",
     ],
   },
