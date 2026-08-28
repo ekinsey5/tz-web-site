@@ -290,6 +290,7 @@
     "readArticle": "Lire l’article",
     "step": "Étape {number}",
     "stages": {
+      "theMap": "La carte",
       "startHere": "Commencez ici",
       "getSetUp": "Mettez tout en place",
       "buildYourBudget": "Construisez votre budget",
@@ -364,6 +365,10 @@
       "moneyStory": {
         "title": "Lire l’histoire de votre argent : valeur nette, âge de l’argent et tendance revenus-dépenses",
         "excerpt": "Valeur nette, âge de l’argent, revenus vs dépenses : trois cartes Perspectives qui transforment des mois de transactions en fil narratif — et disent, honnêtement, si ça marche."
+      },
+      "budgetJourney": {
+        "title": "Le parcours budgétaire : par où commencer et quoi lire ensuite",
+        "excerpt": "Seize articles, six étapes, un seul chemin — la carte de lecture de cette bibliothèque, de votre premier budget à la liberté financière, coach compris."
       }
     }
   },
@@ -1091,6 +1096,34 @@
       "cta": {
         "heading": "Votre argent a une histoire. Lisez-la.",
         "body": "Commencez votre essai gratuit de 30 jours — connectez vos comptes, faites vivre votre budget, et regardez trois chiffres transformer des mois de transactions en une histoire qu’on peut suivre.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "budgetJourney": {
+      "meta": {
+        "title": "Le parcours budgétaire",
+        "description": "Seize articles, un seul chemin : la carte de lecture de la bibliothèque Apprendre de Tether-Zero — du premier budget à la liberté financière."
+      },
+      "title": "Le parcours budgétaire : par où commencer et quoi lire ensuite",
+      "intro": {
+        "p1": "Seize articles vivent dans cette bibliothèque, et aucun n’a été écrit au hasard. Ensemble, ils retracent la vie d’un budget par ses deux bouts : celui que vous commencez aujourd’hui et celui que vous ferez tourner dans un an. Lus dans l’ordre, c’est un cours. Lus à la demande, c’est une référence. Dans les deux cas, mieux vaut voir la carte entière avant de choisir une route.",
+        "p2": "Le chemin ci-dessous traverse six étapes — <strong>pourquoi, installation, construction, gestion, dettes et objectifs, perfectionnement</strong>. Chaque pas mène à son article, chaque article tient debout seul, et les numéros correspondent à ceux des cartes de cette page."
+      },
+      "diagramLabel": "Le chemin de lecture en seize pas à travers six étapes",
+      "stageNotes": {
+        "startHere": "Un article, une mission : ce qu’est vraiment un budget et pourquoi la méthode fonctionne.",
+        "getSetUp": "La plomberie — la synchronisation bancaire et les personnes qui partageront le plan.",
+        "buildYourBudget": "De catégories vides à chaque dollar assigné, en une seule séance.",
+        "monthToMonth": "Les habitudes qui gardent un budget vivant entre deux paies.",
+        "crushDebt": "Stratégie, accélération et compromis honnêtes — dettes en baisse, rêves financés.",
+        "coachRefine": "Lire l’arc long, avec un coach pour aider à l’interpréter."
+      },
+      "outro": {
+        "p1": "Par où commencer, vous ? Si tout est nouveau, prenez le pas 1 et laissez les numéros vous porter. Si votre budget tourne déjà, sautez à l’étape la plus bruyante en ce moment — les articles se renvoient l’un à l’autre là où les chemins se croisent. Et si vous préférez ne pas naviguer du tout, le dernier arrêt de la carte est un coach qui a tout lu."
+      },
+      "cta": {
+        "heading": "Commencez au pas un — ou là où ça fait mal",
+        "body": "Commencez votre essai gratuit de 30 jours — l’application parcourt le même chemin que cette bibliothèque décrit, un chiffre honnête à la fois.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     }

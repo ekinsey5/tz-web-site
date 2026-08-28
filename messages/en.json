@@ -290,6 +290,7 @@
     "readArticle": "Read the article",
     "step": "Step {number}",
     "stages": {
+      "theMap": "The Map",
       "startHere": "Start Here",
       "getSetUp": "Get Set Up",
       "buildYourBudget": "Build Your Budget",
@@ -364,6 +365,10 @@
       "moneyStory": {
         "title": "Reading Your Money Story: Net Worth, Age of Money, and Your Income-vs-Expenses Trend",
         "excerpt": "Net worth, age of money, income vs. expense: three Insights cards that turn months of transactions into a plot line — and tell you, honestly, whether this is working."
+      },
+      "budgetJourney": {
+        "title": "The Budget Journey: Where to Start and What to Read Next",
+        "excerpt": "Sixteen articles, six stages, one path — the reading map for this library, from your first budget to debt freedom and the coach who helps you refine it."
       }
     }
   },
@@ -1091,6 +1096,34 @@
       "cta": {
         "heading": "Your money has a story. Read it.",
         "body": "Start your 30-day free trial — connect your accounts, run your budget, and watch three numbers turn months of transactions into a story you can actually follow.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "budgetJourney": {
+      "meta": {
+        "title": "The Budget Journey",
+        "description": "Sixteen articles, one path: the reading map through Tether-Zero's Learn library — from your first budget to debt freedom and beyond."
+      },
+      "title": "The Budget Journey: Where to Start and What to Read Next",
+      "intro": {
+        "p1": "Sixteen articles live in this library, and none of them was written at random. Together they trace the life of a budget from both ends: the one you're starting today and the one you'll be running a year from now. Read in order, they're a course. Read on demand, they're a reference. Either way, it helps to see the whole map before choosing a road.",
+        "p2": "The path below runs through six stages — <strong>why, set up, build, run, crush debt and fund goals, refine</strong>. Every step links to its article, every article stands on its own, and the step numbers here match the ones on the cards throughout this page."
+      },
+      "diagramLabel": "The sixteen-step reading path through six stages",
+      "stageNotes": {
+        "startHere": "One article, one job: what a budget actually is and why the method works.",
+        "getSetUp": "The plumbing — bank sync and the people who will share the plan.",
+        "buildYourBudget": "From empty categories to every dollar assigned, in one sitting.",
+        "monthToMonth": "The habits that keep a budget alive between paydays.",
+        "crushDebt": "Strategy, acceleration, and the honest trade-offs — debt down, dreams funded.",
+        "coachRefine": "Reading the long arc, with a coach to help interpret it."
+      },
+      "outro": {
+        "p1": "So where should you personally start? If everything is new, take step 1 and let the numbers carry you. If your budget already runs, jump to the stage that's loudest right now — the articles cross-link wherever the paths touch. And if you'd rather not navigate at all, the last stop on the map is a coach who has read all of it."
+      },
+      "cta": {
+        "heading": "Start at step one — or wherever it hurts",
+        "body": "Start your 30-day free trial — the app walks the same journey this library describes, one honest number at a time.",
         "button": "Start your 30-day free trial"
       }
     }

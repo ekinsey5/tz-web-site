@@ -290,6 +290,7 @@
     "readArticle": "Leer el artículo",
     "step": "Paso {number}",
     "stages": {
+      "theMap": "El mapa",
       "startHere": "Empieza aquí",
       "getSetUp": "Deja todo listo",
       "buildYourBudget": "Construye tu presupuesto",
@@ -364,6 +365,10 @@
       "moneyStory": {
         "title": "Leer la historia de tu dinero: patrimonio neto, edad del dinero y tu tendencia de ingresos vs. gastos",
         "excerpt": "Patrimonio neto, edad del dinero, ingresos vs. gastos: tres tarjetas de Perspectivas que convierten meses de transacciones en una trama — y dicen, honestamente, si está funcionando."
+      },
+      "budgetJourney": {
+        "title": "El viaje del presupuesto: por dónde empezar y qué leer después",
+        "excerpt": "Dieciséis artículos, seis etapas, un solo camino — el mapa de lectura de esta biblioteca, de tu primer presupuesto a la libertad financiera, coach incluido."
       }
     }
   },
@@ -1091,6 +1096,34 @@
       "cta": {
         "heading": "Tu dinero tiene una historia. Léela.",
         "body": "Comienza tu prueba gratuita de 30 días — conecta tus cuentas, haz vivir tu presupuesto y mira cómo tres números convierten meses de transacciones en una historia que se puede seguir.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "budgetJourney": {
+      "meta": {
+        "title": "El viaje del presupuesto",
+        "description": "Dieciséis artículos, un solo camino: el mapa de lectura de la biblioteca Aprende de Tether-Zero — del primer presupuesto a la libertad financiera."
+      },
+      "title": "El viaje del presupuesto: por dónde empezar y qué leer después",
+      "intro": {
+        "p1": "Dieciséis artículos viven en esta biblioteca, y ninguno se escribió al azar. Juntos trazan la vida de un presupuesto por sus dos extremos: el que empiezas hoy y el que estarás manejando dentro de un año. Leídos en orden, son un curso. Leídos a demanda, son una referencia. En ambos casos, conviene ver el mapa completo antes de elegir un camino.",
+        "p2": "El camino de abajo cruza seis etapas — <strong>por qué, preparación, construcción, gestión, deudas y metas, refinamiento</strong>. Cada paso lleva a su artículo, cada artículo se sostiene solo, y los números coinciden con los de las tarjetas de esta página."
+      },
+      "diagramLabel": "El camino de lectura de dieciséis pasos a través de seis etapas",
+      "stageNotes": {
+        "startHere": "Un artículo, un trabajo: qué es realmente un presupuesto y por qué funciona el método.",
+        "getSetUp": "La fontanería — la sincronización bancaria y las personas que compartirán el plan.",
+        "buildYourBudget": "De categorías vacías a cada dólar asignado, en una sola sesión.",
+        "monthToMonth": "Los hábitos que mantienen vivo un presupuesto entre pagos.",
+        "crushDebt": "Estrategia, aceleración e intercambios honestos — deuda a la baja, sueños financiados.",
+        "coachRefine": "Leer el arco largo, con un coach que ayuda a interpretarlo."
+      },
+      "outro": {
+        "p1": "¿Y tú por dónde deberías empezar? Si todo es nuevo, toma el paso 1 y deja que los números te lleven. Si tu presupuesto ya funciona, salta a la etapa que hoy suene más fuerte — los artículos se enlazan entre sí donde los caminos se tocan. Y si prefieres no navegar, la última parada del mapa es un coach que lo ha leído todo."
+      },
+      "cta": {
+        "heading": "Empieza en el paso uno — o donde más duela",
+        "body": "Comienza tu prueba gratuita de 30 días — la aplicación recorre el mismo camino que describe esta biblioteca, un número honesto a la vez.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

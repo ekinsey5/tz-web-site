@@ -30,9 +30,10 @@ test("a duplicated key fails the guard by name", () => {
   assert.throws(() => assertJourneyCovers(doubled, KEYS), /Duplicated: makingABudget/);
 });
 
-test("flattened order walks the journey from primer to coach", () => {
+test("flattened order opens with the map, then walks primer to coach", () => {
   const flat = LEARN_JOURNEY.flatMap((s) => s.articles);
   assert.equal(flat.length, KEYS.length);
-  assert.equal(flat[0], "makingABudget");
+  assert.equal(flat[0], "budgetJourney");
+  assert.equal(flat[1], "makingABudget");
   assert.equal(flat[flat.length - 1], "aiFinancialCoach");
 });

@@ -258,6 +258,12 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-28",
   },
+  budgetJourney: {
+    slug: "the-budget-journey",
+    path: "/learn/the-budget-journey/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-28",
+  },
 } as const;
 
 /**
@@ -268,6 +274,8 @@ export const ARTICLES = {
  * otherwise, so placing a new article here is a required publishing step.
  */
 export const LEARN_JOURNEY = [
+  /** The map article is its own stage and carries no step number (see LearnIndexPage). */
+  { stage: "theMap", articles: ["budgetJourney"] },
   { stage: "startHere", articles: ["makingABudget"] },
   { stage: "getSetUp", articles: ["connectYourBank", "budgetWithPartner"] },
   { stage: "buildYourBudget", articles: ["firstBudget", "envelopeBudgeting", "sinkingFunds"] },

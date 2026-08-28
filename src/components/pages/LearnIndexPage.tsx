@@ -3,6 +3,7 @@ import {
   BookOpen,
   Bot,
   Coins,
+  Compass,
   Gauge,
   Gift,
   Landmark,
@@ -42,11 +43,18 @@ const ICONS: Record<keyof typeof ARTICLES, LucideIcon> = {
   spendingTags: Tag,
   budgetWithPartner: Users,
   moneyStory: BookOpen,
+  budgetJourney: Compass,
 };
 
-/** 1-based journey step number per article key, derived from the manifest order. */
-const STEP_NUMBERS = new Map(
-  LEARN_JOURNEY.flatMap((s) => s.articles).map((key, i) => [key, i + 1]),
+/**
+ * 1-based journey step number per article key, derived from the manifest order.
+ * The map article ("theMap" stage) is the overview of the path, not a step on
+ * it, so it carries no number and the sequence starts at the first real stage.
+ */
+const STEP_NUMBERS = new Map<keyof typeof ARTICLES, number>(
+  LEARN_JOURNEY.filter((s) => s.stage !== "theMap")
+    .flatMap((s) => s.articles)
+    .map((key, i) => [key, i + 1]),
 );
 
 /** Listing page for the /learn section, shared by the (en) and [locale] routes. */
@@ -71,6 +79,7 @@ export async function LearnIndexPage({ locale }: { locale: Locale }) {
               {articles.map((key) => {
                 const Icon = ICONS[key];
                 const articleHref = localizePath(locale, ARTICLES[key].path);
+                const step = STEP_NUMBERS.get(key);
                 return (
                   <li key={key}>
                     <article className="card flex h-full flex-col p-6">
@@ -82,11 +91,12 @@ export async function LearnIndexPage({ locale }: { locale: Locale }) {
                           <Icon className="h-7 w-7" />
                         </span>
                         <div>
-                          <p className="text-xs font-semibold uppercase tracking-wide text-brand">
-                            {/* Key always present: the map is built from the same manifest. */}
-                            {t("step", { number: STEP_NUMBERS.get(key)! })}
-                          </p>
-                          <h3 className="mt-1 text-h3 text-ink-strong">
+                          {step !== undefined && (
+                            <p className="text-xs font-semibold uppercase tracking-wide text-brand">
+                              {t("step", { number: step })}
+                            </p>
+                          )}
+                          <h3 className={step !== undefined ? "mt-1 text-h3 text-ink-strong" : "text-h3 text-ink-strong"}>
                             <Link href={articleHref} className="hover:text-brand">
                               {t(`articles.${key}.title`)}
                             </Link>
