@@ -331,6 +331,10 @@
       "windfallInterceptor": {
         "title": "Que faire d’une aubaine : comment Tether-Zero attrape l’argent surprise avant qu’il ne fonde",
         "excerpt": "Remboursements d’impôts et primes ont le don de se dissoudre dans les dépenses du quotidien. L’Intercepteur d’aubaines de Zero repère le dépôt surprise et pose une seule question, pendant qu’il est encore temps : doit-il avancer votre date de liberté ?"
+      },
+      "aiFinancialCoach": {
+        "title": "Rencontrez Zero, votre coach financier IA : de vraies réponses à partir de vos vrais chiffres",
+        "excerpt": "Les conseils génériques ne voient pas votre budget. Zero, si. Rencontrez le coach financier IA intégré de Tether-Zero : des réponses claires calculées à partir des vrais chiffres de votre foyer, des alertes proactives quand votre argent réclame de l’attention — et rien ne change sans votre accord."
       }
     }
   },
@@ -797,6 +801,47 @@
       "cta": {
         "heading": "Donnez une mission à votre prochaine aubaine",
         "body": "Commencez votre essai gratuit de 30 jours — connectez vos comptes, configurez votre Debt Crusher, et laissez Zero attraper le prochain dépôt surprise avant qu’il ne fonde dans les dépenses du quotidien.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "aiFinancialCoach": {
+      "meta": {
+        "title": "Rencontrez Zero, votre coach financier IA",
+        "description": "Découvrez Zero, le coach financier IA de Tether-Zero : réponses claires tirées de vos vrais chiffres, alertes proactives — rien ne change sans votre accord."
+      },
+      "title": "Rencontrez Zero, votre coach financier IA : de vraies réponses à partir de vos vrais chiffres",
+      "intro": {
+        "p1": "Les conseils budgétaires sont partout, et presque tous s’adressent à personne en particulier. Dépensez moins que vous ne gagnez. Cuisinez à la maison. Payez-vous d’abord. Aucun ne peut répondre à la question que vous vous posez vraiment un mardi soir, toujours précise : mon budget épicerie va-t-il tenir jusqu’à la fin du mois ? Cette prime doit-elle aller sur la carte de crédit ou sur le prêt auto ? Puis-je me permettre ce billet d’avion ?",
+        "p2": "La réponse de Tether-Zero à ce vide s’appelle <strong>Zero</strong>, le coach financier IA intégré à chaque page de l’application. Zero ne vous tend pas des articles : il lit les vrais chiffres de votre foyer, répond en langage clair et, quand une action a du sens, il la propose. Ses conseils sont précis pour la même raison que vos questions le sont : il regarde votre budget, pas un manuel."
+      },
+      "askAnywhere": {
+        "heading": "Un coach sur chaque page",
+        "p1": "Zero vit derrière un petit bouton turquoise qui vous suit dans tout le tableau de bord — budget, transactions, objectifs, <em>Écraseur de dettes</em>, analyses. Survolez-le et il annonce sa fonction : « Demander à Zero ». Un geste fait glisser un panneau de conversation par-dessus votre écran, qui vous salue par votre prénom et vous invite : « Posez-moi n’importe quelle question sur vos finances. » Pas de changement de contexte, pas d’application séparée, pas de menus à fouiller.",
+        "p2": "Le panneau sait aussi où vous êtes. Les suggestions affichées correspondent à l’écran ouvert : depuis la page budget, des questions de budget ; depuis l’Écraseur de dettes, des questions de remboursement. Et si vous ne savez pas quoi demander, choisissez « Parcourir les suggestions » pour ouvrir la <strong>Bibliothèque de questions</strong> — des questions toutes prêtes réparties en neuf catégories, de Budget et Transactions à Écraseur de dettes et Santé financière. Les réponses s’affichent au fil de l’eau, comme une conversation, et la vôtre reprend là où vous l’aviez laissée."
+      },
+      "realAnswers": {
+        "heading": "De vraies réponses partent de vos vrais chiffres",
+        "p1": "N’importe quel chatbot peut définir la méthode avalanche. Zero est différent parce qu’il est connecté aux données réelles de votre foyer — vos catégories, vos soldes, vos dettes, votre plan. Demandez « Suis-je sur la bonne voie ce mois-ci ? » et la réponse vient du rythme réel de votre budget, pas d’une liste d’astuces. Demandez « Boule de neige ou avalanche ? » et Zero parle du compromis avec vos soldes et vos taux, ceux qu’il voit.",
+        "p2": "C’est encore plus net quand l’argent s’apprête à bouger. Écrivez la formule anglaise « can I afford $500 » et Zero déclenche le simulateur de <strong>Coût d’opportunité</strong> de Tether-Zero, qui déroule votre plan de remboursement deux fois — avec et sans l’achat — puis dépose dans la conversation une carte montrant votre nouvelle Date sans dette et les intérêts supplémentaires créés par l’achat. Nous y avons consacré un guide entier : <link>que coûte vraiment cet achat ?</link>"
+      },
+      "coachsCorner": {
+        "heading": "Un coaching que vous n’avez pas eu à demander",
+        "p1": "Zero prend aussi la parole de lui-même, au bon moment. Le <strong>Coin du coach</strong>, sur le tableau de bord, est l’endroit où atterrissent ses observations. Quand un dépôt inhabituellement gros arrive — prime, remboursement, aubaine — Zero le signale et propose de l’appliquer comme <em>paiement flocon</em> sur votre dette prioritaire, avant qu’il ne fonde dans les dépenses du quotidien. (<link2>Voici comment fonctionne le jeu de l’aubaine.</link2>)",
+        "p2": "Le coin surveille aussi des signaux plus discrets. Une alerte de rythme prévient qu’une catégorie va s’épuiser avant la fin du mois — pendant qu’il est encore temps d’ajuster. Une carte de série sans nouvelle dette compte les mois écoulés depuis l’ouverture de votre dernier compte de dette, et transforme la retenue en quelque chose qui se regarde grandir. Et une carte d’abonnements additionne ce que vos prélèvements récurrents coûtent vraiment par mois et par an. Chaque carte peut être masquée dans les Préférences : c’est du coaching, pas du harcèlement."
+      },
+      "inControl": {
+        "heading": "Vous gardez la main — toujours",
+        "p1": "Chaque suggestion de Zero arrive comme une offre avec deux boutons, jamais comme une action déjà faite. La carte d’aubaine demande « Appliquer comme flocon » ou « Pas maintenant ». La carte de coût d’opportunité propose de rediriger la somme vers la dette ou de « Continuer l'achat » — et continuer est une réponse parfaitement valable ; l’essentiel est de choisir en connaissance de cause. Rien ne change dans votre plan sans votre accord.",
+        "p2": "Tether-Zero est aussi honnête sur ce qu’est un coach IA. Juste sous la zone de saisie, l’application le dit dans ses propres mots : « Zero utilise l’IA. Vérifiez les décisions financières importantes. » Zero est un coach, pas un oracle — rapide avec vos chiffres, utile pour cadrer une décision, et à recouper quand l’enjeu est grand. La conversation vous appartient aussi : effacez-la à tout moment depuis le menu d’options du panneau."
+      },
+      "gettingStarted": {
+        "heading": "Tirer le meilleur de votre coach",
+        "p1": "Les réponses de Zero valent ce que valent les chiffres derrière elles ; le meilleur premier geste n’a donc rien à voir avec la conversation : connectez vos comptes et gardez votre budget à jour. Un coach qui lit un budget honnête et actuel donne des réponses honnêtes et actuelles. Ensuite, laissez la Bibliothèque de questions vous sortir du syndrome de la page blanche — choisissez une question proche de la vôtre et modifiez-la.",
+        "p2": "Puis installez un rythme. Un point d’une seule question — « Suis-je sur la bonne voie ce mois-ci ? » — prend moins d’une minute. Interrogez Zero avant les gros achats plutôt qu’après. Et laissez le Coin du coach veiller entre vos visites ; vous apportez les questions, il apporte les interruptions qui en valent la peine. C’est toute l’idée de Zero : pas plus de contenu financier, juste de vraies réponses à partir de vos vrais chiffres, exactement quand il le faut."
+      },
+      "cta": {
+        "heading": "Prêt pour de vraies réponses ?",
+        "body": "Commencez votre essai gratuit de 30 jours, connectez vos comptes et posez à Zero la question d’argent que vous portez depuis des semaines. La première réponse prend environ une minute.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     }

@@ -331,6 +331,10 @@
       "windfallInterceptor": {
         "title": "Qué hacer con una ganancia inesperada: cómo Tether-Zero atrapa el dinero sorpresa antes de que se esfume",
         "excerpt": "Los reembolsos y los bonos tienen el don de disolverse en el gasto diario. El Interceptor de Zero detecta el depósito sorpresa y hace una sola pregunta, mientras aún hay tiempo: ¿debería adelantar tu fecha de libertad?"
+      },
+      "aiFinancialCoach": {
+        "title": "Conoce a Zero, tu coach financiero de IA: respuestas reales con tus números reales",
+        "excerpt": "Los consejos genéricos no ven tu presupuesto. Zero sí. Conoce el coach financiero de IA integrado de Tether-Zero: respuestas claras calculadas con los números reales de tu hogar, avisos proactivos cuando tu dinero necesita atención — y nada cambia sin tu aprobación."
       }
     }
   },
@@ -797,6 +801,47 @@
       "cta": {
         "heading": "Dale un trabajo a tu próxima ganancia inesperada",
         "body": "Comienza tu prueba gratuita de 30 días — conecta tus cuentas, configura tu Debt Crusher y deja que Zero atrape el próximo depósito sorpresa antes de que se funda en el gasto diario.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "aiFinancialCoach": {
+      "meta": {
+        "title": "Conoce a Zero, tu coach financiero de IA",
+        "description": "Conoce a Zero, el coach financiero de IA de Tether-Zero: respuestas claras a partir de tus números reales, avisos proactivos y nada cambia sin tu aprobación."
+      },
+      "title": "Conoce a Zero, tu coach financiero de IA: respuestas reales con tus números reales",
+      "intro": {
+        "p1": "Los consejos de finanzas personales están en todas partes, y casi todos van dirigidos a nadie en particular. Gasta menos de lo que ganas. Cocina en casa. Págate primero. Ninguno puede responder la pregunta que de verdad tienes un martes por la noche, siempre concreta: ¿mi presupuesto de supermercado sobrevivirá al mes? ¿Este bono va a la tarjeta de crédito o al préstamo del auto? ¿Puedo permitirme ese vuelo?",
+        "p2": "La respuesta de Tether-Zero a ese vacío se llama <strong>Zero</strong>, el coach financiero de IA integrado en cada página de la aplicación. Zero no te entrega artículos: lee los números reales de tu hogar, responde en lenguaje claro y, cuando una acción tiene sentido, la propone. Sus consejos son concretos por la misma razón que tus preguntas: mira tu presupuesto, no un manual."
+      },
+      "askAnywhere": {
+        "heading": "Un coach en cada página",
+        "p1": "Zero vive detrás de un pequeño botón turquesa que te sigue por todo el panel — presupuesto, transacciones, metas, <em>Destructor de deudas</em>, análisis. Pásale el cursor y dice exactamente para qué está: «Preguntarle a Zero». Un toque desliza un panel de chat sobre lo que estés haciendo, te saluda por tu nombre y te invita: «Pregúntame cualquier cosa sobre tus finanzas.» Sin cambiar de contexto, sin otra aplicación, sin bucear en menús.",
+        "p2": "El panel además sabe dónde estás. Las sugerencias que aparecen corresponden a la pantalla abierta: desde la página del presupuesto verás preguntas de presupuesto y desde el Destructor de deudas, preguntas de pago de deudas. Y si no sabes qué preguntar, elige «Explorar sugerencias» para abrir la <strong>Biblioteca de preguntas</strong> — preguntas listas para usar en nueve categorías, de Presupuesto y Transacciones a Destructor de deudas y Salud financiera. Las respuestas llegan fluyendo, como una conversación, y la tuya continúa donde la dejaste."
+      },
+      "realAnswers": {
+        "heading": "Las respuestas reales empiezan por tus números reales",
+        "p1": "Cualquier chatbot puede definir el método avalancha. Zero es distinto porque está conectado a los datos reales de tu hogar: tus categorías, saldos, deudas y tu plan. Pregunta «¿Voy bien este mes?» y la respuesta sale del ritmo real de tu presupuesto, no de una lista de consejos. Pregunta «¿Bola de nieve o avalancha?» y Zero habla del dilema con tus saldos y tus tasas, los que puede ver.",
+        "p2": "Se vuelve más afilado cuando el dinero está por moverse. Escribe la frase en inglés «can I afford $500» y Zero dispara el simulador de <strong>Costo de oportunidad</strong> de Tether-Zero, que recorre tu plan de pago dos veces — con la compra y sin ella — y deja en el chat una tarjeta con tu nueva Fecha libre de deudas y el interés adicional que esa compra crearía. Le dedicamos una guía completa: <link>¿cuánto cuesta realmente esa compra?</link>"
+      },
+      "coachsCorner": {
+        "heading": "Coaching que no tuviste que pedir",
+        "p1": "Zero también habla por iniciativa propia, en el momento oportuno. El <strong>Rincón del coach</strong>, en el panel principal, es donde aterrizan sus observaciones. Cuando llega un depósito inusualmente grande — un bono, un reembolso, una ganancia inesperada — Zero lo señala y ofrece aplicarlo como <em>pago copo de nieve</em> a tu deuda prioritaria, antes de que se disuelva en el gasto diario. (<link2>Así funciona la jugada de la ganancia inesperada.</link2>)",
+        "p2": "El rincón también vigila señales más silenciosas. Un aviso de ritmo te dice que una categoría va camino de agotarse antes de que termine el mes — cuando aún hay tiempo de ajustar. Una tarjeta de racha sin deuda nueva cuenta los meses desde la última vez que abriste una cuenta de deuda, y convierte la contención en algo que se ve crecer. Y otra tarjeta suma lo que tus suscripciones y cargos recurrentes cuestan de verdad al mes y al año. Cada tarjeta puede ocultarse en Preferencias: es coaching, no insistencia."
+      },
+      "inControl": {
+        "heading": "Tú mantienes el control — siempre",
+        "p1": "Cada sugerencia de Zero llega como una oferta con dos botones, nunca como una acción ya ejecutada. La tarjeta de ganancia inesperada pregunta «Aplicar como copo de nieve» o «Ahora no». La de costo de oportunidad ofrece redirigir ese dinero a la deuda o «Continuar con la compra» — y continuar es una respuesta perfectamente válida; lo importante es elegirla con los ojos abiertos. Nada en tu plan cambia sin tu sí.",
+        "p2": "Tether-Zero también es honesto sobre lo que es un coach de IA. Justo debajo del cuadro de texto, la aplicación lo dice con sus propias palabras: «Zero usa IA. Verifica las decisiones financieras importantes.» Zero es un coach, no un oráculo: rápido con tus números, útil para encuadrar una decisión y digno de verificar cuando hay mucho en juego. La conversación también es tuya: bórrala cuando quieras desde el menú de opciones del panel."
+      },
+      "gettingStarted": {
+        "heading": "Cómo sacarle el máximo a tu coach",
+        "p1": "Las respuestas de Zero valen lo que valen los números detrás de ellas, así que el mejor primer paso no tiene nada que ver con el chat: conecta tus cuentas y mantén tu presupuesto al día. Un coach que lee un presupuesto honesto y actual da respuestas honestas y actuales. Desde ahí, deja que la Biblioteca de preguntas te salve de la página en blanco: elige una pregunta parecida a la tuya y edítala.",
+        "p2": "Después conviértelo en rutina. Una revisión de una sola pregunta — «¿Voy bien este mes?» — toma menos de un minuto. Pregunta antes de las compras grandes, no después. Y deja que el Rincón del coach vigile entre visita y visita; tú traes las preguntas, él trae las interrupciones que valen la pena. Esa es toda la idea de Zero: no más contenido financiero, solo respuestas reales con tus números reales, justo cuando las necesitas."
+      },
+      "cta": {
+        "heading": "¿Listo para respuestas reales?",
+        "body": "Comienza tu prueba gratuita de 30 días, conecta tus cuentas y hazle a Zero esa pregunta sobre tu dinero que llevas semanas cargando. La primera respuesta toma alrededor de un minuto.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

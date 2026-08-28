@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  Bot,
   Coins,
   Gauge,
   Gift,
@@ -20,6 +21,7 @@ import type { Locale } from "@/i18n/config";
 
 /** Listing order + icon chip per article; copy comes from Learn.articles.<key>. */
 const ARTICLE_CARDS: ReadonlyArray<{ key: keyof typeof ARTICLES; icon: LucideIcon }> = [
+  { key: "aiFinancialCoach", icon: Bot },
   { key: "windfallInterceptor", icon: Gift },
   { key: "canIAffordThis", icon: ShoppingCart },
   { key: "payOffDebtFaster", icon: Scale },

@@ -222,6 +222,12 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-27",
   },
+  aiFinancialCoach: {
+    slug: "ai-financial-coach",
+    path: "/learn/ai-financial-coach/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
 } as const;
 
 /* ------------------------------------------------------------------ */

@@ -73,6 +73,12 @@ const CAN_I_AFFORD_THIS_LANGUAGES = {
   es: `${SITE_URL}/es/learn/can-i-afford-this/`,
 };
 
+const AI_FINANCIAL_COACH_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/ai-financial-coach/`,
+  fr: `${SITE_URL}/fr/learn/ai-financial-coach/`,
+  es: `${SITE_URL}/es/learn/ai-financial-coach/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -326,6 +332,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: CAN_I_AFFORD_THIS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/ai-financial-coach/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: AI_FINANCIAL_COACH_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/ai-financial-coach/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: AI_FINANCIAL_COACH_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/ai-financial-coach/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: AI_FINANCIAL_COACH_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

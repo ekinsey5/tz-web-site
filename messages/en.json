@@ -331,6 +331,10 @@
       "windfallInterceptor": {
         "title": "What to Do With a Windfall: How Tether-Zero Catches Surprise Money Before It Melts Away",
         "excerpt": "Tax refunds and bonuses have a way of dissolving into everyday spending. Zero's Windfall Interceptor spots the surprise deposit and asks one question while it still counts: should this move your Debt Free Date?"
+      },
+      "aiFinancialCoach": {
+        "title": "Meet Zero, Your AI Money Coach: Real Answers from Your Real Numbers",
+        "excerpt": "Generic advice can't see your budget. Zero can. Meet Tether-Zero's built-in AI financial coach: plain-language answers computed from your real household numbers, proactive nudges when money needs attention — and nothing changes without your yes."
       }
     }
   },
@@ -797,6 +801,47 @@
       "cta": {
         "heading": "Give your next windfall a job",
         "body": "Start your 30-day free trial — connect your accounts, set up your Debt Crusher, and let Zero catch the next surprise deposit before it melts into everyday spending.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "aiFinancialCoach": {
+      "meta": {
+        "title": "Meet Zero, Your AI Money Coach",
+        "description": "Meet Zero, Tether-Zero’s AI financial coach — plain-language answers from your real numbers, proactive nudges, and nothing changes without your yes."
+      },
+      "title": "Meet Zero, Your AI Money Coach: Real Answers from Your Real Numbers",
+      "intro": {
+        "p1": "Budgeting advice is everywhere, and almost all of it is written for nobody in particular. Spend less than you earn. Cook at home. Pay yourself first. None of it can answer the question you actually have on a Tuesday night, which is always specific: is my grocery budget going to survive the month? Should this bonus go to the credit card or the car loan? Can I afford the flight?",
+        "p2": "Tether-Zero's answer to that gap is <strong>Zero</strong>, the AI financial coach built into every page of the app. Zero doesn't hand you articles — it reads your real household numbers, answers in plain language, and when action makes sense, it offers one. You'll find its advice specific for the same reason your questions are: it's looking at your budget, not a textbook."
+      },
+      "askAnywhere": {
+        "heading": "A coach on every page",
+        "p1": "Zero lives behind a small teal button that follows you through the whole dashboard — budget, transactions, goals, <em>Debt Crusher</em>, insights. Hover it and it says exactly what it's for: “Ask Zero.” One tap slides a chat panel in over whatever you're doing, greets you by name, and invites the question: “Ask me anything about your finances.” No context switch, no separate app, no hunting through menus.",
+        "p2": "The panel also knows where you are. The suggested prompts that appear match the screen you're on, so from the budget page you'll see budget questions and from Debt Crusher you'll see payoff questions. If you're not sure what to ask, choose <strong>Browse prompts</strong> to open the Prompt Library — ready-made questions in nine categories, from Budget and Transactions to Debt Crusher and Financial Wellness. Answers stream in like a conversation, and yours picks up where you left it."
+      },
+      "realAnswers": {
+        "heading": "Real answers start with your real numbers",
+        "p1": "Any chatbot can define the avalanche method. Zero is different because it's connected to your actual household data — your categories, balances, debts, and plan. Ask “Am I on track this month?” and the answer comes from how your budget is actually pacing, not from a listicle. Ask “Snowball or avalanche?” and Zero can talk about the trade-off in terms of your balances and rates, the ones it can see.",
+        "p2": "It gets sharper when money is about to move. Type “can I afford $500” and Zero triggers Tether-Zero's <strong>Opportunity Cost</strong> simulator, which runs your real payoff plan twice — with and without the purchase — and drops a card into the chat showing your new Debt Free Date and the extra interest the purchase would create. We wrote a whole guide to that one: <link>what does that purchase really cost?</link>"
+      },
+      "coachsCorner": {
+        "heading": "Coaching you didn't have to ask for",
+        "p1": "Zero also speaks up on its own, in the right moments. The dashboard's <strong>Coach's Corner</strong> is where its observations land. When an unusually large deposit arrives — a bonus, a refund, a windfall — Zero flags it and offers to apply the money as a <em>Snowflake payment</em> toward your priority debt, before it dissolves into everyday spending. (<link2>Here's how the windfall play works.</link2>)",
+        "p2": "The corner watches quieter signals too. A pacing warning tells you a category is on track to run out before the month does — while there's still time to adjust. A <strong>No-New-Debt Streak</strong> card counts the months since you last opened a new debt account, turning restraint into something you can watch grow. And <strong>Subscriptions Worth a Look</strong> adds up what your recurring charges really cost per month and per year. Every card can be hidden in Preferences: it's coaching, not nagging."
+      },
+      "inControl": {
+        "heading": "You stay in control — always",
+        "p1": "Every suggestion Zero makes arrives as an offer with two buttons, never as an action already taken. A windfall card asks <strong>Apply as Snowflake</strong> or <strong>Not now</strong>. The opportunity-cost card asks whether to redirect the money to debt or <strong>Proceed with purchase</strong> — and proceeding is a fine answer; the point is choosing it with open eyes. Nothing in your plan changes without your yes.",
+        "p2": "Tether-Zero is also honest about what an AI coach is. Right under the chat box, the app says so in its own words: “Zero uses AI. Verify important financial decisions.” Zero is a coach, not an oracle — fast with your numbers, useful for framing a decision, and worth double-checking when the stakes are high. Your conversation is yours, too: clear it any time from the panel's options menu."
+      },
+      "gettingStarted": {
+        "heading": "Getting the most from your coach",
+        "p1": "Zero's answers are only as good as the numbers behind them, so the best first move has nothing to do with chat: connect your accounts and keep your budget assigned. A coach reading a current, honest budget gives current, honest answers. From there, let the Prompt Library carry you past the blank-input problem — pick a question that's close to yours and edit it.",
+        "p2": "Then make it a rhythm. A one-question check-in — “Am I on track this month?” — takes less than a minute. Ask before big purchases instead of after. And let Coach's Corner do the watching between visits; you bring the questions, it brings the interruptions worth having. That's the whole idea of Zero: not more financial content, just real answers from your real numbers, exactly when you need them."
+      },
+      "cta": {
+        "heading": "Ready for real answers?",
+        "body": "Start your 30-day free trial, connect your accounts, and ask Zero the question about your money you've been carrying around. The first answer takes about a minute.",
         "button": "Start your 30-day free trial"
       }
     }

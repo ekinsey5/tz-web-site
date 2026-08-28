@@ -17,7 +17,7 @@ primary_keyword: "" # main SEO phrase to target
 secondary_keywords: [] # 2-5 supporting phrases
 word_count_target: "900-1300"
 cta_goal: "" # e.g. "start free trial", "invite a partner", "connect a bank account"
-slug: "" # e.g. /blog/zero-based-budgeting-basics
+slug: "" # e.g. /learn/zero-based-budgeting-basics
 ```
 
 If any field above is blank when this prompt is run, stop and ask me for it
@@ -42,11 +42,14 @@ knowledge.
 
 ## Phase 0 — Read-Only Discovery (no writes)
 
-1. Scan the marketing site repo for existing blog infrastructure: content
-   directory (MDX/CMS?), blog `page.tsx`/route structure, existing article
-   front-matter schema, SEO metadata patterns, and any shared layout/TOC
-   components (reuse, don't rebuild — check how legal pages and any existing
-   articles set `metadata`, Open Graph tags, and JSON-LD).
+1. Articles live in the site's localized `/learn` section (there is no
+   `/blog`). Follow the established recipe from the existing articles:
+   `ARTICLES` entry in `src/content/site.ts`, message namespaces in all
+   three of `messages/{en,fr,es}.json`, a shared body component in
+   `src/components/pages/` (copy the newest `*ArticlePage.tsx` — it carries
+   Article + BreadcrumbList JSON-LD, `LearnPageChrome`, `ArticleCta`), thin
+   routes under `(en)/learn/` and `[locale]/learn/`, sitemap entries, and an
+   `ARTICLE_CARDS` entry in `LearnIndexPage.tsx`. Reuse, don't rebuild.
 2. Search the **app repo / PRDs / KB articles** for the ground-truth
    description of `primary_feature_area` — exact terminology, flow steps,
    screen names, and any constraints (e.g., RBAC role names, persona names
@@ -54,11 +57,14 @@ knowledge.
    writing until you can cite where each factual claim in the article comes
    from.
 3. Check whether a KB article already exists on this topic
-   (`docs/kb/**` or equivalent) — if so, the blog post should complement it
-   (top-of-funnel, narrative, benefit-driven) rather than duplicate it
-   (how-to reference), and should link to it.
-4. Note the brand color guard: primary is `#155DFC`. Reject `#0D9488` and
-   `#2563EB` if they appear in any component you touch.
+   (`tether-core/kb-content/en/**`) — if so, the article should complement
+   it (top-of-funnel, narrative, benefit-driven) rather than duplicate it
+   (how-to reference). Do NOT link to the KB — it lives behind auth in the
+   app; link to related sibling `/learn` articles instead.
+4. Brand color guard (per the site repo's CLAUDE.md): `#1D4ED8` is the
+   AA-safe text blue; `#155DFC` is decorative-only, never for text. In
+   practice: introduce no raw hex values at all — existing components
+   handle color via Tailwind tokens.
 5. Report findings before proceeding to Phase 1.
 
 ## Phase 1 — Todo List
@@ -110,7 +116,10 @@ Do not write the article body until this plan is approved.
    (single H1, sequential H2/H3) for WCAG 2.1 AA.
 6. If the site fires PostHog blog events, follow existing event conventions:
    snake_case, no PII, no raw currency amounts.
-7. English only for this pass — do not scaffold fr/es content or i18n keys.
+7. Write ALL THREE locales (en/fr/es) in lockstep — missing message keys
+   break the prerender. In fr/es, quote the app's real localized feature
+   names from `tether-web/src/lib/i18n/locales/{fr,es}.json`, not
+   translations of the English names.
 8. Run the site's normal lint/build/typecheck after adding the route/file.
 
 ## Phase 5 — Cold-Read Self-Review
@@ -120,7 +129,8 @@ check independently (don't just re-check your own outline):
 
 - [ ] Every factual/product claim traces to something you actually found in
       Phase 0 — nothing invented
-- [ ] No stale brand color (`#0D9488`, `#2563EB`) introduced
+- [ ] No raw hex color values introduced (Tailwind tokens only; `#1D4ED8`
+      is the only AA-safe text blue if one is ever unavoidable)
 - [ ] Reads as genuinely helpful onboarding content, not thin SEO filler
 - [ ] Meta description and title fit platform limits and match on-page H1
 - [ ] One clear CTA aligned to `cta_goal`; no dead or placeholder links left
