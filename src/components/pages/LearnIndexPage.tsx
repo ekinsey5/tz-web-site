@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  BookOpen,
   Bot,
   Coins,
   Gauge,
@@ -40,6 +41,7 @@ const ICONS: Record<keyof typeof ARTICLES, LucideIcon> = {
   connectYourBank: Landmark,
   spendingTags: Tag,
   budgetWithPartner: Users,
+  moneyStory: BookOpen,
 };
 
 /** Listing page for the /learn section, shared by the (en) and [locale] routes. */

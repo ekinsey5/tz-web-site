@@ -359,6 +359,10 @@
       "spendingTags": {
         "title": "Beyond Categories: Answer “What Did the Vacation Actually Cost?” with Tags",
         "excerpt": "A vacation scatters across groceries, gas, dining, and lodging. Tags collect the scattered pieces — and Zero totals them — so “what did it cost?” finally has an answer."
+      },
+      "moneyStory": {
+        "title": "Reading Your Money Story: Net Worth, Age of Money, and Your Income-vs-Expenses Trend",
+        "excerpt": "Net worth, age of money, income vs. expense: three Insights cards that turn months of transactions into a plot line — and tell you, honestly, whether this is working."
       }
     }
   },
@@ -1040,6 +1044,52 @@
       "cta": {
         "heading": "Tag the trip. Get the number.",
         "body": "Start your 30-day free trial — create your first tag, tag as you go, and ask Zero what it all cost when you land.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "moneyStory": {
+      "meta": {
+        "title": "Reading Your Money Story",
+        "description": "Net worth, age of money, and income vs. expense: Tether-Zero's Insights turn months of transactions into a story you can actually read."
+      },
+      "title": "Reading Your Money Story: Net Worth, Age of Money, and Your Income-vs-Expenses Trend",
+      "intro": {
+        "p1": "A budget is very good at this month. It hands every dollar a job, warns you when a category runs hot, and gets you to the next payday with a plan. What it's quieter about is the part that matters most over years: whether the months are adding up to anything. Am I better off than I was in March? Is the paycheck-to-paycheck feeling actually fading, or does it just have better paperwork now?",
+        "p2": "Those are story questions, and stories need more than one frame. Tether-Zero's <strong>Insights</strong> dashboard is where your transactions stop being a list and start being a plot: a grid of cards, each tracking one number in motion. This article reads the three that carry the main storyline — <strong>Net Worth</strong>, <strong>Age of Money</strong>, and <strong>Income vs. Expense</strong> — and shows how they answer, month by month, the only question that outlasts every budget cycle: is this working?"
+      },
+      "whereTheStoryLives": {
+        "heading": "Where the story lives",
+        "p1": "Open Insights from the sidebar and you land on the <em>Financial</em> tab — a grid of cards, each one a chapter. The time machine sits at the top: a date-range selector that runs from This Month and Last Month through Last 3 Months, Year to Date, and Last Year, plus a custom range for when you want to inspect exactly the stretch a job change or a move carved out.",
+        "p2": "None of the cards is a dead end. Click one and it opens into a detail view with the underlying transactions — so when a number surprises you, the receipts that produced it are one tap away. A story you can audit is a story you can trust."
+      },
+      "netWorthChapter": {
+        "heading": "Net worth: the wide-angle shot",
+        "p1": "Net worth is the bluntest number you own: everything you have minus everything you owe. Tether-Zero computes it straight from your accounts — cash and savings on one side, credit cards and loans on the other — and shows the current figure with its change since the start of your selected range, alongside a line tracing the trajectory week by week, or month by month on longer ranges.",
+        "p2": "Here's the quietly humane part: the chart is built for people who start below zero. A visible zero line crosses the graph, the stretch beneath it draws in red and the stretch above in green — because for a household mid-payoff, the story isn't “rich or not.” It's a line climbing toward zero and then through it, and watching that climb is the entire point of the wide-angle shot."
+      },
+      "ageOfMoneyChapter": {
+        "heading": "Age of money: the tempo",
+        "p1": "Age of Money answers a stranger, sharper question: when you spend a dollar today, how long ago did you earn it? The card matches each expense to the income that funded it — oldest income first — and reports the average gap in days. Ten days means you're spending money that landed a week and a half ago; forty means today's groceries were paid for by a paycheck from early last month. In the app's own words, it tells you whether you're spending last week's income or last month's.",
+        "p2": "Higher is better — older money means a deeper cushion between earning and needing. The number grows slowly, which is honest: breathing room is built, not toggled. Two footnotes worth knowing: the card needs cleared transactions to do its matching, and the display caps at “365+” — past a full year of cushion, the app considers the point made."
+      },
+      "incomeVsExpenseChapter": {
+        "heading": "Income vs. expense: the engine",
+        "p1": "The third card is the simplest and the most consequential: for each month in your range, two bars — what came in, what went out. The gap between them is the engine of everything else in Tether-Zero. It's the money that becomes debt payments, goal contributions, and an aging Age of Money; when the bars touch, or cross, the other charts stall with them.",
+        "p2": "The card's real gift is trend-sight. A single tight month reads as an emergency when it's actually just December; three shrinking gaps in a row read as fine when they're actually a drift. Laid out by month, noise and plot separate on their own — and you respond to the plot, not the noise."
+      },
+      "readingItTogether": {
+        "heading": "Reading the chapters together",
+        "p1": "The three cards are one story told at three speeds. The income-expense gap is the fastest signal — it moves the month it happens. Age of Money is the medium one: sustain a gap and the average slowly climbs as newer spending draws on older income. Net worth is the slow arc that compounds the other two, quarter after quarter. When all three lean the same way, you don't have to wonder whether things are working; when they disagree, the disagreement itself tells you where to look.",
+        "p2": "The date ranges are your zoom lens. This Month answers “how's it going?”; Year to Date answers “what kind of year is this?”; Last Year, read once, is the closest thing a budget offers to rereading an old journal. Same numbers, different altitude — pick the one that matches the question you're actually asking."
+      },
+      "fromStoryToNextChapter": {
+        "heading": "From story to next chapter",
+        "p1": "The dashboard bends to what you care about. A customize panel lets you choose which cards show, and there are more chapters waiting when you want them: Top Payees for “where does it all actually go?”, a Pacing Gauge for the current month's speed, and a whole <em>Freedom</em> tab where your debt payoff draws its burndown. The Goals tab keeps your dreams' progress — photo reveal included — in the same reading room.",
+        "p2": "And when a trend needs interpreting rather than admiring, the reader-in-residence is <link>Zero</link>: ask why net worth dipped in March or what would push Age of Money past thirty, and the answer comes grounded in your actual transactions. Day to day, <link2>Spending Pace</link2> still guards the current month — Insights is where you step back and read the arc those months are writing."
+      },
+      "cta": {
+        "heading": "Your money has a story. Read it.",
+        "body": "Start your 30-day free trial — connect your accounts, run your budget, and watch three numbers turn months of transactions into a story you can actually follow.",
         "button": "Start your 30-day free trial"
       }
     }

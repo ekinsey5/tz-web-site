@@ -359,6 +359,10 @@
       "spendingTags": {
         "title": "Au-delà des catégories : répondez à « Combien ont vraiment coûté les vacances ? » avec les étiquettes",
         "excerpt": "Des vacances s’éparpillent entre épicerie, essence, restaurants et hébergement. Les étiquettes rassemblent les morceaux — et Zero les additionne — pour que « combien ça a coûté ? » ait enfin une réponse."
+      },
+      "moneyStory": {
+        "title": "Lire l’histoire de votre argent : valeur nette, âge de l’argent et tendance revenus-dépenses",
+        "excerpt": "Valeur nette, âge de l’argent, revenus vs dépenses : trois cartes Perspectives qui transforment des mois de transactions en fil narratif — et disent, honnêtement, si ça marche."
       }
     }
   },
@@ -1040,6 +1044,52 @@
       "cta": {
         "heading": "Étiquetez le voyage. Obtenez le chiffre.",
         "body": "Commencez votre essai gratuit de 30 jours — créez votre première étiquette, étiquetez au fil de l’eau, et demandez le total à Zero à l’atterrissage.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "moneyStory": {
+      "meta": {
+        "title": "Lire l’histoire de votre argent",
+        "description": "Valeur nette, âge de l’argent, revenus vs dépenses : les Perspectives de Tether-Zero transforment des mois de transactions en une histoire lisible."
+      },
+      "title": "Lire l’histoire de votre argent : valeur nette, âge de l’argent et tendance revenus-dépenses",
+      "intro": {
+        "p1": "Un budget excelle dans le mois en cours. Il donne une mission à chaque dollar, vous prévient quand une catégorie chauffe, et vous amène à la prochaine paie avec un plan. Il est plus discret sur ce qui compte le plus à l’échelle des années : est-ce que les mois s’additionnent en quelque chose ? Suis-je en meilleure posture qu’en mars ? La sensation de vivre d’une paie à l’autre s’estompe-t-elle vraiment, ou a-t-elle simplement de meilleurs papiers ?",
+        "p2": "Ce sont des questions d’histoire, et une histoire demande plus d’une image. Le tableau de bord <strong>Perspectives</strong> de Tether-Zero est l’endroit où vos transactions cessent d’être une liste pour devenir une intrigue : une grille de cartes, chacune suivant un chiffre en mouvement. Cet article lit les trois qui portent le fil principal — <strong>Valeur nette</strong>, <strong>Âge de l’argent</strong> et <strong>Revenus vs Dépenses</strong> — et montre comment elles répondent, mois après mois, à la seule question qui survit à tous les cycles budgétaires : est-ce que ça marche ?"
+      },
+      "whereTheStoryLives": {
+        "heading": "Où vit l’histoire",
+        "p1": "Ouvrez Perspectives depuis la barre latérale et vous arrivez sur l’onglet <em>Finances</em> — une grille de cartes, chacune un chapitre. La machine à remonter le temps est en haut : un sélecteur de période qui va du mois en cours à l’année dernière, en passant par les trois et six derniers mois et l’année à ce jour, plus une plage personnalisée pour inspecter exactement la période qu’un changement d’emploi ou un déménagement a découpée.",
+        "p2": "Aucune carte n’est un cul-de-sac. Cliquez-en une et elle s’ouvre sur une vue détaillée avec les transactions sous-jacentes — quand un chiffre vous surprend, les reçus qui l’ont produit sont à un geste. Une histoire qu’on peut auditer est une histoire qu’on peut croire."
+      },
+      "netWorthChapter": {
+        "heading": "Valeur nette : le plan large",
+        "p1": "La valeur nette est le chiffre le plus brut que vous possédiez : tout ce que vous avez moins tout ce que vous devez. Tether-Zero la calcule directement depuis vos comptes — liquidités et épargne d’un côté, cartes de crédit et prêts de l’autre — et affiche le montant actuel avec sa variation depuis le début de la période choisie, à côté d’une ligne qui trace la trajectoire semaine par semaine, ou mois par mois sur les longues périodes.",
+        "p2": "Voici la part discrètement humaine : le graphique est construit pour ceux qui commencent sous zéro. Une ligne du zéro traverse la courbe, le segment en dessous se dessine en rouge et celui au-dessus en vert — parce que pour un ménage en plein remboursement, l’histoire n’est pas « riche ou pas ». C’est une ligne qui grimpe vers zéro puis le franchit, et regarder cette montée est tout l’intérêt du plan large."
+      },
+      "ageOfMoneyChapter": {
+        "heading": "Âge de l’argent : le tempo",
+        "p1": "L’Âge de l’argent répond à une question plus étrange et plus tranchante : quand vous dépensez un dollar aujourd’hui, il y a combien de temps l’avez-vous gagné ? La carte apparie chaque dépense au revenu qui l’a financée — le revenu le plus ancien d’abord — et rapporte l’écart moyen en jours. Dix jours signifie que vous dépensez de l’argent arrivé il y a une semaine et demie ; quarante, que l’épicerie d’aujourd’hui a été payée par une paie du début du mois dernier. Selon les mots mêmes de l’application, elle dit si vous dépensez la paie de la semaine dernière ou celle du mois dernier.",
+        "p2": "Plus haut, c’est mieux — un argent plus vieux, c’est un coussin plus profond entre gagner et avoir besoin. Le chiffre monte lentement, et c’est honnête : la marge se construit, elle ne se décrète pas. Deux notes utiles : la carte a besoin de transactions compensées pour faire son appariement, et l’affichage plafonne à « 365+ » — au-delà d’une année entière de coussin, l’application considère la démonstration faite."
+      },
+      "incomeVsExpenseChapter": {
+        "heading": "Revenus vs dépenses : le moteur",
+        "p1": "La troisième carte est la plus simple et la plus lourde de conséquences : pour chaque mois de votre période, deux barres — ce qui est entré, ce qui est sorti. L’écart entre les deux est le moteur de tout le reste dans Tether-Zero. C’est l’argent qui devient paiements de dette, contributions aux objectifs et Âge de l’argent qui vieillit ; quand les barres se touchent, ou se croisent, les autres courbes calent avec.",
+        "p2": "Le vrai cadeau de la carte, c’est la vision de tendance. Un seul mois serré se lit comme une urgence alors que c’est juste décembre ; trois écarts qui rétrécissent d’affilée se lisent comme « ça va » alors que c’est une dérive. Étalés par mois, le bruit et l’intrigue se séparent d’eux-mêmes — et vous répondez à l’intrigue, pas au bruit."
+      },
+      "readingItTogether": {
+        "heading": "Lire les chapitres ensemble",
+        "p1": "Les trois cartes racontent une seule histoire à trois vitesses. L’écart revenus-dépenses est le signal le plus rapide — il bouge le mois même. L’Âge de l’argent est le signal moyen : maintenez un écart et la moyenne grimpe lentement, les dépenses récentes puisant dans des revenus plus anciens. La valeur nette est l’arc lent qui compose les deux autres, trimestre après trimestre. Quand les trois penchent du même côté, plus besoin de se demander si ça marche ; quand ils divergent, le désaccord lui-même dit où regarder.",
+        "p2": "Les périodes sont votre objectif de zoom. Le mois en cours répond à « comment ça va ? » ; l’année à ce jour répond à « quel genre d’année est-ce ? » ; l’année dernière, relue une fois, est ce qu’un budget offre de plus proche de la relecture d’un vieux journal. Mêmes chiffres, altitude différente — choisissez celle qui correspond à la question que vous posez vraiment."
+      },
+      "fromStoryToNextChapter": {
+        "heading": "De l’histoire au chapitre suivant",
+        "p1": "Le tableau de bord se plie à ce qui vous importe. Un panneau de personnalisation choisit les cartes affichées, et d’autres chapitres attendent : les principaux bénéficiaires pour « où va vraiment tout ça ? », une jauge de rythme pour la vitesse du mois en cours, et tout un onglet <em>Liberté</em> où votre remboursement de dettes trace sa descente. L’onglet Objectifs garde les progrès de vos rêves — révélation de photo comprise — dans la même salle de lecture.",
+        "p2": "Et quand une tendance demande une interprétation plutôt qu’une admiration, le lecteur attitré est <link>Zero</link> : demandez pourquoi la valeur nette a fléchi en mars ou ce qui pousserait l’Âge de l’argent au-delà de trente, et la réponse s’appuie sur vos transactions réelles. Au quotidien, le <link2>Rythme de dépenses</link2> garde toujours le mois en cours — Perspectives est l’endroit où l’on prend du recul pour lire l’arc que ces mois écrivent."
+      },
+      "cta": {
+        "heading": "Votre argent a une histoire. Lisez-la.",
+        "body": "Commencez votre essai gratuit de 30 jours — connectez vos comptes, faites vivre votre budget, et regardez trois chiffres transformer des mois de transactions en une histoire qu’on peut suivre.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     }

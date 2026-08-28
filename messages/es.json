@@ -359,6 +359,10 @@
       "spendingTags": {
         "title": "Más allá de las categorías: responde «¿Cuánto costaron realmente las vacaciones?» con etiquetas",
         "excerpt": "Unas vacaciones se dispersan entre supermercado, gasolina, restaurantes y alojamiento. Las etiquetas reúnen los pedazos — y Zero los suma — para que «¿cuánto costó?» por fin tenga respuesta."
+      },
+      "moneyStory": {
+        "title": "Leer la historia de tu dinero: patrimonio neto, edad del dinero y tu tendencia de ingresos vs. gastos",
+        "excerpt": "Patrimonio neto, edad del dinero, ingresos vs. gastos: tres tarjetas de Perspectivas que convierten meses de transacciones en una trama — y dicen, honestamente, si está funcionando."
       }
     }
   },
@@ -1040,6 +1044,52 @@
       "cta": {
         "heading": "Etiqueta el viaje. Consigue el número.",
         "body": "Comienza tu prueba gratuita de 30 días — crea tu primera etiqueta, etiqueta sobre la marcha y pregúntale a Zero el total al aterrizar.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "moneyStory": {
+      "meta": {
+        "title": "Leer la historia de tu dinero",
+        "description": "Patrimonio neto, edad del dinero, ingresos vs. gastos: las Perspectivas de Tether-Zero convierten meses de transacciones en una historia legible."
+      },
+      "title": "Leer la historia de tu dinero: patrimonio neto, edad del dinero y tu tendencia de ingresos vs. gastos",
+      "intro": {
+        "p1": "Un presupuesto es muy bueno con el mes en curso. Le da un trabajo a cada dólar, te avisa cuando una categoría se calienta y te lleva al siguiente pago con un plan. Es más callado sobre lo que más importa a escala de años: si los meses están sumando algo. ¿Estoy mejor que en marzo? ¿La sensación de vivir al día de verdad se desvanece, o solo tiene mejor papeleo?",
+        "p2": "Esas son preguntas de historia, y una historia necesita más de un cuadro. El panel de <strong>Perspectivas</strong> de Tether-Zero es donde tus transacciones dejan de ser una lista y se vuelven una trama: una cuadrícula de tarjetas, cada una siguiendo un número en movimiento. Este artículo lee las tres que llevan el hilo principal — <strong>Patrimonio neto</strong>, <strong>Edad del dinero</strong> e <strong>Ingresos vs. Gastos</strong> — y muestra cómo responden, mes a mes, la única pregunta que sobrevive a todos los ciclos del presupuesto: ¿está funcionando?"
+      },
+      "whereTheStoryLives": {
+        "heading": "Dónde vive la historia",
+        "p1": "Abre Perspectivas desde la barra lateral y aterrizas en la pestaña <em>Finanzas</em> — una cuadrícula de tarjetas, cada una un capítulo. La máquina del tiempo está arriba: un selector de período que va del mes en curso al año pasado, pasando por los últimos tres y seis meses y el año a la fecha, más un rango personalizado para inspeccionar exactamente el tramo que recortó un cambio de trabajo o una mudanza.",
+        "p2": "Ninguna tarjeta es un callejón sin salida. Haz clic en una y se abre en una vista de detalle con las transacciones de fondo — cuando un número te sorprenda, los recibos que lo produjeron están a un toque. Una historia que puedes auditar es una historia en la que puedes confiar."
+      },
+      "netWorthChapter": {
+        "heading": "Patrimonio neto: el plano general",
+        "p1": "El patrimonio neto es el número más directo que tienes: todo lo que posees menos todo lo que debes. Tether-Zero lo calcula directamente desde tus cuentas — efectivo y ahorros de un lado, tarjetas de crédito y préstamos del otro — y muestra la cifra actual con su cambio desde el inicio del período elegido, junto a una línea que traza la trayectoria semana a semana, o mes a mes en rangos largos.",
+        "p2": "Aquí está la parte calladamente humana: la gráfica está construida para quienes empiezan bajo cero. Una línea del cero cruza el dibujo, el tramo por debajo se pinta en rojo y el de arriba en verde — porque para un hogar en pleno pago de deudas, la historia no es «rico o no». Es una línea que sube hacia el cero y luego lo atraviesa, y mirar esa subida es todo el sentido del plano general."
+      },
+      "ageOfMoneyChapter": {
+        "heading": "Edad del dinero: el tempo",
+        "p1": "La Edad del dinero responde una pregunta más rara y más afilada: cuando gastas un dólar hoy, ¿hace cuánto lo ganaste? La tarjeta empareja cada gasto con el ingreso que lo financió — el ingreso más antiguo primero — y reporta la brecha promedio en días. Diez días significa que gastas dinero que llegó hace semana y media; cuarenta, que el supermercado de hoy lo pagó un sueldo de principios del mes pasado. En palabras de la propia aplicación, te dice si estás gastando el ingreso de la semana pasada o el del mes pasado.",
+        "p2": "Más alto es mejor — dinero más viejo significa un colchón más hondo entre ganar y necesitar. El número sube despacio, y eso es honesto: el respiro se construye, no se decreta. Dos notas útiles: la tarjeta necesita transacciones compensadas para hacer su emparejamiento, y la pantalla se detiene en «365+» — pasado un año entero de colchón, la aplicación da el punto por demostrado."
+      },
+      "incomeVsExpenseChapter": {
+        "heading": "Ingresos vs. gastos: el motor",
+        "p1": "La tercera tarjeta es la más simple y la de más consecuencias: por cada mes de tu rango, dos barras — lo que entró, lo que salió. La brecha entre ambas es el motor de todo lo demás en Tether-Zero. Es el dinero que se convierte en pagos de deuda, contribuciones a objetivos y una Edad del dinero que envejece; cuando las barras se tocan, o se cruzan, las otras gráficas se frenan con ellas.",
+        "p2": "El verdadero regalo de la tarjeta es la visión de tendencia. Un solo mes apretado se lee como emergencia cuando en realidad es solo diciembre; tres brechas que se encogen seguidas se leen como «vamos bien» cuando en realidad son una deriva. Puestos mes a mes, el ruido y la trama se separan solos — y tú respondes a la trama, no al ruido."
+      },
+      "readingItTogether": {
+        "heading": "Leer los capítulos juntos",
+        "p1": "Las tres tarjetas cuentan una sola historia a tres velocidades. La brecha ingresos-gastos es la señal más rápida — se mueve el mismo mes. La Edad del dinero es la media: sostén una brecha y el promedio sube despacio, con el gasto nuevo bebiendo de ingresos más viejos. El patrimonio neto es el arco lento que compone a los otros dos, trimestre tras trimestre. Cuando las tres se inclinan hacia el mismo lado, no hay que preguntarse si funciona; cuando discrepan, la discrepancia misma dice dónde mirar.",
+        "p2": "Los rangos de fechas son tu lente de zoom. El mes en curso responde «¿cómo va?»; el año a la fecha responde «¿qué clase de año es este?»; el año pasado, releído una vez, es lo más parecido que ofrece un presupuesto a releer un diario viejo. Los mismos números, distinta altitud — elige la que corresponda a la pregunta que de verdad estás haciendo."
+      },
+      "fromStoryToNextChapter": {
+        "heading": "De la historia al siguiente capítulo",
+        "p1": "El panel se adapta a lo que te importa. Un panel de personalización elige qué tarjetas se muestran, y hay más capítulos esperando: los principales beneficiarios para «¿a dónde se va todo en realidad?», un medidor de ritmo para la velocidad del mes en curso, y toda una pestaña <em>Libertad</em> donde tu pago de deudas dibuja su descenso. La pestaña Metas mantiene el progreso de tus sueños — revelación de foto incluida — en la misma sala de lectura.",
+        "p2": "Y cuando una tendencia pide interpretación en lugar de contemplación, el lector de cabecera es <link>Zero</link>: pregunta por qué el patrimonio bajó en marzo o qué empujaría la Edad del dinero más allá de treinta, y la respuesta llega anclada en tus transacciones reales. En el día a día, el <link2>Ritmo de gasto</link2> sigue cuidando el mes en curso — Perspectivas es donde das un paso atrás y lees el arco que esos meses van escribiendo."
+      },
+      "cta": {
+        "heading": "Tu dinero tiene una historia. Léela.",
+        "body": "Comienza tu prueba gratuita de 30 días — conecta tus cuentas, haz vivir tu presupuesto y mira cómo tres números convierten meses de transacciones en una historia que se puede seguir.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

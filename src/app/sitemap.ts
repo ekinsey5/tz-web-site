@@ -103,6 +103,12 @@ const BUDGET_WITH_PARTNER_LANGUAGES = {
   es: `${SITE_URL}/es/learn/budget-with-your-partner/`,
 };
 
+const MONEY_STORY_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/reading-your-money-story/`,
+  fr: `${SITE_URL}/fr/learn/reading-your-money-story/`,
+  es: `${SITE_URL}/es/learn/reading-your-money-story/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -461,6 +467,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: BUDGET_WITH_PARTNER_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/reading-your-money-story/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: MONEY_STORY_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/reading-your-money-story/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: MONEY_STORY_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/reading-your-money-story/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: MONEY_STORY_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

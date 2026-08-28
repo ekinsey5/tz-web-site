@@ -252,6 +252,12 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-28",
   },
+  moneyStory: {
+    slug: "reading-your-money-story",
+    path: "/learn/reading-your-money-story/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-28",
+  },
 } as const;
 
 /**
@@ -276,7 +282,7 @@ export const LEARN_JOURNEY = [
       "goalsAndDebt",
     ],
   },
-  { stage: "coachRefine", articles: ["aiFinancialCoach"] },
+  { stage: "coachRefine", articles: ["moneyStory", "aiFinancialCoach"] },
 ] as const satisfies ReadonlyArray<{
   stage: string;
   articles: ReadonlyArray<keyof typeof ARTICLES>;
