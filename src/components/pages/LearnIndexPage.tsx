@@ -9,6 +9,7 @@ import {
   Scale,
   ShoppingCart,
   Snowflake,
+  Target,
   Wallet,
   Wand2,
   type LucideIcon,
@@ -32,6 +33,7 @@ const ICONS: Record<keyof typeof ARTICLES, LucideIcon> = {
   canIAffordThis: ShoppingCart,
   windfallInterceptor: Gift,
   aiFinancialCoach: Bot,
+  goalsAndDebt: Target,
 };
 
 /** Listing page for the /learn section, shared by the (en) and [locale] routes. */

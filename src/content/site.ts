@@ -228,6 +228,12 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-27",
   },
+  goalsAndDebt: {
+    slug: "saving-while-paying-off-debt",
+    path: "/learn/saving-while-paying-off-debt/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-28",
+  },
 } as const;
 
 /**
@@ -243,7 +249,13 @@ export const LEARN_JOURNEY = [
   { stage: "monthToMonth", articles: ["irregularPaycheck", "catchOverspendingEarly"] },
   {
     stage: "crushDebt",
-    articles: ["payOffDebtFaster", "snowflakePayments", "canIAffordThis", "windfallInterceptor"],
+    articles: [
+      "payOffDebtFaster",
+      "snowflakePayments",
+      "canIAffordThis",
+      "windfallInterceptor",
+      "goalsAndDebt",
+    ],
   },
   { stage: "coachRefine", articles: ["aiFinancialCoach"] },
 ] as const satisfies ReadonlyArray<{

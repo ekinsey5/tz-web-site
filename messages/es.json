@@ -292,7 +292,7 @@
       "startHere": "Empieza aquí",
       "buildYourBudget": "Construye tu presupuesto",
       "monthToMonth": "Mes a mes",
-      "crushDebt": "Aplasta tus deudas",
+      "crushDebt": "Aplasta deudas, financia metas",
       "coachRefine": "Refina con tu coach"
     },
     "backToHome": "← Volver al inicio",
@@ -342,6 +342,10 @@
       "aiFinancialCoach": {
         "title": "Conoce a Zero, tu coach financiero de IA: respuestas reales con tus números reales",
         "excerpt": "Los consejos genéricos no ven tu presupuesto. Zero sí. Conoce el coach financiero de IA integrado de Tether-Zero: respuestas claras calculadas con los números reales de tu hogar, avisos proactivos cuando tu dinero necesita atención — y nada cambia sin tu aprobación."
+      },
+      "goalsAndDebt": {
+        "title": "Ahorrar para un sueño mientras aplastas tu deuda: objetivos y deudas sin culpa",
+        "excerpt": "Ahorrar para un viaje mientras pagas tarjetas suele alimentarse de culpa. Tether-Zero pone número al intercambio — cuántos meses se retrasa tu fecha de libertad — y te deja elegir con los ojos abiertos."
       }
     }
   },
@@ -849,6 +853,52 @@
       "cta": {
         "heading": "¿Listo para respuestas reales?",
         "body": "Comienza tu prueba gratuita de 30 días, conecta tus cuentas y hazle a Zero esa pregunta sobre tu dinero que llevas semanas cargando. La primera respuesta toma alrededor de un minuto.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "goalsAndDebt": {
+      "meta": {
+        "title": "Ahorrar para un sueño mientras aplastas tu deuda",
+        "description": "Pagar deudas y ahorrar para un sueño pueden convivir. Tether-Zero pone precio a cada intercambio en meses — no en culpa — con tus propios números."
+      },
+      "title": "Ahorrar para un sueño mientras aplastas tu deuda: objetivos y deudas sin culpa",
+      "intro": {
+        "p1": "El consejo clásico para quien tiene deudas es monacal: nada de viajes, nada de extras, nada de sueños hasta que muera el último saldo. Suena a disciplina y funciona — unos tres meses. Luego un amigo reserva el vuelo que tú no reservaste, el plan empieza a sentirse como castigo y una mala semana se lleva el presupuesto entero. La privación no es una estrategia; es una cuenta regresiva.",
+        "p2": "Tether-Zero toma la posición contraria: el sueño pertenece al presupuesto, justo al lado de la deuda. Los <strong>objetivos financieros</strong> viven junto al <strong>Debt Crusher</strong> como ciudadanos de primera clase — con sus propias barras de progreso, su propio ritmo y una costumbre poco común: cuando un objetivo y tu plan de pago compiten por los mismos dólares, la aplicación no arbitra tus valores. Pone precio al intercambio, en meses, y te deja decidir. Este artículo muestra cómo funciona — y por qué un número resulta mucho más amable que la culpa."
+      },
+      "dreamsAreFuel": {
+        "heading": "La privación no es una estrategia",
+        "p1": "Todo plan de deuda de «todo o nada» hace la misma apuesta: que puedes no querer nada durante dos años. Los presupuestos reales pierden esa apuesta constantemente, y la derrota sale cara — abandonar un plan en el cuarto mes suele costar más de lo que jamás habría costado un objetivo modesto. Un sueño hace lo contrario de lo que dice la culpa: le da al esfuerzo una meta que de verdad te importa, y quien puede ver la recompensa sigue presentándose.",
+        "p2": "El problema real nunca fue querer cosas. Es no saber cuánto cuesta quererlas. Mientras el precio de un objetivo sea vago — «esto probablemente atrasa mi pago de deuda… de algún modo… en alguna cantidad» — cada contribución arrastra su nubecita de culpa y cada pago de deuda su poco de resentimiento. El remedio no es querer menos. Es saber exactamente cuánto cuesta el sueño, en la única moneda que entiende un plan de pago: el tiempo."
+      },
+      "honestTradeoff": {
+        "heading": "Una advertencia honesta, no un sermón",
+        "p1": "Crea un objetivo en Tether-Zero — el propio formulario sugiere «Vacaciones en Hawaii» como ejemplo — con monto y fecha objetivo. Si financiarlo al ritmo requerido compite con tu plan de pago, la aplicación lo dice antes de que confirmes, en un cartel ámbar: «Este objetivo entra en conflicto con tu plan de Debt Crusher». Debajo, los detalles: cuántos dólares al mes se redirigirían de tu pago de deuda, y dos tarjetas lado a lado — tu <strong>fecha de libertad actual</strong> junto a la <strong>proyectada</strong>, con el retraso en claro, del estilo «Se retrasa 4 meses».",
+        "p2": "Luego viene la frase que vuelve todo libre de culpa: «Aún puedes crear el objetivo — actualizaremos tu proyección de Debt Crusher». Sin bloqueos, sin regaños, sin desvíos insistentes para disuadirte. Si Hawaii vale cuatro meses más de pagos, es una elección legítima — tu <link>estrategia de pago</link> sigue corriendo, solo que con una nueva fecha honesta. La culpa se alimenta de la vaguedad. Un intercambio aceptado con los ojos abiertos le deja muy poco que comer."
+      },
+      "dreamVisible": {
+        "heading": "Haz visible el sueño",
+        "p1": "Un objetivo en Tether-Zero se parece a lo que quieres, no a una fila de hoja de cálculo. Cada objetivo lleva una imagen de portada — sube la tuya o busca en Unsplash dentro de la aplicación — para que la playa, el auto o el porche presidan la página. El panel de Perspectivas incluso tiene una tarjeta de <em>Revelación de imagen de meta</em> que va descubriendo la foto a medida que sube tu porcentaje financiado: al 40 %, ya se asoma casi la mitad del sueño.",
+        "p2": "Los hitos se celebran en voz alta. Cruza el cuarto y la aplicación aplaude «¡25 % logrado!»; llega a la mitad y es «¡A mitad del camino!»; deposita el último dólar y una animación proclama «¡Objetivo alcanzado!». Parece poca cosa hasta recordar la alternativa — el silencio — que ofrecía la vieja hoja de cálculo. El pago de deudas tiene su fecha de libertad; ahora el ahorro tiene fuegos artificiales propios."
+      },
+      "stayOnPace": {
+        "heading": "Un ritmo, no un ruego",
+        "p1": "Detrás de cada objetivo corre la misma honestidad en unidades de tiempo que el Debt Crusher. A partir del monto y la fecha objetivo, Tether-Zero calcula el «Requerido por mes» — la contribución que te mantiene a tiempo — y etiqueta el objetivo sin rodeos: <strong>Al ritmo</strong>, <strong>Adelantado</strong>, <strong>Retrasado</strong> o <strong>En riesgo</strong>. Ningún misterio sobre si el sueño va a la deriva; la página avisa antes de que la deriva se vuelva un año.",
+        "p2": "El presupuesto se encarga de recordar. Una franja «Metas este mes» vive dentro de tu presupuesto mensual, y un toque en «Financiar todo al ritmo sugerido» contribuye a todos los objetivos activos a la vez — con montos ajustados proporcionalmente al ingreso realmente disponible, para que un mes flaco financie el sueño con suavidad en lugar de descarrilar el plan. Las categorías vinculadas a un objetivo llevan una pequeña insignia, para que la conexión siga visible donde asignas."
+      },
+      "everySource": {
+        "heading": "Aliméntalo desde donde sea",
+        "p1": "Las contribuciones vienen en cuatro sabores: <strong>Asignación mensual</strong> para el goteo constante, <strong>Transferencia única</strong> para el movimiento deliberado, <strong>Cuenta vinculada</strong> cuando una cuenta de ahorro real respalda el objetivo y — la más divertida — <strong>Ganancia inesperada</strong>. El campo de nota sugiere sus propios ejemplos: «reembolso de impuestos, dinero de cumpleaños». Tether-Zero ya <link2>intercepta las ganancias inesperadas</link2> para tu plan de deuda; los objetivos son el otro destino honesto del dinero sorpresa, y la aplicación los trata así.",
+        "p2": "Los objetivos pertenecen al hogar, no a una sola cuenta. Cada contribución queda registrada con el nombre de quien la hizo: los cincuenta dólares de tu pareja hacia el viaje aparecen como suyos, y la página del objetivo mantiene un desglose por contribuyente. Un sueño compartido con recibos compartidos sobrevive discusiones que una vaga intención conjunta no sobreviviría. Hay incluso un diario del objetivo para marcar los momentos — y una retrospectiva para leer cuando por fin esté financiado."
+      },
+      "permissionToPause": {
+        "heading": "Permiso para pausar",
+        "p1": "Hay meses en que la respuesta no es ni culpa ni esfuerzo — es «ahora no». Tether-Zero pausa un objetivo en dos toques: el progreso queda, el historial queda, la foto queda; las contribuciones simplemente dejan de contar contra tu ritmo hasta que reanudes. Pausar no es rendirse, y la aplicación está construida para conocer la diferencia.",
+        "p2": "Las prioridades se reordenan arrastrando cuando la vida se reordena, y un objetivo creado en enero puede esperar una primavera difícil sin borrar un solo dólar. Esa es la tesis silenciosa de toda la función: un plan solo sobrevive al contacto con la vida real si querer cosas, bajar el ritmo y volver a empezar son jugadas permitidas. Ponle precio a los intercambios, celebra los hitos, pausa sin castigo — y las dos fechas de aquella tarjeta de advertencia acabarán llegando."
+      },
+      "cta": {
+        "heading": "Ponle nombre al sueño. Conserva la fecha.",
+        "body": "Comienza tu prueba gratuita de 30 días — configura tu Debt Crusher, crea tu primer objetivo y ve exactamente lo que cuestan ambos futuros antes de elegir.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

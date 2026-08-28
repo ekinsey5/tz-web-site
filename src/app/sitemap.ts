@@ -79,6 +79,12 @@ const AI_FINANCIAL_COACH_LANGUAGES = {
   es: `${SITE_URL}/es/learn/ai-financial-coach/`,
 };
 
+const GOALS_AND_DEBT_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/saving-while-paying-off-debt/`,
+  fr: `${SITE_URL}/fr/learn/saving-while-paying-off-debt/`,
+  es: `${SITE_URL}/es/learn/saving-while-paying-off-debt/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -353,6 +359,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: AI_FINANCIAL_COACH_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/saving-while-paying-off-debt/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: GOALS_AND_DEBT_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/saving-while-paying-off-debt/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: GOALS_AND_DEBT_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/saving-while-paying-off-debt/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: GOALS_AND_DEBT_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

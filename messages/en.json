@@ -292,7 +292,7 @@
       "startHere": "Start Here",
       "buildYourBudget": "Build Your Budget",
       "monthToMonth": "Run It Month to Month",
-      "crushDebt": "Crush Your Debt",
+      "crushDebt": "Crush Debt & Fund Goals",
       "coachRefine": "Refine with Your Coach"
     },
     "backToHome": "← Back to home",
@@ -342,6 +342,10 @@
       "aiFinancialCoach": {
         "title": "Meet Zero, Your AI Money Coach: Real Answers from Your Real Numbers",
         "excerpt": "Generic advice can't see your budget. Zero can. Meet Tether-Zero's built-in AI financial coach: plain-language answers computed from your real household numbers, proactive nudges when money needs attention — and nothing changes without your yes."
+      },
+      "goalsAndDebt": {
+        "title": "Saving for a Dream While Killing Your Debt: Goals and Debt Without the Guilt",
+        "excerpt": "Saving for a trip while paying down cards usually runs on guilt. Tether-Zero prices the trade-off — how many months your debt-free date slips — and lets you choose with open eyes."
       }
     }
   },
@@ -849,6 +853,52 @@
       "cta": {
         "heading": "Ready for real answers?",
         "body": "Start your 30-day free trial, connect your accounts, and ask Zero the question about your money you've been carrying around. The first answer takes about a minute.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "goalsAndDebt": {
+      "meta": {
+        "title": "Saving for a Dream While Killing Your Debt",
+        "description": "Debt payoff and dream savings can share a budget. Tether-Zero's goals price every trade-off in months — not guilt — using your own numbers."
+      },
+      "title": "Saving for a Dream While Killing Your Debt: Goals and Debt Without the Guilt",
+      "intro": {
+        "p1": "The standard advice for people in debt is monastic: no trips, no upgrades, no dreams until the last balance dies. It reads as discipline and it works — for about three months. Then a friend books the flight you didn't, the plan starts to feel like punishment, and one bad week takes the whole budget down with it. Deprivation isn't a strategy; it's a countdown.",
+        "p2": "Tether-Zero takes a different position: the dream belongs in the budget, right next to the debt. <strong>Financial Goals</strong> live alongside the <strong>Debt Crusher</strong> as first-class citizens — with their own progress bars, their own pace math, and one unusual habit: when a goal and your payoff plan compete for the same dollars, the app doesn't referee your values. It prices the trade-off, in months, and lets you decide. This article shows how that works — and why a number turns out to be so much kinder than guilt."
+      },
+      "dreamsAreFuel": {
+        "heading": "Deprivation is not a strategy",
+        "p1": "Every all-or-nothing debt plan makes the same bet: that you can want nothing for two years. Real budgets lose that bet constantly, and the loss is expensive — abandoning a payoff plan in month four usually costs more than a modest goal ever would have. A dream does the opposite of what the guilt says it does. It gives the grind a finish line you actually care about, and people who can see the reward keep showing up.",
+        "p2": "The real problem was never wanting things. It's not knowing what the wanting costs. When the price of a goal is vague — “this probably slows my debt payoff… somehow… by some amount” — every contribution to it carries a little cloud of guilt, and every debt payment carries a little resentment. The fix isn't to want less. It's to know exactly what the dream costs, in the only currency a payoff plan runs on: time."
+      },
+      "honestTradeoff": {
+        "heading": "An honest warning, not a lecture",
+        "p1": "Create a goal in Tether-Zero — the form's own example placeholder suggests “Hawaii vacation” — and give it a target amount and target date. If funding it at the required pace would compete with your payoff plan, the app says so before you commit, in an amber banner: “This goal conflicts with your Debt Crusher plan.” Below it come the specifics: how many dollars a month would be redirected from your debt payoff, and two cards side by side — your <strong>current debt-free date</strong> next to the <strong>projected</strong> one, with the delay spelled out plainly, like “Slips by 4 months.”",
+        "p2": "Then comes the sentence that makes the whole feature guilt-free: “You can still create the goal — we'll update your Debt Crusher projection.” No blocking, no scolding, no dark-pattern detour to talk you out of it. If Hawaii is worth four more months of payments, that is a legitimate choice — your <link>payoff strategy</link> keeps running, just with an honest new date. Guilt thrives on vagueness. A trade-off you accepted with open eyes leaves it very little to feed on."
+      },
+      "dreamVisible": {
+        "heading": "Make the dream visible",
+        "p1": "A goal in Tether-Zero looks like the thing you want, not like a spreadsheet row. Every goal takes a cover image — upload your own or search Unsplash right inside the app — so the beach, the car, or the front porch sits at the top of the page. The Insights dashboard even has a <em>Goal Image Reveal</em> card that uncovers more of the photo as your funded percentage climbs: at 40% funded, you can already see almost half the dream.",
+        "p2": "Milestones get celebrated out loud. Cross a quarter and the app cheers “25% Funded!”; reach the middle and it's “Halfway There!”; land the last dollar and a celebration overlay declares “Goal Complete!” It sounds small until you remember the alternative — silence — which is all the old spreadsheet ever offered. Debt payoff has a Debt Free Date to look forward to; now the saving side has fireworks of its own."
+      },
+      "stayOnPace": {
+        "heading": "A pace, not a plea",
+        "p1": "Behind every goal runs the same time-denominated honesty the Debt Crusher is built on. From your target amount and date, Tether-Zero computes “Required per month” — the contribution that keeps you on schedule — and labels the goal plainly: <strong>On track</strong>, <strong>Ahead</strong>, <strong>Behind</strong>, or <strong>At risk</strong>. No mystery about whether the dream is drifting; the page tells you before the drift becomes a year.",
+        "p2": "The budget does the remembering for you. A “Goals this month” strip sits inside your monthly budget, and one tap on “Fund all at suggested pace” contributes to every active goal at once — with amounts adjusted proportionally to the income you actually have available, so a lean month funds the dream lightly instead of wrecking the plan. Categories linked to a goal carry a small Goal badge, keeping the connection visible right where you allocate."
+      },
+      "everySource": {
+        "heading": "Feed it from anywhere",
+        "p1": "Contributions come in four flavors: <strong>Monthly allocation</strong> for the steady drip, <strong>One-time transfer</strong> for the deliberate move, <strong>Linked account</strong> when a real savings account backs the goal, and — the fun one — <strong>Windfall</strong>. The contribution note field suggests its own examples: “tax refund, birthday money, overtime pay.” Tether-Zero already <link2>intercepts windfalls</link2> for your debt plan; goals are the other honest destination for surprise money, and the app treats them that way.",
+        "p2": "Goals belong to the household, not to one login. Every contribution is recorded with the contributor's name, so your partner's fifty dollars toward the trip shows up as theirs, and the goal page keeps a running contributor breakdown. A shared dream with shared receipts survives arguments that a vague joint intention wouldn't. There's even a goal journal for marking the moments — and a retrospective to read back once the dream is funded."
+      },
+      "permissionToPause": {
+        "heading": "Permission to pause",
+        "p1": "Some months the answer is neither guilt nor grind — it's “not right now.” Tether-Zero lets you pause a goal in two taps: the progress stays, the history stays, the photo stays; contributions simply stop counting against your pace until you resume. Pausing is not quitting, and the app is built to know the difference.",
+        "p2": "Priorities drag into a new order when life reorders itself, and a goal you created in January can wait out a rough spring without a single deleted dollar. That is the quiet thesis of the whole feature: a plan survives contact with real life only if wanting things, slowing down, and starting again are all legal moves. Price the trade-offs, celebrate the milestones, pause without penalty — and both dates on that warning card eventually arrive."
+      },
+      "cta": {
+        "heading": "Name the dream. Keep the date.",
+        "body": "Start your 30-day free trial — set up your Debt Crusher, create your first goal, and see exactly what both futures cost before you choose either.",
         "button": "Start your 30-day free trial"
       }
     }
