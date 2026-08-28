@@ -307,6 +307,14 @@
       "sinkingFunds": {
         "title": "Ne vous laissez plus surprendre par les dépenses « imprévues » : les fonds de réserve expliqués",
         "excerpt": "Immatriculation, pneus neufs, décembre : les dépenses qui ruinent les budgets sont rarement des surprises — ce sont des échéances. Les fonds de réserve les transforment en petits montants mensuels qui grandissent jusqu’à l’arrivée de la facture."
+      },
+      "irregularPaycheck": {
+        "title": "Budgéter avec une paie irrégulière : fréquence de paie et catégories de détention",
+        "excerpt": "Chèques de pige, paie aux deux semaines, mois à trois paies — les budgets cassent quand le revenu n’arrive pas en blocs mensuels bien rangés. Le calcul de fréquence de paie et les catégories de détention de Tether-Zero vous font budgéter uniquement l’argent réellement arrivé."
+      },
+      "catchOverspendingEarly": {
+        "title": "Détectez les dépassements avant qu’ils n’arrivent : alertes de rythme et jauge de rythme",
+        "excerpt": "Les budgets échouent rarement d’un coup — ils échouent par petites dérives que personne ne voit avant la fin du mois. La jauge Rythme de dépenses et les alertes de rythme de Zero signalent les dépassements en cours de mois, quand il est encore temps d’agir."
       }
     }
   },
@@ -512,6 +520,93 @@
       "cta": {
         "heading": "Prêt à rayer le mot « surprise » ?",
         "body": "Commencez votre essai gratuit de 30 jours — créez votre premier fonds de réserve ce mois-ci, et laissez la prochaine facture annuelle trouver l’argent déjà prêt.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "irregularPaycheck": {
+      "meta": {
+        "title": "Budgéter avec une paie irrégulière",
+        "description": "Paie aux deux semaines, revenus de pige, mois à trois paies : Tether-Zero budgète l’argent réel, pas les projections, avec les catégories de détention."
+      },
+      "title": "Budgéter avec une paie irrégulière : fréquence de paie et catégories de détention",
+      "intro": {
+        "p1": "Presque tous les conseils budgétaires partent de la même hypothèse silencieuse : une paie prévisible, une fois par mois, toujours du même montant. Si ce n’est pas votre vie — vous êtes pigiste, chauffeur, payé à la commission, ou simplement payé aux deux semaines — le conseil standard vacille exactement là où vous en avez le plus besoin.",
+        "p2": "Tether-Zero prend l’irrégulier au sérieux, avec deux outils complémentaires : un calcul de fréquence de paie qui convertit ce que vous gagnez en ce qu’un mois livre réellement, et la <strong>catégorie de détention</strong> — un tampon qui vous fait budgéter l’argent que vous avez plutôt que l’argent que vous attendez. Voici comment ils fonctionnent."
+      },
+      "monthlyLie": {
+        "heading": "Le mensonge du budget mensuel",
+        "p1": "Le budget base zéro a un point faible : il suppose sans le dire une paie prévisible. Quand le revenu varie, cette hypothèse vous pousse à allouer de l’argent que vous ne faites qu’espérer — et quand un client paie en retard ou qu’un mois est creux, chaque enveloppe remplie sur une projection se révèle en partie fictive.",
+        "p2": "Le remède n’est pas un autre calcul ; c’est un autre ordre des opérations. Budgétez la réalité, pas les projections : l’argent ne reçoit un rôle qu’une fois arrivé. Tout ce qui suit existe pour rendre cet ordre facile plutôt qu’héroïque."
+      },
+      "realMoney": {
+        "heading": "Budgétez l’argent qui arrive vraiment",
+        "p1": "Commencez par le côté revenus. La catégorie Paies de votre budget porte un conseil pointu intégré : indiquez le net, pas le brut — Tether-Zero budgète les dollars qui arrivent réellement sur votre compte. Retenues, impôts et frais de plateforme n’atteignent jamais votre budget ; ils n’y ont donc pas leur place.",
+        "p2": "Et dans la configuration guidée, les revenus viennent en premier, avant toute catégorie de dépense — chaque allocation qui suit s’appuie donc sur un nombre ancré dans ce que votre compte verra vraiment."
+      },
+      "cadenceMath": {
+        "heading": "Le calcul pour chaque fréquence de paie",
+        "p1": "Quand la configuration guidée aborde vos revenus, elle demande aussi : <em>« À quelle fréquence cela se produit-il ? »</em> — chaque semaine, toutes les deux semaines, chaque mois ou chaque année — puis fait l’arithmétique du calendrier pour vous. Vous rapportez 800 $ net toutes les deux semaines ? L’assistant affiche la conversion noir sur blanc : 800 $ × 2 versements ce mois-ci = 1 600 $. Vous budgétez ce que le mois livre réellement.",
+        "p2": "Le même calcul attrape les bonnes surprises. Deux fois par an, une paie aux deux semaines produit un troisième versement, et l’assistant le signale — « Août compte 3 versements — soit 800 $ supplémentaires à consacrer aux dettes ou à l’épargne. » Il fonctionne aussi dans l’autre sens pour les factures annuelles : un montant annuel est divisé par douze pour que l’argent attende déjà au mois d’échéance — la même idée que les <link>fonds de réserve</link>."
+      },
+      "holdingBuffer": {
+        "heading": "Un tampon pour les revenus en dents de scie",
+        "p1": "Passons au côté pigiste. Créez une catégorie — « Tampon paiements clients », par exemple — et activez <strong>Catégorie de détention</strong>. La boîte de dialogue annonce la couleur : « Les fonds détenus ici sont exclus des totaux de dépenses. » Quand une facture est enfin payée, l’argent va d’abord là : gagné, détenu, pas encore promis à quoi que ce soit.",
+        "p2": "L’en-tête de votre budget dit alors toute la vérité en trois nombres. Revenus 5 000 $, Alloué 3 200 $, Total en réserve 1 200 $ — reste 600 $ à budgéter. L’argent engagé, l’argent en tampon et l’argent en attente de décision restent visiblement séparés — exactement la visibilité qu’exige un revenu variable."
+      },
+      "releaseFunds": {
+        "heading": "Libérez les fonds quand l’argent est réel",
+        "p1": "Quand vous êtes sûr que l’argent est vraiment à vous, ouvrez <strong>Libérer les fonds de détention</strong> et déplacez un montant du tampon vers une catégorie de dépense — 500 $ du tampon vers l’épicerie en une seule opération atomique, les deux côtés mis à jour ensemble. Tether-Zero refuse de libérer plus que ce que le tampon contient réellement.",
+        "p2": "Les catégories de détention sont aussi exclues de vos analyses de dépassement et de sous-utilisation : gérer votre tampon ne pollue jamais vos statistiques de dépenses. Et elles ne sont délibérément pas des fonds de réserve — une catégorie est l’un ou l’autre, jamais les deux. Un fonds de réserve est une épargne qui grossit de mois en mois ; une catégorie de détention est une zone de transit pour l’argent qui entre ce mois-ci."
+      },
+      "rhythm": {
+        "heading": "Un rythme pour l’irrégulier",
+        "p1": "Mis bout à bout, une routine de jour de paie se dessine : quand un chèque arrive, garez-le dans la catégorie de détention. Libérez de quoi financer les factures dues avant le prochain chèque, puis les paiements de dettes, puis l’épicerie et l’essence. À mesure que le revenu se confirme, libérez davantage. Vos enveloppes ne contiennent jamais que des dollars réels — y puiser ne demande aucun acte de foi.",
+        "p2": "Et les mois où le calendrier vous offre un troisième versement, vous saurez déjà où va le surplus. Un revenu irrégulier ne vous disqualifie pas du budget — c’est la meilleure raison d’en tenir un qui dit la vérité."
+      },
+      "cta": {
+        "heading": "Payé bizarrement ? Budgétez quand même.",
+        "body": "Commencez votre essai gratuit de 30 jours — apportez votre vrai calendrier de paie, garez les chèques irréguliers en détention, et ne budgétez que l’argent réellement arrivé.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "catchOverspendingEarly": {
+      "meta": {
+        "title": "Détectez les dépassements avant qu’ils n’arrivent",
+        "description": "La jauge Rythme de dépenses et les alertes de rythme de Zero vous préviennent en cours de mois — quand il est encore temps d’ajuster votre budget."
+      },
+      "title": "Détectez les dépassements avant qu’ils n’arrivent : alertes de rythme et jauge de rythme",
+      "intro": {
+        "p1": "Il y a une sensation bien particulière qui arrive autour du 28 du mois : vous ouvrez votre budget, et une catégorie que vous pensiez sous contrôle est bien dans le rouge. L’argent est déjà parti, il n’y a plus rien à décider — juste un trou à combler. Un budget qui ne fait que raconter ce qui s’est déjà passé n’est pas vraiment un plan ; c’est une autopsie.",
+        "p2": "La solution n’est pas plus de volonté — c’est une information plus précoce. Tether-Zero surveille le <em>rythme</em> de vos dépenses tout au long du mois et vous prévient quand le problème est encore petit. Voici comment la jauge <strong>Rythme de dépenses</strong> et les alertes de rythme de Zero vous aident à stopper les dépassements avant qu’ils n’arrivent, au lieu de les expliquer après coup."
+      },
+      "whySneaks": {
+        "heading": "Pourquoi les dépassements passent inaperçus",
+        "p1": "Personne ne décide de faire exploser le budget courses. Cela s’installe un petit achat à la fois, et chaque dépense semble raisonnable prise isolément. Le problème : un total mensuel vous dit où vous en êtes par rapport au mois entier — pas si vous y êtes arrivé le 9 ou le 26. Avoir encore 20 % de votre budget restaurants est confortable le 28, et un vrai problème le 12 ; le chiffre seul ne dit pas lequel des deux vous vivez.",
+        "p2": "Dans un budget base zéro, les dégâts ne restent pas non plus confinés. Chaque dollar a déjà un rôle : quand une catégorie passe en négatif, la couvrir signifie retirer de l’argent d’un autre rôle — et un dépassement découvert en fin de mois emprunte discrètement sur le plan du mois suivant. Le timing fait presque tout : plus tôt vous savez que votre rythme dérape, plus la correction est petite et sereine."
+      },
+      "gauge": {
+        "heading": "Votre mois en un coup d’œil : la jauge Rythme de dépenses",
+        "p1": "C’est exactement ce problème de timing que résout la jauge <strong>Rythme de dépenses</strong> du tableau de bord Perspectives. Un seul cadran compare deux nombres : le pourcentage de votre budget déjà dépensé, et le pourcentage du mois écoulé. Quand ils montent ensemble, la jauge affiche <strong>Dans les limites</strong>. Dépensez un peu plus vite que le calendrier et elle passe à <strong>Légèrement en avance</strong> ; distancez complètement le mois et elle vire au rouge avec <strong>Dépassement</strong>.",
+        "p2": "Le cadran est volontairement indulgent. La zone verte s’étend jusqu’à 85 % du rythme et une bande jaune couvre la portion jusqu’à 100 %, si bien qu’un mois normalement irrégulier ne déclenche aucune alarme — et Tether-Zero met les avertissements de zone en pause les premiers jours du mois, quand un simple plein de courses peut faire paraître les chiffres plus inquiétants qu’ils ne le sont. La jauge ne demande qu’une chose : un budget mensuel. Allouez vos catégories et elle commence aussitôt à lire votre rythme."
+      },
+      "alerts": {
+        "heading": "Les alertes de rythme : un signal avant les dégâts",
+        "p1": "La jauge surveille votre mois dans son ensemble ; les alertes de rythme surveillent chaque catégorie individuellement. <strong>Zero</strong>, votre coach IA intégré, compare les dépenses de chaque catégorie à la part du mois déjà écoulée, avec une marge intégrée de 15 % pour que les irrégularités ordinaires ne déclenchent pas de fausses alertes. Quand une catégorie distance vraiment le calendrier, une carte ambre <strong>Alerte de rythme</strong> apparaît dans le <strong>Coin du coach</strong> de votre tableau de bord — quand il reste encore du mois pour agir.",
+        "p2": "Chaque alerte fait les prévisions à votre place : elle nomme la catégorie, projette la date à laquelle l’argent sera épuisé et estime le dépassement si rien ne change. De là, la correction est à un geste — <strong>Ajuster le budget</strong> vous amène directement à votre budget, et <strong>Ignorer</strong> retire la carte. Sans harcèlement : une alerte ignorée ne revient que si vos dépenses accélèrent encore."
+      },
+      "courseCorrect": {
+        "heading": "Rythme trop rapide ? Trois corrections en douceur",
+        "p1": "Une alerte de rythme est une information, pas un verdict. Souvent, la bonne réponse est simplement de lever le pied — apprendre le 12 que les restaurants chauffent, c’est précisément ce qui rend les deux semaines suivantes rattrapables. Tout aussi souvent, la réponse honnête est que l’objectif était trop bas, et le bon geste est celui que propose la carte : ajuster le budget à votre vraie vie.",
+        "p2": "Et parfois le mois est simplement irrégulier — vous avez acheté un an de croquettes la première semaine. Le bon geste est alors le classique des enveloppes : <link>déplacez de l’argent depuis une catégorie qui a de la marge</link>, et le plan est de nouveau entier. Quel que soit votre choix, vous choisissez tôt, quand les trois options sont encore sur la table. C’est tout l’intérêt."
+      },
+      "habit": {
+        "heading": "Faites-en une habitude d’une minute",
+        "p1": "Rien de tout cela n’exige des soirées tableur. Jetez un œil au cadran Rythme de dépenses en ouvrant Tether-Zero — un regard suffit pour savoir si le mois a besoin de vous. Côté Budget, le panneau d’aperçu reprend la même idée avec le <strong>Rythme mensuel</strong> — ce que vous avez dépensé comparé à la part du mois écoulée — avec les catégories en dépassement visibles d’un coup d’œil.",
+        "p2": "Voilà toute la pratique : laissez la jauge surveiller le mois, laissez Zero surveiller les catégories, et ne dépensez votre attention que là où quelque chose dérive vraiment. Pas encore de budget à mesurer ? <link2>Créez le vôtre en une dizaine de minutes</link2>, puis laissez-le tourner. Les budgets échouent rarement dans un grand fracas ; ils échouent par petites dérives que personne ne remarque. Désormais, vous les remarquerez."
+      },
+      "cta": {
+        "heading": "Voyez votre propre rythme ce mois-ci",
+        "body": "Commencez votre essai gratuit de 30 jours, configurez votre budget, et laissez la jauge Rythme de dépenses et les alertes de rythme de Zero monter la garde — pour que la fin du mois ne vous surprenne plus.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     }

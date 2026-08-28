@@ -186,6 +186,18 @@ export const ARTICLES = {
     /** ISO date for Article JSON-LD datePublished/dateModified. */
     datePublished: "2026-08-27",
   },
+  irregularPaycheck: {
+    slug: "irregular-paycheck",
+    path: "/learn/irregular-paycheck/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
+  catchOverspendingEarly: {
+    slug: "catch-overspending-early",
+    path: "/learn/catch-overspending-early/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-08-27",
+  },
 } as const;
 
 /* ------------------------------------------------------------------ */

@@ -307,6 +307,14 @@
       "sinkingFunds": {
         "title": "Adiós a los gastos «sorpresa»: fondos de reserva explicados",
         "excerpt": "Registro del auto, llantas nuevas, diciembre: los gastos que arruinan presupuestos rara vez son sorpresas — son fechas. Los fondos de reserva los convierten en pequeños montos mensuales que crecen hasta que llega la factura."
+      },
+      "irregularPaycheck": {
+        "title": "Presupuestar con un pago irregular: frecuencia de pago y categorías de retención",
+        "excerpt": "Cheques freelance, pago quincenal, meses de tres pagos — los presupuestos se rompen cuando el ingreso no llega en bloques mensuales ordenados. El cálculo de frecuencia de pago y las categorías de retención de Tether-Zero te hacen presupuestar solo el dinero que de verdad llegó."
+      },
+      "catchOverspendingEarly": {
+        "title": "Detecta el sobregasto antes de que ocurra: alertas de ritmo y el medidor de ritmo",
+        "excerpt": "Los presupuestos rara vez fallan de golpe — fallan en pequeños desvíos que nadie ve hasta fin de mes. El medidor Ritmo de gasto y las alertas de ritmo de Zero señalan el sobregasto a mitad de mes, cuando todavía hay tiempo de arreglarlo."
       }
     }
   },
@@ -512,6 +520,93 @@
       "cta": {
         "heading": "¿Listo para jubilar la palabra «sorpresa»?",
         "body": "Comienza tu prueba gratuita de 30 días — crea tu primer fondo de reserva este mes, y deja que la próxima factura anual encuentre el dinero ya esperando.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "irregularPaycheck": {
+      "meta": {
+        "title": "Presupuestar con un pago irregular",
+        "description": "Pagos quincenales, ingresos freelance, meses de tres pagos: Tether-Zero presupuesta el dinero real, no proyecciones, con las categorías de retención."
+      },
+      "title": "Presupuestar con un pago irregular: frecuencia de pago y categorías de retención",
+      "intro": {
+        "p1": "Casi todos los consejos de presupuesto parten de la misma suposición silenciosa: un pago predecible, una vez al mes, siempre del mismo tamaño. Si esa no es tu vida — haces freelance, manejas para apps, ganas comisiones, o simplemente te pagan cada dos semanas — el consejo estándar se tambalea justo donde más lo necesitas.",
+        "p2": "Tether-Zero se toma en serio lo irregular, con dos herramientas que trabajan juntas: un cálculo de frecuencia de pago que convierte lo que ganas en lo que un mes realmente entrega, y la <strong>categoría de retención</strong> — un colchón que te hace presupuestar el dinero que tienes en vez del que esperas. Así funcionan."
+      },
+      "monthlyLie": {
+        "heading": "La mentira del presupuesto mensual",
+        "p1": "El presupuesto base cero tiene un punto débil: asume en silencio un pago predecible. Cuando el ingreso varía, esa suposición te empuja a asignar dinero que apenas esperas — y cuando un cliente paga tarde o llega un mes flojo, cada sobre que llenaste sobre una proyección resulta en parte ficción.",
+        "p2": "La solución no es otra matemática; es otro orden de operaciones. Presupuesta la realidad, no las proyecciones: el dinero recibe trabajo solo después de llegar. Todo lo que sigue existe para hacer ese orden fácil en vez de heroico."
+      },
+      "realMoney": {
+        "heading": "Presupuesta el dinero que de verdad llega",
+        "p1": "Empieza por el lado del ingreso. La categoría Pagos de tu presupuesto trae un consejo directo incorporado: ingresa el neto, no el bruto — Tether-Zero presupuesta los dólares que realmente llegan a tu cuenta. Retenciones, impuestos y comisiones de plataforma nunca alcanzan tu presupuesto, así que no pertenecen a él.",
+        "p2": "Y en la configuración guiada, el ingreso va primero, antes que cualquier categoría de gasto — así cada asignación que sigue se apoya en un número anclado en lo que tu cuenta verá de verdad."
+      },
+      "cadenceMath": {
+        "heading": "Matemática para cada frecuencia de pago",
+        "p1": "Cuando la configuración guiada llega a tus ingresos, también pregunta: <em>«¿Con qué frecuencia ocurre esto?»</em> — semanal, cada dos semanas, mensual o anual — y hace la aritmética del calendario por ti. ¿Traes a casa $800 cada dos semanas? El asistente muestra la conversión sin rodeos: $800 × 2 pagos este mes = $1,600. Presupuestas lo que el mes entrega de verdad.",
+        "p2": "La misma cuenta atrapa las sorpresas buenas. Dos veces al año, un pago quincenal produce un tercer cobro, y el asistente lo señala — «Agosto tiene 3 pagos — eso es $800 extra que puedes destinar a deudas o ahorros.» También funciona al revés con las facturas anuales: un monto anual se divide entre doce para que el dinero ya esté esperando en el mes de vencimiento — la misma idea detrás de los <link>fondos de reserva</link>."
+      },
+      "holdingBuffer": {
+        "heading": "Un colchón para ingresos irregulares",
+        "p1": "Ahora la mitad freelance. Crea una categoría — «Colchón de pagos de clientes», digamos — y activa <strong>Categoría de retención</strong>. El diálogo va al grano: «Los fondos aquí se excluyen de los totales de gastos.» Cuando por fin pagan una factura, el dinero entra primero ahí: ganado, retenido, todavía sin promesas.",
+        "p2": "El encabezado de tu presupuesto cuenta entonces toda la verdad en tres números. Ingresos $5,000, Asignado $3,200, Total en reserva $1,200 — quedan $600 por presupuestar. El dinero comprometido, el dinero en colchón y el dinero sin decidir se mantienen visiblemente separados — exactamente la visibilidad que exige un ingreso variable."
+      },
+      "releaseFunds": {
+        "heading": "Libera fondos cuando el dinero sea real",
+        "p1": "Cuando tengas certeza de que el efectivo es tuyo para gastar, abre <strong>Liberar fondos de retención</strong> y mueve un monto del colchón a una categoría de gasto — $500 del colchón a Supermercado en un solo paso atómico, con ambos lados actualizándose juntos. Tether-Zero no te deja liberar más de lo que el colchón realmente tiene.",
+        "p2": "Las categorías de retención también quedan fuera de tus análisis de sobregasto y subgasto: administrar tu colchón nunca contamina tus estadísticas de gastos. Y deliberadamente no son fondos de reserva — una categoría es una cosa o la otra, nunca ambas. Un fondo de reserva es un ahorro que crece mes a mes; una categoría de retención es una zona de tránsito para el efectivo que entra este mes."
+      },
+      "rhythm": {
+        "heading": "Un ritmo para lo irregular",
+        "p1": "En conjunto aparece una rutina de día de pago: cuando cae un cheque, estaciónalo en la categoría de retención. Libera lo suficiente para las facturas que vencen antes del próximo cheque, luego los pagos de deudas, luego supermercado y gasolina. A medida que el ingreso se confirma, libera más. Tus sobres solo contienen dólares reales — gastar de ellos no requiere fe.",
+        "p2": "Y en los meses en que el calendario te regala un tercer pago, ya sabrás a dónde va el extra. Un ingreso irregular no te descalifica del presupuesto — es la mejor razón para llevar uno que diga la verdad."
+      },
+      "cta": {
+        "heading": "¿Te pagan raro? Presupuesta igual.",
+        "body": "Comienza tu prueba gratuita de 30 días — trae tu calendario de pago real, estaciona los cheques irregulares en retención, y presupuesta solo el dinero que de verdad llegó.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "catchOverspendingEarly": {
+      "meta": {
+        "title": "Detecta el sobregasto antes de que ocurra",
+        "description": "El medidor Ritmo de gasto y las alertas de ritmo de Zero te avisan a mitad de mes — cuando todavía hay tiempo de ajustar tu presupuesto."
+      },
+      "title": "Detecta el sobregasto antes de que ocurra: alertas de ritmo y el medidor de ritmo",
+      "intro": {
+        "p1": "Hay una sensación muy particular que llega alrededor del día 28: abres tu presupuesto y una categoría que creías bajo control está bien metida en rojo. El dinero ya se fue, así que no queda nada por decidir — solo un agujero que tapar. Un presupuesto que solo cuenta lo que ya pasó no es realmente un plan; es una autopsia.",
+        "p2": "La solución no es más fuerza de voluntad — es información más temprana. Tether-Zero vigila el <em>ritmo</em> de tus gastos durante todo el mes y te avisa cuando el problema todavía es pequeño. Así es como el medidor <strong>Ritmo de gasto</strong> y las alertas de ritmo de Zero te ayudan a frenar el sobregasto antes de que ocurra, en lugar de explicarlo después."
+      },
+      "whySneaks": {
+        "heading": "Por qué el sobregasto pasa desapercibido",
+        "p1": "Nadie decide reventar el presupuesto del supermercado. Se cuela una compra pequeña a la vez, y cada una parece razonable por sí sola. El problema es que un total mensual solo te dice dónde estás respecto al mes completo — no si llegaste ahí el día 9 o el día 26. Que te quede el 20 % del presupuesto de restaurantes es cómodo el 28 y un problema real el 12; el número por sí solo no dice cuál de los dos estás viviendo.",
+        "p2": "Además, en un presupuesto base cero el daño no se queda quieto. Cada dólar ya tiene un trabajo asignado: cuando una categoría queda en negativo, cubrirla significa quitarle dinero a otro trabajo — y el sobregasto que no detectas hasta fin de mes toma prestado, en silencio, del plan del mes siguiente. El tiempo lo es casi todo: cuanto antes sepas que tu ritmo se desvió, más pequeño y tranquilo es el arreglo."
+      },
+      "gauge": {
+        "heading": "Tu mes de un vistazo: el medidor Ritmo de gasto",
+        "p1": "Ese problema de tiempo es exactamente lo que resuelve el medidor <strong>Ritmo de gasto</strong> del panel Perspectivas. Un solo indicador compara dos números: el porcentaje de tu presupuesto que ya gastaste y el porcentaje del mes transcurrido. Cuando suben juntos, el medidor marca <strong>En curso</strong>. Gasta un poco más rápido que el calendario y pasa a <strong>Ligeramente adelantado</strong>; deja el mes atrás por completo y se pone en rojo con <strong>Presupuesto excedido</strong>.",
+        "p2": "El indicador es deliberadamente indulgente. La zona verde llega hasta el 85 % del ritmo y una franja amarilla cubre el tramo hasta el 100 %, de modo que un mes normal, algo irregular, no dispara alarmas — y Tether-Zero pausa las advertencias de zona en los primeros días del mes, cuando una sola compra grande puede hacer que las cuentas parezcan más graves de lo que son. El medidor solo pide una cosa: un presupuesto mensual. Asigna tus categorías y empieza a leer tu ritmo de inmediato."
+      },
+      "alerts": {
+        "heading": "Alertas de ritmo: un aviso antes del daño",
+        "p1": "El medidor vigila tu mes en conjunto; las alertas de ritmo vigilan cada categoría por separado. <strong>Zero</strong>, tu coach de IA integrado, compara el gasto de cada categoría con la parte del mes que ya pasó, con un margen incorporado del 15 % para que las irregularidades normales no generen falsas alarmas. Cuando una categoría de verdad le saca ventaja al calendario, una tarjeta ámbar de <strong>Alerta de ritmo</strong> aparece en el <strong>Rincón del coach</strong> de tu panel — cuando todavía queda mes para actuar.",
+        "p2": "Cada alerta hace el pronóstico por ti: nombra la categoría, proyecta la fecha en que se acabará el dinero y estima el sobregasto si nada cambia. Desde ahí, el arreglo está a un toque — <strong>Ajustar presupuesto</strong> te lleva directo a tu presupuesto, y <strong>Descartar</strong> retira la tarjeta. Y no te va a perseguir: una alerta descartada no vuelve a menos que tu gasto acelere aún más."
+      },
+      "courseCorrect": {
+        "heading": "¿Ritmo acelerado? Tres correcciones tranquilas",
+        "p1": "Una alerta de ritmo es información, no un veredicto. Muchas veces la respuesta correcta es simplemente frenar un poco — enterarte el 12 de que los restaurantes van calientes es justo lo que hace arreglables las dos semanas siguientes. Otras tantas, la respuesta honesta es que la meta quedó corta, y el mejor movimiento es el que ofrece la tarjeta: ajustar el presupuesto a tu vida real.",
+        "p2": "Y a veces el mes simplemente vino desparejo — compraste un año de comida para el perro en la primera semana. Entonces el movimiento es el clásico de los sobres: <link>mueve dinero desde una categoría con margen de sobra</link> y el plan queda entero otra vez. Elijas lo que elijas, estás eligiendo temprano, con las tres opciones todavía sobre la mesa. Ese es todo el punto."
+      },
+      "habit": {
+        "heading": "Conviértelo en un hábito de un minuto",
+        "p1": "Nada de esto exige noches de hoja de cálculo. Échale un vistazo al medidor Ritmo de gasto al abrir Tether-Zero — una mirada basta para saber si el mes necesita algo de ti. En el Presupuesto, el panel de resumen retoma la misma idea con el <strong>Ritmo mensual</strong> — lo que has gastado comparado con la parte del mes transcurrida — junto con las categorías excedidas a simple vista.",
+        "p2": "Esa es toda la práctica: deja que el medidor vigile el mes, deja que Zero vigile las categorías, y gasta tu atención solo donde algo de verdad se desvía. ¿Aún no tienes un presupuesto que medir? <link2>Crea el tuyo en unos diez minutos</link2> y déjalo correr. Los presupuestos rara vez fallan en un gran estallido; fallan en pequeños desvíos que nadie nota. Ahora tú los notarás."
+      },
+      "cta": {
+        "heading": "Mira tu propio ritmo este mes",
+        "body": "Comienza tu prueba gratuita de 30 días, configura tu presupuesto y deja que el medidor Ritmo de gasto y las alertas de ritmo de Zero monten guardia — para que el fin de mes no vuelva a sorprenderte.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     }

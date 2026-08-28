@@ -37,6 +37,18 @@ const SINKING_FUNDS_LANGUAGES = {
   es: `${SITE_URL}/es/learn/sinking-funds/`,
 };
 
+const IRREGULAR_PAYCHECK_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/irregular-paycheck/`,
+  fr: `${SITE_URL}/fr/learn/irregular-paycheck/`,
+  es: `${SITE_URL}/es/learn/irregular-paycheck/`,
+};
+
+const CATCH_OVERSPENDING_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/catch-overspending-early/`,
+  fr: `${SITE_URL}/fr/learn/catch-overspending-early/`,
+  es: `${SITE_URL}/es/learn/catch-overspending-early/`,
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -164,6 +176,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: SINKING_FUNDS_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/irregular-paycheck/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: IRREGULAR_PAYCHECK_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/irregular-paycheck/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: IRREGULAR_PAYCHECK_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/irregular-paycheck/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: IRREGULAR_PAYCHECK_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/catch-overspending-early/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CATCH_OVERSPENDING_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/catch-overspending-early/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CATCH_OVERSPENDING_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/catch-overspending-early/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: CATCH_OVERSPENDING_LANGUAGES },
     },
     {
       url: `${SITE_URL}/privacy-policy/`,

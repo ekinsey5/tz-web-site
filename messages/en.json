@@ -307,6 +307,14 @@
       "sinkingFunds": {
         "title": "Stop Getting Ambushed by “Surprise” Expenses: Sinking Funds Explained",
         "excerpt": "Car registration, new tires, December: the expenses that wreck budgets are rarely surprises — they're schedules. Sinking funds turn them into small, painless monthly amounts that grow until the bill arrives."
+      },
+      "irregularPaycheck": {
+        "title": "Budgeting on an Irregular Paycheck: Pay Cadence and Holding Categories",
+        "excerpt": "Freelance checks, biweekly pay, three-payday months — budgets break when income doesn't arrive in tidy monthly chunks. Tether-Zero's pay-frequency math and holding categories let you budget only the money that has actually landed."
+      },
+      "catchOverspendingEarly": {
+        "title": "Catch Overspending Before It Happens: Pacing Alerts and the Pacing Gauge",
+        "excerpt": "Budgets rarely fail in one blowout — they fail in small drifts nobody notices until month-end. Tether-Zero's Spending Pace gauge and Zero's pacing alerts flag overspending mid-month, while there's still time to fix it."
       }
     }
   },
@@ -512,6 +520,93 @@
       "cta": {
         "heading": "Ready to retire the word “surprise”?",
         "body": "Start your 30-day free trial — set up your first sinking fund this month, and let the next annual bill arrive to money already waiting.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "irregularPaycheck": {
+      "meta": {
+        "title": "Budgeting on an Irregular Paycheck",
+        "description": "Freelance checks, biweekly pay, three-payday months: Tether-Zero budgets real money, not projections — with pay-frequency math and holding categories."
+      },
+      "title": "Budgeting on an Irregular Paycheck: Pay Cadence and Holding Categories",
+      "intro": {
+        "p1": "Nearly every piece of budgeting advice starts with the same quiet assumption: one predictable paycheck, arriving once a month, always the same size. If that's not your life — you freelance, you drive gigs, you earn commission, or you're simply paid every two weeks — the standard advice wobbles right where you need it most.",
+        "p2": "Tether-Zero handles the irregular on purpose, with two tools that work together: pay-frequency math that converts what you earn into what a month actually delivers, and the <strong>holding category</strong> — a buffer that lets you budget from money you have rather than money you're expecting. Here's how they work."
+      },
+      "monthlyLie": {
+        "heading": "The monthly-budget lie",
+        "p1": "Zero-based budgeting has one weak spot: it quietly assumes a predictable paycheck. When income is variable, that assumption pushes you into allocating money you merely expect — and when a client pays late or a slow month hits, every envelope you funded on a projection turns out to be partly fiction.",
+        "p2": "The fix isn't different math; it's a different order of operations. Budget from reality, not projections: money gets a job only after it lands. Everything below exists to make that ordering easy instead of heroic."
+      },
+      "realMoney": {
+        "heading": "Budget the money that actually lands",
+        "p1": "Start with the income side. Your budget's Paychecks category comes with pointed advice built in: enter take-home, not gross — Tether-Zero budgets the dollars that actually land in your account. Withholding, taxes, and platform fees never reach your budget, so they don't belong in it.",
+        "p2": "And when you run the Guided Setup, income comes first, before any spending category — so every allocation that follows is drawn against a number grounded in what your account will really see."
+      },
+      "cadenceMath": {
+        "heading": "Math for every pay cadence",
+        "p1": "When the Guided Setup reaches your income it also asks, <em>“How often does this happen?”</em> — weekly, every two weeks, monthly, or yearly — and then does the calendar arithmetic for you. Bring home $800 every two weeks, and the wizard shows the conversion plainly: $800 × 2 paydays this month = $1,600. You budget what this month actually delivers.",
+        "p2": "The same math catches the happy surprises. Twice a year, a biweekly schedule produces a third payday, and the wizard calls it out — “August has 3 paydays — that's an extra $800 you can put toward debt or savings.” It works in the other direction for annual bills too: a yearly amount is divided by twelve so the money is already waiting by the due month — the same idea behind <link>sinking funds</link>."
+      },
+      "holdingBuffer": {
+        "heading": "A buffer for lumpy income",
+        "p1": "Now the freelancer's half. Create a category — “Client Payments Buffer,” say — and flip on <strong>Holding Category</strong>. The dialog is blunt about what it does: “Funds held here are excluded from spending totals.” When an invoice finally pays, the money goes here first: earned, held, not yet promised to anything.",
+        "p2": "Your budget header then tells the whole truth in three numbers. Income $5,000, Allocated $3,200, Total Holding $1,200 — leaving $600 To Be Budgeted. Committed money, buffered money, and undecided money stay visibly separate, which is exactly the visibility a variable income demands."
+      },
+      "releaseFunds": {
+        "heading": "Release funds when the money is real",
+        "p1": "When you're confident the cash is truly yours to spend, open <strong>Release Holding Funds</strong> and move an amount from the buffer into a spending category — $500 from the buffer to Groceries in one atomic step, both sides updating together. Tether-Zero won't let you release more than the buffer actually holds.",
+        "p2": "Holding categories are also excluded from your overspent and underspent analytics, so managing your buffer never pollutes your spending insights. And they're deliberately not sinking funds — a category can be one or the other, never both. A sinking fund is a savings bucket that grows month over month; a holding category is a staging area for this month's incoming cash."
+      },
+      "rhythm": {
+        "heading": "A rhythm for the irregular",
+        "p1": "Put together, a payday routine emerges: when a check lands, park it in the holding category. Release enough to fund the bills due before the next check, then debt payments, then groceries and gas. As more income confirms, release more. Your envelopes only ever contain real dollars, so spending from them requires no faith.",
+        "p2": "And in the months when the calendar gifts you a third payday, you'll already know where the extra goes. Irregular income doesn't disqualify you from budgeting — it's the strongest reason to keep a budget that tells the truth."
+      },
+      "cta": {
+        "heading": "Paid weird? Budget anyway.",
+        "body": "Start your 30-day free trial — bring your real pay schedule, park the lumpy checks in holding, and budget only the money that has actually landed.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "catchOverspendingEarly": {
+      "meta": {
+        "title": "Catch Overspending Before It Happens",
+        "description": "Want to stop overspending? Tether-Zero's Spending Pace gauge and Zero's pacing alerts warn you mid-month — while there's still time to adjust."
+      },
+      "title": "Catch Overspending Before It Happens: Pacing Alerts and the Pacing Gauge",
+      "intro": {
+        "p1": "There's a particular sinking feeling that shows up around the 28th of the month: you open the budget, and a category you thought was fine is deep in the red. The money is already gone, so there's nothing left to decide — just a hole to patch. A budget that only tells you what already happened isn't really a plan; it's a post-mortem.",
+        "p2": "The fix isn't more willpower — it's earlier information. Tether-Zero watches the <em>pace</em> of your spending all month long and speaks up while a problem is still small. Here's how the <strong>Spending Pace</strong> gauge and Zero's pacing alerts work together to help you stop overspending before it happens, not explain it afterward."
+      },
+      "whySneaks": {
+        "heading": "Why overspending sneaks up on you",
+        "p1": "Nobody decides to blow the grocery budget. It happens $23 at a time, and every trip looks reasonable on its own. The trouble is that a budget total only tells you where you stand against the whole month — not whether you got there on day 9 or day 26. Having 20% of your dining-out money left is comfortable on the 28th and a real problem on the 12th, and the number alone can't tell you which one you're living.",
+        "p2": "In a zero-based budget the damage doesn't stay put, either. Every dollar already has a job, so when a category goes negative, covering it means pulling money away from another job — and overspending you don't catch until month-end quietly borrows from next month's plan. Timing, it turns out, is most of the game: the earlier you know your pace is off, the smaller and calmer the fix."
+      },
+      "gauge": {
+        "heading": "Your month at a glance: the Spending Pace gauge",
+        "p1": "This timing problem is exactly what the <strong>Spending Pace</strong> gauge on the Insights dashboard solves. One dial compares two numbers: the percentage of your budget you've spent, and the percentage of the month that has elapsed. When they rise together, the gauge reads <strong>On Track</strong>. Spend a bit faster than the calendar and it shifts to <strong>Slightly Ahead</strong>; outrun the month entirely and it turns red with <strong>Over Budget</strong>.",
+        "p2": "The dial is deliberately forgiving. The green zone runs to 85% of pace and a yellow band covers the stretch to 100%, so a normal, slightly lumpy month doesn't set off alarms — and Tether-Zero pauses zone warnings in the first days of a new month, when a single grocery run can make the math look scarier than it is. All the gauge asks is that you've set a monthly budget; allocate your categories and it starts reading your pace right away."
+      },
+      "alerts": {
+        "heading": "Pacing alerts: a nudge before the damage is done",
+        "p1": "The gauge watches your month as a whole; pacing alerts watch every category individually. <strong>Zero</strong>, your built-in AI coach, compares each category's spending against how much of the month has passed, with a built-in 15% buffer so ordinary unevenness doesn't trigger false alarms. When a category genuinely outruns the calendar, an amber <strong>Pacing Warning</strong> card appears in <strong>Coach's Corner</strong> on your dashboard — while there's still month left to act.",
+        "p2": "Each warning does the forecasting for you: it names the category, projects the date the money will run out, and estimates the overspend if nothing changes. From there you're one tap from a fix — <strong>Adjust budget</strong> jumps straight to your budget, and <strong>Dismiss</strong> clears the card. And it won't nag you: a dismissed warning stays gone unless your spending speeds up even further."
+      },
+      "courseCorrect": {
+        "heading": "Pacing fast? Three calm ways to course-correct",
+        "p1": "A pacing warning is information, not a verdict. Often the right response is simply to ease off — learning on the 12th that dining out is running hot is exactly what makes the next two weeks fixable. Just as often, the honest answer is that the target was set too low, and the right move is the one the card offers: adjust the budget to match your real life.",
+        "p2": "And sometimes the month is just lumpy — you bought a year of dog food in week one. Then the move is the classic envelope fix: <link>move money over from a category with room to spare</link>, and the plan is whole again. Whichever you choose, you're choosing early, while all three options are still on the table. That's the entire point."
+      },
+      "habit": {
+        "heading": "Make it a one-minute habit",
+        "p1": "None of this asks for evening spreadsheet sessions. Glance at the Spending Pace dial when you open Tether-Zero — one look says whether the month needs anything from you at all. Over in your Budget, the Overview panel carries the same idea as <strong>Month Pacing</strong> — how much you've spent against how much of the month has passed — with any overspent categories visible at a glance.",
+        "p2": "That's the whole practice: let the gauge watch the month, let Zero watch the categories, and spend your attention only where something actually drifts. If you don't have a budget to pace against yet, <link2>build your first one in about ten minutes</link2> — then let it run. Budgets rarely fail in one dramatic blowout; they fail in small drifts nobody noticed. Now you'll notice."
+      },
+      "cta": {
+        "heading": "See your own pace this month",
+        "body": "Start your 30-day free trial, set up your budget, and let the Spending Pace gauge and Zero's pacing alerts stand watch — so the end of the month never surprises you again.",
         "button": "Start your 30-day free trial"
       }
     }
