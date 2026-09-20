@@ -24,9 +24,15 @@ export const APP_URLS = {
   register: "https://app.tether-zero.com/register",
   /** App login route (confirmed). */
   login: "https://app.tether-zero.com/login",
-  /** Footer legal links — canonical legal pages live on this marketing site. */
-  privacy: "/privacy-policy",
-  terms: "/terms-of-service",
+  /**
+   * Footer legal links — canonical legal pages live on this marketing site.
+   * Trailing slash matches `trailingSlash: true` (next.config.mjs) and the
+   * canonical URLs in sitemap.ts / page metadata — Google picked the
+   * no-slash variant as canonical over our declared one when the footer
+   * (rendered on every page) linked here without it.
+   */
+  privacy: "/privacy-policy/",
+  terms: "/terms-of-service/",
   contact: "mailto:hello@tether-zero.com",
 } as const;
 
