@@ -43,7 +43,7 @@ GitHub Actions ── npm ci → next build → out/ ──► S3 (private bucke
 | **Amazon S3** | Origin store for the `out/` build artifact. | Private bucket; **Block Public Access = all on**; SSE-S3 encryption; no static-website hosting (REST origin via OAC). |
 | **CloudFront** | Global CDN; the only public entry point; terminates TLS. | `PriceClass_100` (NA + EU, cheapest); HTTP→HTTPS redirect; Brotli/Gzip compress; default root object `index.html`; HTTP/2+3. |
 | **Origin Access Control (OAC)** | Lets only CloudFront read the private bucket (SigV4). Replaces legacy OAI. | Bucket policy scoped to the distribution ARN. |
-| **CloudFront Functions** | Lightweight viewer-request edge logic: `www → apex` 301 redirect, a one-time Accept-Language locale redirect for fr/es, and rewriting directory URIs to `…/index.html`. | Cheaper/faster than Lambda@Edge; 2M free invocations/mo. |
+| **CloudFront Functions** | Lightweight viewer-request edge logic: `www → apex` 301 redirect, a one-time Accept-Language locale redirect for fr/es, and a `/path` → `/path/` trailing-slash 301 (one URL per page for Google), and rewriting directory URIs to `…/index.html`. Extensionless image routes (`/opengraph-image`, `/apple-icon`) are allowlisted to pass through untouched. | Cheaper/faster than Lambda@Edge; 2M free invocations/mo. |
 | **AWS Certificate Manager (ACM)** | Free public TLS cert for `tether-zero.com` + `www.tether-zero.com`. | **Must be in us-east-1** for CloudFront; DNS-validated via Route 53. |
 | **Amazon Route 53** | Existing hosted zone. Alias A/AAAA records (apex + www) → CloudFront; auto-created ACM validation records. | Alias queries to CloudFront are **free**. |
 | **GitHub OIDC + IAM Role** | Keyless CI auth. IAM OIDC provider trusts `token.actions.githubusercontent.com`; scoped role assumed per run. | Role limited to S3 sync on the bucket + CloudFront invalidation on the distribution. |
@@ -98,7 +98,7 @@ There is no separate `next export` step in Next.js 14.
 A single CloudFormation stack, deployed **in `us-east-1`** (CloudFront requires the
 ACM cert there), creates: the private S3 bucket and its OAC bucket policy; the
 DNS-validated ACM certificate; the Origin Access Control; the CloudFront Function
-(`www`→apex redirect + directory→`index.html` rewrite); the CloudFront distribution;
+(`www`→apex redirect + trailing-slash 301 + directory→`index.html` rewrite); the CloudFront distribution;
 the Route 53 alias records (apex + www, A + AAAA); and the GitHub OIDC provider +
 scoped deploy role. It references the existing hosted zone via the `HostedZoneId`
 parameter and exports the bucket name, distribution ID, distribution domain, and

@@ -56,6 +56,17 @@ jobs:
             --cache-control "public,max-age=31536000,immutable" \
             --exclude "*.html"
 
+      # Extensionless image routes (app/opengraph-image.tsx, app/apple-icon.tsx)
+      # get binary/octet-stream from sync's extension-based guess — re-upload
+      # them as PNG so social crawlers and iOS accept them.
+      - name: Fix content-type of extensionless images
+        run: |
+          for f in opengraph-image apple-icon; do
+            aws s3 cp "./out/$f" "s3://${{ vars.S3_BUCKET }}/$f" \
+              --content-type image/png \
+              --cache-control "public,max-age=31536000,immutable"
+          done
+
       # HTML must always revalidate so new deploys are seen immediately
       - name: Sync HTML
         run: |

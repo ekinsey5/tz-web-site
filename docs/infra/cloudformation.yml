@@ -103,7 +103,7 @@ Resources:
       Name: !Sub "${ResourcePrefix}-edge-router"
       AutoPublish: true
       FunctionConfig:
-        Comment: Redirect www to apex, redirect root-path visitors by Accept-Language once, and rewrite directory URIs to index.html
+        Comment: www->apex 301, root Accept-Language 302, slashless->trailing-slash 301, directory URIs -> index.html
         Runtime: cloudfront-js-2.0
       FunctionCode: !Sub |
         function handler(event) {
@@ -111,10 +111,12 @@ Resources:
           var host = request.headers.host.value;
           var uri = request.uri;
           if (host === 'www.${DomainName}') {
+            // Add the trailing slash here too so www + slashless is one hop.
+            var target = needsTrailingSlash(uri) ? uri + '/' : uri;
             return {
               statusCode: 301,
               statusDescription: 'Moved Permanently',
-              headers: { location: { value: 'https://${DomainName}' + uri } }
+              headers: { location: { value: 'https://${DomainName}' + target } }
             };
           }
 
@@ -151,10 +153,45 @@ Resources:
 
           if (uri.endsWith('/')) {
             request.uri += 'index.html';
-          } else if (!uri.includes('.')) {
-            request.uri += '/index.html';
+          } else if (needsTrailingSlash(uri)) {
+            // One URL per page: 301 /path -> /path/ (trailingSlash: true).
+            // Serving both as 200 left Google indexing the slashless copy as
+            // an "alternate page" of the canonical one.
+            return {
+              statusCode: 301,
+              statusDescription: 'Moved Permanently',
+              headers: { location: { value: uri + '/' + querySuffix(request.querystring) } }
+            };
           }
           return request;
+        }
+
+        // Next's file-convention image routes (app/opengraph-image.tsx,
+        // app/apple-icon.tsx) export as extensionless files at the bucket
+        // root. Without this allowlist they'd be treated as directories and
+        // 404. Add any new extensionless route file here.
+        var EXTENSIONLESS_FILES = { '/opengraph-image': true, '/apple-icon': true };
+
+        // A page path missing its slash: not a directory, not a file.
+        function needsTrailingSlash(uri) {
+          return !uri.endsWith('/') && !uri.includes('.') && !EXTENSIONLESS_FILES[uri];
+        }
+
+        // Rebuild "?a=1&b=2" from the parsed querystring object so redirects
+        // keep tracking params (utm_*, etc.).
+        function querySuffix(qs) {
+          var parts = [];
+          for (var key in qs) {
+            var param = qs[key];
+            if (param.multiValue) {
+              for (var i = 0; i < param.multiValue.length; i++) {
+                parts.push(key + '=' + param.multiValue[i].value);
+              }
+            } else {
+              parts.push(key + '=' + param.value);
+            }
+          }
+          return parts.length ? '?' + parts.join('&') : '';
         }
 
         // Minimal dependency-free Accept-Language parse (the CloudFront
