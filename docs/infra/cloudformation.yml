@@ -156,11 +156,13 @@ Resources:
           } else if (needsTrailingSlash(uri)) {
             // One URL per page: 301 /path -> /path/ (trailingSlash: true).
             // Serving both as 200 left Google indexing the slashless copy as
-            // an "alternate page" of the canonical one.
+            // an "alternate page" of the canonical one. Location is absolute
+            // and host-pinned: a relative "//host" path would otherwise be
+            // read by browsers as an off-site redirect.
             return {
               statusCode: 301,
               statusDescription: 'Moved Permanently',
-              headers: { location: { value: uri + '/' + querySuffix(request.querystring) } }
+              headers: { location: { value: 'https://${DomainName}' + uri + '/' + querySuffix(request.querystring) } }
             };
           }
           return request;
