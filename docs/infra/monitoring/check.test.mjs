@@ -62,9 +62,18 @@ test("timeout abort classifies as TIMEOUT", async () => {
 });
 
 test("real slow server triggers the timeout signal", async () => {
+  // A real fetch holds an open socket while it waits, which keeps the event
+  // loop alive until AbortSignal.timeout fires. This fake does no I/O, and the
+  // timeout's own timer is unref'd — on Node 22 the test runner then sees an
+  // empty loop and cancels this test and every later one in the file. The
+  // ref'd keepAlive timer stands in for the socket; it is cleared on abort.
   const hangingFetch = (url, { signal }) =>
     new Promise((_, reject) => {
-      signal.addEventListener("abort", () => reject(signal.reason));
+      const keepAlive = setTimeout(() => {}, 10_000);
+      signal.addEventListener("abort", () => {
+        clearTimeout(keepAlive);
+        reject(signal.reason);
+      });
     });
   const result = await checkUrl("https://example.com/", {
     timeoutMs: 20,

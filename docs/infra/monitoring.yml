@@ -107,7 +107,7 @@ Resources:
     Properties:
       FunctionName: !Sub ${ResourcePrefix}-watchdog
       Description: External black-box uptime check for the marketing site; alerts via SES email + SNS SMS
-      Runtime: nodejs20.x
+      Runtime: nodejs22.x
       Handler: watchdog.handler
       MemorySize: 128
       Timeout: 30
