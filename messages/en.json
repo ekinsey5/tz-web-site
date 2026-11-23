@@ -74,7 +74,7 @@
     "items": [
       {
         "title": "Debt Crusher Engine",
-        "body": "Compare snowball and avalanche side by side, see a projected debt-free date, and apply windfall “snowflake” payments to get there faster."
+        "body": "Compare snowball and avalanche side by side, see a projected debt-free date, apply windfall “snowflake” payments to get there faster — then track each month's payments against your plan, with due-date reminders."
       },
       {
         "title": "Hybrid budgeting",
@@ -114,14 +114,15 @@
     "debtCrusher": {
       "eyebrow": "Debt Crusher Engine",
       "heading": "See your debt-free date — and pull it closer.",
-      "body": "Toggle between snowball and avalanche and watch the projection recalculate instantly, right in your browser. The Debt Crusher accounts for promotional APRs, rolls each freed-up minimum payment into your next debt, and shows the interest and months you'll save versus paying the minimums.",
+      "body": "Pick snowball or avalanche and see your projected debt-free date. Then stay on it: each month's payment plan recognizes payments from your synced transactions, shows whether you're on track — with catch-up options if you fall behind — and reminds you before each due date.",
       "bullets": [
-        "Snowball vs. avalanche, compared side by side",
-        "A projected debt-free date with interest and months saved",
-        "Apply a bonus or tax refund as a “snowflake” and see the impact",
-        "Month-by-month amortization for every debt"
+        "Snowball vs. avalanche, with a projected debt-free date and “snowflake” extra payments",
+        "A monthly payment plan that recognizes payments from your synced transactions",
+        "“On track”, “Ahead of plan” or “Behind plan” — with “See catch-up options” when you fall behind",
+        "Due-date reminders in the app and by email",
+        "“Export as PDF”, “Export as CSV” or “Add to calendar” to take your plan with you"
       ],
-      "imageAlt": "Tether-Zero Debt Crusher dashboard showing snowball versus avalanche payoff projections and a debt-free date."
+      "imageAlt": "Tether-Zero Debt Crusher dashboard showing this month's payment plan with each debt's payment status, an On track status and the projected debt-free date."
     },
     "insights": {
       "eyebrow": "Freedom Dashboard & Insights",
@@ -164,7 +165,7 @@
       },
       {
         "capability": "Debt strategy",
-        "tetherZero": "Snowball & avalanche simulator",
+        "tetherZero": "Simulator + monthly plan tracking",
         "ynab": "Static accounts",
         "everyDollar": "Rigid snowball"
       },
@@ -256,6 +257,10 @@
       {
         "q": "Does it work on mobile?",
         "a": "Tether-Zero runs in your web browser, and this site is fully responsive. A mobile-optimized app experience is on the roadmap — reach out if you'd like updates."
+      },
+      {
+        "q": "Will Tether-Zero remind me when a debt payment is due?",
+        "a": "Yes. Once a debt has a due date, Tether-Zero sends due-date reminders in the app and by email, 1, 3, 5 or 7 days before the payment is due — you choose the lead time. You can turn off each type of reminder in Notification settings. Reminders are never sent by text message (SMS)."
       }
     ]
   },
@@ -334,6 +339,10 @@
         "title": "Snowball vs. Avalanche: Pick Your Debt Payoff Strategy with a Side-by-Side Simulation",
         "excerpt": "Snowball or avalanche? Both work — the question is which one gets you to zero. Tether-Zero's Strategy Simulator puts your projected Debt Free Date under each method side by side, so you pick a plan with your own numbers instead of the internet's."
       },
+      "stickToDebtPlan": {
+        "title": "Sticking to Your Debt Plan: Monthly Payments, On-Track Status, and Reminders",
+        "excerpt": "Choosing snowball or avalanche is the easy part. Tether-Zero turns your strategy into a monthly payment plan, recognizes payments as they sync, tells you whether you're on track — and reminds you before anything is due."
+      },
       "canIAffordThis": {
         "title": "What Does That Purchase Really Cost? Using the Opportunity Cost Simulator Before You Buy",
         "excerpt": "Every purchase has two prices: the sticker, and what it does to your Debt Free Date. Ask Zero “can I afford $400” and Tether-Zero answers with your real numbers — days delayed and extra interest — before you buy."
@@ -368,7 +377,7 @@
       },
       "budgetJourney": {
         "title": "The Budget Journey: Where to Start and What to Read Next",
-        "excerpt": "Sixteen articles, six stages, one path — the reading map for this library, from your first budget to debt freedom and the coach who helps you refine it."
+        "excerpt": "Seventeen articles, six stages, one path — the reading map for this library, from your first budget to debt freedom and the coach who helps you refine it."
       }
     }
   },
@@ -745,9 +754,59 @@
         "p1": "Debt payoff is a team sport, so your chosen strategy is shared by the whole household: one person flips the toggle and everyone's dashboard reflects the same plan. Partners with view-only access see the strategy and its projections without being able to change them — everybody sees the same Debt Free Date, and nobody can quietly rearrange the plan.",
         "p2": "And the choice isn't a tattoo. Start with the snowball for a few quick wins, then switch to the avalanche once the momentum is real — the plan recalculates the moment you do. If you haven't set up your budget yet, <link2>start there</link2>: the Monthly Debt Budget needs a budget around it to be honest. Then pick a date, pick the strategy that gets you there in one piece, and let the boulder roll."
       },
+      "stickToPlan": {
+        "heading": "Stick to the plan",
+        "p1": "Choosing a strategy is a one-time decision; following it is a monthly habit. Debt Crusher turns your plan into a monthly payment plan — a card such as “March Payments” listing what to pay on each debt — and recognizes the payments as your transactions sync. Anything it's unsure about waits in <strong>Review payments</strong> for your decision.",
+        "p2": "The card tells you whether you're <strong>On track</strong>, and if you slip, <strong>See catch-up options</strong> shows the way back. Once a month, the <strong>Monthly check-in</strong> recaps your progress. The full walkthrough is in <link3>Sticking to your debt plan</link3>."
+      },
       "cta": {
         "heading": "Two dates. Pick the one you'll reach.",
         "body": "Start your 30-day free trial, add your debts, set your Monthly Debt Budget — and let the Strategy Simulator show you your Debt Free Date under both strategies before you commit to either.",
+        "button": "Start your 30-day free trial"
+      }
+    },
+    "stickToDebtPlan": {
+      "meta": {
+        "title": "Sticking to Your Debt Plan",
+        "description": "Turn your payoff strategy into a monthly payment plan: Tether-Zero recognizes payments, shows whether you're on track, offers catch-up options and reminds you before due dates."
+      },
+      "title": "Sticking to Your Debt Plan: Monthly Payments, On-Track Status, and Reminders",
+      "intro": {
+        "p1": "A payoff strategy is a promise you make once. Keeping it happens twelve times a year, on due dates scattered across the month, while life does its best to get in the way. Most debt plans don't fail because the math was wrong — they fail quietly, one missed or short payment at a time, until the debt-free date on the screen is fiction.",
+        "p2": "Tether-Zero's <strong>Debt Crusher</strong> doesn't stop at the projection. Once you've <link>picked your strategy</link>, it turns that plan into a month-by-month checklist, watches your synced transactions for the payments, and tells you plainly whether you're still on course."
+      },
+      "monthlyPlan": {
+        "heading": "Your plan, one month at a time",
+        "p1": "Every month, the Debt Crusher dashboard shows a payment plan card named for the month — “March Payments”, for example. It lists each debt with the amount your strategy says to pay this month and its due date: the minimums on everything, plus the extra aimed at your focus debt.",
+        "p2": "The plan is a snapshot of your strategy for that month, so it doesn't shift under your feet mid-month. If your Monthly Debt Budget or strategy changes, the plan is updated with a note on what changed and why, instead of silently rewriting what you'd already committed to."
+      },
+      "payments": {
+        "heading": "Payments it recognizes on its own",
+        "p1": "When your bank syncs, Tether-Zero looks for transactions that match a planned payment and checks them off. Anything it isn't sure about waits for you in <strong>Review payments</strong>, where you confirm it, assign it to a different debt, or mark it as not a plan payment — nothing uncertain counts toward the plan until you decide.",
+        "p2": "Paid from an account that isn't linked, or by check? Use <strong>Record payment</strong> to log it yourself. Either way, the plan card shows what's paid, what's partly paid and what's still due."
+      },
+      "onTrack": {
+        "heading": "Know where you stand: on track, ahead or behind",
+        "p1": "The plan card carries a status that answers the question that matters mid-month: <strong>On track</strong>, <strong>Ahead of plan</strong> or <strong>Behind plan</strong> — and what that means for your debt-free date.",
+        "p2": "Falling behind isn't the end of the plan. Choose <strong>See catch-up options</strong> for concrete ways back, and if your real balances have drifted away from the plan's projections, <strong>Recalculate</strong> rebuilds it from where you actually are."
+      },
+      "reminders": {
+        "heading": "Reminders before anything is due",
+        "p1": "Give each debt a due date and Tether-Zero sends due-date reminders in the app and by email, 1, 3, 5 or 7 days before a payment is due — you choose the lead time. Every reminder type can be switched off on its own in <strong>Notification settings</strong>, and reminders are never sent by text message."
+      },
+      "checkIn": {
+        "heading": "A monthly check-in, and a celebration at the finish",
+        "p1": "Once a month, the <strong>Monthly check-in</strong> recaps how last month went: which payments were made, any snowflakes and new charges, the debts you paid off, and whether your debt-free date moved — plus a preview of next month's plan.",
+        "p2": "And when a debt hits zero, Tether-Zero marks the moment and shows you where its payment rolls next. Pay off the last one and you'll see the words the whole plan was built for: “You're debt-free!”"
+      },
+      "export": {
+        "heading": "Take the plan with you",
+        "p1": "Want the plan on paper or in your own spreadsheet? <strong>Export as PDF</strong> or <strong>Export as CSV</strong>. Prefer your own calendar? <strong>Add to calendar</strong> puts each payment's due date where you already look.",
+        "p2": "Still choosing between strategies? Start with <link>snowball vs. avalanche</link>, and see how small <link2>snowflake payments</link2> pull your debt-free date closer."
+      },
+      "cta": {
+        "heading": "A plan you can actually keep",
+        "body": "Start your 30-day free trial, add your debts and pick a strategy — Tether-Zero turns it into a monthly plan and keeps you on it.",
         "button": "Start your 30-day free trial"
       }
     },
@@ -1102,20 +1161,20 @@
     "budgetJourney": {
       "meta": {
         "title": "The Budget Journey",
-        "description": "Sixteen articles, one path: the reading map through Tether-Zero's Learn library — from your first budget to debt freedom and beyond."
+        "description": "Seventeen articles, one path: the reading map through Tether-Zero's Learn library — from your first budget to debt freedom and beyond."
       },
       "title": "The Budget Journey: Where to Start and What to Read Next",
       "intro": {
-        "p1": "Sixteen articles live in this library, and none of them was written at random. Together they trace the life of a budget from both ends: the one you're starting today and the one you'll be running a year from now. Read in order, they're a course. Read on demand, they're a reference. Either way, it helps to see the whole map before choosing a road.",
+        "p1": "Seventeen articles live in this library, and none of them was written at random. Together they trace the life of a budget from both ends: the one you're starting today and the one you'll be running a year from now. Read in order, they're a course. Read on demand, they're a reference. Either way, it helps to see the whole map before choosing a road.",
         "p2": "The path below runs through six stages — <strong>why, set up, build, run, crush debt and fund goals, refine</strong>. Every step links to its article, every article stands on its own, and the step numbers here match the ones on the cards throughout this page."
       },
-      "diagramLabel": "The sixteen-step reading path through six stages",
+      "diagramLabel": "The seventeen-step reading path through six stages",
       "stageNotes": {
         "startHere": "One article, one job: what a budget actually is and why the method works.",
         "getSetUp": "The plumbing — bank sync and the people who will share the plan.",
         "buildYourBudget": "From empty categories to every dollar assigned, in one sitting.",
         "monthToMonth": "The habits that keep a budget alive between paydays.",
-        "crushDebt": "Strategy, acceleration, and the honest trade-offs — debt down, dreams funded.",
+        "crushDebt": "Strategy, staying on plan, acceleration, and the honest trade-offs — debt down, dreams funded.",
         "coachRefine": "Reading the long arc, with a coach to help interpret it."
       },
       "outro": {

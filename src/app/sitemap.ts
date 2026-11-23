@@ -61,6 +61,12 @@ const PAY_OFF_DEBT_FASTER_LANGUAGES = {
   es: `${SITE_URL}/es/learn/pay-off-debt-faster/`,
 };
 
+const STICK_TO_DEBT_PLAN_LANGUAGES = {
+  "en-US": `${SITE_URL}/learn/sticking-to-your-debt-plan/`,
+  fr: `${SITE_URL}/fr/learn/sticking-to-your-debt-plan/`,
+  es: `${SITE_URL}/es/learn/sticking-to-your-debt-plan/`,
+};
+
 const WINDFALL_INTERCEPTOR_LANGUAGES = {
   "en-US": `${SITE_URL}/learn/what-to-do-with-a-windfall/`,
   fr: `${SITE_URL}/fr/learn/what-to-do-with-a-windfall/`,
@@ -326,6 +332,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: { languages: PAY_OFF_DEBT_FASTER_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/learn/sticking-to-your-debt-plan/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: STICK_TO_DEBT_PLAN_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/fr/learn/sticking-to-your-debt-plan/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: STICK_TO_DEBT_PLAN_LANGUAGES },
+    },
+    {
+      url: `${SITE_URL}/es/learn/sticking-to-your-debt-plan/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: { languages: STICK_TO_DEBT_PLAN_LANGUAGES },
     },
     {
       url: `${SITE_URL}/learn/what-to-do-with-a-windfall/`,

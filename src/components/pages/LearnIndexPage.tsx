@@ -2,6 +2,7 @@ import Link from "next/link";
 import {
   BookOpen,
   Bot,
+  CalendarCheck,
   Coins,
   Compass,
   Gauge,
@@ -34,6 +35,7 @@ const ICONS: Record<keyof typeof ARTICLES, LucideIcon> = {
   irregularPaycheck: Coins,
   catchOverspendingEarly: Gauge,
   payOffDebtFaster: Scale,
+  stickToDebtPlan: CalendarCheck,
   snowflakePayments: Snowflake,
   canIAffordThis: ShoppingCart,
   windfallInterceptor: Gift,

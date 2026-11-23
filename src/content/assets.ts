@@ -32,12 +32,12 @@ export const SCREENSHOTS: Record<
     available: true,
     ratio: "1579 / 880",
   },
-  // Not rendered (the #debt-crusher spotlight uses the interactive simulator),
-  // kept here for completeness.
+  // Rendered above the interactive simulator in the #debt-crusher spotlight (TZ-395).
+  // Captured by tether-web tests/e2e/capture-marketing-debt-crusher.spec.ts (demo data).
   debtCrusher: {
     src: spot("debt-crusher").image.src,
-    available: false,
-    ratio: "4 / 3",
+    available: true,
+    ratio: "1184 / 836",
   },
   insights: {
     src: spot("insights").image.src,

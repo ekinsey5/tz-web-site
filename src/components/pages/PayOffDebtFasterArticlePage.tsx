@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
+  CalendarCheck,
   Columns2,
   Flame,
   Handshake,
@@ -27,6 +28,7 @@ const SECTIONS = [
   { key: "snowball", paragraphs: 2, icon: Snowflake },
   { key: "simulator", paragraphs: 2, icon: Columns2 },
   { key: "commit", paragraphs: 2, icon: Handshake },
+  { key: "stickToPlan", paragraphs: 2, icon: CalendarCheck },
 ] as const;
 
 /** Section h2 with a tinted icon chip, matching the homepage feature cards. */
@@ -51,6 +53,7 @@ export async function PayOffDebtFasterArticlePage({ locale }: { locale: Locale }
 
   const simulatorHref = `${localizePath(locale, "/")}#debt-crusher`;
   const firstBudgetHref = localizePath(locale, ARTICLES.firstBudget.path);
+  const stickToPlanHref = localizePath(locale, ARTICLES.stickToDebtPlan.path);
   const rich = (key: string) =>
     t.rich(key, {
       strong: (chunks) => <strong className="font-semibold text-ink-strong">{chunks}</strong>,
@@ -65,6 +68,11 @@ export async function PayOffDebtFasterArticlePage({ locale }: { locale: Locale }
           {chunks}
         </Link>
       ),
+      link3: (chunks) => (
+        <Link href={stickToPlanHref} className="font-medium text-brand hover:underline">
+          {chunks}
+        </Link>
+      ),
     });
 
   const pageUrl = `${SITE_URL}${localizePath(locale, ARTICLE.path)}`;
@@ -76,7 +84,7 @@ export async function PayOffDebtFasterArticlePage({ locale }: { locale: Locale }
     description: t("meta.description"),
     inLanguage: locale,
     datePublished: ARTICLE.datePublished,
-    dateModified: ARTICLE.datePublished,
+    dateModified: ARTICLE.dateModified,
     mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
     image: `${SITE_URL}/opengraph-image`,
     author: { "@type": "Organization", name: BRAND.company, url: SITE_URL },
