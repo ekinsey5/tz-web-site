@@ -213,8 +213,16 @@ export const ARTICLES = {
   payOffDebtFaster: {
     slug: "pay-off-debt-faster",
     path: "/learn/pay-off-debt-faster/",
-    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    /** ISO date for Article JSON-LD datePublished. */
     datePublished: "2026-08-27",
+    /** ISO date for Article JSON-LD dateModified ("Stick to the plan" section, TZ-395). */
+    dateModified: "2026-11-23",
+  },
+  stickToDebtPlan: {
+    slug: "sticking-to-your-debt-plan",
+    path: "/learn/sticking-to-your-debt-plan/",
+    /** ISO date for Article JSON-LD datePublished/dateModified. */
+    datePublished: "2026-11-23",
   },
   canIAffordThis: {
     slug: "can-i-afford-this",
@@ -290,6 +298,7 @@ export const LEARN_JOURNEY = [
     stage: "crushDebt",
     articles: [
       "payOffDebtFaster",
+      "stickToDebtPlan",
       "snowflakePayments",
       "windfallInterceptor",
       "canIAffordThis",
@@ -354,4 +363,7 @@ export const PLACEHOLDERS: string[] = [
   "Cancellation/refund policy — not specified in PRDs.",
   "Mobile app availability/timeline — app is currently desktop-first per design system.",
   "Competitive one-pager (marketing.pdf) could not be parsed (no PDF renderer available); matrix uses the brief-provided values. Reconcile with the one-pager before launch.",
+  "TZ-395 RELEASE GATE: the Debt Plan Adherence copy (home Debt Crusher spotlight + screenshot, Features 'Debt Crusher Engine', FAQ reminder item, Compare 'Debt strategy' row, the 'Stick to the plan' section of /learn/pay-off-debt-faster, and /learn/sticking-to-your-debt-plan) must NOT be deployed until tether-web feature/TZ-313-debt-plan-adherence is merged and every PostHog Debt Plan phase flag is on in production.",
+  "Compare table 'Debt strategy' Tether-Zero cell changed to 'Simulator + monthly plan tracking' — approved by the product owner 2026-11-23 (TZ-395).",
+  "/learn/sticking-to-your-debt-plan links only to other /learn articles: the TZ-385 Help Center articles live inside the app with no public URL (TZ-395). Add links if a public Help Center ships.",
 ];

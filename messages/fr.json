@@ -74,7 +74,7 @@
     "items": [
       {
         "title": "Moteur Broyeur de dettes",
-        "body": "Comparez boule de neige et avalanche côte à côte, visualisez une date de liberté financière projetée, et appliquez des paiements exceptionnels « flocons de neige » pour y arriver plus vite."
+        "body": "Comparez boule de neige et avalanche côte à côte, visualisez une date de liberté financière projetée, appliquez des paiements exceptionnels « flocons de neige » pour y arriver plus vite — puis suivez chaque mois vos paiements par rapport à votre plan, avec des rappels d’échéance."
       },
       {
         "title": "Budgétisation hybride",
@@ -114,14 +114,15 @@
     "debtCrusher": {
       "eyebrow": "Moteur Broyeur de dettes",
       "heading": "Visualisez votre date de liberté financière — et rapprochez-la.",
-      "body": "Basculez entre boule de neige et avalanche et regardez la projection se recalculer instantanément, directement dans votre navigateur. Le Broyeur de dettes tient compte des taux promotionnels, réinjecte chaque paiement minimum libéré dans votre prochaine dette, et affiche les intérêts et les mois que vous économiserez par rapport aux paiements minimums.",
+      "body": "Choisissez boule de neige ou avalanche et découvrez votre date de liberté financière projetée. Puis tenez le cap : chaque mois, votre plan de paiements reconnaît les paiements de vos transactions synchronisées, indique si vous êtes dans les temps — avec des options de rattrapage en cas de retard — et vous rappelle chaque échéance.",
       "bullets": [
-        "Boule de neige vs avalanche, comparées côte à côte",
-        "Une date de liberté financière projetée avec intérêts et mois économisés",
-        "Appliquez un bonus ou un remboursement d'impôt comme « flocon de neige » et voyez l'impact",
-        "Amortissement mois par mois pour chaque dette"
+        "Boule de neige vs avalanche, avec une date de liberté financière projetée et des paiements « flocons de neige »",
+        "Un plan de paiements mensuel qui reconnaît les paiements de vos transactions synchronisées",
+        "« Dans les temps », « En avance sur le plan » ou « En retard sur le plan » — avec « Voir les options de rattrapage » en cas de retard",
+        "Des rappels d’échéance dans l’application et par e-mail",
+        "« Exporter en PDF », « Exporter en CSV » ou « Ajouter au calendrier » pour emporter votre plan"
       ],
-      "imageAlt": "Tableau de bord Broyeur de dettes de Tether-Zero montrant les projections de remboursement boule de neige versus avalanche et une date de liberté financière."
+      "imageAlt": "Tableau de bord Broyeur de dettes de Tether-Zero affichant le plan de paiements du mois avec le statut de paiement de chaque dette, un statut Dans les temps et la date de liberté financière projetée."
     },
     "insights": {
       "eyebrow": "Tableau de bord Liberté et analyses",
@@ -164,7 +165,7 @@
       },
       {
         "capability": "Stratégie de dette",
-        "tetherZero": "Simulateur boule de neige et avalanche",
+        "tetherZero": "Simulateur + suivi du plan mensuel",
         "ynab": "Comptes statiques",
         "everyDollar": "Boule de neige rigide"
       },
@@ -256,6 +257,10 @@
       {
         "q": "Est-ce que ça fonctionne sur mobile ?",
         "a": "Tether-Zero fonctionne dans votre navigateur web, et ce site est entièrement responsive. Une expérience d'application optimisée pour mobile est prévue — contactez-nous si vous souhaitez être informé des mises à jour."
+      },
+      {
+        "q": "Tether-Zero me rappellera-t-il quand un paiement de dette arrive à échéance ?",
+        "a": "Oui. Dès qu’une dette a une date d’échéance, Tether-Zero envoie des rappels dans l’application et par e-mail, 1, 3, 5 ou 7 jours avant l’échéance du paiement — c’est vous qui choisissez le délai. Vous pouvez désactiver chaque type de rappel dans « Paramètres de notification ». Les rappels ne sont jamais envoyés par SMS."
       }
     ]
   },
@@ -334,6 +339,10 @@
         "title": "Boule de neige ou avalanche : choisissez votre stratégie de remboursement avec une simulation côte à côte",
         "excerpt": "Boule de neige ou avalanche ? Les deux fonctionnent — la question est de savoir laquelle vous mène à zéro. Le Simulateur de stratégie met votre Date sans dette projetée selon chaque méthode côte à côte, pour choisir avec vos propres chiffres plutôt qu’avec ceux d’Internet."
       },
+      "stickToDebtPlan": {
+        "title": "Tenir votre plan de remboursement : paiements mensuels, statut de suivi et rappels",
+        "excerpt": "Choisir entre boule de neige et avalanche, c’est la partie facile. Tether-Zero transforme votre stratégie en plan de paiements mensuel, reconnaît les paiements à mesure qu’ils se synchronisent, vous dit si vous êtes dans les temps — et vous rappelle chaque échéance."
+      },
       "canIAffordThis": {
         "title": "Que coûte vraiment cet achat ? Utiliser le simulateur de Coût d’opportunité avant d’acheter",
         "excerpt": "Chaque achat a deux prix : l’étiquette, et ce qu’il fait à votre Date sans dette. Demandez à Zero « can I afford $400 » et Tether-Zero répond avec vos vrais chiffres — jours de retard et intérêts supplémentaires — avant d’acheter."
@@ -368,7 +377,7 @@
       },
       "budgetJourney": {
         "title": "Le parcours budgétaire : par où commencer et quoi lire ensuite",
-        "excerpt": "Seize articles, six étapes, un seul chemin — la carte de lecture de cette bibliothèque, de votre premier budget à la liberté financière, coach compris."
+        "excerpt": "Dix-sept articles, six étapes, un seul chemin — la carte de lecture de cette bibliothèque, de votre premier budget à la liberté financière, coach compris."
       }
     }
   },
@@ -745,9 +754,59 @@
         "p1": "Le remboursement de dettes est un sport d’équipe : la stratégie choisie est partagée par tout le foyer. Une personne bascule l’interrupteur, et le tableau de bord de chacun reflète le même plan. Les partenaires en lecture seule voient la stratégie et ses projections sans pouvoir les modifier — tout le monde voit la même Date sans dette, et personne ne peut réarranger le plan en douce.",
         "p2": "Et ce choix n’est pas un tatouage. Commencez par la boule de neige pour quelques victoires rapides, puis passez à l’avalanche une fois l’élan bien réel — le plan se recalcule à l’instant même. Si vous n’avez pas encore de budget, <link2>commencez par là</link2> : le Budget mensuel de dette a besoin d’un budget autour de lui pour être honnête. Puis choisissez une date, choisissez la stratégie qui vous y mène entier, et laissez le rocher rouler."
       },
+      "stickToPlan": {
+        "heading": "Tenir le plan",
+        "p1": "Choisir une stratégie est une décision ponctuelle ; la suivre est une habitude mensuelle. Debt Crusher transforme votre plan en plan de paiements mensuel — une carte comme « Paiements de mars » qui indique quoi payer sur chaque dette — et reconnaît les paiements à mesure que vos transactions se synchronisent. Tout ce dont il n’est pas sûr attend votre décision dans <strong>Vérifier les paiements</strong>.",
+        "p2": "La carte vous indique si vous êtes <strong>Dans les temps</strong>, et en cas de retard, <strong>Voir les options de rattrapage</strong> montre le chemin du retour. Une fois par mois, le <strong>Bilan mensuel</strong> récapitule vos progrès. Le guide complet se trouve dans <link3>Tenir votre plan de remboursement</link3>."
+      },
       "cta": {
         "heading": "Deux dates. Choisissez celle que vous atteindrez.",
         "body": "Commencez votre essai gratuit de 30 jours, ajoutez vos dettes, définissez votre Budget mensuel de dette — et laissez le Simulateur de stratégie vous montrer votre Date sans dette selon les deux stratégies avant de vous engager.",
+        "button": "Commencez votre essai gratuit de 30 jours"
+      }
+    },
+    "stickToDebtPlan": {
+      "meta": {
+        "title": "Tenir votre plan de remboursement",
+        "description": "Transformez votre stratégie de remboursement en plan de paiements mensuel : Tether-Zero reconnaît les paiements, indique si vous êtes dans les temps, propose des options de rattrapage et vous rappelle les échéances."
+      },
+      "title": "Tenir votre plan de remboursement : paiements mensuels, statut de suivi et rappels",
+      "intro": {
+        "p1": "Une stratégie de remboursement est une promesse qu’on fait une fois. La tenir se joue douze fois par an, à des échéances dispersées dans le mois, pendant que la vie fait tout pour s’en mêler. La plupart des plans n’échouent pas parce que le calcul était faux — ils échouent en silence, un paiement manqué ou incomplet à la fois, jusqu’à ce que la Date sans dette à l’écran devienne une fiction.",
+        "p2": "Le <strong>Debt Crusher</strong> de Tether-Zero ne s’arrête pas à la projection. Une fois votre <link>stratégie choisie</link>, il transforme ce plan en liste de contrôle mois par mois, repère les paiements dans vos transactions synchronisées et vous dit clairement si vous tenez toujours le cap."
+      },
+      "monthlyPlan": {
+        "heading": "Votre plan, un mois à la fois",
+        "p1": "Chaque mois, le tableau de bord Debt Crusher affiche une carte de plan de paiements au nom du mois — « Paiements de mars », par exemple. Elle liste chaque dette avec le montant que votre stratégie prévoit ce mois-ci et sa date d’échéance : les minimums sur tout, plus l’extra dirigé vers votre dette prioritaire.",
+        "p2": "Le plan est un instantané de votre stratégie pour ce mois : il ne bouge pas sous vos pieds en cours de mois. Si votre Budget mensuel de dette ou votre stratégie change, le plan est mis à jour avec une note indiquant ce qui a changé et pourquoi, au lieu de réécrire en silence ce sur quoi vous vous étiez engagé."
+      },
+      "payments": {
+        "heading": "Des paiements reconnus automatiquement",
+        "p1": "Lorsque votre banque se synchronise, Tether-Zero cherche les transactions qui correspondent à un paiement prévu et les coche. Tout ce dont il n’est pas sûr vous attend dans <strong>Vérifier les paiements</strong>, où vous le confirmez, l’attribuez à une autre dette ou le marquez comme ne faisant pas partie du plan — rien d’incertain ne compte pour le plan tant que vous n’avez pas décidé.",
+        "p2": "Payé depuis un compte non lié, ou par chèque ? Utilisez <strong>Enregistrer un paiement</strong> pour le saisir vous-même. Dans tous les cas, la carte du plan montre ce qui est payé, partiellement payé ou encore dû."
+      },
+      "onTrack": {
+        "heading": "Savoir où vous en êtes : dans les temps, en avance ou en retard",
+        "p1": "La carte du plan affiche un statut qui répond à la question qui compte en milieu de mois : <strong>Dans les temps</strong>, <strong>En avance sur le plan</strong> ou <strong>En retard sur le plan</strong> — et ce que cela signifie pour votre Date sans dette.",
+        "p2": "Prendre du retard n’est pas la fin du plan. Choisissez <strong>Voir les options de rattrapage</strong> pour des moyens concrets de revenir, et si vos soldes réels se sont éloignés des projections du plan, <strong>Recalculer</strong> le reconstruit à partir de votre situation réelle."
+      },
+      "reminders": {
+        "heading": "Des rappels avant chaque échéance",
+        "p1": "Donnez une date d’échéance à chaque dette et Tether-Zero envoie des rappels dans l’application et par e-mail, 1, 3, 5 ou 7 jours avant l’échéance d’un paiement — c’est vous qui choisissez le délai. Chaque type de rappel peut être désactivé séparément dans <strong>Paramètres de notification</strong>, et les rappels ne sont jamais envoyés par SMS."
+      },
+      "checkIn": {
+        "heading": "Un bilan mensuel, et une fête à l’arrivée",
+        "p1": "Une fois par mois, le <strong>Bilan mensuel</strong> récapitule le mois écoulé : les paiements effectués, les flocons de neige et nouveaux achats, les dettes remboursées et l’évolution de votre Date sans dette — plus un aperçu du plan du mois suivant.",
+        "p2": "Et quand une dette tombe à zéro, Tether-Zero marque le moment et vous montre où son paiement est reporté. Remboursez la dernière et vous verrez les mots pour lesquels tout le plan a été conçu : « Vous êtes sans dette ! »"
+      },
+      "export": {
+        "heading": "Emportez votre plan",
+        "p1": "Vous voulez le plan sur papier ou dans votre propre tableur ? <strong>Exporter en PDF</strong> ou <strong>Exporter en CSV</strong>. Vous préférez votre propre calendrier ? <strong>Ajouter au calendrier</strong> place l’échéance de chaque paiement là où vous regardez déjà.",
+        "p2": "Vous hésitez encore entre les stratégies ? Commencez par <link>boule de neige ou avalanche</link>, et voyez comment de petits <link2>paiements flocons de neige</link2> rapprochent votre Date sans dette."
+      },
+      "cta": {
+        "heading": "Un plan que vous pouvez vraiment tenir",
+        "body": "Commencez votre essai gratuit de 30 jours, ajoutez vos dettes et choisissez une stratégie — Tether-Zero la transforme en plan mensuel et vous aide à le tenir.",
         "button": "Commencez votre essai gratuit de 30 jours"
       }
     },
@@ -1102,20 +1161,20 @@
     "budgetJourney": {
       "meta": {
         "title": "Le parcours budgétaire",
-        "description": "Seize articles, un seul chemin : la carte de lecture de la bibliothèque Apprendre de Tether-Zero — du premier budget à la liberté financière."
+        "description": "Dix-sept articles, un seul chemin : la carte de lecture de la bibliothèque Apprendre de Tether-Zero — du premier budget à la liberté financière."
       },
       "title": "Le parcours budgétaire : par où commencer et quoi lire ensuite",
       "intro": {
-        "p1": "Seize articles vivent dans cette bibliothèque, et aucun n’a été écrit au hasard. Ensemble, ils retracent la vie d’un budget par ses deux bouts : celui que vous commencez aujourd’hui et celui que vous ferez tourner dans un an. Lus dans l’ordre, c’est un cours. Lus à la demande, c’est une référence. Dans les deux cas, mieux vaut voir la carte entière avant de choisir une route.",
+        "p1": "Dix-sept articles vivent dans cette bibliothèque, et aucun n’a été écrit au hasard. Ensemble, ils retracent la vie d’un budget par ses deux bouts : celui que vous commencez aujourd’hui et celui que vous ferez tourner dans un an. Lus dans l’ordre, c’est un cours. Lus à la demande, c’est une référence. Dans les deux cas, mieux vaut voir la carte entière avant de choisir une route.",
         "p2": "Le chemin ci-dessous traverse six étapes — <strong>pourquoi, installation, construction, gestion, dettes et objectifs, perfectionnement</strong>. Chaque pas mène à son article, chaque article tient debout seul, et les numéros correspondent à ceux des cartes de cette page."
       },
-      "diagramLabel": "Le chemin de lecture en seize pas à travers six étapes",
+      "diagramLabel": "Le chemin de lecture en dix-sept pas à travers six étapes",
       "stageNotes": {
         "startHere": "Un article, une mission : ce qu’est vraiment un budget et pourquoi la méthode fonctionne.",
         "getSetUp": "La plomberie — la synchronisation bancaire et les personnes qui partageront le plan.",
         "buildYourBudget": "De catégories vides à chaque dollar assigné, en une seule séance.",
         "monthToMonth": "Les habitudes qui gardent un budget vivant entre deux paies.",
-        "crushDebt": "Stratégie, accélération et compromis honnêtes — dettes en baisse, rêves financés.",
+        "crushDebt": "Stratégie, suivi du plan, accélération et compromis honnêtes — dettes en baisse, rêves financés.",
         "coachRefine": "Lire l’arc long, avec un coach pour aider à l’interpréter."
       },
       "outro": {

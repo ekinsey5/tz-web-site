@@ -74,7 +74,7 @@
     "items": [
       {
         "title": "Motor Triturador de deudas",
-        "body": "Compara bola de nieve y avalancha lado a lado, ve una fecha de libertad financiera proyectada, y aplica pagos inesperados «copo de nieve» para llegar más rápido."
+        "body": "Compara bola de nieve y avalancha lado a lado, ve una fecha de libertad financiera proyectada, aplica pagos inesperados «copo de nieve» para llegar más rápido y luego sigue cada mes tus pagos frente a tu plan, con recordatorios de vencimiento."
       },
       {
         "title": "Presupuesto híbrido",
@@ -114,14 +114,15 @@
     "debtCrusher": {
       "eyebrow": "Motor Triturador de deudas",
       "heading": "Ve tu fecha de libertad financiera — y acércala.",
-      "body": "Alterna entre bola de nieve y avalancha y observa cómo la proyección se recalcula al instante, directamente en tu navegador. El Triturador de deudas tiene en cuenta las tasas promocionales, reinvierte cada pago mínimo liberado en tu siguiente deuda, y muestra los intereses y meses que ahorrarás frente a pagar solo los mínimos.",
+      "body": "Elige bola de nieve o avalancha y ve tu fecha de libertad financiera proyectada. Después, mantén el rumbo: cada mes, tu plan de pagos reconoce los pagos de tus transacciones sincronizadas, te indica si vas al día —con opciones para ponerte al día si te atrasas— y te recuerda cada vencimiento.",
       "bullets": [
-        "Bola de nieve vs. avalancha, comparadas lado a lado",
-        "Una fecha de libertad financiera proyectada con intereses y meses ahorrados",
-        "Aplica un bono o reembolso de impuestos como «copo de nieve» y ve el impacto",
-        "Amortización mes a mes para cada deuda"
+        "Bola de nieve vs. avalancha, con una fecha de libertad financiera proyectada y pagos extra «copo de nieve»",
+        "Un plan de pagos mensual que reconoce los pagos de tus transacciones sincronizadas",
+        "«Al día», «Adelantado al plan» o «Retrasado respecto al plan», con «Ver opciones para ponerte al día» si te atrasas",
+        "Recordatorios de vencimiento en la aplicación y por correo electrónico",
+        "«Exportar como PDF», «Exportar como CSV» o «Añadir al calendario» para llevarte tu plan"
       ],
-      "imageAlt": "Panel del Triturador de deudas de Tether-Zero que muestra las proyecciones de pago bola de nieve versus avalancha y una fecha de libertad financiera."
+      "imageAlt": "Panel del Triturador de deudas de Tether-Zero que muestra el plan de pagos del mes con el estado de pago de cada deuda, un estado Al día y la fecha de libertad financiera proyectada."
     },
     "insights": {
       "eyebrow": "Panel de Libertad y análisis",
@@ -164,7 +165,7 @@
       },
       {
         "capability": "Estrategia de deuda",
-        "tetherZero": "Simulador de bola de nieve y avalancha",
+        "tetherZero": "Simulador + seguimiento del plan mensual",
         "ynab": "Cuentas estáticas",
         "everyDollar": "Bola de nieve rígida"
       },
@@ -256,6 +257,10 @@
       {
         "q": "¿Funciona en móvil?",
         "a": "Tether-Zero funciona en tu navegador web, y este sitio es completamente responsivo. Una experiencia de aplicación optimizada para móvil está en camino — contáctanos si quieres recibir actualizaciones."
+      },
+      {
+        "q": "¿Tether-Zero me recordará cuándo vence un pago de deuda?",
+        "a": "Sí. Cuando una deuda tiene fecha de vencimiento, Tether-Zero envía recordatorios en la aplicación y por correo electrónico 1, 3, 5 o 7 días antes de que venza el pago; tú eliges la anticipación. Puedes desactivar cada tipo de recordatorio en «Configuración de notificaciones». Los recordatorios nunca se envían por mensaje de texto (SMS)."
       }
     ]
   },
@@ -334,6 +339,10 @@
         "title": "¿Bola de nieve o avalancha? Elige tu estrategia de pago de deudas con una simulación lado a lado",
         "excerpt": "¿Bola de nieve o avalancha? Ambas funcionan — la pregunta es cuál te lleva a cero. El Simulador de estrategia pone tu Fecha libre de deudas proyectada con cada método lado a lado, para que elijas con tus números y no con los de Internet."
       },
+      "stickToDebtPlan": {
+        "title": "Cumplir tu plan de deudas: pagos mensuales, estado de avance y recordatorios",
+        "excerpt": "Elegir entre bola de nieve y avalancha es la parte fácil. Tether-Zero convierte tu estrategia en un plan de pagos mensual, reconoce los pagos a medida que se sincronizan, te dice si vas al día y te recuerda cada vencimiento."
+      },
       "canIAffordThis": {
         "title": "¿Cuánto cuesta realmente esa compra? Usa el simulador de Costo de oportunidad antes de comprar",
         "excerpt": "Cada compra tiene dos precios: la etiqueta y lo que le hace a tu Fecha libre de deudas. Pregúntale a Zero «can I afford $400» y Tether-Zero responde con tus números reales — días de retraso e interés adicional — antes de comprar."
@@ -368,7 +377,7 @@
       },
       "budgetJourney": {
         "title": "El viaje del presupuesto: por dónde empezar y qué leer después",
-        "excerpt": "Dieciséis artículos, seis etapas, un solo camino — el mapa de lectura de esta biblioteca, de tu primer presupuesto a la libertad financiera, coach incluido."
+        "excerpt": "Diecisiete artículos, seis etapas, un solo camino — el mapa de lectura de esta biblioteca, de tu primer presupuesto a la libertad financiera, coach incluido."
       }
     }
   },
@@ -745,9 +754,59 @@
         "p1": "Pagar deudas es un deporte de equipo, así que la estrategia elegida se comparte con todo el hogar: una persona mueve el interruptor y el panel de todos refleja el mismo plan. Quienes tienen acceso de solo lectura ven la estrategia y sus proyecciones sin poder cambiarlas — todos ven la misma Fecha libre de deudas, y nadie puede reacomodar el plan en silencio.",
         "p2": "Y la elección no es un tatuaje. Empieza con la bola de nieve para un par de victorias rápidas y cambia a la avalancha cuando el impulso sea real — el plan se recalcula en el momento. Si aún no tienes un presupuesto, <link2>empieza por ahí</link2>: el Presupuesto mensual de deuda necesita un presupuesto alrededor para ser honesto. Luego elige una fecha, elige la estrategia que te lleve entero, y deja rodar la roca."
       },
+      "stickToPlan": {
+        "heading": "Cumple el plan",
+        "p1": "Elegir una estrategia es una decisión de una vez; seguirla es un hábito mensual. Debt Crusher convierte tu plan en un plan de pagos mensual —una tarjeta como «Pagos de marzo» que indica cuánto pagar en cada deuda— y reconoce los pagos a medida que se sincronizan tus transacciones. Lo que no tiene claro espera tu decisión en <strong>Revisar pagos</strong>.",
+        "p2": "La tarjeta te dice si vas <strong>Al día</strong>, y si te atrasas, <strong>Ver opciones para ponerte al día</strong> te muestra el camino de vuelta. Una vez al mes, el <strong>Balance mensual</strong> resume tu progreso. La guía completa está en <link3>Cumplir tu plan de deudas</link3>."
+      },
       "cta": {
         "heading": "Dos fechas. Elige la que vas a alcanzar.",
         "body": "Comienza tu prueba gratuita de 30 días, agrega tus deudas, define tu Presupuesto mensual de deuda — y deja que el Simulador de estrategia te muestre tu Fecha libre de deudas con ambas estrategias antes de comprometerte.",
+        "button": "Comienza tu prueba gratuita de 30 días"
+      }
+    },
+    "stickToDebtPlan": {
+      "meta": {
+        "title": "Cumplir tu plan de deudas",
+        "description": "Convierte tu estrategia de pago en un plan de pagos mensual: Tether-Zero reconoce los pagos, te indica si vas al día, ofrece opciones para ponerte al día y te recuerda los vencimientos."
+      },
+      "title": "Cumplir tu plan de deudas: pagos mensuales, estado de avance y recordatorios",
+      "intro": {
+        "p1": "Una estrategia de pago es una promesa que haces una vez. Cumplirla ocurre doce veces al año, en vencimientos repartidos por el mes, mientras la vida hace todo lo posible por interponerse. La mayoría de los planes de deuda no fracasan porque las cuentas estuvieran mal: fracasan en silencio, un pago olvidado o incompleto a la vez, hasta que la Fecha libre de deudas de la pantalla se vuelve ficción.",
+        "p2": "El <strong>Debt Crusher</strong> de Tether-Zero no se queda en la proyección. Una vez que <link>eliges tu estrategia</link>, convierte ese plan en una lista de control mes a mes, busca los pagos en tus transacciones sincronizadas y te dice claramente si sigues en rumbo."
+      },
+      "monthlyPlan": {
+        "heading": "Tu plan, un mes a la vez",
+        "p1": "Cada mes, el panel de Debt Crusher muestra una tarjeta del plan de pagos con el nombre del mes, por ejemplo «Pagos de marzo». Enumera cada deuda con el monto que tu estrategia indica pagar este mes y su fecha de vencimiento: los mínimos de todo, más el extra dirigido a tu deuda prioritaria.",
+        "p2": "El plan es una instantánea de tu estrategia para ese mes, así que no cambia a mitad de mes. Si tu Presupuesto mensual de deuda o tu estrategia cambian, el plan se actualiza con una nota sobre qué cambió y por qué, en lugar de reescribir en silencio lo que ya habías comprometido."
+      },
+      "payments": {
+        "heading": "Pagos que reconoce por sí solo",
+        "p1": "Cuando tu banco se sincroniza, Tether-Zero busca las transacciones que coinciden con un pago planificado y las marca. Lo que no tiene claro te espera en <strong>Revisar pagos</strong>, donde lo confirmas, lo asignas a otra deuda o lo marcas como que no es un pago del plan: nada dudoso cuenta para el plan hasta que tú decidas.",
+        "p2": "¿Pagaste desde una cuenta no vinculada o con cheque? Usa <strong>Registrar pago</strong> para anotarlo tú mismo. En cualquier caso, la tarjeta del plan muestra lo pagado, lo pagado en parte y lo que aún vence."
+      },
+      "onTrack": {
+        "heading": "Sabe dónde estás: al día, adelantado o retrasado",
+        "p1": "La tarjeta del plan muestra un estado que responde la pregunta que importa a mitad de mes: <strong>Al día</strong>, <strong>Adelantado al plan</strong> o <strong>Retrasado respecto al plan</strong>, y qué significa para tu Fecha libre de deudas.",
+        "p2": "Atrasarte no es el fin del plan. Elige <strong>Ver opciones para ponerte al día</strong> para encontrar formas concretas de volver, y si tus saldos reales se alejaron de las proyecciones del plan, <strong>Recalcular</strong> lo reconstruye desde donde realmente estás."
+      },
+      "reminders": {
+        "heading": "Recordatorios antes de cada vencimiento",
+        "p1": "Asigna una fecha de vencimiento a cada deuda y Tether-Zero enviará recordatorios en la aplicación y por correo electrónico 1, 3, 5 o 7 días antes de que venza un pago; tú eliges la anticipación. Cada tipo de recordatorio se puede desactivar por separado en <strong>Configuración de notificaciones</strong>, y los recordatorios nunca se envían por mensaje de texto."
+      },
+      "checkIn": {
+        "heading": "Un balance mensual, y una celebración al final",
+        "p1": "Una vez al mes, el <strong>Balance mensual</strong> resume cómo fue el mes anterior: qué pagos se hicieron, los copos de nieve y cargos nuevos, las deudas que liquidaste y si tu Fecha libre de deudas se movió, además de un adelanto del plan del mes siguiente.",
+        "p2": "Y cuando una deuda llega a cero, Tether-Zero celebra el momento y te muestra a dónde pasa su pago. Liquida la última y verás las palabras para las que se construyó todo el plan: «¡Estás libre de deudas!»"
+      },
+      "export": {
+        "heading": "Llévate el plan contigo",
+        "p1": "¿Quieres el plan en papel o en tu propia hoja de cálculo? <strong>Exportar como PDF</strong> o <strong>Exportar como CSV</strong>. ¿Prefieres tu propio calendario? <strong>Añadir al calendario</strong> pone la fecha de vencimiento de cada pago donde ya miras.",
+        "p2": "¿Aún eliges entre estrategias? Empieza con <link>bola de nieve o avalancha</link> y descubre cómo pequeños <link2>pagos copo de nieve</link2> acercan tu Fecha libre de deudas."
+      },
+      "cta": {
+        "heading": "Un plan que de verdad puedes cumplir",
+        "body": "Comienza tu prueba gratuita de 30 días, agrega tus deudas y elige una estrategia: Tether-Zero la convierte en un plan mensual y te ayuda a cumplirlo.",
         "button": "Comienza tu prueba gratuita de 30 días"
       }
     },
@@ -1102,20 +1161,20 @@
     "budgetJourney": {
       "meta": {
         "title": "El viaje del presupuesto",
-        "description": "Dieciséis artículos, un solo camino: el mapa de lectura de la biblioteca Aprende de Tether-Zero — del primer presupuesto a la libertad financiera."
+        "description": "Diecisiete artículos, un solo camino: el mapa de lectura de la biblioteca Aprende de Tether-Zero — del primer presupuesto a la libertad financiera."
       },
       "title": "El viaje del presupuesto: por dónde empezar y qué leer después",
       "intro": {
-        "p1": "Dieciséis artículos viven en esta biblioteca, y ninguno se escribió al azar. Juntos trazan la vida de un presupuesto por sus dos extremos: el que empiezas hoy y el que estarás manejando dentro de un año. Leídos en orden, son un curso. Leídos a demanda, son una referencia. En ambos casos, conviene ver el mapa completo antes de elegir un camino.",
+        "p1": "Diecisiete artículos viven en esta biblioteca, y ninguno se escribió al azar. Juntos trazan la vida de un presupuesto por sus dos extremos: el que empiezas hoy y el que estarás manejando dentro de un año. Leídos en orden, son un curso. Leídos a demanda, son una referencia. En ambos casos, conviene ver el mapa completo antes de elegir un camino.",
         "p2": "El camino de abajo cruza seis etapas — <strong>por qué, preparación, construcción, gestión, deudas y metas, refinamiento</strong>. Cada paso lleva a su artículo, cada artículo se sostiene solo, y los números coinciden con los de las tarjetas de esta página."
       },
-      "diagramLabel": "El camino de lectura de dieciséis pasos a través de seis etapas",
+      "diagramLabel": "El camino de lectura de diecisiete pasos a través de seis etapas",
       "stageNotes": {
         "startHere": "Un artículo, un trabajo: qué es realmente un presupuesto y por qué funciona el método.",
         "getSetUp": "La fontanería — la sincronización bancaria y las personas que compartirán el plan.",
         "buildYourBudget": "De categorías vacías a cada dólar asignado, en una sola sesión.",
         "monthToMonth": "Los hábitos que mantienen vivo un presupuesto entre pagos.",
-        "crushDebt": "Estrategia, aceleración e intercambios honestos — deuda a la baja, sueños financiados.",
+        "crushDebt": "Estrategia, seguimiento del plan, aceleración e intercambios honestos — deuda a la baja, sueños financiados.",
         "coachRefine": "Leer el arco largo, con un coach que ayuda a interpretarlo."
       },
       "outro": {

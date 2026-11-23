@@ -43,7 +43,7 @@ There are no tests configured.
 
 ### Content grounding
 
-`src/content/site.ts` exports a `PLACEHOLDERS` array tracking 14 items that need product-owner confirmation before launch (sign-up URLs, legal links, supported countries, cancellation policy, etc.). See README.md for the full list.
+`src/content/site.ts` exports a `PLACEHOLDERS` array tracking 17 items that need product-owner confirmation before launch (sign-up URLs, legal links, supported countries, cancellation policy, etc.). See README.md for the full list.
 
 ### /learn article ordering
 
@@ -52,6 +52,6 @@ The `/learn` index renders in the curated "budget journey" order defined by `LEA
 ### Public assets
 
 - `public/fonts/` — Self-hosted Inter woff2 (weights 400/500/600/700)
-- `public/screenshots/` — Product screenshots (hero, insights, coach); source from Figma
+- `public/screenshots/` — Product screenshots: hero, insights, coach (from Figma) and debt-crusher (captured from the app by tether-web `tests/e2e/capture-marketing-debt-crusher.spec.ts`; see README "Screenshots")
 - `public/brand/` — `logo-full.svg`, `logo-full-inverse.svg`, `logo-mark.svg`
 - `design-ref/` — Git-ignored Figma design system export bundle

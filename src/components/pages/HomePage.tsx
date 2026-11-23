@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Features } from "@/components/Features";
 import { Spotlight } from "@/components/Spotlight";
+import { Screenshot } from "@/components/Screenshot";
 import { StrategySimulator } from "@/components/StrategySimulator";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { Pricing } from "@/components/Pricing";
@@ -69,6 +70,7 @@ async function buildJsonLd(locale: Locale) {
 
 export async function HomePage({ locale }: { locale: Locale }) {
   const { softwareApplicationJsonLd, faqJsonLd } = await buildJsonLd(locale);
+  const tDebtCrusher = await getTranslations({ locale, namespace: "Spotlights.debtCrusher" });
 
   return (
     <>
@@ -84,7 +86,16 @@ export async function HomePage({ locale }: { locale: Locale }) {
           spotlight={debtCrusher}
           asset={SCREENSHOTS.debtCrusher}
           locale={locale}
-          visual={<StrategySimulator />}
+          visual={
+            <div className="flex flex-col gap-6">
+              <Screenshot
+                asset={SCREENSHOTS.debtCrusher}
+                alt={tDebtCrusher("imageAlt")}
+                locale={locale}
+              />
+              <StrategySimulator />
+            </div>
+          }
         />
         <Spotlight spotlight={insights} asset={SCREENSHOTS.insights} locale={locale} alt />
         <Spotlight spotlight={coach} asset={SCREENSHOTS.coach} locale={locale} />

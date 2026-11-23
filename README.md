@@ -110,16 +110,26 @@ reworded** because the PRDs don't support them:
 
 ## Screenshots
 
-Three frames were pulled from Figma (via the Figma MCP) into `public/screenshots/`:
+Three frames were pulled from Figma (via the Figma MCP) into `public/screenshots/`,
+and one was captured from the app:
 
-| File | Source frame | Used in |
+| File | Source | Used in |
 | --- | --- | --- |
-| `hero.png` | Debt Crusher dashboard | Hero (`#home`) |
-| `insights.png` | Insights dashboard | `#insights` |
-| `coach.png` | Zero AI coach chat | `#coach` |
+| `hero.png` | Figma: Debt Crusher dashboard | Hero (`#home`) |
+| `insights.png` | Figma: Insights dashboard | `#insights` |
+| `coach.png` | Figma: Zero AI coach chat | `#coach` |
+| `debt-crusher.png` | App capture: Debt Crusher dashboard with the Monthly Plan card (TZ-395) | `#debt-crusher`, above the simulator |
 
-The `#debt-crusher` section uses an **interactive client-side simulator**
-(`StrategySimulator.tsx`) instead of a static screenshot, which demonstrates the
+`debt-crusher.png` is produced by the guarded Playwright spec
+`tether-web/tests/e2e/capture-marketing-debt-crusher.spec.ts`
+(`CAPTURE_SCREENSHOTS=1 npx playwright test tests/e2e/capture-marketing-debt-crusher.spec.ts --project=chromium`,
+run from tether-web with the backend + dev server up). It stubs the debt plan
+endpoints with fictitious demo debts — no real household data — and writes the
+PNG straight into this repo's `public/screenshots/`. If its pixel size changes,
+update `ratio` in `assets.ts`.
+
+Below that screenshot, the `#debt-crusher` section also renders an **interactive
+client-side simulator** (`StrategySimulator.tsx`), which demonstrates the
 snowball-vs-avalanche recalculation. It uses sample data and is clearly labeled
 "Illustrative example — not financial advice."
 
@@ -206,6 +216,17 @@ neutral ramp, semantic colors, borders-over-shadows, generous whitespace):
 14. **Competitive one-pager** (`marketing.pdf`) could not be parsed in this environment
     (no PDF renderer). The comparison matrix uses the brief-provided values; reconcile
     with the one-pager before launch.
+15. **TZ-395 release gate** — the Debt Plan Adherence copy (home Debt Crusher spotlight +
+    screenshot, Features "Debt Crusher Engine", FAQ reminder item, Compare "Debt strategy"
+    row, the "Stick to the plan" section of `/learn/pay-off-debt-faster`, and
+    `/learn/sticking-to-your-debt-plan`) must **not** be deployed until tether-web
+    `feature/TZ-313-debt-plan-adherence` is merged and every PostHog Debt Plan phase flag
+    is on in production.
+16. **Compare "Debt strategy" row** — Tether-Zero cell changed to "Simulator + monthly plan
+    tracking"; approved by the product owner 2026-11-23 (TZ-395).
+17. **No Help Center links** — `/learn/sticking-to-your-debt-plan` links only to other
+    `/learn` articles because the TZ-385 Help Center articles live inside the app with no
+    public URL. Add links if a public Help Center ships.
 
 Also note: **"No credit card required"** trial claim was **omitted** (not
 confirmed) — this is a design decision, not a tracked placeholder. Add to the
